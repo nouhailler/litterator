@@ -34,6 +34,11 @@ Une **Progressive Web App (PWA)** dédiée à la découverte de la littérature 
 ### 4. **Mode Hors Ligne (PWA)**
 - **100% local** : Toutes les données sont stockées sur votre appareil.
 - Pas besoin de connexion Internet pour explorer la littérature.
+
+### 5. **Paramétrage (Import/Export)**
+- **Importer des données** : Ajoutez de nouveaux auteurs, œuvres, mouvements ou lieux via un gabarit JSON.
+- **Exporter des données** : Sauvegardez ou partagez vos données (par catégorie ou toutes ensemble).
+- **Gabarits JSON** : Des exemples de structure sont fournis pour chaque type de données.
 - Installation possible sur mobile et desktop.
 
 ## 🛠 Stack Technique
