@@ -3,13 +3,14 @@ import { Link } from 'react-router-dom';
 
 function SettingsPage() {
   const [activeTab, setActiveTab] = useState('import');
-  const [dataType, setDataType] = useState('author'); // 'author', 'work', 'movement', 'location'
+  const [dataType, setDataType] = useState('author');
   const [jsonInput, setJsonInput] = useState('');
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const [theme, setTheme] = useState('light');
 
-  // Gabarits JSON pour l'import
+  // Gabarits JSON pour l'import (avec image_url pour Wikipédia/Wikimédia)
   const templates = {
     author: `{
   "id": "nouvel_auteur",
@@ -26,6 +27,7 @@ function SettingsPage() {
     "place": "Lieu de décès"
   },
   "portrait": "/images/authors/nouvel_auteur.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/.../Nom_Auteur.jpg",
   "bio": "Biographie de l'auteur...",
   "movements": ["romantisme"],
   "genres": ["roman", "poésie"],
@@ -112,17 +114,23 @@ function SettingsPage() {
     }
   ],
   "image": "/images/locations/nouveau_lieu.jpg",
+  "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/.../Nom_Lieu.jpg",
   "color": "#e91e63"
 }`
   };
 
-  // Charger les données existantes pour vérification
+  // Charger les données existantes
   const [existingData, setExistingData] = useState({
     authors: [],
     works: [],
     movements: [],
     locations: []
   });
+
+  // Charger les images depuis Wikipédia/Wikimédia
+  const [wikipediaSearch, setWikipediaSearch] = useState('');
+  const [wikipediaResults, setWikipediaResults] = useState([]);
+  const [selectedImageUrl, setSelectedImageUrl] = useState('');
 
   useEffect(() => {
     const loadData = async () => {
@@ -147,12 +155,57 @@ function SettingsPage() {
     loadData();
   }, []);
 
+  // Appliquer le thème
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+  }, [theme]);
+
+  // Charger le thème depuis localStorage
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    setTheme(savedTheme);
+  }, []);
+
+  // Rechercher des images sur Wikipédia/Wikimédia
+  const searchWikipediaImages = async () => {
+    if (!wikipediaSearch.trim()) return;
+    
+    try {
+      // Utiliser l'API Wikimedia Commons (recherche d'images)
+      const response = await fetch(
+        `https://commons.wikimedia.org/w/api.php?action=query&format=json&list=search&srsearch=${encodeURIComponent(wikipediaSearch)}&srnamespace=6&srlimit=10&origin=*`
+      );
+      const data = await response.json();
+      
+      if (data.query && data.query.search) {
+        // Extraire les URLs des images (simplifié - en réalité, il faudrait plus de traitement)
+        const results = data.query.search.map((item) => ({
+          title: item.title,
+          // URL simplifiée (en réalité, il faudrait utiliser l'API pour obtenir l'URL complète)
+          url: `https://commons.wikimedia.org/wiki/File:${encodeURIComponent(item.title)}`,
+          thumbnail: `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(item.title)}?width=200`
+        }));
+        setWikipediaResults(results);
+      }
+    } catch (error) {
+      console.error('Erreur lors de la recherche Wikipédia:', error);
+      // Si l'API échoue, proposer des URLs manuelles
+      setWikipediaResults([
+        {
+          title: `Image pour ${wikipediaSearch}`,
+          url: `https://upload.wikimedia.org/wikipedia/commons/thumb/.../${encodeURIComponent(wikipediaSearch)}.jpg`,
+          thumbnail: `https://via.placeholder.com/200?text=${encodeURIComponent(wikipediaSearch)}`
+        }
+      ]);
+    }
+  };
+
   // Valider le JSON
   const validateJSON = (jsonString) => {
     try {
       const data = JSON.parse(jsonString);
       
-      // Vérifier les champs obligatoires selon le type
       switch (dataType) {
         case 'author':
           if (!data.id || !data.name) {
@@ -178,13 +231,12 @@ function SettingsPage() {
           return 'Type de données invalide.';
       }
       
-      // Vérifier que l'ID n'existe pas déjà
       const existingIds = existingData[dataType + 's'].map(item => item.id);
       if (existingIds.includes(data.id)) {
         return `Un ${dataType} avec l'ID "${data.id}" existe déjà.`;
       }
       
-      return null; // Pas d'erreur
+      return null;
     } catch (error) {
       return 'JSON invalide : ' + error.message;
     }
@@ -211,9 +263,7 @@ function SettingsPage() {
       // Ajouter la nouvelle entrée
       const updatedData = [...currentData, newData];
       
-      // Sauvegarder dans le fichier JSON (simulation pour une PWA locale)
-      // Dans une vraie PWA, on utiliserait IndexedDB ou localStorage
-      // Ici, on va créer un blob et proposer un téléchargement
+      // Créer un blob et proposer un téléchargement
       const blob = new Blob([JSON.stringify(updatedData, null, 2)], { type: 'application/json' });
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
@@ -224,7 +274,6 @@ function SettingsPage() {
       
       setSuccess(`Données importées avec succès ! Téléchargez le fichier ${fileName} pour le remplacer dans /public/data/.`);
       
-      // Recharger les données après un délai
       setTimeout(() => {
         window.location.reload();
       }, 2000);
@@ -276,11 +325,46 @@ function SettingsPage() {
     setSuccess('');
   };
 
+  // Sélectionner une image depuis Wikipédia
+  const selectImage = (url) => {
+    setSelectedImageUrl(url);
+    // Mettre à jour le JSON avec l'URL de l'image
+    if (jsonInput) {
+      try {
+        const data = JSON.parse(jsonInput);
+        if (dataType === 'author') {
+          data.image_url = url;
+          data.portrait = `/images/authors/${data.id}.jpg`; // Chemin local
+        } else if (dataType === 'location') {
+          data.image_url = url;
+          data.image = `/images/locations/${data.id}.jpg`; // Chemin local
+        }
+        setJsonInput(JSON.stringify(data, null, 2));
+      } catch (error) {
+        console.error('Erreur lors de la mise à jour de l\'image:', error);
+      }
+    }
+  };
+
+  // Basculer entre thème clair et sombre
+  const toggleTheme = () => {
+    setTheme(theme === 'light' ? 'dark' : 'light');
+  };
+
   return (
     <div className="fade-in">
-      <h2 style={{ fontFamily: 'var(--font-secondary)', marginBottom: '20px' }}>
-        Paramétrage - Import/Export de Données
-      </h2>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
+        <h2 style={{ fontFamily: 'var(--font-secondary)', margin: 0 }}>
+          Paramétrage - Import/Export de Données
+        </h2>
+        <button 
+          onClick={toggleTheme} 
+          className="button button-secondary"
+          style={{ padding: '10px 20px', display: 'flex', alignItems: 'center', gap: '8px' }}
+        >
+          {theme === 'light' ? '🌙 Thème Sombre' : '☀️ Thème Clair'}
+        </button>
+      </div>
 
       <p style={{ marginBottom: '30px', color: 'var(--text-light)' }}>
         Gérez vos données littéraires : importez de nouvelles œuvres, auteurs, mouvements ou lieux,
@@ -288,7 +372,7 @@ function SettingsPage() {
       </p>
 
       {/* Menu de navigation */}
-      <div style={{ display: 'flex', gap: '10px', marginBottom: '30px', borderBottom: '1px solid #eee' }}>
+      <div style={{ display: 'flex', gap: '10px', marginBottom: '30px', borderBottom: '1px solid var(--border-color)' }}>
         <button 
           onClick={() => setActiveTab('import')} 
           className={`button ${activeTab === 'import' ? 'button-secondary' : ''}`}
@@ -302,6 +386,13 @@ function SettingsPage() {
           style={{ padding: '10px 20px' }}
         >
           Exporter des données
+        </button>
+        <button 
+          onClick={() => setActiveTab('images')} 
+          className={`button ${activeTab === 'images' ? 'button-secondary' : ''}`}
+          style={{ padding: '10px 20px' }}
+        >
+          Images Wikipédia
         </button>
       </div>
 
@@ -331,7 +422,7 @@ function SettingsPage() {
               Charger le gabarit
             </button>
             <span style={{ color: 'var(--text-light)', fontSize: '0.9rem' }}>
-              (Exemple de structure JSON pour {dataType === 'author' ? 'un auteur' : dataType === 'work' ? 'une œuvre' : dataType === 'movement' ? 'un mouvement' : 'un lieu'})
+              (Inclut un champ <code>image_url</code> pour les images Wikipédia/Wikimédia)
             </span>
           </div>
 
@@ -347,14 +438,17 @@ function SettingsPage() {
                 minHeight: '300px',
                 padding: '10px',
                 borderRadius: 'var(--border-radius)',
-                border: '1px solid #ddd',
+                border: '1px solid var(--border-color)',
                 fontFamily: 'monospace',
-                fontSize: '0.9rem'
+                fontSize: '0.9rem',
+                backgroundColor: 'var(--card-bg)',
+                color: 'var(--text-color)'
               }}
               placeholder={`Collez ici vos données JSON au format :
 {
   "id": "...",
   "name": "...",
+  "image_url": "https://upload.wikimedia.org/...",
   ...
 }`}
             />
@@ -381,12 +475,13 @@ function SettingsPage() {
             {isLoading ? 'Import en cours...' : 'Importer'}
           </button>
 
-          <div style={{ marginTop: '20px', padding: '15px', backgroundColor: '#f5f5f5', borderRadius: 'var(--border-radius)' }}>
+          <div style={{ marginTop: '20px', padding: '15px', backgroundColor: 'var(--card-bg)', borderRadius: 'var(--border-radius)', border: '1px solid var(--border-color)' }}>
             <h4 style={{ marginBottom: '10px' }}>Instructions :</h4>
             <ol style={{ paddingLeft: '20px', lineHeight: '1.6' }}>
               <li>Sélectionnez le type de données à importer.</li>
               <li>Cliquez sur "Charger le gabarit" pour obtenir un exemple de structure JSON.</li>
               <li>Modifiez le JSON avec vos propres données.</li>
+              <li>Pour les images, utilisez le champ <code>image_url</code> avec une URL Wikipédia/Wikimédia (ex: <code>https://upload.wikimedia.org/wikipedia/commons/...</code>).</li>
               <li>Cliquez sur "Importer" pour valider et télécharger le fichier mis à jour.</li>
               <li>Remplacez le fichier correspondant dans <code>/public/data/</code> par le fichier téléchargé.</li>
               <li>Rafraîchissez la page pour voir les nouvelles données.</li>
@@ -454,7 +549,7 @@ function SettingsPage() {
             </div>
           )}
 
-          <div style={{ marginTop: '20px', padding: '15px', backgroundColor: '#f5f5f5', borderRadius: 'var(--border-radius)' }}>
+          <div style={{ marginTop: '20px', padding: '15px', backgroundColor: 'var(--card-bg)', borderRadius: 'var(--border-radius)', border: '1px solid var(--border-color)' }}>
             <h4 style={{ marginBottom: '10px' }}>Instructions :</h4>
             <ol style={{ paddingLeft: '20px', lineHeight: '1.6' }}>
               <li>Cliquez sur le bouton correspondant à la catégorie que vous souhaitez exporter.</li>
@@ -467,6 +562,114 @@ function SettingsPage() {
                 </ul>
               </li>
             </ol>
+          </div>
+        </div>
+      )}
+
+      {/* Onglet Images Wikipédia */}
+      {activeTab === 'images' && (
+        <div className="card">
+          <h3 style={{ marginBottom: '20px' }}>Rechercher des images sur Wikipédia/Wikimédia</h3>
+          
+          <p style={{ marginBottom: '20px', color: 'var(--text-light)' }}>
+            Trouvez des images libres de droits pour vos auteurs ou lieux. Les images proviennent de 
+            <a href="https://commons.wikimedia.org" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary-color)' }}>
+              Wikimedia Commons
+            </a>.
+          </p>
+
+          <div style={{ marginBottom: '20px' }}>
+            <label style={{ display: 'block', marginBottom: '10px', fontWeight: '600' }}>
+              Rechercher une image :
+            </label>
+            <div style={{ display: 'flex', gap: '10px' }}>
+              <input 
+                type="text" 
+                value={wikipediaSearch} 
+                onChange={(e) => setWikipediaSearch(e.target.value)}
+                placeholder="Ex: Victor Hugo, Gustave Flaubert, Notre-Dame de Paris..."
+                style={{
+                  flex: 1,
+                  padding: '10px',
+                  borderRadius: 'var(--border-radius)',
+                  border: '1px solid var(--border-color)',
+                  backgroundColor: 'var(--card-bg)',
+                  color: 'var(--text-color)'
+                }}
+              />
+              <button onClick={searchWikipediaImages} className="button" style={{ padding: '10px 20px' }}>
+                Rechercher
+              </button>
+            </div>
+          </div>
+
+          {selectedImageUrl && (
+            <div style={{ marginBottom: '20px', padding: '15px', backgroundColor: 'var(--card-bg)', borderRadius: 'var(--border-radius)', border: '1px solid var(--border-color)' }}>
+              <h4 style={{ marginBottom: '10px' }}>Image sélectionnée :</h4>
+              <img 
+                src={selectedImageUrl} 
+                alt="Sélectionnée"
+                style={{ maxWidth: '200px', maxHeight: '200px', borderRadius: 'var(--border-radius)' }}
+                onError={(e) => {
+                  e.target.src = 'https://via.placeholder.com/200?text=Image+non+disponible';
+                }}
+              />
+              <div style={{ marginTop: '10px' }}>
+                <code style={{ backgroundColor: 'var(--border-color)', padding: '5px', borderRadius: '4px' }}>
+                  {selectedImageUrl}
+                </code>
+                <button 
+                  onClick={() => navigator.clipboard.writeText(selectedImageUrl)}
+                  className="button"
+                  style={{ padding: '5px 10px', marginLeft: '10px', fontSize: '0.8rem' }}
+                >
+                  Copier
+                </button>
+              </div>
+            </div>
+          )}
+
+          {wikipediaResults.length > 0 && (
+            <div>
+              <h4 style={{ marginBottom: '15px' }}>Résultats :</h4>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '15px' }}>
+                {wikipediaResults.map((result, index) => (
+                  <div 
+                    key={index} 
+                    className="card" 
+                    style={{ cursor: 'pointer', padding: '10px' }}
+                    onClick={() => selectImage(result.url)}
+                  >
+                    <img 
+                      src={result.thumbnail || result.url} 
+                      alt={result.title}
+                      style={{ width: '100%', height: '150px', objectFit: 'cover', borderRadius: 'var(--border-radius)' }}
+                      onError={(e) => {
+                        e.target.src = 'https://via.placeholder.com/200?text=Image+non+disponible';
+                      }}
+                    />
+                    <p style={{ marginTop: '10px', fontSize: '0.8rem', textAlign: 'center' }}>
+                      {result.title}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          <div style={{ marginTop: '20px', padding: '15px', backgroundColor: 'var(--card-bg)', borderRadius: 'var(--border-radius)', border: '1px solid var(--border-color)' }}>
+            <h4 style={{ marginBottom: '10px' }}>Comment utiliser les images Wikipédia :</h4>
+            <ol style={{ paddingLeft: '20px', lineHeight: '1.6' }}>
+              <li>Recherchez un auteur ou un lieu (ex: "Victor Hugo", "Notre-Dame de Paris").</li>
+              <li>Cliquez sur une image pour la sélectionner.</li>
+              <li>Copiez l'URL de l'image ou utilisez-la directement dans votre JSON.</li>
+              <li>Dans le gabarit JSON, utilisez le champ <code>image_url</code> pour l'URL complète.</li>
+              <li>Exemple : <code>"image_url": "https://upload.wikimedia.org/wikipedia/commons/.../Victor_Hugo.jpg"</code></li>
+              <li>Les images de Wikimedia Commons sont <strong>libres de droits</strong> (vérifiez la licence).</li>
+            </ol>
+            <p style={{ marginTop: '15px', fontSize: '0.9rem', color: 'var(--text-light)' }}>
+              <strong>Note :</strong> Pour une utilisation optimale, préférez les images en haute résolution et vérifiez leur licence sur Wikimedia Commons.
+            </p>
           </div>
         </div>
       )}

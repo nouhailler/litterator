@@ -123,9 +123,10 @@ function AuthorsPage() {
               id={author.id} 
               className="card"
             >
-              {author.portrait && (
+              {/* Afficher l'image depuis image_url ou portrait local */}
+              {(author.image_url || author.portrait) && (
                 <img 
-                  src={author.portrait} 
+                  src={author.image_url || author.portrait}
                   alt={author.name} 
                   style={{ 
                     width: '100%', 
@@ -231,7 +232,7 @@ function AuthorsPage() {
                 </Link>
                 {author.birth.place && (
                   <Link 
-                    to={`/map#${author.birth.place.toLowerCase().replace(/\s+/g, '-')}`} 
+                    to={`/map`} 
                     className="button button-secondary" 
                     style={{ fontSize: '0.9rem', padding: '8px 16px' }}
                   >

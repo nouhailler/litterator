@@ -14,6 +14,7 @@
       "place": "Paris, France"
     },
     "portrait": "/images/authors/victor_hugo.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Victor_Hugo_002.jpg/800px-Victor_Hugo_002.jpg",
     "bio": "Poète, dramaturge, romancier et homme politique français. Figure majeure du romantisme, il a marqué la littérature française par son engagement humaniste et ses œuvres monumentales comme 'Les Misérables' et 'Notre-Dame de Paris'.",
     "movements": ["romantisme"],
     "genres": ["poésie", "roman", "théâtre", "essai"],
@@ -75,6 +76,7 @@
       "place": "Paris, France"
     },
     "portrait": "/images/authors/lamartine.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Alphonse_de_Lamartine.jpg/800px-Alphonse_de_Lamartine.jpg",
     "bio": "Poète, romancier et homme politique français. Pionnier du romantisme en France avec 'Méditations poétiques' (1820), il a introduit la poésie lyrique et intime.",
     "movements": ["romantisme"],
     "genres": ["poésie", "roman", "autobiographie"],
@@ -128,6 +130,7 @@
       "place": "Canteleu, France"
     },
     "portrait": "/images/authors/flaubert.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Gustave_Flaubert_1856.jpg/800px-Gustave_Flaubert_1856.jpg",
     "bio": "Écrivain français, maître du réalisme. Son œuvre 'Madame Bovary' (1857) est considérée comme un chef-d'œuvre de la littérature mondiale. Connu pour son perfectionnisme et son style impersonnel.",
     "movements": ["realisme"],
     "genres": ["roman", "nouvelle", "théâtre"],
@@ -188,6 +191,7 @@
       "place": "Paris, France"
     },
     "portrait": "/images/authors/zola.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/%C3%89mile_Zola_2.jpg/800px-%C3%89mile_Zola_2.jpg",
     "bio": "Écrivain et journaliste français, chef de file du naturalisme. Auteur des 'Rougon-Macquart', une fresque romanesque de 20 romans explorant l'hérédité et le déterminisme social.",
     "movements": ["naturalisme", "realisme"],
     "genres": ["roman", "essai", "nouvelle"],
@@ -254,6 +258,7 @@
       "place": "Paris, France"
     },
     "portrait": "/images/authors/baudelaire.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Charles_Baudelaire_par_Nadar.jpg/800px-Charles_Baudelaire_par_Nadar.jpg",
     "bio": "Poète français, figure majeure de la littérature moderne. 'Les Fleurs du Mal' (1857) est un recueil poétique révolutionnaire qui explore la beauté, la décadence et la mélancolie.",
     "movements": ["symbolisme", "romantisme"],
     "genres": ["poésie", "essai", "critique"],
@@ -308,6 +313,7 @@
       "place": "Villeblevin, France"
     },
     "portrait": "/images/authors/camus.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Albert_Camus%2C_gagnant_de_prix_Nobel%2C_1957.jpg/800px-Albert_Camus%2C_gagnant_de_prix_Nobel%2C_1957.jpg",
     "bio": "Écrivain, philosophe et journaliste français. Prix Nobel de littérature en 1957. Connu pour ses romans 'L'Étranger' et 'La Peste', ainsi que pour son essai 'Le Mythe de Sisyphe' qui développe sa philosophie de l'absurde.",
     "movements": ["existentialisme"],
     "genres": ["roman", "essai", "théâtre", "nouvelle"],
@@ -368,6 +374,7 @@
       "place": "Paris, France"
     },
     "portrait": "/images/authors/beauvoir.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Simone_de_Beauvoir_1967.jpg/800px-Simone_de_Beauvoir_1967.jpg",
     "bio": "Philosophe, romancière et essayiste française. Figure majeure de l'existentialisme et du féminisme. Son œuvre 'Le Deuxième Sexe' (1949) est un texte fondateur du mouvement féministe moderne.",
     "movements": ["existentialisme", "féminisme"],
     "genres": ["essai", "roman", "autobiographie"],
@@ -422,6 +429,7 @@
       "place": "Paris, France"
     },
     "portrait": "/images/authors/duras.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Marguerite_Duras_1993.jpg/800px-Marguerite_Duras_1993.jpg",
     "bio": "Écrivaine, dramaturge et cinéaste française. Son œuvre explore la mémoire, l'amour, la douleur et l'exil. 'L'Amant' (1984) lui a valu le prix Goncourt.",
     "movements": ["nouveau_roman"],
     "genres": ["roman", "théâtre", "scénario"],

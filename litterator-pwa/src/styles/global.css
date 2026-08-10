@@ -6,7 +6,7 @@
 }
 
 :root {
-  /* Couleurs principales */
+  /* Couleurs principales (thème clair) */
   --primary-color: #1a237e; /* Bleu foncé */
   --secondary-color: #3f51b5; /* Bleu */
   --accent-color: #ff5722; /* Orange */
@@ -15,34 +15,28 @@
   --text-light: #666;
   --white: #ffffff;
   --black: #000000;
-  
-  /* Couleurs des mouvements littéraires */
-  --romantisme: #e91e63;
-  --realisme: #4caf50;
-  --naturalisme: #ff9800;
-  --symbolisme: #9c27b0;
-  --surréalisme: #2196f3;
-  --existentialisme: #ff5722;
-  --nouveau-roman: #795548;
-  --litterature-contemporaine: #607d8b;
-  
-  /* Typographie */
-  --font-primary: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  --font-secondary: 'Merriweather', Georgia, serif;
-  
-  /* Espacements */
-  --spacing-sm: 8px;
-  --spacing-md: 16px;
-  --spacing-lg: 24px;
-  --spacing-xl: 32px;
-  
-  /* Bordures et ombres */
-  --border-radius: 8px;
-  --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  --box-shadow-hover: 0 4px 15px rgba(0, 0, 0, 0.2);
-  
-  /* Transitions */
-  --transition: all 0.3s ease;
+  --card-bg: #ffffff;
+  --header-bg: #1a237e;
+  --footer-bg: #1a237e;
+  --border-color: #e0e0e0;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Thème sombre */
+[data-theme="dark"] {
+  --primary-color: #90caf9;
+  --secondary-color: #a5d6a7;
+  --accent-color: #ffab91;
+  --background-color: #121212;
+  --text-color: #e0e0e0;
+  --text-light: #b0b0b0;
+  --white: #121212;
+  --black: #ffffff;
+  --card-bg: #1e1e1e;
+  --header-bg: #0d47a1;
+  --footer-bg: #0d47a1;
+  --border-color: #333;
+  --shadow-color: rgba(0, 0, 0, 0.3);
 }
 
 body {
@@ -50,17 +44,19 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
   line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* En-tête et navigation */
 header {
-  background-color: var(--primary-color);
+  background-color: var(--header-bg);
   color: var(--white);
   padding: var(--spacing-md) var(--spacing-lg);
-  box-shadow: var(--box-shadow);
+  box-shadow: 0 2px 10px var(--shadow-color);
   position: sticky;
   top: 0;
   z-index: 100;
+  transition: background-color 0.3s ease;
 }
 
 header h1 {
@@ -72,6 +68,7 @@ nav ul {
   display: flex;
   list-style: none;
   gap: var(--spacing-lg);
+  flex-wrap: wrap;
 }
 
 nav a {
@@ -121,16 +118,17 @@ nav a:hover {
 
 /* Cartes */
 .card {
-  background-color: var(--white);
+  background-color: var(--card-bg);
   border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
+  box-shadow: 0 2px 10px var(--shadow-color);
   padding: var(--spacing-md);
   margin-bottom: var(--spacing-md);
   transition: var(--transition);
+  color: var(--text-color);
 }
 
 .card:hover {
-  box-shadow: var(--box-shadow-hover);
+  box-shadow: 0 4px 15px var(--shadow-color);
   transform: translateY(-5px);
 }
 
@@ -189,9 +187,11 @@ nav a:hover {
 .filter-group select,
 .filter-group input {
   padding: var(--spacing-sm);
-  border: 1px solid #ddd;
+  border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
   font-size: 1rem;
+  background-color: var(--card-bg);
+  color: var(--text-color);
 }
 
 /* Timeline */
@@ -223,10 +223,11 @@ nav a:hover {
 .timeline-content {
   width: 45%;
   padding: var(--spacing-md);
-  background-color: var(--white);
+  background-color: var(--card-bg);
   border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
+  box-shadow: 0 2px 10px var(--shadow-color);
   position: relative;
+  color: var(--text-color);
 }
 
 .timeline-item-left .timeline-content {
@@ -274,7 +275,7 @@ nav a:hover {
   width: 100%;
   border-radius: var(--border-radius);
   margin-bottom: var(--spacing-lg);
-  box-shadow: var(--box-shadow);
+  box-shadow: 0 2px 10px var(--shadow-color);
 }
 
 .leaflet-container {
@@ -297,15 +298,16 @@ nav a:hover {
 }
 
 .modal {
-  background-color: var(--white);
+  background-color: var(--card-bg);
   border-radius: var(--border-radius);
   padding: var(--spacing-lg);
   max-width: 800px;
   width: 90%;
   max-height: 90vh;
   overflow-y: auto;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 20px var(--shadow-color);
   position: relative;
+  color: var(--text-color);
 }
 
 .modal-close {
@@ -325,11 +327,12 @@ nav a:hover {
 
 /* Pied de page */
 footer {
-  background-color: var(--primary-color);
+  background-color: var(--footer-bg);
   color: var(--white);
   text-align: center;
   padding: var(--spacing-lg);
   margin-top: var(--spacing-xl);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Responsive */
@@ -393,4 +396,13 @@ footer {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--secondary-color);
+}
+
+/* Thème sombre pour la scrollbar */
+[data-theme="dark"] ::-webkit-scrollbar-track {
+  background: #333;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
 }
