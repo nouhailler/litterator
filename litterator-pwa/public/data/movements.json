@@ -1,0 +1,234 @@
+[
+  {
+    "id": "romantisme",
+    "name": "Romantisme",
+    "period": {
+      "start": 1820,
+      "end": 1850
+    },
+    "description": "Mouvement littéraire et artistique du XIXe siècle qui exalte les émotions, la nature, et la liberté. Réaction contre le classicisme et le rationalisme des Lumières.",
+    "context": {
+      "historical": "Révolution industrielle, chute de Napoléon, Restauration monarchique, révolution de 1830.",
+      "cultural": "Influence du préromantisme allemand et anglais (Goethe, Byron). Essor du 'moi' et de l'individualisme."
+    },
+    "key_authors": ["victor_hugo", "alphonse_de_lamartine", "gerard_de_nerval", "alexandre_dumas", "george_sand"],
+    "key_works": ["les_miserables", "notre_dame_de_paris", "meditations_poetiques", "les_caprices_de_marianne", "sylvie"],
+    "themes": ["émotion", "nature", "mélancolie", "liberté", "amour", "révolte"],
+    "influences": {
+      "predecessors": ["preromantisme"],
+      "successors": ["realisme", "symbolisme"]
+    },
+    "quotes": [
+      {
+        "text": "La vie, c'est une fleur ; l'amour en est le miel.",
+        "author": "victor_hugo"
+      },
+      {
+        "text": "Un seul être vous manque, et tout est dépeuplé.",
+        "author": "alphonse_de_lamartine"
+      }
+    ],
+    "color": "#e91e63"
+  },
+  {
+    "id": "realisme",
+    "name": "Réalisme",
+    "period": {
+      "start": 1850,
+      "end": 1880
+    },
+    "description": "Mouvement littéraire qui cherche à dépeindre la réalité de manière objective, sans idéalisation. Focus sur la société contemporaine et les classes populaires.",
+    "context": {
+      "historical": "Industrialisation, urbanisation, inégalités sociales sous le Second Empire.",
+      "cultural": "Influence de la photographie et des sciences (positivisme). Réaction contre le romantisme."
+    },
+    "key_authors": ["gustave_flaubert", "emile_zola", "honore_de_balzac", "guy_de_maupassant", "stendhal"],
+    "key_works": ["madame_bovary", "l_education_sentimentale", "le_pere_goriot", "l_assommoir", "le_rouge_et_le_noir"],
+    "themes": ["réalité sociale", "critique des mœurs", "déterminisme", "observation", "ironie"],
+    "influences": {
+      "predecessors": ["romantisme"],
+      "successors": ["naturalisme"]
+    },
+    "quotes": [
+      {
+        "text": "Madame Bovary, c'est moi.",
+        "author": "gustave_flaubert"
+      },
+      {
+        "text": "Le réalisme est la reproduction exacte de la société.",
+        "author": "emile_zola"
+      }
+    ],
+    "color": "#4caf50"
+  },
+  {
+    "id": "naturalisme",
+    "name": "Naturalisme",
+    "period": {
+      "start": 1870,
+      "end": 1890
+    },
+    "description": "Mouvement littéraire qui applique les méthodes scientifiques à la littérature. Étude des comportements humains sous l'influence de l'hérédité et du milieu social.",
+    "context": {
+      "historical": "Développement des sciences (Darwin, Pasteur), misère ouvrière, Commune de Paris (1871).",
+      "cultural": "Influence du positivisme d'Auguste Comte. Le roman devient un 'laboratoire' social."
+    },
+    "key_authors": ["emile_zola", "guy_de_maupassant", "jules_de_goncourt", "edmond_de_goncourt"],
+    "key_works": ["l_assommoir", "germinal", "nana", "bel_ami", "la_bete_humaine"],
+    "themes": ["hérédité", "milieu social", "déterminisme", "misère", "alcoolisme", "prostitution"],
+    "influences": {
+      "predecessors": ["realisme"],
+      "successors": ["symbolisme"]
+    },
+    "quotes": [
+      {
+        "text": "Le naturalisme est un retour à la nature, mais une nature vue à travers les découvertes scientifiques.",
+        "author": "emile_zola"
+      }
+    ],
+    "color": "#ff9800"
+  },
+  {
+    "id": "symbolisme",
+    "name": "Symbolisme",
+    "period": {
+      "start": 1880,
+      "end": 1900
+    },
+    "description": "Mouvement littéraire qui privilégie l'expression des idées et des émotions à travers des symboles, des métaphores et des suggestions, plutôt que par une description directe.",
+    "context": {
+      "historical": "Fin du XIXe siècle, crise des valeurs traditionnelles, essor de la psychanalyse.",
+      "cultural": "Réaction contre le naturalisme. Influence de la musique (Wagner) et des arts visuels (impressionnisme)."
+    },
+    "key_authors": ["charles_baudelaire", "paul_verlaine", "arthur_rimbaud", "stephane_mallarme", "paul_valery"],
+    "key_works": ["les_fleurs_du_mal", "fetes_galantes", "une_saison_en_enfer", "l_apres_midi_d_un_faune"],
+    "themes": ["rêve", "mystère", "beauté", "décadence", "spiritualité"],
+    "influences": {
+      "predecessors": ["romantisme", "parnasse"],
+      "successors": ["surréalisme"]
+    },
+    "quotes": [
+      {
+        "text": "La poésie est un art qui se fait avec des mots.",
+        "author": "stephane_mallarme"
+      },
+      {
+        "text": "Je est un autre.",
+        "author": "arthur_rimbaud"
+      }
+    ],
+    "color": "#9c27b0"
+  },
+  {
+    "id": "surréalisme",
+    "name": "Surréalisme",
+    "period": {
+      "start": 1920,
+      "end": 1940
+    },
+    "description": "Mouvement littéraire et artistique qui cherche à libérer l'inconscient et à explorer les rêves, l'irrationnel et l'imaginaire. Influencé par Freud et la psychanalyse.",
+    "context": {
+      "historical": "Première Guerre mondiale, désillusion, montée des totalitarismes.",
+      "cultural": "Influence de la psychanalyse (Freud), du dadaïsme. Manifestes d'André Breton."
+    },
+    "key_authors": ["andre_breton", "louis_aragon", "paul_elouard", "rene_char", "antonin_artaud"],
+    "key_works": ["nadja", "les_champs_magnetiques", "le_paysan_de_paris", "le_theatre_et_son_double"],
+    "themes": ["rêve", "inconscient", "amour fou", "révolte", "liberté", "hasard"],
+    "influences": {
+      "predecessors": ["dadaisme", "symbolisme"],
+      "successors": ["existentialisme"]
+    },
+    "quotes": [
+      {
+        "text": "La beauté sera CONVULSIVE ou ne sera pas.",
+        "author": "andre_breton"
+      }
+    ],
+    "color": "#2196f3"
+  },
+  {
+    "id": "existentialisme",
+    "name": "Existentialisme",
+    "period": {
+      "start": 1940,
+      "end": 1960
+    },
+    "description": "Mouvement philosophique et littéraire qui met l'accent sur la liberté, la responsabilité et le choix individuel. L'existence précède l'essence.",
+    "context": {
+      "historical": "Seconde Guerre mondiale, occupation allemande, Libération, guerre froide.",
+      "cultural": "Influence de la phénoménologie (Husserl, Heidegger). Réflexion sur l'absurdité de la condition humaine."
+    },
+    "key_authors": ["jean_paul_sartre", "simone_de_beauvoir", "albert_camus", "maurice_merleau_ponty"],
+    "key_works": ["la_nausee", "l_etre_et_le_neant", "le_deuxieme_sexe", "l_etranger", "le_mythe_de_sisyphe"],
+    "themes": ["liberté", "responsabilité", "absurdité", "angoisse", "engagement", "authenticité"],
+    "influences": {
+      "predecessors": ["surréalisme"],
+      "successors": ["nouveau_roman"]
+    },
+    "quotes": [
+      {
+        "text": "L'homme est condamné à être libre.",
+        "author": "jean_paul_sartre"
+      },
+      {
+        "text": "Il n'y a qu'un problème philosophique vraiment sérieux : c'est le suicide.",
+        "author": "albert_camus"
+      }
+    ],
+    "color": "#ff5722"
+  },
+  {
+    "id": "nouveau_roman",
+    "name": "Nouveau Roman",
+    "period": {
+      "start": 1950,
+      "end": 1970
+    },
+    "description": "Mouvement littéraire qui remet en cause les formes traditionnelles du roman (intrigue, personnages, chronologie). Expérimentation narrative et focus sur l'écriture elle-même.",
+    "context": {
+      "historical": "Trente Glorieuses, guerre d'Algérie, mai 68.",
+      "cultural": "Influence du cinéma (Nouvelle Vague), de la psychanalyse, et de la philosophie (structuralisme)."
+    },
+    "key_authors": ["alain_robbe_grillet", "marguerite_duras", "michel_butor", "claude_simon", "nathalie_sarraute"],
+    "key_works": ["la_jalousie", "l_annee_derniere_a_marienbad", "la_modification", "l_herbe", "l_ere_du_soupcon"],
+    "themes": ["expérimentation", "subjectivité", "temps", "mémoire", "perception"],
+    "influences": {
+      "predecessors": ["existentialisme"],
+      "successors": ["litterature_contemporaine"]
+    },
+    "quotes": [
+      {
+        "text": "Le roman est une machine à penser la réalité.",
+        "author": "alain_robbe_grillet"
+      }
+    ],
+    "color": "#795548"
+  },
+  {
+    "id": "litterature_contemporaine",
+    "name": "Littérature Contemporaine",
+    "period": {
+      "start": 1980,
+      "end": 2025
+    },
+    "description": "La littérature contemporaine explore des thèmes variés comme l'autofiction, l'identité, la mémoire, et les enjeux sociétaux. Diversification des formes (numérique, hybride).",
+    "context": {
+      "historical": "Chute du mur de Berlin, mondialisation, révolution numérique, crises écologiques.",
+      "cultural": "Influence des médias de masse, d'Internet, et des questions postcoloniales."
+    },
+    "key_authors": ["christophe_boltanski", "emmanuel_carrere", "leila_slimani", "edouard_louis", "maylis_de_kerangal"],
+    "key_works": ["les_particules_elementaires", "d_apres_une_histoire_vraie", "chanson_douce", "qui_a_tue_mon_pere", "reparer_les_vivants"],
+    "themes": ["autofiction", "mémoire", "identité", "mondialisation", "écologie", "genre"],
+    "influences": {
+      "predecessors": ["nouveau_roman"],
+      "successors": []
+    },
+    "quotes": [
+      {
+        "text": "Écrire, c'est aussi ne pas savoir.",
+        "author": "emmanuel_carrere"
+      }
+    ],
+    "color": "#607d8b"
+  }
+]

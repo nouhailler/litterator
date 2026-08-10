@@ -1,0 +1,370 @@
+[
+  {
+    "id": "paris_romantique",
+    "name": "Paris Romantique",
+    "description": "Paris au XIXe siècle était le cœur du mouvement romantique. Les salons littéraires, les cafés et les théâtres étaient des lieux de rencontre pour les écrivains comme Victor Hugo, Alphonse de Lamartine et Alexandre Dumas.",
+    "type": "ville",
+    "coordinates": {
+      "lat": 48.8566,
+      "lng": 2.3522
+    },
+    "zoom": 12,
+    "period": {
+      "start": 1820,
+      "end": 1850
+    },
+    "movements": ["romantisme"],
+    "authors": ["victor_hugo", "alphonse_de_lamartine", "alexandre_dumas", "gerard_de_nerval"],
+    "works": ["les_miserables", "notre_dame_de_paris"],
+    "places": [
+      {
+        "name": "Théâtre de la Porte-Saint-Martin",
+        "description": "Lieu de la célèbre 'bataille d'Hernani' en 1830, où les romantiques (menés par Hugo) ont affronté les classiques.",
+        "coordinates": {
+          "lat": 48.8738,
+          "lng": 2.3559
+        }
+      },
+      {
+        "name": "Café de Paris",
+        "description": "Lieu de rencontre des écrivains romantiques.",
+        "coordinates": {
+          "lat": 48.8696,
+          "lng": 2.3411
+        }
+      },
+      {
+        "name": "Notre-Dame de Paris",
+        "description": "Cathédrale emblématique du roman de Victor Hugo, qui a contribué à sa restauration.",
+        "coordinates": {
+          "lat": 48.8534,
+          "lng": 2.3488
+        }
+      }
+    ],
+    "image": "/images/locations/paris_romantique.jpg",
+    "color": "#e91e63"
+  },
+  {
+    "id": "rouen_flaubert",
+    "name": "Rouen et la Normandie de Flaubert",
+    "description": "Gustave Flaubert a passé une grande partie de sa vie à Rouen et en Normandie. Ces lieux ont inspiré plusieurs de ses œuvres, notamment 'Madame Bovary' et 'L'Éducation sentimentale'.",
+    "type": "région",
+    "coordinates": {
+      "lat": 49.4431,
+      "lng": 1.0993
+    },
+    "zoom": 10,
+    "period": {
+      "start": 1850,
+      "end": 1880
+    },
+    "movements": ["realisme"],
+    "authors": ["gustave_flaubert"],
+    "works": ["madame_bovary", "l_education_sentimentale"],
+    "places": [
+      {
+        "name": "Maison de Flaubert (Rouen)",
+        "description": "Maison où Flaubert a écrit 'Madame Bovary'. Aujourd'hui musée.",
+        "coordinates": {
+          "lat": 49.4425,
+          "lng": 1.0775
+        }
+      },
+      {
+        "name": "Ry (Normandie)",
+        "description": "Village où Flaubert a passé son enfance et qui a inspiré le cadre de 'Madame Bovary'.",
+        "coordinates": {
+          "lat": 49.4500,
+          "lng": 1.2167
+        }
+      },
+      {
+        "name": "Croisset",
+        "description": "Propriété de Flaubert près de Rouen, où il a écrit la plupart de ses œuvres.",
+        "coordinates": {
+          "lat": 49.4267,
+          "lng": 1.0500
+        }
+      }
+    ],
+    "image": "/images/locations/rouen_flaubert.jpg",
+    "color": "#4caf50"
+  },
+  {
+    "id": "paris_naturaliste",
+    "name": "Paris Naturaliste",
+    "description": "Paris sous le Second Empire était le cadre idéal pour les romans naturalistes de Zola et Maupassant. Les quartiers populaires, les usines et les cabarets y sont dépeints avec un réalisme cru.",
+    "type": "ville",
+    "coordinates": {
+      "lat": 48.8566,
+      "lng": 2.3522
+    },
+    "zoom": 12,
+    "period": {
+      "start": 1870,
+      "end": 1890
+    },
+    "movements": ["naturalisme", "realisme"],
+    "authors": ["emile_zola", "guy_de_maupassant"],
+    "works": ["l_assommoir", "germinal", "bel_ami"],
+    "places": [
+      {
+        "name": "Montmartre",
+        "description": "Quartier populaire où se déroule une partie de 'L'Assommoir'. Connu pour ses cabarets et son ambiance bohème.",
+        "coordinates": {
+          "lat": 48.8867,
+          "lng": 2.3411
+        }
+      },
+      {
+        "name": "Les Halles de Paris",
+        "description": "Marché central de Paris, décrit dans 'Le Ventre de Paris' de Zola.",
+        "coordinates": {
+          "lat": 48.8606,
+          "lng": 2.3478
+        }
+      },
+      {
+        "name": "Passage des Panoramas",
+        "description": "Lieu mentionné dans plusieurs œuvres naturalistes.",
+        "coordinates": {
+          "lat": 48.8719,
+          "lng": 2.3461
+        }
+      }
+    ],
+    "image": "/images/locations/paris_naturaliste.jpg",
+    "color": "#ff9800"
+  },
+  {
+    "id": "montmartre_boheme",
+    "name": "Montmartre Bohème",
+    "description": "Montmartre était le quartier des artistes et des écrivains à la fin du XIXe et au début du XXe siècle. Les surréalistes, comme André Breton et Louis Aragon, y ont trouvé inspiration.",
+    "type": "quartier",
+    "coordinates": {
+      "lat": 48.8867,
+      "lng": 2.3411
+    },
+    "zoom": 14,
+    "period": {
+      "start": 1920,
+      "end": 1940
+    },
+    "movements": ["surréalisme"],
+    "authors": ["andre_breton", "louis_aragon", "paul_elouard"],
+    "works": ["nadja", "le_paysan_de_paris"],
+    "places": [
+      {
+        "name": "Le Lapin Agile",
+        "description": "Cabaret emblématique de Montmartre, fréquenté par les surréalistes.",
+        "coordinates": {
+          "lat": 48.8858,
+          "lng": 2.3403
+        }
+      },
+      {
+        "name": "Moulin Rouge",
+        "description": "Célèbre cabaret ouvert en 1889, symbole de la vie nocturne parisienne.",
+        "coordinates": {
+          "lat": 48.8842,
+          "lng": 2.3325
+        }
+      },
+      {
+        "name": "Place du Tertre",
+        "description": "Cœur historique de Montmartre, où les artistes exposent leurs œuvres.",
+        "coordinates": {
+          "lat": 48.8867,
+          "lng": 2.3411
+        }
+      }
+    ],
+    "image": "/images/locations/montmartre_boheme.jpg",
+    "color": "#2196f3"
+  },
+  {
+    "id": "algerie_camus",
+    "name": "Algérie de Camus",
+    "description": "Albert Camus est né en Algérie française (à Mondovi) et a passé une grande partie de sa jeunesse à Alger. Ces lieux ont profondément influencé son œuvre, notamment 'L'Étranger' et 'La Peste'.",
+    "type": "pays",
+    "coordinates": {
+      "lat": 36.7538,
+      "lng": 3.0588
+    },
+    "zoom": 7,
+    "period": {
+      "start": 1940,
+      "end": 1960
+    },
+    "movements": ["existentialisme"],
+    "authors": ["albert_camus"],
+    "works": ["l_etranger", "la_peste"],
+    "places": [
+      {
+        "name": "Mondovi (Dréan)",
+        "description": "Lieu de naissance d'Albert Camus.",
+        "coordinates": {
+          "lat": 36.7167,
+          "lng": 3.0333
+        }
+      },
+      {
+        "name": "Alger",
+        "description": "Ville où Camus a grandi et étudié. Cadre de plusieurs de ses œuvres.",
+        "coordinates": {
+          "lat": 36.7538,
+          "lng": 3.0588
+        }
+      },
+      {
+        "name": "Tipaza",
+        "description": "Site archéologique près d'Alger, où Camus aimait se promener.",
+        "coordinates": {
+          "lat": 36.5939,
+          "lng": 2.4417
+        }
+      }
+    ],
+    "image": "/images/locations/algerie_camus.jpg",
+    "color": "#ff5722"
+  },
+  {
+    "id": "indochine_duras",
+    "name": "Indochine de Duras",
+    "description": "Marguerite Duras a passé son enfance en Indochine française (aujourd'hui Vietnam). Ces années ont inspiré son œuvre, notamment 'L'Amant', qui raconte une histoire d'amour entre une jeune Française et un riche Chinois.",
+    "type": "région",
+    "coordinates": {
+      "lat": 16.0471,
+      "lng": 106.3123
+    },
+    "zoom": 7,
+    "period": {
+      "start": 1980,
+      "end": 1996
+    },
+    "movements": ["nouveau_roman"],
+    "authors": ["marguerite_duras"],
+    "works": ["l_amant"],
+    "places": [
+      {
+        "name": "Sadec (Vietnam)",
+        "description": "Ville où Duras a passé une partie de son enfance. Cadre principal de 'L'Amant'.",
+        "coordinates": {
+          "lat": 10.3000,
+          "lng": 105.6667
+        }
+      },
+      {
+        "name": "Saigon (Hô Chi Minh-Ville)",
+        "description": "Ville où Duras a étudié au lycée.",
+        "coordinates": {
+          "lat": 10.8231,
+          "lng": 106.6297
+        }
+      },
+      {
+        "name": "Mékong",
+        "description": "Fleuve qui traverse l'Indochine et qui est souvent mentionné dans les œuvres de Duras.",
+        "coordinates": {
+          "lat": 12.0000,
+          "lng": 105.0000
+        }
+      }
+    ],
+    "image": "/images/locations/indochine_duras.jpg",
+    "color": "#795548"
+  },
+  {
+    "id": "paris_existentialiste",
+    "name": "Paris Existentialiste",
+    "description": "Dans l'après-guerre, Paris était le centre de la vie intellectuelle existentialiste. Les cafés de Saint-Germain-des-Prés, comme Les Deux Magots et le Café de Flore, étaient des lieux de rencontre pour Sartre, Beauvoir, Camus et d'autres.",
+    "type": "quartier",
+    "coordinates": {
+      "lat": 48.8534,
+      "lng": 2.3386
+    },
+    "zoom": 14,
+    "period": {
+      "start": 1940,
+      "end": 1960
+    },
+    "movements": ["existentialisme"],
+    "authors": ["jean_paul_sartre", "simone_de_beauvoir", "albert_camus"],
+    "works": ["la_nausee", "le_deuxieme_sexe", "l_etranger"],
+    "places": [
+      {
+        "name": "Les Deux Magots",
+        "description": "Café emblématique de Saint-Germain-des-Prés, fréquenté par Sartre et Beauvoir.",
+        "coordinates": {
+          "lat": 48.8542,
+          "lng": 2.3361
+        }
+      },
+      {
+        "name": "Café de Flore",
+        "description": "Autre café célèbre de Saint-Germain-des-Prés, lieu de débats philosophiques.",
+        "coordinates": {
+          "lat": 48.8544,
+          "lng": 2.3356
+        }
+      },
+      {
+        "name": "Librairie Shakespeare and Company",
+        "description": "Librairie historique fréquentée par les écrivains existentialistes.",
+        "coordinates": {
+          "lat": 48.8520,
+          "lng": 2.3463
+        }
+      }
+    ],
+    "image": "/images/locations/paris_existentialiste.jpg",
+    "color": "#ff5722"
+  },
+  {
+    "id": "balzac_paris",
+    "name": "Paris de Balzac",
+    "description": "Honoré de Balzac a décrit Paris dans 'La Comédie Humaine', une fresque romanesque de 90 romans qui explore la société française sous la Restauration et la monarchie de Juillet. Ses descriptions de la ville sont d'une précision remarquable.",
+    "type": "ville",
+    "coordinates": {
+      "lat": 48.8566,
+      "lng": 2.3522
+    },
+    "zoom": 12,
+    "period": {
+      "start": 1820,
+      "end": 1850
+    },
+    "movements": ["realisme"],
+    "authors": ["honore_de_balzac"],
+    "works": ["le_pere_goriot", "eugenie_grandet"],
+    "places": [
+      {
+        "name": "Rue de Varenne",
+        "description": "Lieu de résidence de plusieurs personnages de 'La Comédie Humaine'.",
+        "coordinates": {
+          "lat": 48.8500,
+          "lng": 2.3250
+        }
+      },
+      {
+        "name": "Passage des Panoramas",
+        "description": "Mentionné dans plusieurs romans de Balzac.",
+        "coordinates": {
+          "lat": 48.8719,
+          "lng": 2.3461
+        }
+      },
+      {
+        "name": "Théâtre des Variétés",
+        "description": "Lieu de divertissement pour les personnages de Balzac.",
+        "coordinates": {
+          "lat": 48.8719,
+          "lng": 2.3486
+        }
+      }
+    ],
+    "image": "/images/locations/balzac_paris.jpg",
+    "color": "#4caf50"
+  }
+]

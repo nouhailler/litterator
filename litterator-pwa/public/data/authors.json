@@ -1,0 +1,464 @@
+[
+  {
+    "id": "victor_hugo",
+    "name": "Victor Hugo",
+    "full_name": "Victor Marie Hugo",
+    "birth": {
+      "year": 1802,
+      "date": "1802-02-26",
+      "place": "Besançon, France"
+    },
+    "death": {
+      "year": 1885,
+      "date": "1885-05-22",
+      "place": "Paris, France"
+    },
+    "portrait": "/images/authors/victor_hugo.jpg",
+    "bio": "Poète, dramaturge, romancier et homme politique français. Figure majeure du romantisme, il a marqué la littérature française par son engagement humaniste et ses œuvres monumentales comme 'Les Misérables' et 'Notre-Dame de Paris'.",
+    "movements": ["romantisme"],
+    "genres": ["poésie", "roman", "théâtre", "essai"],
+    "works": [
+      {
+        "id": "les_miserables",
+        "title": "Les Misérables",
+        "year": 1862,
+        "genre": "roman"
+      },
+      {
+        "id": "notre_dame_de_paris",
+        "title": "Notre-Dame de Paris",
+        "year": 1831,
+        "genre": "roman"
+      },
+      {
+        "id": "les_contemplations",
+        "title": "Les Contemplations",
+        "year": 1856,
+        "genre": "poésie"
+      },
+      {
+        "id": "hernani",
+        "title": "Hernani",
+        "year": 1830,
+        "genre": "théâtre"
+      }
+    ],
+    "quotes": [
+      "Demain, dès l'aube, à l'heure où blanchit la campagne, Je partirai. Vois-tu, je sais que tu m'attends.",
+      "La vie, c'est une fleur ; l'amour en est le miel.",
+      "Rien n'est plus puissant qu'une idée dont l'heure est venue.",
+      "La liberté commence où l'ignorance finit."
+    ],
+    "influences": {
+      "received": ["chateaubriand", "lamartine"],
+      "exerted": ["baudelaire", "verlaine", "rimbaud"]
+    },
+    "reading_level": "lycéen",
+    "notable_facts": [
+      "Membre de l'Académie française (1841).",
+      "Exilé sous Napoléon III pour son opposition politique (1851-1870).",
+      "Funérailles nationales en 1885, enterré au Panthéon."
+    ]
+  },
+  {
+    "id": "alphonse_de_lamartine",
+    "name": "Alphonse de Lamartine",
+    "full_name": "Alphonse Marie Louis de Prat de Lamartine",
+    "birth": {
+      "year": 1790,
+      "date": "1790-10-21",
+      "place": "Mâcon, France"
+    },
+    "death": {
+      "year": 1869,
+      "date": "1869-02-28",
+      "place": "Paris, France"
+    },
+    "portrait": "/images/authors/lamartine.jpg",
+    "bio": "Poète, romancier et homme politique français. Pionnier du romantisme en France avec 'Méditations poétiques' (1820), il a introduit la poésie lyrique et intime.",
+    "movements": ["romantisme"],
+    "genres": ["poésie", "roman", "autobiographie"],
+    "works": [
+      {
+        "id": "meditations_poetiques",
+        "title": "Méditations poétiques",
+        "year": 1820,
+        "genre": "poésie"
+      },
+      {
+        "id": "graziella",
+        "title": "Graziella",
+        "year": 1852,
+        "genre": "roman"
+      },
+      {
+        "id": "jocelyn",
+        "title": "Jocelyn",
+        "year": 1836,
+        "genre": "poésie"
+      }
+    ],
+    "quotes": [
+      "Un seul être vous manque, et tout est dépeuplé.",
+      "Le lac est calme et semble dormir ; Au loin, un vent léger d'une haleine tiède, De son souffle invisible agite l'onde verte.",
+      "L'amour, c'est l'histoire vraie. Le reste n'est que littérature."
+    ],
+    "influences": {
+      "received": ["chateaubriand", "rousseau"],
+      "exerted": ["victor_hugo", "musset"]
+    },
+    "reading_level": "lycéen",
+    "notable_facts": [
+      "Voyage en Orient (1832-1833) qui inspire plusieurs œuvres.",
+      "Ministre des Affaires étrangères en 1848."
+    ]
+  },
+  {
+    "id": "gustave_flaubert",
+    "name": "Gustave Flaubert",
+    "full_name": "Gustave Flaubert",
+    "birth": {
+      "year": 1821,
+      "date": "1821-12-12",
+      "place": "Rouen, France"
+    },
+    "death": {
+      "year": 1880,
+      "date": "1880-05-08",
+      "place": "Canteleu, France"
+    },
+    "portrait": "/images/authors/flaubert.jpg",
+    "bio": "Écrivain français, maître du réalisme. Son œuvre 'Madame Bovary' (1857) est considérée comme un chef-d'œuvre de la littérature mondiale. Connu pour son perfectionnisme et son style impersonnel.",
+    "movements": ["realisme"],
+    "genres": ["roman", "nouvelle", "théâtre"],
+    "works": [
+      {
+        "id": "madame_bovary",
+        "title": "Madame Bovary",
+        "year": 1857,
+        "genre": "roman"
+      },
+      {
+        "id": "l_education_sentimentale",
+        "title": "L'Éducation sentimentale",
+        "year": 1869,
+        "genre": "roman"
+      },
+      {
+        "id": "salammbo",
+        "title": "Salammbô",
+        "year": 1862,
+        "genre": "roman"
+      },
+      {
+        "id": "trois_contes",
+        "title": "Trois Contes",
+        "year": 1877,
+        "genre": "nouvelle"
+      }
+    ],
+    "quotes": [
+      "Madame Bovary, c'est moi.",
+      "Il faut que l'œuvre d'art soit impersonnelle ; l'artiste doit disparaître comme Dieu derrière sa création.",
+      "Le bon sens est la chose du monde la mieux partagée."
+    ],
+    "influences": {
+      "received": ["balzac", "stendhal"],
+      "exerted": ["zola", "maupassant", "proust"]
+    },
+    "reading_level": "étudiant",
+    "notable_facts": [
+      "Procès pour 'Madame Bovary' (1857) accusé d'outrage à la morale.",
+      "A passé 5 ans à écrire 'Madame Bovary' (1851-1856).",
+      "Inventeur du mot 'bovarysme' pour désigner l'insatisfaction chronique."
+    ]
+  },
+  {
+    "id": "emile_zola",
+    "name": "Émile Zola",
+    "full_name": "Émile Édouard Charles Antoine Zola",
+    "birth": {
+      "year": 1840,
+      "date": "1840-04-02",
+      "place": "Paris, France"
+    },
+    "death": {
+      "year": 1902,
+      "date": "1902-09-29",
+      "place": "Paris, France"
+    },
+    "portrait": "/images/authors/zola.jpg",
+    "bio": "Écrivain et journaliste français, chef de file du naturalisme. Auteur des 'Rougon-Macquart', une fresque romanesque de 20 romans explorant l'hérédité et le déterminisme social.",
+    "movements": ["naturalisme", "realisme"],
+    "genres": ["roman", "essai", "nouvelle"],
+    "works": [
+      {
+        "id": "l_assommoir",
+        "title": "L'Assommoir",
+        "year": 1877,
+        "genre": "roman"
+      },
+      {
+        "id": "germinal",
+        "title": "Germinal",
+        "year": 1885,
+        "genre": "roman"
+      },
+      {
+        "id": "nana",
+        "title": "Nana",
+        "year": 1880,
+        "genre": "roman"
+      },
+      {
+        "id": "la_bete_humaine",
+        "title": "La Bête humaine",
+        "year": 1890,
+        "genre": "roman"
+      },
+      {
+        "id": "j_accuse",
+        "title": "J'accuse…!",
+        "year": 1898,
+        "genre": "essai"
+      }
+    ],
+    "quotes": [
+      "Le naturalisme est un retour à la nature, mais une nature vue à travers les découvertes scientifiques.",
+      "La vérité est en marche et rien ne l'arrêtera.",
+      "Un roman est un miroir qui se promène sur une grande route."
+    ],
+    "influences": {
+      "received": ["flaubert", "balzac"],
+      "exerted": ["maupassant", "huysmans"]
+    },
+    "reading_level": "étudiant",
+    "notable_facts": [
+      "Auteur de l'article 'J'accuse…!' (1898) dans l'affaire Dreyfus.",
+      "Théoricien du roman expérimental ('Le Roman expérimental', 1880).",
+      "Mort asphyxié par les fumées d'un poêle défectueux."
+    ]
+  },
+  {
+    "id": "charles_baudelaire",
+    "name": "Charles Baudelaire",
+    "full_name": "Charles Pierre Baudelaire",
+    "birth": {
+      "year": 1821,
+      "date": "1821-04-09",
+      "place": "Paris, France"
+    },
+    "death": {
+      "year": 1867,
+      "date": "1867-08-31",
+      "place": "Paris, France"
+    },
+    "portrait": "/images/authors/baudelaire.jpg",
+    "bio": "Poète français, figure majeure de la littérature moderne. 'Les Fleurs du Mal' (1857) est un recueil poétique révolutionnaire qui explore la beauté, la décadence et la mélancolie.",
+    "movements": ["symbolisme", "romantisme"],
+    "genres": ["poésie", "essai", "critique"],
+    "works": [
+      {
+        "id": "les_fleurs_du_mal",
+        "title": "Les Fleurs du Mal",
+        "year": 1857,
+        "genre": "poésie"
+      },
+      {
+        "id": "le_spleen_de_paris",
+        "title": "Le Spleen de Paris",
+        "year": 1869,
+        "genre": "poésie"
+      },
+      {
+        "id": "les_paradises_artificiels",
+        "title": "Les Paradis artificiels",
+        "year": 1860,
+        "genre": "essai"
+      }
+    ],
+    "quotes": [
+      "La forme d'un visage change moins que celle du cœur.",
+      "La modernité, c'est le transitoire, le fugitif, le contingent, la moitié de l'art, dont l'autre moitié est l'éternel et l'immuable.",
+      "Le plus bel ornement d'une femme, c'est la simplicité."
+    ],
+    "influences": {
+      "received": ["poe", "gautier"],
+      "exerted": ["verlaine", "rimbaud", "mallarme"]
+    },
+    "reading_level": "étudiant",
+    "notable_facts": [
+      "Procès pour 'Les Fleurs du Mal' (1857) : 6 poèmes censurés pour outrage à la morale.",
+      "Traduction des œuvres d'Edgar Allan Poe.",
+      "Vie marquée par la syphilis et la dette."
+    ]
+  },
+  {
+    "id": "albert_camus",
+    "name": "Albert Camus",
+    "full_name": "Albert Camus",
+    "birth": {
+      "year": 1913,
+      "date": "1913-11-07",
+      "place": "Mondovi, Algérie française"
+    },
+    "death": {
+      "year": 1960,
+      "date": "1960-01-04",
+      "place": "Villeblevin, France"
+    },
+    "portrait": "/images/authors/camus.jpg",
+    "bio": "Écrivain, philosophe et journaliste français. Prix Nobel de littérature en 1957. Connu pour ses romans 'L'Étranger' et 'La Peste', ainsi que pour son essai 'Le Mythe de Sisyphe' qui développe sa philosophie de l'absurde.",
+    "movements": ["existentialisme"],
+    "genres": ["roman", "essai", "théâtre", "nouvelle"],
+    "works": [
+      {
+        "id": "l_etranger",
+        "title": "L'Étranger",
+        "year": 1942,
+        "genre": "roman"
+      },
+      {
+        "id": "la_peste",
+        "title": "La Peste",
+        "year": 1947,
+        "genre": "roman"
+      },
+      {
+        "id": "le_mythe_de_sisyphe",
+        "title": "Le Mythe de Sisyphe",
+        "year": 1942,
+        "genre": "essai"
+      },
+      {
+        "id": "caligula",
+        "title": "Caligula",
+        "year": 1944,
+        "genre": "théâtre"
+      }
+    ],
+    "quotes": [
+      "Il n'y a qu'un problème philosophique vraiment sérieux : c'est le suicide.",
+      "L'absurde naît de cette confrontation entre l'appel humain et le silence déraisonnable du monde.",
+      "La lutte vers les sommets suffit à remplir un cœur d'homme. Il faut imaginer Sisyphe heureux."
+    ],
+    "influences": {
+      "received": ["sartre", "nierzsche"],
+      "exerted": ["sartre", "beauvoir"]
+    },
+    "reading_level": "lycéen",
+    "notable_facts": [
+      "Prix Nobel de littérature en 1957.",
+      "Engagé dans la Résistance pendant la Seconde Guerre mondiale.",
+      "Mort dans un accident de voiture à l'âge de 46 ans."
+    ]
+  },
+  {
+    "id": "simone_de_beauvoir",
+    "name": "Simone de Beauvoir",
+    "full_name": "Simone Lucie Ernestine Marie Bertrand de Beauvoir",
+    "birth": {
+      "year": 1908,
+      "date": "1908-01-09",
+      "place": "Paris, France"
+    },
+    "death": {
+      "year": 1986,
+      "date": "1986-04-14",
+      "place": "Paris, France"
+    },
+    "portrait": "/images/authors/beauvoir.jpg",
+    "bio": "Philosophe, romancière et essayiste française. Figure majeure de l'existentialisme et du féminisme. Son œuvre 'Le Deuxième Sexe' (1949) est un texte fondateur du mouvement féministe moderne.",
+    "movements": ["existentialisme", "féminisme"],
+    "genres": ["essai", "roman", "autobiographie"],
+    "works": [
+      {
+        "id": "le_deuxieme_sexe",
+        "title": "Le Deuxième Sexe",
+        "year": 1949,
+        "genre": "essai"
+      },
+      {
+        "id": "les_mandarins",
+        "title": "Les Mandarins",
+        "year": 1954,
+        "genre": "roman"
+      },
+      {
+        "id": "memoires_d_une_jeune_fille_rangee",
+        "title": "Mémoires d'une jeune fille rangée",
+        "year": 1958,
+        "genre": "autobiographie"
+      }
+    ],
+    "quotes": [
+      "On ne naît pas femme, on le devient.",
+      "Ne vous demandez jamais ce que le monde peut faire pour vous, demandez ce que vous pouvez faire pour le monde.",
+      "L'ambiguïté est la structure fondamentale de l'existence humaine."
+    ],
+    "influences": {
+      "received": ["sartre", "hegel"],
+      "exerted": ["feminist_movement"]
+    },
+    "reading_level": "étudiant",
+    "notable_facts": [
+      "Compagne de Jean-Paul Sartre (relation ouverte).",
+      "Professeure de philosophie au lycée Molière (Paris).",
+      "Signataire du Manifeste des 343 (1971) pour la légalisation de l'avortement."
+    ]
+  },
+  {
+    "id": "marguerite_duras",
+    "name": "Marguerite Duras",
+    "full_name": "Marguerite Germaine Marie Donnadieu",
+    "birth": {
+      "year": 1914,
+      "date": "1914-04-04",
+      "place": "Gia Định, Indochine française (Vietnam)"
+    },
+    "death": {
+      "year": 1996,
+      "date": "1996-03-03",
+      "place": "Paris, France"
+    },
+    "portrait": "/images/authors/duras.jpg",
+    "bio": "Écrivaine, dramaturge et cinéaste française. Son œuvre explore la mémoire, l'amour, la douleur et l'exil. 'L'Amant' (1984) lui a valu le prix Goncourt.",
+    "movements": ["nouveau_roman"],
+    "genres": ["roman", "théâtre", "scénario"],
+    "works": [
+      {
+        "id": "l_amant",
+        "title": "L'Amant",
+        "year": 1984,
+        "genre": "roman"
+      },
+      {
+        "id": "l_amant_de_la_chine_du_nord",
+        "title": "L'Amant de la Chine du Nord",
+        "year": 1991,
+        "genre": "roman"
+      },
+      {
+        "id": "moderato_cantabile",
+        "title": "Moderato cantabile",
+        "year": 1958,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [
+      "Écrire, c'est aussi ne pas savoir.",
+      "L'amour, c'est l'histoire vraie. Le reste n'est que littérature.",
+      "La douleur est une île. On y est seul."
+    ],
+    "influences": {
+      "received": ["proust", "faulkner"],
+      "exerted": ["contemporary_writers"]
+    },
+    "reading_level": "étudiant",
+    "notable_facts": [
+      "Prix Goncourt en 1984 pour 'L'Amant'.",
+      "Enfance marquée par la pauvreté en Indochine.",
+      "A également réalisé des films (ex : 'India Song', 1975)."
+    ]
+  }
+]

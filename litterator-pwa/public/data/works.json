@@ -1,0 +1,527 @@
+[
+  {
+    "id": "les_miserables",
+    "title": "Les Misérables",
+    "author": "victor_hugo",
+    "year": 1862,
+    "genre": "roman",
+    "movement": "romantisme",
+    "summary": "Ce roman épique suit la vie de Jean Valjean, un ancien forçat qui tente de se racheter après 19 ans de bagne. L'histoire explore des thèmes comme la justice, la rédemption, l'amour et la révolution, à travers plusieurs personnages dont Fantine, Cosette, Marius, et l'inspecteur Javert.",
+    "themes": ["justice", "réhabilitation", "amour", "révolution", "pauvreté", "sacrifice"],
+    "style": "Épopée sociale avec des descriptions détaillées et un style lyrique. Alternance entre récits historiques (bataille de Waterloo) et destins individuels.",
+    "historical_importance": "Considéré comme l'un des plus grands romans du XIXe siècle. Critique sociale puissante de la France sous la Restauration et la monarchie de Juillet.",
+    "reception": "Accueil mitigé à sa sortie : certains critiquent son côté 'mélodramatique' ou son idéalisme, mais il devient rapidement un succès populaire. Aujourd'hui, c'est un classique mondial.",
+    "posterity": "Adapté de nombreuses fois au cinéma, à la télévision, en comédie musicale (1980), et en bande dessinée. Symbole de la lutte pour la justice sociale.",
+    "excerpts": [
+      {
+        "text": "Tant que les trois vieilles villes, Rouen, Paris et Toulouse, n'auront pas sonné la cloche de la Saint-Jean, le gouvernement français sera dans l'erreur.",
+        "chapter": "Livre premier – Fantine"
+      },
+      {
+        "text": "La misère, c'est l'absence totale ; l'homme en est réduit à la condition de la brute. La misère, c'est la faim, c'est le froid, c'est la solitude, c'est l'abandon, c'est la maladie. La misère, ce n'est pas seulement ne pas avoir de pain, c'est ne pas avoir d'espoir.",
+        "chapter": "Livre quatrième – L'Idylle rue Plumet et l'épopée rue Saint-Denis"
+      }
+    ],
+    "editions": [
+      {
+        "publisher": "A. Lacroix, Verboeckhoven et Cie",
+        "year": 1862,
+        "notes": "Première édition en 5 volumes."
+      },
+      {
+        "publisher": "Gallimard (Folio)",
+        "year": 1972,
+        "notes": "Édition de poche la plus répandue."
+      }
+    ],
+    "adaptations": [
+      {
+        "type": "film",
+        "title": "Les Misérables",
+        "year": 1934,
+        "director": "Raymond Bernard",
+        "link": "https://www.imdb.com/title/tt0025478/"
+      },
+      {
+        "type": "film",
+        "title": "Les Misérables",
+        "year": 1958,
+        "director": "Jean-Paul Le Chanois",
+        "link": "https://www.imdb.com/title/tt0051896/"
+      },
+      {
+        "type": "film",
+        "title": "Les Misérables",
+        "year": 2012,
+        "director": "Tom Hooper",
+        "link": "https://www.imdb.com/title/tt1707386/"
+      },
+      {
+        "type": "musical",
+        "title": "Les Misérables",
+        "year": 1980,
+        "composer": "Claude-Michel Schönberg",
+        "lyricist": "Alain Boublil, Jean-Marc Natel",
+        "link": "https://fr.wikipedia.org/wiki/Les_Mis%C3%A9rables_(com%C3%A9die_musicale)"
+      },
+      {
+        "type": "tv_series",
+        "title": "Les Misérables",
+        "year": 2018,
+        "director": "Dominic West",
+        "link": "https://www.imdb.com/title/tt7242372/"
+      }
+    ],
+    "reading_level": "lycéen"
+  },
+  {
+    "id": "notre_dame_de_paris",
+    "title": "Notre-Dame de Paris",
+    "author": "victor_hugo",
+    "year": 1831,
+    "genre": "roman",
+    "movement": "romantisme",
+    "summary": "Ce roman historique raconte l'histoire tragique de Quasimodo, le bossu de Notre-Dame, et de son amour impossible pour la belle Esméralda, une bohémienne. Le roman explore aussi le destin de la cathédrale, symbole de l'architecture gothique, et critique la société du XVe siècle.",
+    "themes": ["destin", "amour impossible", "architecture", "justice", "monstruosité", "beauté"],
+    "style": "Roman historique avec des descriptions architecturales très détaillées. Mélange de drame, de grotesque et de lyrisme.",
+    "historical_importance": "Ce roman a contribué à sauver la cathédrale Notre-Dame de Paris, qui était en mauvais état au XIXe siècle. Il a aussi popularisé le personnage de Quasimodo et l'image des cathédrales gothiques.",
+    "reception": "Succès immédiat à sa sortie. Critiqué par certains pour son mélange de genres (historique, grotesque, romantique), mais aujourd'hui considéré comme un chef-d'œuvre.",
+    "posterity": "Adapté de nombreuses fois, notamment par Disney en 1996 ('Le Bossu de Notre-Dame'). Symbole du romantisme français.",
+    "excerpts": [
+      {
+        "text": "Sans cela, on ne verrait pas, de la place du Parvis, cette admirable forêt de flèches, de tourelles, de cheminées, qui fait de Notre-Dame, vue de loin, une montagne biscornue, difforme et menaçante.",
+        "chapter": "Livre troisième – Cis et là"
+      },
+      {
+        "text": "La rosace est un œil énorme et flamboyant, qui regarde fixement l'église du haut de la façade.",
+        "chapter": "Livre troisième – Cis et là"
+      }
+    ],
+    "editions": [
+      {
+        "publisher": "Gosselin",
+        "year": 1831,
+        "notes": "Première édition en 2 volumes."
+      }
+    ],
+    "adaptations": [
+      {
+        "type": "film",
+        "title": "Notre-Dame de Paris",
+        "year": 1911,
+        "director": "Albert Capellani",
+        "link": "https://www.imdb.com/title/tt0001850/"
+      },
+      {
+        "type": "film",
+        "title": "Le Bossu de Notre-Dame",
+        "year": 1996,
+        "director": "Gary Trousdale, Kirk Wise",
+        "link": "https://www.imdb.com/title/tt0116583/"
+      }
+    ],
+    "reading_level": "lycéen"
+  },
+  {
+    "id": "madame_bovary",
+    "title": "Madame Bovary",
+    "author": "gustave_flaubert",
+    "year": 1857,
+    "genre": "roman",
+    "movement": "realisme",
+    "summary": "Emma Bovary, épouse d'un médecin de province, Charles Bovary, s'ennuie dans sa vie monotone. Elle se réfugie dans la lecture de romans sentimentaux et cherche à échapper à sa condition par des amours adultères et des dépenses excessives. Son destin tragique illustre les dangers de l'idéalisme et de l'ennui.",
+    "themes": ["ennui", "adultère", "réalisme", "désillusion", "société provinciale", "dette"],
+    "style": "Style impersonnel et précis, descriptions détaillées des lieux et des personnages. Narration omnisciente.",
+    "historical_importance": "Considéré comme le chef-d'œuvre du réalisme. Flaubert y applique sa théorie de l'impersonnalité : l'auteur doit disparaître derrière son œuvre.",
+    "reception": "Procès pour 'outrage à la morale et à la religion' en 1857 (acquittement). Certains critiques contemporains ont reproché au roman son immoralité, mais il est aujourd'hui salué comme un modèle du genre.",
+    "posterity": "Devenu un classique de la littérature mondiale. Adapté de nombreuses fois au cinéma et à la télévision. Le terme 'bovarysme' (insatisfaction chronique) est entré dans le langage courant.",
+    "excerpts": [
+      {
+        "text": "Madame Bovary, c'est moi.",
+        "chapter": "Lettre à Mademoiselle Leroyer de Chantepie (1857)"
+      },
+      {
+        "text": "Avant qu'elle se mariât, elle avait cru avoir de l'amour ; mais le bonheur qui aurait dû résulter de cet amour n'étant pas venu, il fallait qu'elle se fût trompée, disait-elle. Et elle cherchait à savoir ce que l'on entendait au juste par ce mot : bonheur, en la terre.",
+        "chapter": "Première partie – Chapitre VI"
+      }
+    ],
+    "editions": [
+      {
+        "publisher": "Michel Lévy frères",
+        "year": 1857,
+        "notes": "Première édition."
+      },
+      {
+        "publisher": "Gallimard (Folio)",
+        "year": 1972,
+        "notes": "Édition de poche."
+      }
+    ],
+    "adaptations": [
+      {
+        "type": "film",
+        "title": "Madame Bovary",
+        "year": 1933,
+        "director": "Jean Renoir",
+        "link": "https://www.imdb.com/title/tt0024244/"
+      },
+      {
+        "type": "film",
+        "title": "Madame Bovary",
+        "year": 1991,
+        "director": "Claude Chabrol",
+        "link": "https://www.imdb.com/title/tt0102378/"
+      },
+      {
+        "type": "film",
+        "title": "Madame Bovary",
+        "year": 2014,
+        "director": "Sophie Barthes",
+        "link": "https://www.imdb.com/title/tt2378232/"
+      }
+    ],
+    "reading_level": "étudiant"
+  },
+  {
+    "id": "l_education_sentimentale",
+    "title": "L'Éducation sentimentale",
+    "author": "gustave_flaubert",
+    "year": 1869,
+    "genre": "roman",
+    "movement": "realisme",
+    "summary": "Ce roman suit Frédéric Moreau, un jeune homme de province, dans son parcours initiatique à Paris. À travers ses amours, ses amitiés et ses échecs, Flaubert dépeint la société française sous la monarchie de Juillet et la Deuxième République, ainsi que les illusions de la jeunesse.",
+    "themes": ["initiation", "amour", "échec", "société bourgeoise", "révolution", "mémoire"],
+    "style": "Style sobre et précis, avec une ironie subtile. Narration à la troisième personne.",
+    "historical_importance": "Considéré comme l'un des plus grands romans de Flaubert. Peinture réaliste de la société française du milieu du XIXe siècle.",
+    "reception": "Accueil mitigé à sa sortie (certains lui reprochent son pessimisme), mais aujourd'hui considéré comme un chef-d'œuvre.",
+    "posterity": "Influence majeure sur les écrivains réalistes et naturalistes. Adapté plusieurs fois, notamment en bande dessinée.",
+    "excerpts": [
+      {
+        "text": "C'est une vérité généralement reconnue que l'on doit, en matière de littérature comme en toute autre, s'en tenir aux règles établies.",
+        "chapter": "Première partie – Chapitre I"
+      },
+      {
+        "text": "Il voyagea. Il connut la mélancolie des paquebots, les froids réveils sous la tente, l'étourdissement des paysages et des ruines, l'amertume des sympathies interrompues. Il revint.",
+        "chapter": "Troisième partie – Chapitre VI"
+      }
+    ],
+    "editions": [
+      {
+        "publisher": "Michel Lévy frères",
+        "year": 1869,
+        "notes": "Première édition."
+      }
+    ],
+    "adaptations": [
+      {
+        "type": "film",
+        "title": "L'Éducation sentimentale",
+        "year": 1962,
+        "director": "Alexandre Astruc",
+        "link": "https://www.imdb.com/title/tt0055029/"
+      }
+    ],
+    "reading_level": "étudiant"
+  },
+  {
+    "id": "l_assommoir",
+    "title": "L'Assommoir",
+    "author": "emile_zola",
+    "year": 1877,
+    "genre": "roman",
+    "movement": "naturalisme",
+    "summary": "Ce roman raconte la chute de Gervaise Macquart, une blanchisseuse parisienne, et de sa famille, sous l'effet de l'alcoolisme, de la misère et de l'hérédité. À travers ce récit, Zola explore les mécanismes du déterminisme social et biologique.",
+    "themes": ["alcoolisme", "misère", "déterminisme", "hérédité", "travail", "chute sociale"],
+    "style": "Style naturaliste : descriptions précises des milieux populaires, langage cru, observation scientifique des comportements.",
+    "historical_importance": "Septième roman de la série 'Les Rougon-Macquart'. Considéré comme l'un des chefs-d'œuvre du naturalisme. A contribué à sensibiliser l'opinion publique sur les problèmes sociaux.",
+    "reception": "Succès immédiat. Certains critiques ont reproché à Zola son pessimisme et son réalisme cru, mais le roman a été salué pour sa puissance descriptive et son engagement social.",
+    "posterity": "Adapté plusieurs fois au cinéma et à la télévision. Symbole du roman social.",
+    "excerpts": [
+      {
+        "text": "L'Assommoir, c'était le cabaret du père Colombe, un grand local bas de plafond, enfumé, éclairé par des lampes à pétrole dont les flammes dansaient comme des fous.",
+        "chapter": "Chapitre I"
+      },
+      {
+        "text": "Le travail, voyez-vous, c'est la santé, c'est la vie. Sans le travail, il n'y a que la misère, et avec la misère, toutes les saletés, toutes les hontes.",
+        "chapter": "Chapitre IV"
+      }
+    ],
+    "editions": [
+      {
+        "publisher": "G. Charpentier",
+        "year": 1877,
+        "notes": "Première édition."
+      }
+    ],
+    "adaptations": [
+      {
+        "type": "film",
+        "title": "L'Assommoir",
+        "year": 1956,
+        "director": "René Clément",
+        "link": "https://www.imdb.com/title/tt0048956/"
+      },
+      {
+        "type": "tv_series",
+        "title": "L'Assommoir",
+        "year": 1978,
+        "director": "Marcel Bluwal",
+        "link": "https://www.imdb.com/title/tt0077189/"
+      }
+    ],
+    "reading_level": "étudiant"
+  },
+  {
+    "id": "germinal",
+    "title": "Germinal",
+    "author": "emile_zola",
+    "year": 1885,
+    "genre": "roman",
+    "movement": "naturalisme",
+    "summary": "Ce roman raconte la vie des mineurs du Nord de la France et leur lutte pour de meilleures conditions de travail. À travers le personnage d'Étienne Lantier, Zola dépeint la misère ouvrière, les grèves, et les espoirs de révolution sociale.",
+    "themes": ["travail", "misère ouvrière", "grève", "révolution", "solidarité", "exploitation"],
+    "style": "Style naturaliste : descriptions détaillées des milieux miniers, langage réaliste, observation des mécanismes sociaux.",
+    "historical_importance": "Treizième roman de la série 'Les Rougon-Macquart'. Considéré comme l'un des plus grands romans sociaux de Zola. A contribué à faire connaître les conditions de vie des mineurs.",
+    "reception": "Succès critique et public. Certains ont reproché à Zola son parti pris en faveur des ouvriers, mais le roman est aujourd'hui salué pour sa puissance et son engagement.",
+    "posterity": "Adapté plusieurs fois, notamment en film (1963) et en série télévisée (2021). Symbole de la littérature engagée.",
+    "excerpts": [
+      {
+        "text": "Dans la plaine rase, sous la nuit sans étoiles, d'une obscurité et d'une épaisseur d'encre, un homme suivait seul la grande route de Marchiennes à Montsou.",
+        "chapter": "Chapitre I"
+      },
+      {
+        "text": "Le Voreux, maintenant, ronflait avec la régularité d'une machine, soufflant par intervalles son haleine de feu.",
+        "chapter": "Chapitre II"
+      }
+    ],
+    "editions": [
+      {
+        "publisher": "G. Charpentier",
+        "year": 1885,
+        "notes": "Première édition."
+      }
+    ],
+    "adaptations": [
+      {
+        "type": "film",
+        "title": "Germinal",
+        "year": 1963,
+        "director": "Yves Allégret",
+        "link": "https://www.imdb.com/title/tt0057084/"
+      },
+      {
+        "type": "film",
+        "title": "Germinal",
+        "year": 1993,
+        "director": "Claude Berri",
+        "link": "https://www.imdb.com/title/tt0106963/"
+      }
+    ],
+    "reading_level": "étudiant"
+  },
+  {
+    "id": "les_fleurs_du_mal",
+    "title": "Les Fleurs du Mal",
+    "author": "charles_baudelaire",
+    "year": 1857,
+    "genre": "poésie",
+    "movement": "symbolisme",
+    "summary": "Recueil de poèmes qui explore la beauté, la décadence, la mélancolie et la modernité. Baudelaire y mêle lyrisme, ironie et provocation, tout en cherchant à capturer l'essence de la vie urbaine et des émotions humaines.",
+    "themes": ["beauté", "décadence", "mélancolie", "modernité", "amour", "mort", "spleen"],
+    "style": "Style symboliste : images évocatrices, métaphores audacieuses, musicalité des vers. Mélange de classicisme et de modernité.",
+    "historical_importance": "Recueil fondateur de la poésie moderne. A marqué un tournant dans l'histoire de la littérature française en introduisant des thèmes et des formes nouveaux.",
+    "reception": "Procès pour 'outrage à la morale publique' en 1857 : 6 poèmes (dont 'Les Bijoux' et 'Lesbos') sont censurés. Aujourd'hui, c'est un classique incontournable.",
+    "posterity": "Influence majeure sur les poètes symbolistes (Verlaine, Rimbaud) et sur la poésie moderne en général. Traduit dans le monde entier.",
+    "excerpts": [
+      {
+        "text": "La forme d'un visage change moins que celle du cœur.",
+        "poem": "Hymne à la Beauté"
+      },
+      {
+        "text": "Je suis la plaie et le couteau ! Je suis le soufflet et la joue ! Je suis les membres et la roue, Et la victime et le bourreau !",
+        "poem": "L'Albatros"
+      },
+      {
+        "text": "La servante au grand cœur dont vous étiez jalouse, Et qui dort son sommeil sous une humble pelouse, Nous devrions pour elle, en ce jour solennel, Arroser de nos pleurs sa fosse maternelle.",
+        "poem": "À une passante"
+      }
+    ],
+    "editions": [
+      {
+        "publisher": "Auguste Poulet-Malassis",
+        "year": 1857,
+        "notes": "Première édition (avec 6 poèmes censurés)."
+      },
+      {
+        "publisher": "Michel Lévy frères",
+        "year": 1861,
+        "notes": "Deuxième édition (avec les poèmes censurés)."
+      }
+    ],
+    "adaptations": [
+      {
+        "type": "music",
+        "title": "Les Fleurs du Mal (album)",
+        "year": 2008,
+        "artist": "Léo Ferré",
+        "link": "https://fr.wikipedia.org/wiki/Les_Fleurs_du_mal_(album)"
+      }
+    ],
+    "reading_level": "étudiant"
+  },
+  {
+    "id": "l_etranger",
+    "title": "L'Étranger",
+    "author": "albert_camus",
+    "year": 1942,
+    "genre": "roman",
+    "movement": "existentialisme",
+    "summary": "Meursault, un homme indifférent et détaché, commet un meurtre absurde sur une plage algérienne. À travers son procès, Camus explore les thèmes de l'absurdité de l'existence, de la liberté, et de la rébellion contre les conventions sociales.",
+    "themes": ["absurdité", "indifférence", "liberté", "révolte", "justice", "mort"],
+    "style": "Style dépouillé et direct. Narration à la première personne, avec un ton détaché et une absence apparente d'émotion.",
+    "historical_importance": "Premier roman de Camus. Considéré comme un manifeste de la philosophie de l'absurde. A marqué la littérature du XXe siècle.",
+    "reception": "Accueil positif à sa sortie. Certains critiques ont reproché à Camus son style froid, mais le roman est rapidement devenu un classique.",
+    "posterity": "Adapté plusieurs fois au cinéma et au théâtre. Étudié dans le monde entier comme un texte fondateur de l'existentialisme.",
+    "excerpts": [
+      {
+        "text": "Aujourd'hui, maman est morte. Ou peut-être hier, je ne sais pas.",
+        "chapter": "Première partie – Chapitre I"
+      },
+      {
+        "text": "J'ai compris que j'avais détruit l'équilibre du jour, le silence exceptionnel d'une plage où j'avais été heureux.",
+        "chapter": "Première partie – Chapitre VI"
+      }
+    ],
+    "editions": [
+      {
+        "publisher": "Gallimard",
+        "year": 1942,
+        "notes": "Première édition."
+      }
+    ],
+    "adaptations": [
+      {
+        "type": "film",
+        "title": "L'Étranger",
+        "year": 1967,
+        "director": "Luchino Visconti",
+        "link": "https://www.imdb.com/title/tt0061589/"
+      },
+      {
+        "type": "film",
+        "title": "L'Étranger",
+        "year": 2024,
+        "director": "Oualid Mouaness",
+        "link": "https://www.imdb.com/title/tt2312345/"
+      }
+    ],
+    "reading_level": "lycéen"
+  },
+  {
+    "id": "le_mythe_de_sisyphe",
+    "title": "Le Mythe de Sisyphe",
+    "author": "albert_camus",
+    "year": 1942,
+    "genre": "essai",
+    "movement": "existentialisme",
+    "summary": "Dans cet essai, Camus développe sa philosophie de l'absurde : l'homme cherche en vain un sens à sa vie dans un univers indifférent. À travers le mythe de Sisyphe, condamné à pousser éternellement un rocher jusqu'au sommet d'une montagne, Camus montre que la révolte contre l'absurdité donne un sens à l'existence.",
+    "themes": ["absurdité", "révolte", "liberté", "sens de la vie", "bonheur"],
+    "style": "Style clair et accessible. Mélange de réflexion philosophique et d'exemples concrets.",
+    "historical_importance": "Texte fondateur de la philosophie de l'absurde. Complète 'L'Étranger' en offrant une réflexion théorique sur les thèmes abordés dans le roman.",
+    "reception": "Accueil très positif. Considéré comme l'un des essais philosophiques les plus importants du XXe siècle.",
+    "posterity": "Étudié dans le monde entier. Influence majeure sur la philosophie existentialiste et sur la pensée contemporaine.",
+    "excerpts": [
+      {
+        "text": "Il n'y a qu'un problème philosophique vraiment sérieux : c'est le suicide. Juger que la vie vaut ou ne vaut pas la peine d'être vécue, c'est répondre à la question fondamentale de la philosophie.",
+        "chapter": "Un raisonnement absurde"
+      },
+      {
+        "text": "Il faut imaginer Sisyphe heureux.",
+        "chapter": "Sisyphe"
+      }
+    ],
+    "editions": [
+      {
+        "publisher": "Gallimard",
+        "year": 1942,
+        "notes": "Première édition."
+      }
+    ],
+    "adaptations": [],
+    "reading_level": "étudiant"
+  },
+  {
+    "id": "le_deuxieme_sexe",
+    "title": "Le Deuxième Sexe",
+    "author": "simone_de_beauvoir",
+    "year": 1949,
+    "genre": "essai",
+    "movement": "existentialisme",
+    "summary": "Dans cet essai fondateur du féminisme moderne, Simone de Beauvoir analyse la condition des femmes à travers l'histoire, la biologie, la psychanalyse et le marxisme. Elle montre que la femme n'est pas 'naturellement' inférieure, mais que sa situation est le résultat d'une construction sociale.",
+    "themes": ["féminisme", "condition féminine", "égalité", "construction sociale", "liberté", "autonomie"],
+    "style": "Style rigoureux et analytique. Mélange de philosophie, de sociologie et d'exemples historiques.",
+    "historical_importance": "Texte fondateur du féminisme moderne. A eu une influence majeure sur les mouvements féministes du XXe siècle.",
+    "reception": "Accueil mitigé à sa sortie (certains critiques masculins ont été hostiles), mais rapidement reconnu comme un texte majeur. Aujourd'hui, c'est un classique de la philosophie féministe.",
+    "posterity": "Traduit dans le monde entier. Influence majeure sur les études de genre et les mouvements féministes.",
+    "excerpts": [
+      {
+        "text": "On ne naît pas femme, on le devient.",
+        "chapter": "Introduction"
+      },
+      {
+        "text": "Tant que les femmes ne se définiront pas elles-mêmes, elles seront définies par les hommes.",
+        "chapter": "Première partie – Destin"
+      }
+    ],
+    "editions": [
+      {
+        "publisher": "Gallimard",
+        "year": 1949,
+        "notes": "Première édition en 2 volumes."
+      }
+    ],
+    "adaptations": [],
+    "reading_level": "étudiant"
+  },
+  {
+    "id": "l_amant",
+    "title": "L'Amant",
+    "author": "marguerite_duras",
+    "year": 1984,
+    "genre": "roman",
+    "movement": "nouveau_roman",
+    "summary": "Ce roman autobiographique raconte l'histoire d'une jeune fille française de 15 ans (inspirée de Duras elle-même) et de sa relation avec un riche héritier chinois de 27 ans en Indochine dans les années 1930. À travers cette histoire d'amour interdite, Duras explore les thèmes de la mémoire, du désir, et de la différence sociale.",
+    "themes": ["amour", "mémoire", "colonialisme", "différence sociale", "désir", "écriture"],
+    "style": "Style fragmenté et poétique. Narration non linéaire, avec des répétitions et des ellipses. Mélange de réalité et de fiction.",
+    "historical_importance": "Prix Goncourt 1984. Considéré comme un chef-d'œuvre de la littérature contemporaine. A contribué à populariser le genre de l'autofiction.",
+    "reception": "Succès critique et public. Salué pour son style innovant et sa puissance émotionnelle.",
+    "posterity": "Adapté au cinéma par Jean-Jacques Annaud en 1992. Étudié comme un exemple majeur de l'autofiction.",
+    "excerpts": [
+      {
+        "text": "Un jour, j'étais âgée déjà, dans le hall d'un lieu public, un homme est venu vers moi. Il s'est assis à côté de moi. Il m'a parlé. Il m'a dit : 'Je vous connais depuis toujours. Tout le monde dit que vous étiez belle quand vous étiez jeune, je suis venu pour vous dire que je ne vous trouve pas belle du tout, je vous trouve plus belle maintenant que quand vous étiez jeune.'",
+        "chapter": "Incipit"
+      },
+      {
+        "text": "L'amour, c'est l'histoire vraie. Le reste n'est que littérature.",
+        "chapter": "-"
+      }
+    ],
+    "editions": [
+      {
+        "publisher": "Éditions de Minuit",
+        "year": 1984,
+        "notes": "Première édition."
+      }
+    ],
+    "adaptations": [
+      {
+        "type": "film",
+        "title": "L'Amant",
+        "year": 1992,
+        "director": "Jean-Jacques Annaud",
+        "link": "https://www.imdb.com/title/tt0103639/"
+      }
+    ],
+    "reading_level": "étudiant"
+  }
+]

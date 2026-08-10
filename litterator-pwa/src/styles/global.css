@@ -1,0 +1,396 @@
+/* Reset et styles de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Couleurs principales */
+  --primary-color: #1a237e; /* Bleu foncé */
+  --secondary-color: #3f51b5; /* Bleu */
+  --accent-color: #ff5722; /* Orange */
+  --background-color: #f5f5f5;
+  --text-color: #333;
+  --text-light: #666;
+  --white: #ffffff;
+  --black: #000000;
+  
+  /* Couleurs des mouvements littéraires */
+  --romantisme: #e91e63;
+  --realisme: #4caf50;
+  --naturalisme: #ff9800;
+  --symbolisme: #9c27b0;
+  --surréalisme: #2196f3;
+  --existentialisme: #ff5722;
+  --nouveau-roman: #795548;
+  --litterature-contemporaine: #607d8b;
+  
+  /* Typographie */
+  --font-primary: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-secondary: 'Merriweather', Georgia, serif;
+  
+  /* Espacements */
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  
+  /* Bordures et ombres */
+  --border-radius: 8px;
+  --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  --box-shadow-hover: 0 4px 15px rgba(0, 0, 0, 0.2);
+  
+  /* Transitions */
+  --transition: all 0.3s ease;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* En-tête et navigation */
+header {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: var(--spacing-md) var(--spacing-lg);
+  box-shadow: var(--box-shadow);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: var(--spacing-lg);
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+nav a:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Conteneur principal */
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-lg);
+}
+
+/* Boutons */
+.button {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.button:hover {
+  background-color: var(--secondary-color);
+  box-shadow: var(--box-shadow-hover);
+}
+
+.button-secondary {
+  background-color: var(--accent-color);
+}
+
+.button-secondary:hover {
+  background-color: #e64a19;
+}
+
+/* Cartes */
+.card {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  transition: var(--transition);
+}
+
+.card:hover {
+  box-shadow: var(--box-shadow-hover);
+  transform: translateY(-5px);
+}
+
+.card-title {
+  font-family: var(--font-secondary);
+  font-size: 1.4rem;
+  margin-bottom: var(--spacing-sm);
+  color: var(--primary-color);
+}
+
+.card-subtitle {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Badges pour les mouvements */
+.badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-right: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+}
+
+.badge-romantisme { background-color: var(--romantisme); color: white; }
+.badge-realisme { background-color: var(--realisme); color: white; }
+.badge-naturalisme { background-color: var(--naturalisme); color: white; }
+.badge-symbolisme { background-color: var(--symbolisme); color: white; }
+.badge-surrealisme { background-color: var(--surréalisme); color: white; }
+.badge-existentialisme { background-color: var(--existentialisme); color: white; }
+.badge-nouveau-roman { background-color: var(--nouveau-roman); color: white; }
+.badge-litterature-contemporaine { background-color: var(--litterature-contemporaine); color: white; }
+
+/* Filtres */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.filter-group label {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.filter-group select,
+.filter-group input {
+  padding: var(--spacing-sm);
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+}
+
+/* Timeline */
+.timeline-container {
+  position: relative;
+  padding: var(--spacing-xl) 0;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: var(--primary-color);
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  display: flex;
+  margin-bottom: var(--spacing-xl);
+  position: relative;
+}
+
+.timeline-item-left {
+  flex-direction: row-reverse;
+}
+
+.timeline-content {
+  width: 45%;
+  padding: var(--spacing-md);
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  position: relative;
+}
+
+.timeline-item-left .timeline-content {
+  margin-right: auto;
+  margin-left: var(--spacing-lg);
+}
+
+.timeline-item-right .timeline-content {
+  margin-left: auto;
+  margin-right: var(--spacing-lg);
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.timeline-date {
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-sm);
+}
+
+.timeline-title {
+  font-family: var(--font-secondary);
+  font-size: 1.3rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.timeline-description {
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+/* Carte Leaflet */
+.map-container {
+  height: 600px;
+  width: 100%;
+  border-radius: var(--border-radius);
+  margin-bottom: var(--spacing-lg);
+  box-shadow: var(--box-shadow);
+}
+
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-lg);
+  max-width: 800px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: var(--spacing-md);
+  right: var(--spacing-md);
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text-light);
+}
+
+.modal-close:hover {
+  color: var(--black);
+}
+
+/* Pied de page */
+footer {
+  background-color: var(--primary-color);
+  color: var(--white);
+  text-align: center;
+  padding: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .timeline-item-left,
+  .timeline-item-right {
+    flex-direction: column;
+  }
+  
+  .timeline-content {
+    width: 80%;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  
+  .timeline-line {
+    left: 30px;
+  }
+  
+  .timeline-dot {
+    left: 30px;
+  }
+  
+  .filters {
+    flex-direction: column;
+  }
+  
+  .filter-group {
+    width: 100%;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
+}
