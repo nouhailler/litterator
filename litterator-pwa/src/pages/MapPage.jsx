@@ -20,13 +20,30 @@ function ChangeView({ center, zoom }) {
   return null;
 }
 
-// Icônes personnalisées pour les marqueurs
-function createCustomIcon(color) {
+function PopupCloseButton({ onClose }) {
+  const map = useMap();
+
+  return (
+    <button
+      type="button"
+      className="popup-close-button"
+      onClick={() => {
+        onClose();
+        map.closePopup();
+      }}
+    >
+      Fermer
+    </button>
+  );
+}
+
+// Icône personnalisée harmonisée avec le thème.
+function createCustomIcon() {
   return new L.Icon({
     iconUrl: `data:image/svg+xml;charset=utf-8,${encodeURIComponent(`
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
-        <circle cx="12" cy="12" r="10" fill="${color}" stroke="white" stroke-width="2"/>
-        <text x="12" y="16" text-anchor="middle" fill="white" font-size="12" font-family="Arial">📍</text>
+        <path fill="#6f1d1b" stroke="#fffdf8" stroke-width="1.8" d="M12 2.8c-4.1 0-7.4 3.2-7.4 7.2 0 5.1 7.4 11.2 7.4 11.2s7.4-6.1 7.4-11.2c0-4-3.3-7.2-7.4-7.2Z"/>
+        <circle cx="12" cy="10" r="2.7" fill="#fffdf8"/>
       </svg>
     `)}`,
     iconSize: [32, 32],
@@ -117,9 +134,8 @@ function MapPage() {
   };
 
   // Obtenir l'icône pour un lieu
-  const getLocationIcon = (location) => {
-    const movement = movements.find(m => location.movements.includes(m.id));
-    return createCustomIcon(movement?.color || '#1a237e');
+  const getLocationIcon = () => {
+    return createCustomIcon();
   };
 
   if (isLoading) {
@@ -205,7 +221,7 @@ function MapPage() {
             <Marker 
               key={location.id} 
               position={[location.coordinates.lat, location.coordinates.lng]} 
-              icon={getLocationIcon(location)}
+              icon={getLocationIcon()}
               eventHandlers={{
                 click: () => {
                   setSelectedLocation(location);
@@ -230,8 +246,8 @@ function MapPage() {
                           return (
                             <span 
                               key={movementId} 
-                              className="badge" 
-                              style={{ backgroundColor: movement?.color || '#999', fontSize: '0.7rem' }}
+                              className="badge badge-theme" 
+                              style={{ fontSize: '0.7rem' }}
                             >
                               {movement?.name || movementId}
                             </span>
@@ -277,16 +293,7 @@ function MapPage() {
                   )}
 
                   <div style={{ marginTop: '15px', textAlign: 'center' }}>
-                    <a 
-                      href={`#${location.id}`} 
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setSelectedLocation(null);
-                      }}
-                      style={{ color: 'var(--primary-color)', textDecoration: 'none', fontSize: '0.9rem' }}
-                    >
-                      Fermer
-                    </a>
+                    <PopupCloseButton onClose={() => setSelectedLocation(null)} />
                   </div>
                 </div>
               </Popup>
@@ -301,7 +308,7 @@ function MapPage() {
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '15px' }}>
           {movements.map((movement) => (
             <div key={movement.id} style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
-              <div style={{ width: '20px', height: '20px', backgroundColor: movement.color, borderRadius: '50%', border: '2px solid white' }}></div>
+              <div className="legend-dot"></div>
               <span style={{ fontSize: '0.9rem' }}>{movement.name}</span>
             </div>
           ))}
@@ -334,8 +341,8 @@ function MapPage() {
                   return (
                     <span 
                       key={movementId} 
-                      className="badge" 
-                      style={{ backgroundColor: movement?.color || '#999', fontSize: '0.7rem' }}
+                      className="badge badge-theme" 
+                      style={{ fontSize: '0.7rem' }}
                     >
                       {movement?.name || movementId}
                     </span>
