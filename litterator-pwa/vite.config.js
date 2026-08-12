@@ -50,8 +50,8 @@ export default defineConfig({
         name: 'Littérator',
         short_name: 'Littérator',
         description: 'PWA dédiée à la littérature française depuis 1800',
-        theme_color: '#1a237e',
-        background_color: '#ffffff',
+        theme_color: '#6f1d1b',
+        background_color: '#fbf7ef',
         display: 'standalone',
         icons: [
           {
