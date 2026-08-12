@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 function MovementsPage() {
   const [movements, setMovements] = useState([]);
-  const [selectedMovement, setSelectedMovement] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [authors, setAuthors] = useState([]);
   const [works, setWorks] = useState([]);
@@ -67,9 +66,8 @@ function MovementsPage() {
               key={movement.id} 
               id={movement.id} 
               className="card movement-card" 
-              style={{ '--card-accent': movement.color }}
             >
-              <h3 style={{ color: movement.color, marginBottom: '10px' }}>
+              <h3 style={{ marginBottom: '10px' }}>
                 {movement.name} ({movement.period.start}-{movement.period.end})
               </h3>
               
@@ -93,8 +91,8 @@ function MovementsPage() {
                   {movement.themes.map((theme, index) => (
                     <span 
                       key={index} 
-                      className="badge" 
-                      style={{ backgroundColor: movement.color, fontSize: '0.8rem' }}
+                      className="badge badge-theme" 
+                      style={{ fontSize: '0.8rem' }}
                     >
                       {theme}
                     </span>
@@ -109,8 +107,8 @@ function MovementsPage() {
                     <Link 
                       key={author.id} 
                       to={`/authors#${author.id}`} 
-                      className="badge" 
-                      style={{ backgroundColor: '#e0e0e0', color: 'var(--primary-color)', fontSize: '0.8rem' }}
+                      className="badge badge-theme" 
+                      style={{ fontSize: '0.8rem' }}
                     >
                       {author.name}
                     </Link>
@@ -130,8 +128,8 @@ function MovementsPage() {
                     <Link 
                       key={work.id} 
                       to={`/works#${work.id}`} 
-                      className="badge" 
-                      style={{ backgroundColor: '#e0e0e0', color: 'var(--primary-color)', fontSize: '0.8rem' }}
+                      className="badge badge-theme" 
+                      style={{ fontSize: '0.8rem' }}
                     >
                       {work.title} ({work.year})
                     </Link>
@@ -157,7 +155,7 @@ function MovementsPage() {
                         fontSize: '0.9rem',
                         marginBottom: '10px',
                         paddingLeft: '10px',
-                        borderLeft: `3px solid ${movement.color}`
+                        borderLeft: '3px solid var(--brand)'
                       }}
                     >
                       "{quote.text}"
@@ -181,8 +179,8 @@ function MovementsPage() {
                           return (
                             <span 
                               key={index} 
-                              className="badge" 
-                              style={{ backgroundColor: predMovement?.color || '#999', fontSize: '0.8rem' }}
+                              className="badge badge-theme" 
+                              style={{ fontSize: '0.8rem' }}
                             >
                               {predMovement?.name || pred}
                             </span>
@@ -200,8 +198,8 @@ function MovementsPage() {
                           return (
                             <span 
                               key={index} 
-                              className="badge" 
-                              style={{ backgroundColor: succMovement?.color || '#999', fontSize: '0.8rem' }}
+                              className="badge badge-theme" 
+                              style={{ fontSize: '0.8rem' }}
                             >
                               {succMovement?.name || succ}
                             </span>

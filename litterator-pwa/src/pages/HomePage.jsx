@@ -60,6 +60,10 @@ function HomePage() {
               <span>Lieux</span>
               <span className="stat-number">8</span>
             </div>
+            <div className="stat-item">
+              <span>Termes</span>
+              <span className="stat-number">224</span>
+            </div>
           </div>
         </aside>
       </section>
@@ -118,6 +122,35 @@ function HomePage() {
               <p>{author.work}</p>
               <Link to={`/authors#${author.id}`} className="button button-secondary">
                 Voir la fiche
+              </Link>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <div className="section-header">
+          <div>
+            <p className="eyebrow">Méthode</p>
+            <h2 className="section-title">Glossaire littéraire</h2>
+          </div>
+          <Link to="/glossary" className="button button-secondary">
+            Ouvrir le glossaire
+          </Link>
+        </div>
+
+        <div className="content-grid">
+          {[
+            { term: 'Focalisation', category: 'Narration' },
+            { term: 'Métaphore', category: 'Figure de sens' },
+            { term: 'Registre', category: 'Analyse' },
+          ].map((item) => (
+            <article key={item.term} className="card entity-card">
+              <span className="badge badge-theme">{item.category}</span>
+              <h3>{item.term}</h3>
+              <p>Un repère pour commenter les textes et relier les procédés aux œuvres du corpus.</p>
+              <Link to="/glossary" className="button button-secondary">
+                Consulter
               </Link>
             </article>
           ))}

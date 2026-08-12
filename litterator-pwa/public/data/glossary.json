@@ -1,0 +1,453 @@
+[
+  {
+    "id": "allegorie",
+    "term": "Allégorie",
+    "category": "Figure de sens",
+    "definition": "Représentation concrète d'une idée abstraite par un personnage, une image, un récit ou une scène.",
+    "example": "La Liberté guidant le peuple personnifie une idée politique; en littérature, une ville, une femme ou un voyage peuvent porter une valeur abstraite.",
+    "relatedTerms": [
+      "symbole",
+      "personnification",
+      "metaphore"
+    ],
+    "relatedMovements": [
+      "symbolisme",
+      "surréalisme"
+    ]
+  },
+  {
+    "id": "anaphore",
+    "term": "Anaphore",
+    "category": "Figure de construction",
+    "definition": "Répétition d'un même mot ou groupe de mots au début de phrases, de vers ou de propositions successives.",
+    "example": "Elle donne du rythme au discours et insiste sur une idée dominante.",
+    "relatedTerms": [
+      "repetition",
+      "parallellisme"
+    ],
+    "relatedMovements": [
+      "romantisme",
+      "surréalisme"
+    ]
+  },
+  {
+    "id": "antiheros",
+    "term": "Antihéros",
+    "category": "Personnage",
+    "definition": "Personnage principal qui ne possède pas les qualités héroïques traditionnelles: grandeur morale, courage exceptionnel ou destin glorieux.",
+    "example": "Meursault dans L'Étranger est souvent lu comme un antihéros par son détachement et son refus des codes attendus.",
+    "relatedTerms": [
+      "narrateur",
+      "point-de-vue"
+    ],
+    "relatedWorks": [
+      "l_etranger"
+    ],
+    "relatedMovements": [
+      "existentialisme",
+      "nouveau_roman"
+    ]
+  },
+  {
+    "id": "champ-lexical",
+    "term": "Champ lexical",
+    "category": "Analyse",
+    "definition": "Ensemble de mots qui renvoient à une même idée, un même thème ou un même domaine de réalité.",
+    "example": "Un champ lexical de la mine peut réunir charbon, galerie, puits, poussière et lampe.",
+    "relatedTerms": [
+      "theme",
+      "registre"
+    ],
+    "relatedWorks": [
+      "germinal"
+    ],
+    "relatedMovements": [
+      "realisme",
+      "naturalisme"
+    ]
+  },
+  {
+    "id": "discours-indirect-libre",
+    "term": "Discours indirect libre",
+    "category": "Narration",
+    "definition": "Procédé narratif qui mêle la voix du narrateur et les pensées ou paroles d'un personnage sans verbe introducteur explicite.",
+    "example": "Très fréquent dans le roman réaliste, il permet d'entrer dans la conscience d'un personnage tout en conservant une narration à la troisième personne.",
+    "relatedTerms": [
+      "narrateur",
+      "focalisation"
+    ],
+    "relatedWorks": [
+      "madame_bovary",
+      "l_education_sentimentale"
+    ],
+    "relatedMovements": [
+      "realisme"
+    ]
+  },
+  {
+    "id": "focalisation",
+    "term": "Focalisation",
+    "category": "Narration",
+    "definition": "Point de vue adopté par le récit pour donner accès aux événements, aux pensées et aux informations.",
+    "example": "La focalisation peut être interne, externe ou omnisciente selon la quantité d'informations livrées au lecteur.",
+    "relatedTerms": [
+      "narrateur",
+      "point-de-vue",
+      "discours-indirect-libre"
+    ],
+    "relatedMovements": [
+      "realisme",
+      "nouveau_roman"
+    ]
+  },
+  {
+    "id": "incipit",
+    "term": "Incipit",
+    "category": "Structure",
+    "definition": "Début d'une œuvre narrative, chargé de présenter un cadre, une voix, une situation ou une attente de lecture.",
+    "example": "Un incipit peut installer un univers réaliste, créer une énigme ou rompre immédiatement avec les conventions.",
+    "relatedTerms": [
+      "excipit",
+      "narrateur"
+    ],
+    "relatedWorks": [
+      "madame_bovary",
+      "l_etranger"
+    ]
+  },
+  {
+    "id": "intertextualite",
+    "term": "Intertextualité",
+    "category": "Analyse",
+    "definition": "Relation qu'un texte entretient avec d'autres textes par citation, allusion, réécriture, parodie ou reprise de motifs.",
+    "example": "Un roman peut dialoguer avec un mythe antique, une œuvre biblique, un conte ou un texte littéraire antérieur.",
+    "relatedTerms": [
+      "parodie",
+      "pastiche",
+      "reecriture"
+    ],
+    "relatedMovements": [
+      "surréalisme",
+      "litterature_contemporaine"
+    ]
+  },
+  {
+    "id": "lyrisme",
+    "term": "Lyrisme",
+    "category": "Registre",
+    "definition": "Expression intense et personnelle des sentiments, souvent associée à la plainte, à l'élan amoureux, à la nature ou au temps qui passe.",
+    "example": "Le lyrisme romantique met souvent en scène une voix sensible confrontée à la solitude, au souvenir ou à l'infini.",
+    "relatedTerms": [
+      "registre",
+      "elegie"
+    ],
+    "relatedWorks": [
+      "les_fleurs_du_mal"
+    ],
+    "relatedMovements": [
+      "romantisme",
+      "symbolisme"
+    ]
+  },
+  {
+    "id": "metaphore",
+    "term": "Métaphore",
+    "category": "Figure de sens",
+    "definition": "Rapprochement implicite entre deux réalités sans outil de comparaison, fondé sur une ressemblance ou une analogie.",
+    "example": "Dire d'une ville qu'elle est un labyrinthe transforme la description en image interprétative.",
+    "relatedTerms": [
+      "comparaison",
+      "symbole",
+      "allegorie"
+    ],
+    "relatedMovements": [
+      "symbolisme",
+      "surréalisme"
+    ]
+  },
+  {
+    "id": "mise-en-abyme",
+    "term": "Mise en abyme",
+    "category": "Structure",
+    "definition": "Procédé par lequel une œuvre contient une représentation réduite ou réfléchie d'elle-même.",
+    "example": "Un roman qui met en scène un écrivain composant un roman proche de celui que le lecteur lit crée une mise en abyme.",
+    "relatedTerms": [
+      "intertextualite",
+      "narrateur"
+    ],
+    "relatedMovements": [
+      "nouveau_roman",
+      "litterature_contemporaine"
+    ]
+  },
+  {
+    "id": "narrateur",
+    "term": "Narrateur",
+    "category": "Narration",
+    "definition": "Instance qui raconte l'histoire; elle ne se confond pas nécessairement avec l'auteur réel.",
+    "example": "Un narrateur peut être personnage du récit, témoin, extérieur à l'action ou doté d'un savoir très large.",
+    "relatedTerms": [
+      "focalisation",
+      "point-de-vue",
+      "discours-indirect-libre"
+    ]
+  },
+  {
+    "id": "oxymore",
+    "term": "Oxymore",
+    "category": "Figure d'opposition",
+    "definition": "Association de deux termes de sens contradictoire dans une même expression.",
+    "example": "Cette tension produit souvent un effet de surprise, de densité poétique ou de contradiction intérieure.",
+    "relatedTerms": [
+      "antithese",
+      "paradoxe"
+    ],
+    "relatedMovements": [
+      "romantisme",
+      "symbolisme"
+    ]
+  },
+  {
+    "id": "parodie",
+    "term": "Parodie",
+    "category": "Réécriture",
+    "definition": "Imitation détournée d'un texte, d'un genre ou d'un style, souvent dans une intention critique ou comique.",
+    "example": "La parodie révèle les codes d'un modèle en les exagérant ou en les déplaçant.",
+    "relatedTerms": [
+      "intertextualite",
+      "pastiche",
+      "reecriture"
+    ]
+  },
+  {
+    "id": "pathétique",
+    "term": "Pathétique",
+    "category": "Registre",
+    "definition": "Registre qui cherche à émouvoir le lecteur par la souffrance, la fragilité ou l'injustice subie par un personnage.",
+    "example": "Les scènes de misère sociale dans Les Misérables mobilisent souvent des effets pathétiques.",
+    "relatedTerms": [
+      "registre",
+      "tragique"
+    ],
+    "relatedWorks": [
+      "les_miserables"
+    ],
+    "relatedMovements": [
+      "romantisme",
+      "realisme"
+    ]
+  },
+  {
+    "id": "realisme",
+    "term": "Réalisme",
+    "category": "Mouvement",
+    "definition": "Esthétique qui vise à représenter la société, les milieux, les gestes et les contraintes matérielles avec précision.",
+    "example": "Le roman réaliste observe les rapports sociaux, l'argent, les ambitions et les limites d'une époque.",
+    "relatedTerms": [
+      "description",
+      "discours-indirect-libre",
+      "champ-lexical"
+    ],
+    "relatedWorks": [
+      "madame_bovary",
+      "l_education_sentimentale"
+    ],
+    "relatedMovements": [
+      "realisme"
+    ]
+  },
+  {
+    "id": "registre",
+    "term": "Registre",
+    "category": "Analyse",
+    "definition": "Effet dominant produit par un texte sur le lecteur: comique, tragique, pathétique, lyrique, polémique ou fantastique.",
+    "example": "Identifier un registre suppose d'observer le vocabulaire, les images, la situation et le rythme du passage.",
+    "relatedTerms": [
+      "lyrisme",
+      "pathétique",
+      "tragique"
+    ]
+  },
+  {
+    "id": "symbole",
+    "term": "Symbole",
+    "category": "Figure de sens",
+    "definition": "Élément concret qui renvoie à une signification plus large, souvent suggérée plutôt qu'expliquée.",
+    "example": "Chez les symbolistes, l'image poétique invite à dépasser le sens immédiat pour atteindre une réalité intérieure ou spirituelle.",
+    "relatedTerms": [
+      "allegorie",
+      "metaphore"
+    ],
+    "relatedWorks": [
+      "les_fleurs_du_mal"
+    ],
+    "relatedMovements": [
+      "symbolisme"
+    ]
+  },
+  {
+    "id": "antithese",
+    "term": "Antithèse",
+    "category": "Figure d'opposition",
+    "definition": "Rapprochement de deux idées opposées dans une phrase, un vers, un paragraphe ou une scène.",
+    "example": "Elle rend visible un conflit moral, social ou affectif en construisant une opposition nette.",
+    "relatedTerms": [
+      "oxymore",
+      "paradoxe"
+    ]
+  },
+  {
+    "id": "comparaison",
+    "term": "Comparaison",
+    "category": "Figure de sens",
+    "definition": "Rapprochement explicite entre deux réalités au moyen d'un outil de comparaison.",
+    "example": "Elle éclaire une idée par une image plus concrète ou plus frappante.",
+    "relatedTerms": [
+      "metaphore",
+      "symbole"
+    ]
+  },
+  {
+    "id": "description",
+    "term": "Description",
+    "category": "Narration",
+    "definition": "Passage qui donne à voir un lieu, un personnage, un objet ou un milieu par une série de détails organisés.",
+    "example": "Dans le roman réaliste, la description renseigne souvent sur la condition sociale et l'époque.",
+    "relatedTerms": [
+      "champ-lexical",
+      "realisme"
+    ],
+    "relatedMovements": [
+      "realisme",
+      "naturalisme"
+    ]
+  },
+  {
+    "id": "elegie",
+    "term": "Élégie",
+    "category": "Registre",
+    "definition": "Expression poétique de la plainte, du deuil, de la nostalgie ou de la mélancolie.",
+    "example": "Elle associe souvent le souvenir personnel à une méditation sur le temps.",
+    "relatedTerms": [
+      "lyrisme",
+      "registre"
+    ],
+    "relatedMovements": [
+      "romantisme"
+    ]
+  },
+  {
+    "id": "excipit",
+    "term": "Excipit",
+    "category": "Structure",
+    "definition": "Fin d'une œuvre narrative, qui peut fermer l'intrigue, ouvrir une interprétation ou produire un effet de rupture.",
+    "example": "Un excipit peut confirmer le sens du récit ou laisser le lecteur face à une ambiguïté.",
+    "relatedTerms": [
+      "incipit",
+      "narrateur"
+    ]
+  },
+  {
+    "id": "paradoxe",
+    "term": "Paradoxe",
+    "category": "Figure d'opposition",
+    "definition": "Énoncé qui semble contredire l'opinion commune ou la logique attendue, mais qui invite à une réflexion plus profonde.",
+    "example": "Le paradoxe crée un choc intellectuel et oblige à réexaminer une idée.",
+    "relatedTerms": [
+      "antithese",
+      "oxymore"
+    ]
+  },
+  {
+    "id": "parallellisme",
+    "term": "Parallélisme",
+    "category": "Figure de construction",
+    "definition": "Répétition d'une même structure syntaxique dans plusieurs segments de phrase ou plusieurs vers.",
+    "example": "Il organise le rythme et met en relation deux idées proches ou opposées.",
+    "relatedTerms": [
+      "anaphore",
+      "repetition"
+    ]
+  },
+  {
+    "id": "pastiche",
+    "term": "Pastiche",
+    "category": "Réécriture",
+    "definition": "Imitation reconnaissable du style d'un auteur, d'une époque ou d'un genre.",
+    "example": "Contrairement à la parodie, le pastiche peut relever de l'hommage autant que de la distance critique.",
+    "relatedTerms": [
+      "parodie",
+      "intertextualite"
+    ]
+  },
+  {
+    "id": "personnification",
+    "term": "Personnification",
+    "category": "Figure de sens",
+    "definition": "Attribution de caractéristiques humaines à une chose, une idée, un animal ou une force abstraite.",
+    "example": "Une ville qui respire ou une nuit qui marche sont des personnifications.",
+    "relatedTerms": [
+      "allegorie",
+      "metaphore"
+    ]
+  },
+  {
+    "id": "point-de-vue",
+    "term": "Point de vue",
+    "category": "Narration",
+    "definition": "Position depuis laquelle les événements sont perçus, compris et racontés.",
+    "example": "Le point de vue conditionne ce que le lecteur sait, ignore ou interprète.",
+    "relatedTerms": [
+      "focalisation",
+      "narrateur"
+    ]
+  },
+  {
+    "id": "reecriture",
+    "term": "Réécriture",
+    "category": "Réécriture",
+    "definition": "Transformation d'un texte, d'un mythe, d'un motif ou d'un genre déjà existant.",
+    "example": "Elle peut actualiser un modèle, le contester, le déplacer ou le rendre méconnaissable.",
+    "relatedTerms": [
+      "intertextualite",
+      "parodie",
+      "pastiche"
+    ]
+  },
+  {
+    "id": "repetition",
+    "term": "Répétition",
+    "category": "Figure de construction",
+    "definition": "Reprise volontaire d'un mot, d'un groupe de mots, d'un son ou d'une structure.",
+    "example": "Elle peut produire une insistance, un rythme, une obsession ou un effet oratoire.",
+    "relatedTerms": [
+      "anaphore",
+      "parallellisme"
+    ]
+  },
+  {
+    "id": "theme",
+    "term": "Thème",
+    "category": "Analyse",
+    "definition": "Sujet ou idée récurrente qu'un texte développe, transforme ou interroge.",
+    "example": "La liberté, la ville, l'argent, l'amour ou la mort peuvent constituer des thèmes d'analyse.",
+    "relatedTerms": [
+      "champ-lexical",
+      "registre"
+    ]
+  },
+  {
+    "id": "tragique",
+    "term": "Tragique",
+    "category": "Registre",
+    "definition": "Registre qui met en scène une fatalité, un conflit insoluble ou une impuissance face à des forces supérieures.",
+    "example": "Le tragique peut naître d'un destin social, historique, familial ou existentiel.",
+    "relatedTerms": [
+      "registre",
+      "pathétique"
+    ],
+    "relatedMovements": [
+      "existentialisme"
+    ]
+  }
+]
