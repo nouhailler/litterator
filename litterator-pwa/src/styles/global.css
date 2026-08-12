@@ -573,6 +573,27 @@ blockquote {
   font-weight: 700;
 }
 
+.author-portrait,
+.work-cover {
+  width: 100%;
+  border: 1px solid var(--line-soft);
+  border-radius: 6px;
+  background: var(--paper-deep);
+  box-shadow: inset 0 0 0 1px rgba(255, 253, 248, 0.6);
+}
+
+.author-portrait {
+  height: 230px;
+  object-fit: cover;
+  object-position: center 20%;
+}
+
+.work-cover {
+  height: 270px;
+  object-fit: cover;
+  object-position: center;
+}
+
 .card-section {
   display: grid;
   gap: 8px;

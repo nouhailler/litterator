@@ -1,0 +1,21 @@
+# Attributions des images
+
+Les portraits et visuels historiques ci-dessous proviennent de Wikimedia Commons. Les couvertures typographiques modernes sont créées localement pour Littérator et ne reproduisent pas de jaquette commerciale.
+
+| Fichier local | Source | Auteur / crédit | Licence |
+| --- | --- | --- | --- |
+| `/images/authors/victor_hugo.jpg` | [File:Victor Hugo by Étienne Carjat 1876 - full.jpg](https://commons.wikimedia.org/wiki/File%3AVictor%20Hugo%20by%20%C3%89tienne%20Carjat%201876%20-%20full.jpg) | Étienne Carjat - Bibliothèque nationale de France | Public domain |
+| `/images/authors/lamartine.jpg` | [File:Lamartine photography.jpg](https://commons.wikimedia.org/wiki/File%3ALamartine%20photography.jpg) | A.Martin, photographe à Paris. Uploaded, stitched, cleaned and restored by Jebulon - Bibliothèque nationale de France | Public domain |
+| `/images/authors/flaubert.jpg` | [File:Gustave Flaubert portrait photo.jpg](https://commons.wikimedia.org/wiki/File%3AGustave%20Flaubert%20portrait%20photo.jpg) | Gaspard-Félix Tournachon (Nadar) - Here | Public domain |
+| `/images/authors/zola.jpg` | [File:Manet, Edouard - Portrait of Emile Zola.jpg](https://commons.wikimedia.org/wiki/File%3AManet%2C%20Edouard%20-%20Portrait%20of%20Emile%20Zola.jpg) | Auteur non renseigné sur Commons - Unknown sourceUnknown source | Public domain |
+| `/images/authors/baudelaire.jpg` | [File:Portrait Charles Baudelaire cropped from foto by Nadar.jpg](https://commons.wikimedia.org/wiki/File%3APortrait%20Charles%20Baudelaire%20cropped%20from%20foto%20by%20Nadar.jpg) | Nadar - This file was derived from: Charles Baudelaire.jpg: | Public domain |
+| `/images/authors/camus.jpg` | [File:Albert Camus 1945 (cropped).jpg](https://commons.wikimedia.org/wiki/File%3AAlbert%20Camus%201945%20(cropped).jpg) | Studio Harcourt - RMN | Public domain |
+| `/images/authors/beauvoir.jpg` | [File:Simone de Beauvoir.PNG](https://commons.wikimedia.org/wiki/File%3ASimone%20de%20Beauvoir.PNG) | The Ogre - self-made from (cropped) | Public domain |
+| `/images/authors/duras.jpg` | [File:Marguerite Duras 1993.jpg](https://commons.wikimedia.org/wiki/File%3AMarguerite%20Duras%201993.jpg) | La_Pluie_d'été_au_Stella.jpg: Jutta johannaderivative work: JJ Georges (talk) - La_Pluie_d'été_au_Stella.jpg | CC BY 3.0 |
+| `/images/works/les_miserables.jpg` | [File:Cosette-sweeping-les-miserables-emile-bayard-1862.jpg](https://commons.wikimedia.org/wiki/File%3ACosette-sweeping-les-miserables-emile-bayard-1862.jpg) | Émile Bayard - https://www.parismuseescollections.paris.fr/fr/maison-de-victor-hugo/oeuvres/cosette-balayant | Public domain |
+| `/images/works/notre_dame_de_paris.jpg` | [File:Notre-Dame de Paris 1st edition BnF RES P-Z-1150 (2).jpg](https://commons.wikimedia.org/wiki/File%3ANotre-Dame%20de%20Paris%201st%20edition%20BnF%20RES%20P-Z-1150%20(2).jpg) | Marie-Lan Nguyen - Own work | Public domain |
+| `/images/works/madame_bovary.jpg` | [File:Madame Bovary 1857 (hi-res).jpg](https://commons.wikimedia.org/wiki/File%3AMadame%20Bovary%201857%20(hi-res).jpg) | Gustave Flaubert - Book dealer (immediate image source) | Public domain |
+| `/images/works/l_assommoir.jpg` | [File:L'Assommoir (Lo Sannatojo) di E. Zola. opera complets, Flli treves editori affiche, Cillino.jpg](https://commons.wikimedia.org/wiki/File%3AL'Assommoir%20(Lo%20Sannatojo)%20di%20E.%20Zola.%20opera%20complets%2C%20Flli%20treves%20editori%20affiche%2C%20Cillino.jpg) | Cillino (affichiste). Illustrateur - This file comes from Gallica Digital Library and is available under the digital ID btv1b90166275 | Public domain |
+| `/images/works/germinal.jpg` | [File:Zola - Germinal (Charpentier).djvu](https://commons.wikimedia.org/wiki/File%3AZola%20-%20Germinal%20(Charpentier).djvu) | Émile Zola - Bibliothèque nationale de France | Public domain |
+| `/images/works/les_fleurs_du_mal.jpg` | [File:Les fleurs small.jpg](https://commons.wikimedia.org/wiki/File%3ALes%20fleurs%20small.jpg) | hrc - http://www.hrc.utexas.edu | Public domain |
+| `/images/works/l_education_sentimentale.jpg` | [File:Education sentimentale flaubert.jpg](https://commons.wikimedia.org/wiki/File:Education%20sentimentale%20flaubert.jpg) | Flaubert - www.liberlibri.com/laurentcoulet/flaubert.jpg | Public domain |

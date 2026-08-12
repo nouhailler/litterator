@@ -7,7 +7,14 @@
     "genre": "roman",
     "movement": "romantisme",
     "summary": "Ce roman épique suit la vie de Jean Valjean, un ancien forçat qui tente de se racheter après 19 ans de bagne. L'histoire explore des thèmes comme la justice, la rédemption, l'amour et la révolution, à travers plusieurs personnages dont Fantine, Cosette, Marius, et l'inspecteur Javert.",
-    "themes": ["justice", "réhabilitation", "amour", "révolution", "pauvreté", "sacrifice"],
+    "themes": [
+      "justice",
+      "réhabilitation",
+      "amour",
+      "révolution",
+      "pauvreté",
+      "sacrifice"
+    ],
     "style": "Épopée sociale avec des descriptions détaillées et un style lyrique. Alternance entre récits historiques (bataille de Waterloo) et destins individuels.",
     "historical_importance": "Considéré comme l'un des plus grands romans du XIXe siècle. Critique sociale puissante de la France sous la Restauration et la monarchie de Juillet.",
     "reception": "Accueil mitigé à sa sortie : certains critiquent son côté 'mélodramatique' ou son idéalisme, mais il devient rapidement un succès populaire. Aujourd'hui, c'est un classique mondial.",
@@ -72,7 +79,8 @@
         "link": "https://www.imdb.com/title/tt7242372/"
       }
     ],
-    "reading_level": "lycéen"
+    "reading_level": "lycéen",
+    "cover": "/images/works/les_miserables.jpg"
   },
   {
     "id": "notre_dame_de_paris",
@@ -82,7 +90,14 @@
     "genre": "roman",
     "movement": "romantisme",
     "summary": "Ce roman historique raconte l'histoire tragique de Quasimodo, le bossu de Notre-Dame, et de son amour impossible pour la belle Esméralda, une bohémienne. Le roman explore aussi le destin de la cathédrale, symbole de l'architecture gothique, et critique la société du XVe siècle.",
-    "themes": ["destin", "amour impossible", "architecture", "justice", "monstruosité", "beauté"],
+    "themes": [
+      "destin",
+      "amour impossible",
+      "architecture",
+      "justice",
+      "monstruosité",
+      "beauté"
+    ],
     "style": "Roman historique avec des descriptions architecturales très détaillées. Mélange de drame, de grotesque et de lyrisme.",
     "historical_importance": "Ce roman a contribué à sauver la cathédrale Notre-Dame de Paris, qui était en mauvais état au XIXe siècle. Il a aussi popularisé le personnage de Quasimodo et l'image des cathédrales gothiques.",
     "reception": "Succès immédiat à sa sortie. Critiqué par certains pour son mélange de genres (historique, grotesque, romantique), mais aujourd'hui considéré comme un chef-d'œuvre.",
@@ -120,7 +135,8 @@
         "link": "https://www.imdb.com/title/tt0116583/"
       }
     ],
-    "reading_level": "lycéen"
+    "reading_level": "lycéen",
+    "cover": "/images/works/notre_dame_de_paris.jpg"
   },
   {
     "id": "madame_bovary",
@@ -130,7 +146,14 @@
     "genre": "roman",
     "movement": "realisme",
     "summary": "Emma Bovary, épouse d'un médecin de province, Charles Bovary, s'ennuie dans sa vie monotone. Elle se réfugie dans la lecture de romans sentimentaux et cherche à échapper à sa condition par des amours adultères et des dépenses excessives. Son destin tragique illustre les dangers de l'idéalisme et de l'ennui.",
-    "themes": ["ennui", "adultère", "réalisme", "désillusion", "société provinciale", "dette"],
+    "themes": [
+      "ennui",
+      "adultère",
+      "réalisme",
+      "désillusion",
+      "société provinciale",
+      "dette"
+    ],
     "style": "Style impersonnel et précis, descriptions détaillées des lieux et des personnages. Narration omnisciente.",
     "historical_importance": "Considéré comme le chef-d'œuvre du réalisme. Flaubert y applique sa théorie de l'impersonnalité : l'auteur doit disparaître derrière son œuvre.",
     "reception": "Procès pour 'outrage à la morale et à la religion' en 1857 (acquittement). Certains critiques contemporains ont reproché au roman son immoralité, mais il est aujourd'hui salué comme un modèle du genre.",
@@ -180,7 +203,8 @@
         "link": "https://www.imdb.com/title/tt2378232/"
       }
     ],
-    "reading_level": "étudiant"
+    "reading_level": "étudiant",
+    "cover": "/images/works/madame_bovary.jpg"
   },
   {
     "id": "l_education_sentimentale",
@@ -190,7 +214,14 @@
     "genre": "roman",
     "movement": "realisme",
     "summary": "Ce roman suit Frédéric Moreau, un jeune homme de province, dans son parcours initiatique à Paris. À travers ses amours, ses amitiés et ses échecs, Flaubert dépeint la société française sous la monarchie de Juillet et la Deuxième République, ainsi que les illusions de la jeunesse.",
-    "themes": ["initiation", "amour", "échec", "société bourgeoise", "révolution", "mémoire"],
+    "themes": [
+      "initiation",
+      "amour",
+      "échec",
+      "société bourgeoise",
+      "révolution",
+      "mémoire"
+    ],
     "style": "Style sobre et précis, avec une ironie subtile. Narration à la troisième personne.",
     "historical_importance": "Considéré comme l'un des plus grands romans de Flaubert. Peinture réaliste de la société française du milieu du XIXe siècle.",
     "reception": "Accueil mitigé à sa sortie (certains lui reprochent son pessimisme), mais aujourd'hui considéré comme un chef-d'œuvre.",
@@ -221,7 +252,8 @@
         "link": "https://www.imdb.com/title/tt0055029/"
       }
     ],
-    "reading_level": "étudiant"
+    "reading_level": "étudiant",
+    "cover": "/images/works/l_education_sentimentale.jpg"
   },
   {
     "id": "l_assommoir",
@@ -231,7 +263,14 @@
     "genre": "roman",
     "movement": "naturalisme",
     "summary": "Ce roman raconte la chute de Gervaise Macquart, une blanchisseuse parisienne, et de sa famille, sous l'effet de l'alcoolisme, de la misère et de l'hérédité. À travers ce récit, Zola explore les mécanismes du déterminisme social et biologique.",
-    "themes": ["alcoolisme", "misère", "déterminisme", "hérédité", "travail", "chute sociale"],
+    "themes": [
+      "alcoolisme",
+      "misère",
+      "déterminisme",
+      "hérédité",
+      "travail",
+      "chute sociale"
+    ],
     "style": "Style naturaliste : descriptions précises des milieux populaires, langage cru, observation scientifique des comportements.",
     "historical_importance": "Septième roman de la série 'Les Rougon-Macquart'. Considéré comme l'un des chefs-d'œuvre du naturalisme. A contribué à sensibiliser l'opinion publique sur les problèmes sociaux.",
     "reception": "Succès immédiat. Certains critiques ont reproché à Zola son pessimisme et son réalisme cru, mais le roman a été salué pour sa puissance descriptive et son engagement social.",
@@ -269,7 +308,8 @@
         "link": "https://www.imdb.com/title/tt0077189/"
       }
     ],
-    "reading_level": "étudiant"
+    "reading_level": "étudiant",
+    "cover": "/images/works/l_assommoir.jpg"
   },
   {
     "id": "germinal",
@@ -279,7 +319,14 @@
     "genre": "roman",
     "movement": "naturalisme",
     "summary": "Ce roman raconte la vie des mineurs du Nord de la France et leur lutte pour de meilleures conditions de travail. À travers le personnage d'Étienne Lantier, Zola dépeint la misère ouvrière, les grèves, et les espoirs de révolution sociale.",
-    "themes": ["travail", "misère ouvrière", "grève", "révolution", "solidarité", "exploitation"],
+    "themes": [
+      "travail",
+      "misère ouvrière",
+      "grève",
+      "révolution",
+      "solidarité",
+      "exploitation"
+    ],
     "style": "Style naturaliste : descriptions détaillées des milieux miniers, langage réaliste, observation des mécanismes sociaux.",
     "historical_importance": "Treizième roman de la série 'Les Rougon-Macquart'. Considéré comme l'un des plus grands romans sociaux de Zola. A contribué à faire connaître les conditions de vie des mineurs.",
     "reception": "Succès critique et public. Certains ont reproché à Zola son parti pris en faveur des ouvriers, mais le roman est aujourd'hui salué pour sa puissance et son engagement.",
@@ -317,7 +364,8 @@
         "link": "https://www.imdb.com/title/tt0106963/"
       }
     ],
-    "reading_level": "étudiant"
+    "reading_level": "étudiant",
+    "cover": "/images/works/germinal.jpg"
   },
   {
     "id": "les_fleurs_du_mal",
@@ -327,7 +375,15 @@
     "genre": "poésie",
     "movement": "symbolisme",
     "summary": "Recueil de poèmes qui explore la beauté, la décadence, la mélancolie et la modernité. Baudelaire y mêle lyrisme, ironie et provocation, tout en cherchant à capturer l'essence de la vie urbaine et des émotions humaines.",
-    "themes": ["beauté", "décadence", "mélancolie", "modernité", "amour", "mort", "spleen"],
+    "themes": [
+      "beauté",
+      "décadence",
+      "mélancolie",
+      "modernité",
+      "amour",
+      "mort",
+      "spleen"
+    ],
     "style": "Style symboliste : images évocatrices, métaphores audacieuses, musicalité des vers. Mélange de classicisme et de modernité.",
     "historical_importance": "Recueil fondateur de la poésie moderne. A marqué un tournant dans l'histoire de la littérature française en introduisant des thèmes et des formes nouveaux.",
     "reception": "Procès pour 'outrage à la morale publique' en 1857 : 6 poèmes (dont 'Les Bijoux' et 'Lesbos') sont censurés. Aujourd'hui, c'est un classique incontournable.",
@@ -367,7 +423,8 @@
         "link": "https://fr.wikipedia.org/wiki/Les_Fleurs_du_mal_(album)"
       }
     ],
-    "reading_level": "étudiant"
+    "reading_level": "étudiant",
+    "cover": "/images/works/les_fleurs_du_mal.jpg"
   },
   {
     "id": "l_etranger",
@@ -377,7 +434,14 @@
     "genre": "roman",
     "movement": "existentialisme",
     "summary": "Meursault, un homme indifférent et détaché, commet un meurtre absurde sur une plage algérienne. À travers son procès, Camus explore les thèmes de l'absurdité de l'existence, de la liberté, et de la rébellion contre les conventions sociales.",
-    "themes": ["absurdité", "indifférence", "liberté", "révolte", "justice", "mort"],
+    "themes": [
+      "absurdité",
+      "indifférence",
+      "liberté",
+      "révolte",
+      "justice",
+      "mort"
+    ],
     "style": "Style dépouillé et direct. Narration à la première personne, avec un ton détaché et une absence apparente d'émotion.",
     "historical_importance": "Premier roman de Camus. Considéré comme un manifeste de la philosophie de l'absurde. A marqué la littérature du XXe siècle.",
     "reception": "Accueil positif à sa sortie. Certains critiques ont reproché à Camus son style froid, mais le roman est rapidement devenu un classique.",
@@ -415,7 +479,8 @@
         "link": "https://www.imdb.com/title/tt2312345/"
       }
     ],
-    "reading_level": "lycéen"
+    "reading_level": "lycéen",
+    "cover": "/images/works/l_etranger.svg"
   },
   {
     "id": "le_mythe_de_sisyphe",
@@ -425,7 +490,13 @@
     "genre": "essai",
     "movement": "existentialisme",
     "summary": "Dans cet essai, Camus développe sa philosophie de l'absurde : l'homme cherche en vain un sens à sa vie dans un univers indifférent. À travers le mythe de Sisyphe, condamné à pousser éternellement un rocher jusqu'au sommet d'une montagne, Camus montre que la révolte contre l'absurdité donne un sens à l'existence.",
-    "themes": ["absurdité", "révolte", "liberté", "sens de la vie", "bonheur"],
+    "themes": [
+      "absurdité",
+      "révolte",
+      "liberté",
+      "sens de la vie",
+      "bonheur"
+    ],
     "style": "Style clair et accessible. Mélange de réflexion philosophique et d'exemples concrets.",
     "historical_importance": "Texte fondateur de la philosophie de l'absurde. Complète 'L'Étranger' en offrant une réflexion théorique sur les thèmes abordés dans le roman.",
     "reception": "Accueil très positif. Considéré comme l'un des essais philosophiques les plus importants du XXe siècle.",
@@ -448,7 +519,8 @@
       }
     ],
     "adaptations": [],
-    "reading_level": "étudiant"
+    "reading_level": "étudiant",
+    "cover": "/images/works/le_mythe_de_sisyphe.svg"
   },
   {
     "id": "le_deuxieme_sexe",
@@ -458,7 +530,14 @@
     "genre": "essai",
     "movement": "existentialisme",
     "summary": "Dans cet essai fondateur du féminisme moderne, Simone de Beauvoir analyse la condition des femmes à travers l'histoire, la biologie, la psychanalyse et le marxisme. Elle montre que la femme n'est pas 'naturellement' inférieure, mais que sa situation est le résultat d'une construction sociale.",
-    "themes": ["féminisme", "condition féminine", "égalité", "construction sociale", "liberté", "autonomie"],
+    "themes": [
+      "féminisme",
+      "condition féminine",
+      "égalité",
+      "construction sociale",
+      "liberté",
+      "autonomie"
+    ],
     "style": "Style rigoureux et analytique. Mélange de philosophie, de sociologie et d'exemples historiques.",
     "historical_importance": "Texte fondateur du féminisme moderne. A eu une influence majeure sur les mouvements féministes du XXe siècle.",
     "reception": "Accueil mitigé à sa sortie (certains critiques masculins ont été hostiles), mais rapidement reconnu comme un texte majeur. Aujourd'hui, c'est un classique de la philosophie féministe.",
@@ -481,7 +560,8 @@
       }
     ],
     "adaptations": [],
-    "reading_level": "étudiant"
+    "reading_level": "étudiant",
+    "cover": "/images/works/le_deuxieme_sexe.svg"
   },
   {
     "id": "l_amant",
@@ -491,7 +571,14 @@
     "genre": "roman",
     "movement": "nouveau_roman",
     "summary": "Ce roman autobiographique raconte l'histoire d'une jeune fille française de 15 ans (inspirée de Duras elle-même) et de sa relation avec un riche héritier chinois de 27 ans en Indochine dans les années 1930. À travers cette histoire d'amour interdite, Duras explore les thèmes de la mémoire, du désir, et de la différence sociale.",
-    "themes": ["amour", "mémoire", "colonialisme", "différence sociale", "désir", "écriture"],
+    "themes": [
+      "amour",
+      "mémoire",
+      "colonialisme",
+      "différence sociale",
+      "désir",
+      "écriture"
+    ],
     "style": "Style fragmenté et poétique. Narration non linéaire, avec des répétitions et des ellipses. Mélange de réalité et de fiction.",
     "historical_importance": "Prix Goncourt 1984. Considéré comme un chef-d'œuvre de la littérature contemporaine. A contribué à populariser le genre de l'autofiction.",
     "reception": "Succès critique et public. Salué pour son style innovant et sa puissance émotionnelle.",
@@ -522,6 +609,7 @@
         "link": "https://www.imdb.com/title/tt0103639/"
       }
     ],
-    "reading_level": "étudiant"
+    "reading_level": "étudiant",
+    "cover": "/images/works/l_amant.svg"
   }
 ]

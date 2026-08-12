@@ -163,6 +163,15 @@ function WorksPage() {
               id={work.id} 
               className="card entity-card work-card"
             >
+              {work.cover && (
+                <img
+                  src={work.cover}
+                  alt={work.title}
+                  className="work-cover"
+                  loading="lazy"
+                />
+              )}
+
               <h3 style={{ marginBottom: '10px' }}>
                 {work.title}
               </h3>
@@ -192,8 +201,8 @@ function WorksPage() {
                   {work.themes.map((theme, index) => (
                     <span 
                       key={index} 
-                      className="badge" 
-                      style={{ backgroundColor: '#e0e0e0', color: 'var(--primary-color)', fontSize: '0.8rem' }}
+                      className="badge badge-theme" 
+                      style={{ fontSize: '0.8rem' }}
                     >
                       {theme}
                     </span>
@@ -240,8 +249,8 @@ function WorksPage() {
                         href={adaptation.link} 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="badge" 
-                        style={{ backgroundColor: '#e0e0e0', color: 'var(--primary-color)', fontSize: '0.8rem' }}
+                        className="badge badge-theme" 
+                        style={{ fontSize: '0.8rem' }}
                       >
                         {adaptation.type === 'film' ? '🎬' : adaptation.type === 'tv_series' ? '📺' : adaptation.type === 'musical' ? '🎭' : '🎵'} 
                         {adaptation.title} ({adaptation.year})

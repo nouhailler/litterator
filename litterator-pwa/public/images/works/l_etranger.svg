@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 960">
+  <rect width="720" height="960" fill="#fbf7ef"/>
+  <rect x="74" y="74" width="572" height="812" rx="18" fill="#6f1d1b"/>
+  <path d="M126 775h468" stroke="#b8893b" stroke-width="18" stroke-linecap="round"/>
+  <text x="360" y="260" text-anchor="middle" fill="#fbf7ef" font-family="Georgia, serif" font-size="86" font-weight="700">L'Etranger</text>
+  <text x="360" y="340" text-anchor="middle" fill="#eadfce" font-family="Arial, sans-serif" font-size="32" letter-spacing="7">ALBERT CAMUS</text>
+  <circle cx="360" cy="525" r="92" fill="#fbf7ef" opacity=".92"/>
+  <path d="M218 642c96-52 190-52 284 0" stroke="#fbf7ef" stroke-width="12" fill="none" opacity=".7"/>
+</svg>

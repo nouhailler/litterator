@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 960">
+  <rect width="720" height="960" fill="#fbf7ef"/>
+  <rect x="74" y="74" width="572" height="812" rx="18" fill="#251b14"/>
+  <text x="360" y="245" text-anchor="middle" fill="#fbf7ef" font-family="Georgia, serif" font-size="70" font-weight="700">Le Mythe</text>
+  <text x="360" y="325" text-anchor="middle" fill="#fbf7ef" font-family="Georgia, serif" font-size="70" font-weight="700">de Sisyphe</text>
+  <text x="360" y="405" text-anchor="middle" fill="#c9b8a4" font-family="Arial, sans-serif" font-size="32" letter-spacing="7">ALBERT CAMUS</text>
+  <path d="M185 740h350L428 510 318 660 260 590Z" fill="#6f1d1b"/>
+  <circle cx="405" cy="486" r="42" fill="#b8893b"/>
+  <path d="M150 790h420" stroke="#b8893b" stroke-width="18" stroke-linecap="round"/>
+</svg>

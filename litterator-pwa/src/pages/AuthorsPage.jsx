@@ -123,9 +123,18 @@ function AuthorsPage() {
               id={author.id} 
               className="card entity-card author-card"
             >
-              <div className="entity-initial" aria-hidden="true">
-                {author.name.charAt(0)}
-              </div>
+              {author.portrait ? (
+                <img
+                  src={author.portrait}
+                  alt={author.name}
+                  className="author-portrait"
+                  loading="lazy"
+                />
+              ) : (
+                <div className="entity-initial" aria-hidden="true">
+                  {author.name.charAt(0)}
+                </div>
+              )}
 
               <h3 style={{ marginBottom: '10px' }}>
                 {author.name} ({author.birth.year}-{author.death.year})
