@@ -57,7 +57,7 @@ function WorksPage() {
 
   if (isLoading) {
     return (
-      <div style={{ textAlign: 'center', padding: '40px' }}>
+      <div className="loading-state">
         <p>Chargement des données...</p>
       </div>
     );
@@ -65,16 +65,16 @@ function WorksPage() {
 
   return (
     <div className="fade-in">
-      <h2 style={{ fontFamily: 'var(--font-secondary)', marginBottom: '20px' }}>
-        Œuvres de la Littérature Française
-      </h2>
+      <div className="page-header">
+        <p className="eyebrow">Bibliothèque</p>
+        <h2>Œuvres de la littérature française</h2>
+        <p className="lead">
+          Explorez les œuvres majeures qui ont marqué l'histoire littéraire française,
+          des Misérables de Victor Hugo à L'Amant de Marguerite Duras.
+        </p>
+      </div>
 
-      <p style={{ marginBottom: '30px', color: 'var(--text-light)' }}>
-        Explorez les œuvres majeures qui ont marqué l'histoire littéraire française,
-        des 'Misérables' de Victor Hugo à 'L'Amant' de Marguerite Duras.
-      </p>
-
-      <div className="filters" style={{ marginBottom: '30px' }}>
+      <div className="filters">
         <div className="filter-group">
           <label>Rechercher une œuvre</label>
           <input 
@@ -148,11 +148,11 @@ function WorksPage() {
         </button>
       </div>
 
-      <div style={{ marginTop: '20px', fontSize: '0.9rem', color: 'var(--text-light)' }}>
+      <div className="result-count">
         {filteredWorks.length} œuvres trouvées
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))', gap: '20px', marginTop: '20px' }}>
+      <div className="content-grid">
         {filteredWorks.map((work) => {
           const author = authors.find(a => a.id === work.author);
           const movement = movements.find(m => m.id === work.movement);
@@ -161,10 +161,9 @@ function WorksPage() {
             <div 
               key={work.id} 
               id={work.id} 
-              className="card"
-              style={{ borderTop: `4px solid ${movement?.color || '#999'}` }}
+              className="card entity-card work-card"
             >
-              <h3 style={{ marginBottom: '10px', color: movement?.color || '#999' }}>
+              <h3 style={{ marginBottom: '10px' }}>
                 {work.title}
               </h3>
 
@@ -175,8 +174,8 @@ function WorksPage() {
               {movement && (
                 <div style={{ marginBottom: '10px' }}>
                   <span 
-                    className="badge" 
-                    style={{ backgroundColor: movement.color, fontSize: '0.8rem' }}
+                    className="badge badge-theme" 
+                    style={{ fontSize: '0.8rem' }}
                   >
                     {movement.name}
                   </span>
@@ -213,7 +212,7 @@ function WorksPage() {
                       fontSize: '0.9rem',
                       marginBottom: '10px',
                       paddingLeft: '10px',
-                      borderLeft: `3px solid ${movement?.color || '#999'}`
+                      borderLeft: '3px solid var(--brand)'
                     }}
                   >
                     "{excerpt.text}"
@@ -259,11 +258,11 @@ function WorksPage() {
                 )}
               </div>
 
-              <div style={{ textAlign: 'center', marginTop: '15px' }}>
+              <div className="card-actions">
                 <Link 
                   to={`/authors#${work.author}`} 
                   className="button" 
-                  style={{ fontSize: '0.9rem', padding: '8px 16px', marginRight: '10px' }}
+                  style={{ fontSize: '0.9rem', padding: '8px 16px' }}
                 >
                   Voir l'auteur
                 </Link>

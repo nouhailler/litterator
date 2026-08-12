@@ -204,7 +204,7 @@ function TimelinePage() {
 
   if (isLoading) {
     return (
-      <div style={{ textAlign: 'center', padding: '40px' }}>
+      <div className="loading-state">
         <p>Chargement des données...</p>
       </div>
     );
@@ -212,9 +212,13 @@ function TimelinePage() {
 
   return (
     <div className="fade-in">
-      <h2 style={{ fontFamily: 'var(--font-secondary)', marginBottom: '20px' }}>
-        Frise Chronologique de la Littérature Française (1800 - Aujourd'hui)
-      </h2>
+      <div className="page-header">
+        <p className="eyebrow">Chronologie</p>
+        <h2>Frise de la littérature française</h2>
+        <p className="lead">
+          Situez mouvements, œuvres, auteurs et événements historiques dans une même lecture du temps.
+        </p>
+      </div>
 
       <div className="filters">
         <div className="filter-group">
@@ -273,7 +277,7 @@ function TimelinePage() {
         </button>
       </div>
 
-      <div style={{ marginTop: '20px', fontSize: '0.9rem', color: 'var(--text-light)' }}>
+      <div className="result-count">
         {filteredEvents.length} événements affichés
       </div>
 
