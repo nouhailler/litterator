@@ -5,7 +5,6 @@ import MapPage from './pages/MapPage';
 import MovementsPage from './pages/MovementsPage';
 import AuthorsPage from './pages/AuthorsPage';
 import WorksPage from './pages/WorksPage';
-import SettingsPage from './pages/SettingsPage';
 import HomePage from './pages/HomePage';
 import './styles/global.css';
 
@@ -39,7 +38,6 @@ function App() {
   return (
     <Router>
       <div className="app">
-<<<<<<< HEAD
         <header className="app-header">
           <div className="header-inner">
             <Link to="/" className="brand-link">
@@ -67,26 +65,6 @@ function App() {
               </div>
             )}
           </div>
-=======
-        <header>
-          <h1>Littérator</h1>
-          <nav>
-            <ul>
-              <li><Link to="/">Accueil</Link></li>
-              <li><Link to="/timeline">Frise Chronologique</Link></li>
-              <li><Link to="/map">Carte Littéraire</Link></li>
-              <li><Link to="/movements">Mouvements</Link></li>
-              <li><Link to="/authors">Auteurs</Link></li>
-              <li><Link to="/works">Œuvres</Link></li>
-              <li><Link to="/settings">Paramétrage</Link></li>
-            </ul>
-          </nav>
-          {isInstalled && (
-            <div className="badge" style={{ backgroundColor: 'var(--accent-color)', marginTop: '10px' }}>
-              Mode PWA activé
-            </div>
-          )}
->>>>>>> upstream/main
         </header>
 
         <main className="main-container">
@@ -97,7 +75,6 @@ function App() {
             <Route path="/movements" element={<MovementsPage />} />
             <Route path="/authors" element={<AuthorsPage />} />
             <Route path="/works" element={<WorksPage />} />
-            <Route path="/settings" element={<SettingsPage />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>

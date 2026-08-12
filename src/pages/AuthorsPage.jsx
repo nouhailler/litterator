@@ -123,29 +123,9 @@ function AuthorsPage() {
               id={author.id} 
               className="card entity-card author-card"
             >
-<<<<<<< HEAD
               <div className="entity-initial" aria-hidden="true">
                 {author.name.charAt(0)}
               </div>
-=======
-              {/* Afficher l'image depuis image_url ou portrait local */}
-              {(author.image_url || author.portrait) && (
-                <img 
-                  src={author.image_url || author.portrait}
-                  alt={author.name} 
-                  style={{ 
-                    width: '100%', 
-                    height: '200px', 
-                    objectFit: 'cover', 
-                    borderRadius: 'var(--border-radius)',
-                    marginBottom: '15px'
-                  }} 
-                  onError={(e) => {
-                    e.target.src = 'https://via.placeholder.com/300x200?text=Portrait+non+disponible';
-                  }}
-                />
-              )}
->>>>>>> upstream/main
 
               <h3 style={{ marginBottom: '10px' }}>
                 {author.name} ({author.birth.year}-{author.death.year})
@@ -238,7 +218,7 @@ function AuthorsPage() {
                 </Link>
                 {author.birth.place && (
                   <Link 
-                    to={`/map`} 
+                    to={`/map#${author.birth.place.toLowerCase().replace(/\s+/g, '-')}`} 
                     className="button button-secondary" 
                     style={{ fontSize: '0.9rem', padding: '8px 16px' }}
                   >
