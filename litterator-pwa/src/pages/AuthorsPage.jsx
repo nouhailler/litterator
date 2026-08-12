@@ -51,7 +51,7 @@ function AuthorsPage() {
 
   if (isLoading) {
     return (
-      <div style={{ textAlign: 'center', padding: '40px' }}>
+      <div className="loading-state">
         <p>Chargement des données...</p>
       </div>
     );
@@ -59,16 +59,16 @@ function AuthorsPage() {
 
   return (
     <div className="fade-in">
-      <h2 style={{ fontFamily: 'var(--font-secondary)', marginBottom: '20px' }}>
-        Auteurs de la Littérature Française
-      </h2>
+      <div className="page-header">
+        <p className="eyebrow">Fiches biographiques</p>
+        <h2>Auteurs de la littérature française</h2>
+        <p className="lead">
+          Découvrez les grands auteurs qui ont marqué l'histoire littéraire française,
+          de Victor Hugo à Marguerite Duras.
+        </p>
+      </div>
 
-      <p style={{ marginBottom: '30px', color: 'var(--text-light)' }}>
-        Découvrez les grands auteurs qui ont marqué l'histoire littéraire française,
-        de Victor Hugo à Marguerite Duras.
-      </p>
-
-      <div className="filters" style={{ marginBottom: '30px' }}>
+      <div className="filters">
         <div className="filter-group">
           <label>Rechercher un auteur</label>
           <input 
@@ -105,11 +105,11 @@ function AuthorsPage() {
         </button>
       </div>
 
-      <div style={{ marginTop: '20px', fontSize: '0.9rem', color: 'var(--text-light)' }}>
+      <div className="result-count">
         {filteredAuthors.length} auteurs trouvés
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))', gap: '20px', marginTop: '20px' }}>
+      <div className="content-grid">
         {filteredAuthors.map((author) => {
           // Trouver les œuvres de l'auteur
           const authorWorks = works.filter(work => work.author === author.id);
@@ -121,24 +121,11 @@ function AuthorsPage() {
             <div 
               key={author.id} 
               id={author.id} 
-              className="card"
+              className="card entity-card author-card"
             >
-              {author.portrait && (
-                <img 
-                  src={author.portrait} 
-                  alt={author.name} 
-                  style={{ 
-                    width: '100%', 
-                    height: '200px', 
-                    objectFit: 'cover', 
-                    borderRadius: 'var(--border-radius)',
-                    marginBottom: '15px'
-                  }} 
-                  onError={(e) => {
-                    e.target.src = 'https://via.placeholder.com/300x200?text=Portrait+non+disponible';
-                  }}
-                />
-              )}
+              <div className="entity-initial" aria-hidden="true">
+                {author.name.charAt(0)}
+              </div>
 
               <h3 style={{ marginBottom: '10px' }}>
                 {author.name} ({author.birth.year}-{author.death.year})
@@ -150,12 +137,12 @@ function AuthorsPage() {
 
               <div style={{ marginBottom: '15px' }}>
                 <h4 style={{ fontSize: '1rem', marginBottom: '8px' }}>Mouvements</h4>
-                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '5px' }}>
+                <div className="tag-row">
                   {authorMovements.map((movement) => (
                     <span 
                       key={movement.id} 
-                      className="badge" 
-                      style={{ backgroundColor: movement.color, fontSize: '0.8rem' }}
+                      className="badge badge-theme" 
+                      style={{ fontSize: '0.8rem' }}
                     >
                       {movement.name}
                     </span>
@@ -165,13 +152,13 @@ function AuthorsPage() {
 
               <div style={{ marginBottom: '15px' }}>
                 <h4 style={{ fontSize: '1rem', marginBottom: '8px' }}>Œuvres Principales</h4>
-                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '5px' }}>
+                <div className="tag-row">
                   {authorWorks.slice(0, 5).map((work) => (
                     <Link 
                       key={work.id} 
                       to={`/works#${work.id}`} 
-                      className="badge" 
-                      style={{ backgroundColor: '#e0e0e0', color: 'var(--primary-color)', fontSize: '0.8rem' }}
+                      className="badge badge-theme" 
+                      style={{ fontSize: '0.8rem' }}
                     >
                       {work.title} ({work.year})
                     </Link>
@@ -221,11 +208,11 @@ function AuthorsPage() {
                 </p>
               </div>
 
-              <div style={{ textAlign: 'center', marginTop: '15px' }}>
+              <div className="card-actions">
                 <Link 
                   to={`/timeline#author-birth-${author.id}`} 
                   className="button" 
-                  style={{ fontSize: '0.9rem', padding: '8px 16px', marginRight: '10px' }}
+                  style={{ fontSize: '0.9rem', padding: '8px 16px' }}
                 >
                   Voir sur la timeline
                 </Link>

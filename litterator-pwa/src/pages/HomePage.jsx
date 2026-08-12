@@ -1,110 +1,127 @@
 import { Link } from 'react-router-dom';
 
+const movements = [
+  { id: 'romantisme', name: 'Romantisme', period: '1820-1850', color: 'var(--romantisme)' },
+  { id: 'realisme', name: 'Réalisme', period: '1850-1880', color: 'var(--realisme)' },
+  { id: 'naturalisme', name: 'Naturalisme', period: '1870-1890', color: 'var(--naturalisme)' },
+  { id: 'symbolisme', name: 'Symbolisme', period: '1880-1900', color: 'var(--symbolisme)' },
+  { id: 'surrealisme', name: 'Surréalisme', period: '1920-1940', color: 'var(--surréalisme)' },
+  { id: 'existentialisme', name: 'Existentialisme', period: '1940-1960', color: 'var(--existentialisme)' },
+];
+
+const authors = [
+  { id: 'victor_hugo', name: 'Victor Hugo', work: 'Les Misérables', period: '1802-1885' },
+  { id: 'gustave_flaubert', name: 'Gustave Flaubert', work: 'Madame Bovary', period: '1821-1880' },
+  { id: 'emile_zola', name: 'Émile Zola', work: 'Germinal', period: '1840-1902' },
+  { id: 'albert_camus', name: 'Albert Camus', work: "L'Étranger", period: '1913-1960' },
+];
+
 function HomePage() {
   return (
     <div className="fade-in">
-      <section style={{ textAlign: 'center', marginBottom: '40px' }}>
-        <h2 style={{ fontFamily: 'var(--font-secondary)', fontSize: '2.5rem', marginBottom: '20px' }}>
-          Bienvenue sur Littérator
-        </h2>
-        <p style={{ fontSize: '1.2rem', color: 'var(--text-light)', maxWidth: '800px', margin: '0 auto 30px' }}>
-          Explorez la littérature française depuis 1800 à travers une frise chronologique interactive,
-          une carte des lieux emblématiques, et des fiches détaillées sur les mouvements, les auteurs et les œuvres.
-        </p>
-        
-        <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
-          <Link to="/timeline" className="button">
-            Découvrir la Frise Chronologique
-          </Link>
-          <Link to="/map" className="button button-secondary">
-            Explorer la Carte Littéraire
-          </Link>
+      <section className="hero-panel">
+        <div className="hero-copy">
+          <p className="eyebrow">Explorer, situer, relier</p>
+          <h1>Littérature française depuis 1800</h1>
+          <p className="lead">
+            Parcourez les mouvements, les auteurs, les œuvres et les lieux qui structurent deux siècles
+            de création littéraire. L'application privilégie une lecture claire, chronologique et locale.
+          </p>
+
+          <div className="hero-actions">
+            <Link to="/timeline" className="button">
+              Ouvrir la frise
+            </Link>
+            <Link to="/map" className="button button-secondary">
+              Explorer la carte
+            </Link>
+          </div>
         </div>
+
+        <aside className="hero-aside" aria-label="Résumé du corpus">
+          <div>
+            <p className="eyebrow">Corpus local</p>
+            <h2>Littérator</h2>
+          </div>
+          <div className="stat-list">
+            <div className="stat-item">
+              <span>Mouvements</span>
+              <span className="stat-number">8</span>
+            </div>
+            <div className="stat-item">
+              <span>Auteurs</span>
+              <span className="stat-number">8</span>
+            </div>
+            <div className="stat-item">
+              <span>Œuvres</span>
+              <span className="stat-number">11</span>
+            </div>
+            <div className="stat-item">
+              <span>Lieux</span>
+              <span className="stat-number">8</span>
+            </div>
+          </div>
+        </aside>
       </section>
 
-      <section style={{ marginBottom: '40px' }}>
-        <h3 style={{ fontFamily: 'var(--font-secondary)', fontSize: '1.8rem', marginBottom: '20px', textAlign: 'center' }}>
-          Les Mouvements Littéraires
-        </h3>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '20px' }}>
-          {[
-            { id: 'romantisme', name: 'Romantisme', period: '1820-1850', color: 'var(--romantisme)' },
-            { id: 'realisme', name: 'Réalisme', period: '1850-1880', color: 'var(--realisme)' },
-            { id: 'naturalisme', name: 'Naturalisme', period: '1870-1890', color: 'var(--naturalisme)' },
-            { id: 'symbolisme', name: 'Symbolisme', period: '1880-1900', color: 'var(--symbolisme)' },
-            { id: 'surréalisme', name: 'Surréalisme', period: '1920-1940', color: 'var(--surréalisme)' },
-            { id: 'existentialisme', name: 'Existentialisme', period: '1940-1960', color: 'var(--existentialisme)' },
-          ].map((movement) => (
-            <div 
-              key={movement.id} 
-              className="card" 
-              style={{ borderTop: `4px solid ${movement.color}` }}
+      <section>
+        <div className="section-header">
+          <div>
+            <p className="eyebrow">Périodes</p>
+            <h2 className="section-title">Mouvements littéraires</h2>
+          </div>
+          <Link to="/movements" className="button button-secondary">
+            Tout voir
+          </Link>
+        </div>
+
+        <div className="content-grid">
+          {movements.map((movement) => (
+            <article
+              key={movement.id}
+              className="card movement-card"
+              style={{ '--card-accent': movement.color }}
             >
-              <h4 style={{ color: movement.color, marginBottom: '10px' }}>{movement.name}</h4>
-              <p style={{ color: 'var(--text-light)', fontSize: '0.9rem', marginBottom: '10px' }}>
-                {movement.period}
-              </p>
-              <Link 
-                to={`/movements#${movement.id}`} 
-                className="button" 
-                style={{ display: 'inline-block', fontSize: '0.9rem', padding: '8px 16px' }}
-              >
+              <div>
+                <h3>{movement.name}</h3>
+                <p className="movement-period">{movement.period}</p>
+              </div>
+              <Link to={`/movements#${movement.id}`} className="button button-secondary">
                 En savoir plus
               </Link>
-            </div>
+            </article>
           ))}
         </div>
       </section>
 
-      <section style={{ marginBottom: '40px' }}>
-        <h3 style={{ fontFamily: 'var(--font-secondary)', fontSize: '1.8rem', marginBottom: '20px', textAlign: 'center' }}>
-          Auteurs et Œuvres Célèbres
-        </h3>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: '20px' }}>
-          {[
-            { id: 'victor_hugo', name: 'Victor Hugo', work: 'Les Misérables', image: '/images/authors/victor_hugo.jpg' },
-            { id: 'gustave_flaubert', name: 'Gustave Flaubert', work: 'Madame Bovary', image: '/images/authors/flaubert.jpg' },
-            { id: 'emile_zola', name: 'Émile Zola', work: 'Germinal', image: '/images/authors/zola.jpg' },
-            { id: 'albert_camus', name: 'Albert Camus', work: "L'Étranger", image: '/images/authors/camus.jpg' },
-          ].map((author) => (
-            <div key={author.id} className="card">
-              <img 
-                src={author.image} 
-                alt={author.name} 
-                style={{ 
-                  width: '100%', 
-                  height: '200px', 
-                  objectFit: 'cover', 
-                  borderRadius: 'var(--border-radius)',
-                  marginBottom: '10px'
-                }} 
-                onError={(e) => {
-                  e.target.src = 'https://via.placeholder.com/300x200?text=Portait+non+disponible';
-                }}
-              />
-              <h4 style={{ marginBottom: '5px' }}>{author.name}</h4>
-              <p style={{ color: 'var(--text-light)', fontSize: '0.9rem', marginBottom: '10px' }}>
-                {author.work}
-              </p>
-              <Link 
-                to={`/authors#${author.id}`} 
-                className="button" 
-                style={{ display: 'inline-block', fontSize: '0.9rem', padding: '8px 16px' }}
-              >
+      <section>
+        <div className="section-header">
+          <div>
+            <p className="eyebrow">Repères</p>
+            <h2 className="section-title">Auteurs et œuvres</h2>
+          </div>
+          <Link to="/authors" className="button button-secondary">
+            Parcourir les auteurs
+          </Link>
+        </div>
+
+        <div className="content-grid">
+          {authors.map((author) => (
+            <article key={author.id} className="card entity-card">
+              <div className="entity-initial" aria-hidden="true">
+                {author.name.charAt(0)}
+              </div>
+              <div>
+                <h3>{author.name}</h3>
+                <p className="meta-line">{author.period}</p>
+              </div>
+              <p>{author.work}</p>
+              <Link to={`/authors#${author.id}`} className="button button-secondary">
                 Voir la fiche
               </Link>
-            </div>
+            </article>
           ))}
         </div>
-      </section>
-
-      <section style={{ textAlign: 'center', padding: '30px', backgroundColor: 'var(--primary-color)', color: 'white', borderRadius: 'var(--border-radius)' }}>
-        <h3 style={{ fontSize: '1.5rem', marginBottom: '10px' }}>
-          Une application 100% locale
-        </h3>
-        <p style={{ fontSize: '1rem' }}>
-          Toutes les données sont stockées sur votre appareil. Pas besoin de connexion Internet pour explorer la littérature française !
-        </p>
       </section>
     </div>
   );

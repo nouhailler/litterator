@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, NavLink, Link, Navigate } from 'react-router-dom';
 import TimelinePage from './pages/TimelinePage';
 import MapPage from './pages/MapPage';
 import MovementsPage from './pages/MovementsPage';
@@ -12,15 +12,16 @@ function App() {
   const [isInstalled, setIsInstalled] = useState(false);
 
   useEffect(() => {
+    const standaloneQuery = window.matchMedia('(display-mode: standalone)');
+
     // Vérifier si l'application est installée (PWA)
-    if (window.matchMedia('(display-mode: standalone)').matches) {
-      setIsInstalled(true);
-    }
+    setIsInstalled(standaloneQuery.matches);
 
     // Écouter les changements de mode d'affichage
-    window.matchMedia('(display-mode: standalone)').addEventListener('change', (e) => {
+    const handleDisplayModeChange = (e) => {
       setIsInstalled(e.matches);
-    });
+    };
+    standaloneQuery.addEventListener('change', handleDisplayModeChange);
 
     // Vérifier si une nouvelle version est disponible (pour la PWA)
     if ('serviceWorker' in navigator) {
@@ -28,28 +29,42 @@ function App() {
         window.location.reload();
       });
     }
+
+    return () => {
+      standaloneQuery.removeEventListener('change', handleDisplayModeChange);
+    };
   }, []);
 
   return (
     <Router>
       <div className="app">
-        <header>
-          <h1>Littérator</h1>
-          <nav>
-            <ul>
-              <li><Link to="/">Accueil</Link></li>
-              <li><Link to="/timeline">Frise Chronologique</Link></li>
-              <li><Link to="/map">Carte Littéraire</Link></li>
-              <li><Link to="/movements">Mouvements</Link></li>
-              <li><Link to="/authors">Auteurs</Link></li>
-              <li><Link to="/works">Œuvres</Link></li>
-            </ul>
-          </nav>
-          {isInstalled && (
-            <div className="badge" style={{ backgroundColor: 'var(--accent-color)', marginTop: '10px' }}>
-              Mode PWA activé
-            </div>
-          )}
+        <header className="app-header">
+          <div className="header-inner">
+            <Link to="/" className="brand-link">
+              <span className="brand-mark">L</span>
+              <span className="brand-text">
+                <span className="brand-title">Littérator</span>
+                <span className="brand-subtitle">Littérature française depuis 1800</span>
+              </span>
+            </Link>
+
+            <nav className="app-nav" aria-label="Navigation principale">
+              <ul>
+                <li><NavLink to="/" end>Accueil</NavLink></li>
+                <li><NavLink to="/timeline">Frise</NavLink></li>
+                <li><NavLink to="/map">Carte</NavLink></li>
+                <li><NavLink to="/movements">Mouvements</NavLink></li>
+                <li><NavLink to="/authors">Auteurs</NavLink></li>
+                <li><NavLink to="/works">Œuvres</NavLink></li>
+              </ul>
+            </nav>
+
+            {isInstalled && (
+              <div className="badge pwa-badge">
+                Mode PWA activé
+              </div>
+            )}
+          </div>
         </header>
 
         <main className="main-container">
@@ -64,11 +79,13 @@ function App() {
           </Routes>
         </main>
 
-        <footer>
-          <p>Littérator - Découvrez la littérature française depuis 1800</p>
-          <p style={{ fontSize: '0.8rem', marginTop: '8px' }}>
-            Une PWA 100% locale - Toutes les données sont stockées sur votre appareil
-          </p>
+        <footer className="app-footer">
+          <div className="footer-inner">
+            <p>Littérator - Découvrez la littérature française depuis 1800</p>
+            <p className="footer-note">
+              PWA locale - données stockées sur votre appareil
+            </p>
+          </div>
         </footer>
       </div>
     </Router>

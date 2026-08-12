@@ -124,7 +124,7 @@ function MapPage() {
 
   if (isLoading) {
     return (
-      <div style={{ textAlign: 'center', padding: '40px' }}>
+      <div className="loading-state">
         <p>Chargement des données...</p>
       </div>
     );
@@ -132,16 +132,16 @@ function MapPage() {
 
   return (
     <div className="fade-in">
-      <h2 style={{ fontFamily: 'var(--font-secondary)', marginBottom: '20px' }}>
-        Carte Littéraire de la France
-      </h2>
+      <div className="page-header">
+        <p className="eyebrow">Géographie littéraire</p>
+        <h2>Carte littéraire de la France</h2>
+        <p className="lead">
+          Explorez les lieux emblématiques de la littérature française : Paris romantique, la Normandie de Flaubert,
+          Montmartre des surréalistes, l'Algérie de Camus, et bien d'autres.
+        </p>
+      </div>
 
-      <p style={{ marginBottom: '20px', color: 'var(--text-light)' }}>
-        Explorez les lieux emblématiques de la littérature française : Paris romantique, la Normandie de Flaubert,
-        Montmartre des surréalistes, l'Algérie de Camus, et bien d'autres.
-      </p>
-
-      <div className="filters" style={{ marginBottom: '20px' }}>
+      <div className="filters">
         <div className="filter-group">
           <label>Mouvement Littéraire</label>
           <select 
@@ -183,7 +183,7 @@ function MapPage() {
         </button>
       </div>
 
-      <div style={{ marginTop: '20px', fontSize: '0.9rem', color: 'var(--text-light)' }}>
+      <div className="result-count">
         {filteredLocations.length} lieux affichés
       </div>
 
@@ -296,7 +296,7 @@ function MapPage() {
       </div>
 
       {/* Légende */}
-      <div style={{ marginTop: '20px', padding: '15px', backgroundColor: 'white', borderRadius: 'var(--border-radius)', boxShadow: 'var(--box-shadow)' }}>
+      <div className="card" style={{ marginTop: '20px' }}>
         <h4 style={{ marginBottom: '10px' }}>Légende</h4>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '15px' }}>
           {movements.map((movement) => (

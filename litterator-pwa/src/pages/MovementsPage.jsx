@@ -39,7 +39,7 @@ function MovementsPage() {
 
   if (isLoading) {
     return (
-      <div style={{ textAlign: 'center', padding: '40px' }}>
+      <div className="loading-state">
         <p>Chargement des données...</p>
       </div>
     );
@@ -47,14 +47,14 @@ function MovementsPage() {
 
   return (
     <div className="fade-in">
-      <h2 style={{ fontFamily: 'var(--font-secondary)', marginBottom: '20px' }}>
-        Mouvements Littéraires Français (1800 - Aujourd'hui)
-      </h2>
-
-      <p style={{ marginBottom: '30px', color: 'var(--text-light)' }}>
-        Découvrez les grands mouvements qui ont marqué l'histoire de la littérature française,
-        de la Révolution industrielle à l'ère numérique.
-      </p>
+      <div className="page-header">
+        <p className="eyebrow">Courants et ruptures</p>
+        <h2>Mouvements littéraires français</h2>
+        <p className="lead">
+          Découvrez les grands mouvements qui ont marqué l'histoire de la littérature française,
+          de la Révolution industrielle à l'ère numérique.
+        </p>
+      </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))', gap: '20px' }}>
         {sortedMovements.map((movement) => {
@@ -66,8 +66,8 @@ function MovementsPage() {
             <div 
               key={movement.id} 
               id={movement.id} 
-              className="card" 
-              style={{ borderTop: `4px solid ${movement.color}` }}
+              className="card movement-card" 
+              style={{ '--card-accent': movement.color }}
             >
               <h3 style={{ color: movement.color, marginBottom: '10px' }}>
                 {movement.name} ({movement.period.start}-{movement.period.end})
@@ -213,7 +213,7 @@ function MovementsPage() {
                 </div>
               </div>
 
-              <div style={{ textAlign: 'center', marginTop: '15px' }}>
+              <div className="card-actions">
                 <Link 
                   to={`/timeline#movement-${movement.id}`} 
                   className="button" 
