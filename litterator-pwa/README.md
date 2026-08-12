@@ -15,21 +15,9 @@ Littérator rassemble mouvements, auteurs, œuvres et lieux littéraires dans un
 
 ## Aperçus
 
-<<<<<<< HEAD
 | Œuvres | Auteurs |
 | --- | --- |
 | ![Écran des œuvres](public/screenshots/works.png) | ![Écran des auteurs](public/screenshots/authors.png) |
-=======
-### 4. **Mode Hors Ligne (PWA)**
-- **100% local** : Toutes les données sont stockées sur votre appareil.
-- Pas besoin de connexion Internet pour explorer la littérature.
-
-### 5. **Paramétrage (Import/Export)**
-- **Importer des données** : Ajoutez de nouveaux auteurs, œuvres, mouvements ou lieux via un gabarit JSON.
-- **Exporter des données** : Sauvegardez ou partagez vos données (par catégorie ou toutes ensemble).
-- **Gabarits JSON** : Des exemples de structure sont fournis pour chaque type de données.
-- Installation possible sur mobile et desktop.
->>>>>>> upstream/main
 
 | Carte littéraire |
 | --- |

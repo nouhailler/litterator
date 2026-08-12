@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { useState, useEffect } from 'react';
 
 const movements = [
   { id: 'romantisme', name: 'Romantisme', period: '1820-1850', color: 'var(--romantisme)' },
@@ -18,32 +17,6 @@ const authors = [
 ];
 
 function HomePage() {
-  const [authors, setAuthors] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    const loadAuthors = async () => {
-      try {
-        const response = await fetch('/data/authors.json');
-        const data = await response.json();
-        setAuthors(data.slice(0, 4)); // Charger les 4 premiers auteurs
-        setIsLoading(false);
-      } catch (error) {
-        console.error('Erreur lors du chargement des auteurs:', error);
-        setIsLoading(false);
-      }
-    };
-    loadAuthors();
-  }, []);
-
-  if (isLoading) {
-    return (
-      <div style={{ textAlign: 'center', padding: '40px' }}>
-        <p>Chargement...</p>
-      </div>
-    );
-  }
-
   return (
     <div className="fade-in">
       <section className="hero-panel">
@@ -121,7 +94,6 @@ function HomePage() {
         </div>
       </section>
 
-<<<<<<< HEAD
       <section>
         <div className="section-header">
           <div>
@@ -145,40 +117,6 @@ function HomePage() {
               </div>
               <p>{author.work}</p>
               <Link to={`/authors#${author.id}`} className="button button-secondary">
-=======
-      <section style={{ marginBottom: '40px' }}>
-        <h3 style={{ fontFamily: 'var(--font-secondary)', fontSize: '1.8rem', marginBottom: '20px', textAlign: 'center' }}>
-          Auteurs et Œuvres Célèbres
-        </h3>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: '20px' }}>
-          {authors.map((author) => (
-            <div key={author.id} className="card">
-              {author.image_url && (
-                <img 
-                  src={author.image_url} 
-                  alt={author.name} 
-                  style={{ 
-                    width: '100%', 
-                    height: '200px', 
-                    objectFit: 'cover', 
-                    borderRadius: 'var(--border-radius)',
-                    marginBottom: '10px'
-                  }} 
-                  onError={(e) => {
-                    e.target.src = 'https://via.placeholder.com/300x200?text=Portrait+non+disponible';
-                  }}
-                />
-              )}
-              <h4 style={{ marginBottom: '5px' }}>{author.name}</h4>
-              <p style={{ color: 'var(--text-light)', fontSize: '0.9rem', marginBottom: '10px' }}>
-                {author.works[0]?.title || 'Œuvre inconnue'} ({author.works[0]?.year || '???'})
-              </p>
-              <Link 
-                to={`/authors#${author.id}`} 
-                className="button" 
-                style={{ display: 'inline-block', fontSize: '0.9rem', padding: '8px 16px' }}
-              >
->>>>>>> upstream/main
                 Voir la fiche
               </Link>
             </article>
