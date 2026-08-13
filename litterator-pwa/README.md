@@ -11,7 +11,7 @@
 
 ## Pourquoi Littérator ?
 
-Littérator rassemble mouvements, auteurs, œuvres et lieux littéraires dans une interface claire, installable et utilisable comme une application. Le projet met l'accent sur la consultation rapide, la navigation chronologique et la découverte géographique.
+Littérator rassemble mouvements, auteurs, œuvres, notions de glossaire et lieux littéraires dans une interface claire, installable et utilisable comme une application. Le projet met l'accent sur la consultation rapide, la navigation chronologique, les liens directs entre fiches et la découverte géographique.
 
 ## Aperçus
 
@@ -27,21 +27,31 @@ Littérator rassemble mouvements, auteurs, œuvres et lieux littéraires dans un
 
 | Icône | Module | Description |
 | --- | --- | --- |
-| ⏳ | Frise chronologique | Situer mouvements, œuvres, auteurs et événements historiques de 1800 à aujourd'hui. |
-| 🗺️ | Carte littéraire | Explorer les lieux liés aux auteurs, œuvres et mouvements avec Leaflet. |
-| 📚 | Œuvres | Parcourir les œuvres, thèmes, extraits et adaptations. |
-| ✒️ | Auteurs | Consulter biographies, œuvres principales, citations et repères. |
-| 🏛️ | Mouvements | Comprendre les courants littéraires, leurs influences et leurs textes clés. |
-| 📱 | PWA | Installer l'application sur desktop ou mobile, avec données locales précachées. |
+| Chronologie | Frise chronologique | Situer mouvements, œuvres, auteurs et événements historiques avec navigation horizontale, zoom et panneaux détaillés par année. |
+| Carte | Carte littéraire | Explorer les lieux liés aux auteurs, œuvres et mouvements avec Leaflet et un fond CARTO. |
+| Œuvres | Fiches œuvres | Parcourir les œuvres, leurs auteurs, genres, mouvements et visuels. |
+| Auteurs | Fiches biographiques | Consulter biographies, œuvres principales, citations, portraits et lieux biographiques précis. |
+| Mouvements | Fiches mouvements | Comprendre les courants littéraires, leurs influences, auteurs majeurs et œuvres clés en accordéons. |
+| Glossaire | Notions littéraires | Rechercher les termes, procédés, genres, périodes et concepts, avec définitions complétées. |
+| PWA | Application installable | Installer l'application sur desktop ou mobile, avec données locales précachées. |
 
 ## Corpus inclus
 
 | Type | Volume |
 | --- | ---: |
-| Mouvements littéraires | 8 |
-| Auteurs | 8 |
-| Œuvres | 11 |
-| Lieux littéraires | 8 |
+| Mouvements littéraires | 19 |
+| Auteurs de premier plan | 100 |
+| Œuvres de premier plan | 200 |
+| Entrées de glossaire | 224 |
+| Lieux littéraires éditoriaux | 8 |
+| Lieux biographiques géocodés | 117 |
+
+Deux fichiers JSON de travail au niveau racine du dépôt contiennent aussi des corpus de second plan non encore intégrés à l'application :
+
+```text
+Qwen_json_20260813_jdn2gbxvr.json
+Qwen_json_20260813_upkhtc94i.json
+```
 
 ## Stack
 
@@ -120,6 +130,8 @@ public/data/movements.json
 public/data/authors.json
 public/data/works.json
 public/data/locations.json
+public/data/place-coordinates.json
+public/data/glossary.json
 ```
 
 Après modification :
@@ -138,3 +150,23 @@ La direction visuelle utilise une palette éditoriale unique :
 - accent doré discret pour les détails.
 
 Les variables sont centralisées dans `src/styles/global.css`.
+
+## Navigation Profonde
+
+Les fiches supportent les liens directs par hash :
+
+```text
+/authors#lamartine
+/works#meditations-poetiques
+/movements#romantisme
+/timeline#movement-parnasse
+/map#macon-france
+```
+
+Les utilitaires de normalisation et de scroll sont dans `src/utils/`.
+
+## Sources
+
+- Les portraits distants proviennent de Wikimedia Commons via Wikidata.
+- Les lieux biographiques et coordonnées ajoutés proviennent de Wikidata, base structurée liée à Wikipédia.
+- Les attributions connues sont documentées dans `public/images/ATTRIBUTIONS.md`.

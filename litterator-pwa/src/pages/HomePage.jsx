@@ -1,19 +1,19 @@
 import { Link } from 'react-router-dom';
 
 const movements = [
-  { id: 'romantisme', name: 'Romantisme', period: '1820-1850', color: 'var(--romantisme)' },
-  { id: 'realisme', name: 'Réalisme', period: '1850-1880', color: 'var(--realisme)' },
-  { id: 'naturalisme', name: 'Naturalisme', period: '1870-1890', color: 'var(--naturalisme)' },
-  { id: 'symbolisme', name: 'Symbolisme', period: '1880-1900', color: 'var(--symbolisme)' },
-  { id: 'surrealisme', name: 'Surréalisme', period: '1920-1940', color: 'var(--surréalisme)' },
-  { id: 'existentialisme', name: 'Existentialisme', period: '1940-1960', color: 'var(--existentialisme)' },
+  { id: 'romantisme', name: 'Romantisme', period: '1800-1865', color: 'var(--romantisme)' },
+  { id: 'realisme', name: 'Réalisme', period: '1830-1922', color: 'var(--realisme)' },
+  { id: 'modernite', name: 'Modernité', period: '1857-1968', color: '#2563eb' },
+  { id: 'surréalisme', name: 'Surréalisme', period: '1917-1938', color: 'var(--surréalisme)' },
+  { id: 'existentialisme', name: 'Existentialisme', period: '1938-1964', color: 'var(--existentialisme)' },
+  { id: 'contemporain', name: 'Contemporain', period: '1967-2022', color: '#607d8b' },
 ];
 
 const authors = [
-  { id: 'victor_hugo', name: 'Victor Hugo', work: 'Les Misérables', period: '1802-1885' },
-  { id: 'gustave_flaubert', name: 'Gustave Flaubert', work: 'Madame Bovary', period: '1821-1880' },
-  { id: 'emile_zola', name: 'Émile Zola', work: 'Germinal', period: '1840-1902' },
-  { id: 'albert_camus', name: 'Albert Camus', work: "L'Étranger", period: '1913-1960' },
+  { id: 'hugo', name: 'Victor Hugo', work: 'Les Misérables', period: '1802-1885' },
+  { id: 'flaubert', name: 'Gustave Flaubert', work: 'Madame Bovary', period: '1821-1880' },
+  { id: 'zola', name: 'Émile Zola', work: 'Germinal', period: '1840-1902' },
+  { id: 'camus', name: 'Albert Camus', work: "L'Étranger", period: '1913-1960' },
 ];
 
 function HomePage() {
@@ -46,15 +46,15 @@ function HomePage() {
           <div className="stat-list">
             <div className="stat-item">
               <span>Mouvements</span>
-              <span className="stat-number">8</span>
+              <span className="stat-number">19</span>
             </div>
             <div className="stat-item">
               <span>Auteurs</span>
-              <span className="stat-number">8</span>
+              <span className="stat-number">100</span>
             </div>
             <div className="stat-item">
               <span>Œuvres</span>
-              <span className="stat-number">11</span>
+              <span className="stat-number">200</span>
             </div>
             <div className="stat-item">
               <span>Lieux</span>

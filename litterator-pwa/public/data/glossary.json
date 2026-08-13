@@ -1,5 +1,61 @@
 [
   {
+    "id": "academisme",
+    "term": "Académisme",
+    "category": "Mouvement",
+    "definition": "Respect strict des règles, des modèles consacrés et des normes esthétiques reconnues par les institutions.",
+    "example": "L'académisme privilégie souvent la maîtrise formelle, la clarté et l'imitation des œuvres jugées exemplaires.",
+    "relatedTerms": []
+  },
+  {
+    "id": "accumulation",
+    "term": "Accumulation",
+    "category": "Figure de construction",
+    "definition": "Énumération abondante de mots ou de groupes de mots qui produisent un effet d'amplification ou de saturation.",
+    "example": "L'accumulation peut rendre une scène plus intense, plus comique ou plus oppressante.",
+    "relatedTerms": []
+  },
+  {
+    "id": "acrostiche",
+    "term": "Acrostiche",
+    "category": "Forme poétique",
+    "definition": "Poème ou texte dont les premières lettres de chaque vers ou ligne composent un mot ou un message.",
+    "example": "Un acrostiche peut dissimuler un nom propre dans la verticale du poème.",
+    "relatedTerms": []
+  },
+  {
+    "id": "acte",
+    "term": "Acte",
+    "category": "Théâtre",
+    "definition": "Grande division d'une pièce de théâtre, regroupant plusieurs scènes et marquant une étape de l'action.",
+    "example": "Dans le théâtre classique, une tragédie compte souvent cinq actes.",
+    "relatedTerms": []
+  },
+  {
+    "id": "adaptation",
+    "term": "Adaptation",
+    "category": "Réécriture",
+    "definition": "Transformation d'une œuvre pour un autre support, un autre genre, un autre public ou un autre contexte.",
+    "example": "Adapter un roman au cinéma suppose de choisir scènes, points de vue et modes de narration.",
+    "relatedTerms": []
+  },
+  {
+    "id": "adynaton",
+    "term": "Adynaton",
+    "category": "Figure d'exagération",
+    "definition": "Hyperbole extrême qui évoque une impossibilité pour exprimer avec force une idée ou un sentiment.",
+    "example": "Promettre de déplacer les montagnes relève de l'adynaton.",
+    "relatedTerms": []
+  },
+  {
+    "id": "alexandrin",
+    "term": "Alexandrin",
+    "category": "Versification",
+    "definition": "Vers français de douze syllabes, souvent structuré par une césure centrale après la sixième syllabe.",
+    "example": "L'alexandrin domine une grande partie de la poésie et du théâtre classiques.",
+    "relatedTerms": []
+  },
+  {
     "id": "allegorie",
     "term": "Allégorie",
     "category": "Figure de sens",
@@ -14,6 +70,30 @@
       "symbolisme",
       "surréalisme"
     ]
+  },
+  {
+    "id": "alliteration",
+    "term": "Allitération",
+    "category": "Figure de son",
+    "definition": "Répétition d'un même son consonantique dans une suite de mots proches.",
+    "example": "Une allitération en s peut suggérer un souffle, un glissement ou un murmure.",
+    "relatedTerms": []
+  },
+  {
+    "id": "allusion",
+    "term": "Allusion",
+    "category": "Figure de sens",
+    "definition": "Référence indirecte à une personne, une œuvre, un événement ou un mythe que le lecteur doit reconnaître.",
+    "example": "Une allusion à Icare évoque implicitement l'ambition et la chute.",
+    "relatedTerms": []
+  },
+  {
+    "id": "analepse",
+    "term": "Analepse",
+    "category": "Narration",
+    "definition": "Retour en arrière dans l'ordre du récit, qui raconte après coup un événement antérieur au moment principal de l'histoire.",
+    "example": "Une analepse peut expliquer le passé d'un personnage ou éclairer une situation présente.",
+    "relatedTerms": []
   },
   {
     "id": "anaphore",
@@ -41,12 +121,143 @@
       "point-de-vue"
     ],
     "relatedWorks": [
-      "l_etranger"
+      "l-etranger"
     ],
     "relatedMovements": [
       "existentialisme",
       "nouveau_roman"
     ]
+  },
+  {
+    "id": "antillanite",
+    "term": "Antillanité",
+    "category": "Mouvement",
+    "definition": "Courant de pensée et d'écriture qui affirme la spécificité historique, culturelle et linguistique des Antilles.",
+    "example": "Elle met en valeur la mémoire coloniale, le métissage, les langues créoles et les paysages insulaires.",
+    "relatedTerms": []
+  },
+  {
+    "id": "antiphrase",
+    "term": "Antiphrase",
+    "category": "Figure d'ironie",
+    "definition": "Procédé qui consiste à dire le contraire de ce que l'on veut faire comprendre, souvent par ironie.",
+    "example": "Dire quelle réussite devant un échec évident constitue une antiphrase.",
+    "relatedTerms": []
+  },
+  {
+    "id": "antithese",
+    "term": "Antithèse",
+    "category": "Figure d'opposition",
+    "definition": "Rapprochement de deux idées opposées dans une phrase, un vers, un paragraphe ou une scène.",
+    "example": "Elle rend visible un conflit moral, social ou affectif en construisant une opposition nette.",
+    "relatedTerms": [
+      "oxymore",
+      "paradoxe"
+    ]
+  },
+  {
+    "id": "antonomase",
+    "term": "Antonomase",
+    "category": "Figure de substitution",
+    "definition": "Emploi d'un nom propre comme nom commun, ou d'un nom commun comme nom propre, pour désigner une qualité typique.",
+    "example": "Dire un harpagon pour parler d'un avare est une antonomase.",
+    "relatedTerms": []
+  },
+  {
+    "id": "aparte",
+    "term": "Aparté",
+    "category": "Théâtre",
+    "definition": "Réplique qu'un personnage prononce comme pour lui-même ou pour le public, sans être entendu des autres personnages.",
+    "example": "L'aparté crée une complicité avec le spectateur et révèle une intention cachée.",
+    "relatedTerms": []
+  },
+  {
+    "id": "apostrophe",
+    "term": "Apostrophe",
+    "category": "Figure d'énonciation",
+    "definition": "Interpellation directe d'une personne, d'une idée, d'un objet ou d'une entité absente ou présente.",
+    "example": "Ô rage, ô désespoir ouvre une adresse lyrique et dramatique.",
+    "relatedTerms": []
+  },
+  {
+    "id": "art-pour-l-art",
+    "term": "Art pour l'art",
+    "category": "Mouvement",
+    "definition": "Conception selon laquelle l'œuvre d'art vaut par sa beauté propre et ne doit pas être soumise à une utilité morale, politique ou sociale.",
+    "example": "Cette esthétique défend l'autonomie de la création et le travail exigeant de la forme.",
+    "relatedTerms": []
+  },
+  {
+    "id": "assonance",
+    "term": "Assonance",
+    "category": "Figure de son",
+    "definition": "Répétition d'un même son vocalique dans une suite de mots proches.",
+    "example": "Une assonance en an peut installer une résonance ample ou plaintive.",
+    "relatedTerms": []
+  },
+  {
+    "id": "autobiographie",
+    "term": "Autobiographie",
+    "category": "Genre",
+    "definition": "Récit rétrospectif dans lequel un auteur raconte sa propre vie en assumant l'identité entre auteur, narrateur et personnage.",
+    "example": "L'autobiographie repose sur un pacte de sincérité avec le lecteur, même si la mémoire reste reconstruite.",
+    "relatedTerms": []
+  },
+  {
+    "id": "autofiction",
+    "term": "Autofiction",
+    "category": "Genre",
+    "definition": "Récit qui mêle des éléments autobiographiques à des procédés romanesques et brouille la frontière entre vécu et invention.",
+    "example": "Le nom de l'auteur peut apparaître, mais le texte revendique une part de fiction.",
+    "relatedTerms": []
+  },
+  {
+    "id": "avant-garde",
+    "term": "Avant-garde",
+    "category": "Mouvement",
+    "definition": "Ensemble de démarches artistiques qui rompent avec les formes établies et cherchent à ouvrir des voies nouvelles.",
+    "example": "Les avant-gardes expérimentent souvent le langage, la mise en page, le collage ou la provocation.",
+    "relatedTerms": []
+  },
+  {
+    "id": "ballade",
+    "term": "Ballade",
+    "category": "Forme poétique",
+    "definition": "Forme fixe médiévale composée de strophes régulières et d'un envoi, souvent organisée autour d'un refrain.",
+    "example": "La ballade combine contrainte formelle, musicalité et retour d'un même vers.",
+    "relatedTerms": []
+  },
+  {
+    "id": "baroque",
+    "term": "Baroque",
+    "category": "Mouvement",
+    "definition": "Esthétique marquée par le mouvement, l'instabilité, le contraste, l'illusion et la métamorphose.",
+    "example": "Le théâtre du monde, le masque et le changement sont des motifs fréquents de l'imaginaire baroque.",
+    "relatedTerms": []
+  },
+  {
+    "id": "biographie",
+    "term": "Biographie",
+    "category": "Genre",
+    "definition": "Récit de la vie d'une personne écrit par un autre auteur à partir de documents, de témoignages ou d'une enquête.",
+    "example": "Une biographie articule événements personnels, contexte historique et interprétation d'un parcours.",
+    "relatedTerms": []
+  },
+  {
+    "id": "catharsis",
+    "term": "Catharsis",
+    "category": "Théâtre",
+    "definition": "Effet de purification ou de libération des émotions produit par la représentation tragique selon la tradition aristotélicienne.",
+    "example": "La peur et la pitié éprouvées devant la tragédie participent à la catharsis.",
+    "relatedTerms": []
+  },
+  {
+    "id": "cesure",
+    "term": "Césure",
+    "category": "Versification",
+    "definition": "Coupe principale d'un vers, qui organise son rythme et ses groupes de souffle.",
+    "example": "Dans l'alexandrin classique, la césure se place souvent à l'hémistiche.",
+    "relatedTerms": []
   },
   {
     "id": "champ-lexical",
@@ -67,6 +278,224 @@
     ]
   },
   {
+    "id": "chanson-de-geste",
+    "term": "Chanson de geste",
+    "category": "Genre",
+    "definition": "Long poème narratif médiéval célébrant les exploits héroïques de chevaliers ou de figures légendaires.",
+    "example": "La Chanson de Roland appartient à cette tradition épique.",
+    "relatedTerms": []
+  },
+  {
+    "id": "chant-royal",
+    "term": "Chant royal",
+    "category": "Forme poétique",
+    "definition": "Forme fixe ancienne composée de longues strophes et d'un envoi, proche de la ballade mais plus développée.",
+    "example": "Le chant royal exige une grande régularité de rimes, de mètres et de refrain.",
+    "relatedTerms": []
+  },
+  {
+    "id": "chiasme",
+    "term": "Chiasme",
+    "category": "Figure de construction",
+    "definition": "Disposition croisée de deux groupes syntaxiques selon un schéma inversé de type ABBA.",
+    "example": "Il faut manger pour vivre et non vivre pour manger forme un chiasme.",
+    "relatedTerms": []
+  },
+  {
+    "id": "chronique",
+    "term": "Chronique",
+    "category": "Genre",
+    "definition": "Récit d'événements présentés dans leur ordre temporel, souvent lié à une époque, une communauté ou un témoignage.",
+    "example": "Une chronique peut mêler observation historique, commentaire et narration.",
+    "relatedTerms": []
+  },
+  {
+    "id": "classicisme",
+    "term": "Classicisme",
+    "category": "Mouvement",
+    "definition": "Esthétique du XVIIe siècle qui recherche l'ordre, la mesure, la clarté et le respect de règles héritées de l'Antiquité.",
+    "example": "Au théâtre, le classicisme valorise la vraisemblance, la bienséance et l'unité de l'action.",
+    "relatedTerms": []
+  },
+  {
+    "id": "comedie",
+    "term": "Comédie",
+    "category": "Genre",
+    "definition": "Pièce de théâtre qui cherche à faire rire ou sourire en représentant des défauts, des conflits sociaux ou des situations ridicules.",
+    "example": "Chez Molière, la comédie corrige les mœurs par le rire.",
+    "relatedTerms": []
+  },
+  {
+    "id": "comedie-ballet",
+    "term": "Comédie-ballet",
+    "category": "Genre",
+    "definition": "Genre théâtral mêlant comédie parlée, musique et danse dans un même spectacle.",
+    "example": "Molière et Lully ont donné à la comédie-ballet une forme brillante à la cour de Louis XIV.",
+    "relatedTerms": []
+  },
+  {
+    "id": "commentaire-compose",
+    "term": "Commentaire composé",
+    "category": "Analyse",
+    "definition": "Exercice d'analyse littéraire qui organise l'étude d'un texte autour d'axes interprétatifs construits et justifiés.",
+    "example": "Un commentaire composé s'appuie sur des citations précises et des procédés clairement expliqués.",
+    "relatedTerms": []
+  },
+  {
+    "id": "comparaison",
+    "term": "Comparaison",
+    "category": "Figure de sens",
+    "definition": "Rapprochement explicite entre deux réalités au moyen d'un outil de comparaison.",
+    "example": "Elle éclaire une idée par une image plus concrète ou plus frappante.",
+    "relatedTerms": [
+      "metaphore",
+      "symbole"
+    ]
+  },
+  {
+    "id": "composition",
+    "term": "Composition",
+    "category": "Structure",
+    "definition": "Organisation d'ensemble d'une œuvre, d'un passage ou d'un récit selon ses parties, ses mouvements et ses articulations.",
+    "example": "Étudier la composition revient à repérer comment le texte progresse et distribue ses effets.",
+    "relatedTerms": []
+  },
+  {
+    "id": "concession",
+    "term": "Concession",
+    "category": "Procédé argumentatif",
+    "definition": "Procédé qui consiste à accorder provisoirement un point à l'adversaire avant de défendre une thèse différente.",
+    "example": "Certes introduit souvent une concession suivie d'une réfutation.",
+    "relatedTerms": []
+  },
+  {
+    "id": "conte",
+    "term": "Conte",
+    "category": "Genre",
+    "definition": "Récit bref, souvent merveilleux ou symbolique, qui met en scène des épreuves, des personnages typés et une progression simple.",
+    "example": "Le conte peut transmettre une morale, une peur collective ou un imaginaire populaire.",
+    "relatedTerms": []
+  },
+  {
+    "id": "conte-philosophique",
+    "term": "Conte philosophique",
+    "category": "Genre",
+    "definition": "Récit bref qui utilise la fiction, le voyage ou l'ironie pour défendre une réflexion critique ou philosophique.",
+    "example": "Voltaire emploie ce genre pour interroger l'optimisme, l'intolérance ou le pouvoir.",
+    "relatedTerms": []
+  },
+  {
+    "id": "correspondance",
+    "term": "Correspondance",
+    "category": "Genre",
+    "definition": "Ensemble de lettres échangées ou réunies, pouvant former un témoignage, une œuvre littéraire ou une intrigue.",
+    "example": "Dans un roman épistolaire, les lettres construisent directement le récit.",
+    "relatedTerms": []
+  },
+  {
+    "id": "coup-de-theatre",
+    "term": "Coup de théâtre",
+    "category": "Théâtre",
+    "definition": "Événement soudain et imprévu qui renverse la situation dramatique.",
+    "example": "Une révélation d'identité ou un retour inattendu peut produire un coup de théâtre.",
+    "relatedTerms": []
+  },
+  {
+    "id": "coupe",
+    "term": "Coupe",
+    "category": "Versification",
+    "definition": "Pause rythmique secondaire à l'intérieur d'un vers, moins structurante que la césure principale.",
+    "example": "Les coupes contribuent à la vitesse, à l'équilibre ou à la tension d'un vers.",
+    "relatedTerms": []
+  },
+  {
+    "id": "creolite",
+    "term": "Créolité",
+    "category": "Mouvement",
+    "definition": "Mouvement littéraire qui revendique l'identité créole comme réalité multiple, née de rencontres, de ruptures et de métissages.",
+    "example": "La créolité valorise les langues, les imaginaires et les mémoires composites des sociétés créoles.",
+    "relatedTerms": []
+  },
+  {
+    "id": "dadaisme",
+    "term": "Dadaïsme",
+    "category": "Mouvement",
+    "definition": "Mouvement d'avant-garde qui conteste les valeurs artistiques et sociales par le hasard, l'absurde et la provocation.",
+    "example": "Les textes dadaïstes peuvent déconstruire la logique, la syntaxe et l'idée même d'œuvre sérieuse.",
+    "relatedTerms": []
+  },
+  {
+    "id": "decadentisme",
+    "term": "Décadentisme",
+    "category": "Mouvement",
+    "definition": "Sensibilité de la fin du XIXe siècle associée au raffinement, à l'artifice, à la fatigue du monde et au goût des formes rares.",
+    "example": "Elle met souvent en scène des personnages hypersensibles, désenchantés ou attirés par l'excès esthétique.",
+    "relatedTerms": []
+  },
+  {
+    "id": "decasyllabe",
+    "term": "Décasyllabe",
+    "category": "Versification",
+    "definition": "Vers de dix syllabes, très utilisé dans la poésie médiévale et certaines formes lyriques.",
+    "example": "Le décasyllabe peut se couper en groupes de quatre et six syllabes.",
+    "relatedTerms": []
+  },
+  {
+    "id": "deconstruction",
+    "term": "Déconstruction",
+    "category": "Critique",
+    "definition": "Méthode de lecture qui met en évidence les tensions, contradictions et hiérarchies cachées dans un texte ou un discours.",
+    "example": "Une analyse déconstructive interroge ce qu'un texte suppose sans le dire explicitement.",
+    "relatedTerms": []
+  },
+  {
+    "id": "denouement",
+    "term": "Dénouement",
+    "category": "Structure",
+    "definition": "Moment final d'une intrigue où les conflits trouvent une résolution, une catastrophe ou une ouverture interprétative.",
+    "example": "Dans une comédie, le dénouement rétablit souvent un ordre social ou familial.",
+    "relatedTerms": []
+  },
+  {
+    "id": "description",
+    "term": "Description",
+    "category": "Narration",
+    "definition": "Passage qui donne à voir un lieu, un personnage, un objet ou un milieu par une série de détails organisés.",
+    "example": "Dans le roman réaliste, la description renseigne souvent sur la condition sociale et l'époque.",
+    "relatedTerms": [
+      "champ-lexical",
+      "realisme"
+    ],
+    "relatedMovements": [
+      "realisme",
+      "naturalisme"
+    ]
+  },
+  {
+    "id": "didascalie",
+    "term": "Didascalie",
+    "category": "Théâtre",
+    "definition": "Indication scénique donnée par l'auteur concernant les gestes, le ton, le décor, les déplacements ou les silences.",
+    "example": "Les didascalies guident la mise en scène et la lecture de la pièce.",
+    "relatedTerms": []
+  },
+  {
+    "id": "diegese",
+    "term": "Diégèse",
+    "category": "Narration",
+    "definition": "Univers fictionnel dans lequel se déroulent les événements racontés, avec ses lieux, son temps et ses personnages.",
+    "example": "Un élément diégétique appartient au monde de l'histoire et peut être perçu par les personnages.",
+    "relatedTerms": []
+  },
+  {
+    "id": "discours",
+    "term": "Discours",
+    "category": "Genre",
+    "definition": "Texte destiné à être prononcé devant un auditoire pour informer, convaincre, émouvoir ou célébrer.",
+    "example": "Un discours politique ou judiciaire mobilise souvent des procédés rhétoriques.",
+    "relatedTerms": []
+  },
+  {
     "id": "discours-indirect-libre",
     "term": "Discours indirect libre",
     "category": "Narration",
@@ -77,12 +506,205 @@
       "focalisation"
     ],
     "relatedWorks": [
-      "madame_bovary",
-      "l_education_sentimentale"
+      "madame-bovary",
+      "l-education-sentimentale"
     ],
     "relatedMovements": [
       "realisme"
     ]
+  },
+  {
+    "id": "distique",
+    "term": "Distique",
+    "category": "Forme poétique",
+    "definition": "Ensemble de deux vers formant une unité métrique, syntaxique ou sémantique.",
+    "example": "Un distique peut clore une strophe ou condenser une pensée en deux lignes.",
+    "relatedTerms": []
+  },
+  {
+    "id": "duree-narrative",
+    "term": "Durée narrative",
+    "category": "Narration",
+    "definition": "Rapport entre le temps que prennent les événements dans l'histoire et l'espace que le récit leur consacre.",
+    "example": "Une scène ralentit la durée narrative, tandis qu'un sommaire l'accélère.",
+    "relatedTerms": []
+  },
+  {
+    "id": "ecocritique",
+    "term": "Écocritique",
+    "category": "Critique",
+    "definition": "Approche critique qui étudie les relations entre littérature, milieux naturels, crise écologique et représentations du vivant.",
+    "example": "Elle observe la place des paysages, des espèces, des ressources ou des catastrophes dans les textes.",
+    "relatedTerms": []
+  },
+  {
+    "id": "elegie",
+    "term": "Élégie",
+    "category": "Registre",
+    "definition": "Expression poétique de la plainte, du deuil, de la nostalgie ou de la mélancolie.",
+    "example": "Elle associe souvent le souvenir personnel à une méditation sur le temps.",
+    "relatedTerms": [
+      "lyrisme",
+      "registre"
+    ],
+    "relatedMovements": [
+      "romantisme"
+    ]
+  },
+  {
+    "id": "element-declencheur",
+    "term": "Élément déclencheur",
+    "category": "Structure",
+    "definition": "Événement qui rompt l'équilibre initial et lance véritablement l'intrigue.",
+    "example": "Une rencontre, une découverte ou une décision peut jouer le rôle d'élément déclencheur.",
+    "relatedTerms": []
+  },
+  {
+    "id": "ellipse",
+    "term": "Ellipse",
+    "category": "Narration",
+    "definition": "Suppression d'une période de l'histoire dans le récit, signalée ou non au lecteur.",
+    "example": "Une phrase comme quelques années plus tard marque une ellipse temporelle.",
+    "relatedTerms": []
+  },
+  {
+    "id": "enjambement",
+    "term": "Enjambement",
+    "category": "Versification",
+    "definition": "Procédé par lequel une phrase ou un groupe syntaxique se poursuit au-delà de la fin d'un vers.",
+    "example": "L'enjambement crée un effet de débordement, de fluidité ou de surprise.",
+    "relatedTerms": []
+  },
+  {
+    "id": "enonciation",
+    "term": "Énonciation",
+    "category": "Analyse",
+    "definition": "Situation dans laquelle un énoncé est produit, avec un locuteur, un destinataire, un moment, un lieu et une intention.",
+    "example": "Les pronoms, les temps verbaux et les marques d'adresse renseignent sur l'énonciation.",
+    "relatedTerms": []
+  },
+  {
+    "id": "enumeration",
+    "term": "Énumération",
+    "category": "Figure de construction",
+    "definition": "Suite de mots ou de groupes de mots appartenant à une même catégorie ou à une même progression.",
+    "example": "Une énumération peut préciser une description ou renforcer une argumentation.",
+    "relatedTerms": []
+  },
+  {
+    "id": "epanaphore",
+    "term": "Épanaphore",
+    "category": "Figure de répétition",
+    "definition": "Répétition d'un même mot ou groupe de mots au début de plusieurs phrases ou segments successifs.",
+    "example": "L'épanaphore produit une insistance très proche de l'anaphore.",
+    "relatedTerms": []
+  },
+  {
+    "id": "epiphore",
+    "term": "Épiphore",
+    "category": "Figure de répétition",
+    "definition": "Répétition d'un même mot ou groupe de mots à la fin de phrases, de vers ou de propositions successives.",
+    "example": "L'épiphore crée un effet de refrain et de martèlement final.",
+    "relatedTerms": []
+  },
+  {
+    "id": "epopee",
+    "term": "Épopée",
+    "category": "Genre",
+    "definition": "Long récit poétique ou narratif qui célèbre les exploits d'un héros et les valeurs d'une communauté.",
+    "example": "L'épopée agrandit les actions humaines par un style élevé et une dimension collective.",
+    "relatedTerms": []
+  },
+  {
+    "id": "essai",
+    "term": "Essai",
+    "category": "Genre",
+    "definition": "Texte de réflexion libre dans lequel un auteur explore une idée, une expérience ou une question sans prétendre l'épuiser.",
+    "example": "L'essai associe souvent argumentation, subjectivité et culture personnelle.",
+    "relatedTerms": []
+  },
+  {
+    "id": "euphemisme",
+    "term": "Euphémisme",
+    "category": "Figure d'atténuation",
+    "definition": "Expression adoucie d'une réalité jugée brutale, choquante ou pénible.",
+    "example": "Dire il nous a quittés pour évoquer la mort est un euphémisme.",
+    "relatedTerms": []
+  },
+  {
+    "id": "excipit",
+    "term": "Excipit",
+    "category": "Structure",
+    "definition": "Fin d'une œuvre narrative, qui peut fermer l'intrigue, ouvrir une interprétation ou produire un effet de rupture.",
+    "example": "Un excipit peut confirmer le sens du récit ou laisser le lecteur face à une ambiguïté.",
+    "relatedTerms": [
+      "incipit",
+      "narrateur"
+    ]
+  },
+  {
+    "id": "existentialisme",
+    "term": "Existentialisme",
+    "category": "Mouvement",
+    "definition": "Courant philosophique et littéraire qui interroge la liberté, la responsabilité, l'absurde et la construction du sens par l'existence.",
+    "example": "Chez Camus ou Sartre, le personnage est souvent confronté à un monde sans justification évidente.",
+    "relatedTerms": []
+  },
+  {
+    "id": "exposition",
+    "term": "Exposition",
+    "category": "Théâtre",
+    "definition": "Début d'une pièce qui présente les personnages, la situation, les enjeux et les premiers conflits.",
+    "example": "Une exposition efficace informe le spectateur sans arrêter l'action.",
+    "relatedTerms": []
+  },
+  {
+    "id": "expressionnisme",
+    "term": "Expressionnisme",
+    "category": "Mouvement",
+    "definition": "Esthétique qui déforme le réel pour exprimer une intensité intérieure, une angoisse ou une vision subjective du monde.",
+    "example": "L'expressionnisme privilégie les contrastes violents, les images heurtées et les atmosphères de crise.",
+    "relatedTerms": []
+  },
+  {
+    "id": "extreme-contemporain",
+    "term": "Extrême contemporain",
+    "category": "Mouvement",
+    "definition": "Désignation de la littérature la plus récente, encore en cours de constitution et proche du présent historique du lecteur.",
+    "example": "Elle permet d'étudier des œuvres dont la réception critique n'est pas encore stabilisée.",
+    "relatedTerms": []
+  },
+  {
+    "id": "fable",
+    "term": "Fable",
+    "category": "Genre",
+    "definition": "Court récit généralement versifié qui met en scène des personnages humains ou animaux pour délivrer une morale.",
+    "example": "La morale peut être explicite ou laissée à l'interprétation du lecteur.",
+    "relatedTerms": []
+  },
+  {
+    "id": "fabliau",
+    "term": "Fabliau",
+    "category": "Genre",
+    "definition": "Court récit médiéval en vers, souvent comique, satirique et centré sur des situations de tromperie ou de ruse.",
+    "example": "Le fabliau se moque fréquemment des paysans, des clercs, des maris ou des puissants.",
+    "relatedTerms": []
+  },
+  {
+    "id": "farce",
+    "term": "Farce",
+    "category": "Genre",
+    "definition": "Courte pièce comique fondée sur des situations simples, des coups, des tromperies et un rire souvent populaire.",
+    "example": "La farce privilégie l'efficacité scénique et le renversement des rôles.",
+    "relatedTerms": []
+  },
+  {
+    "id": "feminisme-litteraire",
+    "term": "Féminisme littéraire",
+    "category": "Critique",
+    "definition": "Approche qui analyse la représentation des femmes, les rapports de genre et la place des autrices dans l'histoire littéraire.",
+    "example": "Elle peut interroger les stéréotypes, les voix minorées et les formes d'émancipation dans les textes.",
+    "relatedTerms": []
   },
   {
     "id": "focalisation",
@@ -101,6 +723,142 @@
     ]
   },
   {
+    "id": "focalisation-externe",
+    "term": "Focalisation externe",
+    "category": "Narration",
+    "definition": "Point de vue limité aux gestes, paroles et apparences observables, sans accès direct aux pensées des personnages.",
+    "example": "La focalisation externe donne parfois au récit une allure objective ou énigmatique.",
+    "relatedTerms": []
+  },
+  {
+    "id": "focalisation-interne",
+    "term": "Focalisation interne",
+    "category": "Narration",
+    "definition": "Point de vue qui limite l'information à ce que perçoit, sait ou ressent un personnage.",
+    "example": "Le lecteur découvre alors les événements à travers la conscience d'un personnage.",
+    "relatedTerms": []
+  },
+  {
+    "id": "focalisation-zero",
+    "term": "Focalisation zéro",
+    "category": "Narration",
+    "definition": "Point de vue d'un narrateur qui en sait plus que les personnages et peut accéder à plusieurs pensées, lieux ou époques.",
+    "example": "On parle souvent de narrateur omniscient pour désigner ce type de savoir narratif.",
+    "relatedTerms": []
+  },
+  {
+    "id": "formalisme",
+    "term": "Formalisme",
+    "category": "Critique",
+    "definition": "Approche qui privilégie l'étude des formes, des procédés, de la structure et du fonctionnement interne des textes.",
+    "example": "Une lecture formaliste examine par exemple la composition, les répétitions, les rythmes et les écarts de langue.",
+    "relatedTerms": []
+  },
+  {
+    "id": "forme-fixe",
+    "term": "Forme fixe",
+    "category": "Forme poétique",
+    "definition": "Forme poétique réglée par une organisation précise des strophes, des rimes, des mètres et parfois des refrains.",
+    "example": "Le sonnet, la ballade et le rondeau sont des formes fixes.",
+    "relatedTerms": []
+  },
+  {
+    "id": "frequence-narrative",
+    "term": "Fréquence narrative",
+    "category": "Narration",
+    "definition": "Rapport entre le nombre de fois où un événement se produit dans l'histoire et le nombre de fois où il est raconté.",
+    "example": "Un récit peut raconter une seule fois ce qui s'est répété de nombreuses fois.",
+    "relatedTerms": []
+  },
+  {
+    "id": "gradation",
+    "term": "Gradation",
+    "category": "Figure d'amplification",
+    "definition": "Suite de termes ordonnés selon une progression croissante ou décroissante d'intensité.",
+    "example": "Je marche, je cours, je vole construit une gradation ascendante.",
+    "relatedTerms": []
+  },
+  {
+    "id": "haiku",
+    "term": "Haïku",
+    "category": "Forme poétique",
+    "definition": "Poème bref d'origine japonaise, souvent lié à une perception fugitive de la nature ou du temps.",
+    "example": "Le haïku saisit un instant avec économie et intensité.",
+    "relatedTerms": []
+  },
+  {
+    "id": "hermeneutique",
+    "term": "Herméneutique",
+    "category": "Critique",
+    "definition": "Art et théorie de l'interprétation des textes, attentive aux sens possibles et à leurs conditions de compréhension.",
+    "example": "L'herméneutique interroge la manière dont un lecteur construit du sens à partir d'une œuvre.",
+    "relatedTerms": []
+  },
+  {
+    "id": "hexametre",
+    "term": "Hexamètre",
+    "category": "Versification",
+    "definition": "Vers antique composé de six mesures, associé notamment à l'épopée grecque et latine.",
+    "example": "L'hexamètre dactylique est le mètre traditionnel de l'Iliade et de l'Énéide.",
+    "relatedTerms": []
+  },
+  {
+    "id": "histoire",
+    "term": "Histoire",
+    "category": "Narration",
+    "definition": "Suite chronologique des événements tels qu'ils seraient ordonnés dans l'univers raconté.",
+    "example": "L'histoire se distingue du récit, qui choisit un ordre et une manière de raconter.",
+    "relatedTerms": []
+  },
+  {
+    "id": "huis-clos",
+    "term": "Huis clos",
+    "category": "Théâtre",
+    "definition": "Situation dramatique dans laquelle les personnages sont enfermés dans un lieu dont ils ne peuvent sortir.",
+    "example": "Le huis clos intensifie les conflits et rend les rapports de force plus visibles.",
+    "relatedTerms": []
+  },
+  {
+    "id": "humanisme",
+    "term": "Humanisme",
+    "category": "Mouvement",
+    "definition": "Mouvement de la Renaissance qui place l'être humain, l'éducation, les savoirs antiques et l'esprit critique au centre de la réflexion.",
+    "example": "L'humanisme défend la formation du jugement par la lecture, le dialogue et la curiosité intellectuelle.",
+    "relatedTerms": []
+  },
+  {
+    "id": "hymne",
+    "term": "Hymne",
+    "category": "Forme poétique",
+    "definition": "Poème ou chant de célébration adressé à une divinité, une idée, une personne ou une communauté.",
+    "example": "Un hymne adopte souvent un ton élevé et collectif.",
+    "relatedTerms": []
+  },
+  {
+    "id": "hyperbate",
+    "term": "Hyperbate",
+    "category": "Figure de construction",
+    "definition": "Ajout ou déplacement d'un élément qui prolonge une phrase alors qu'elle semblait achevée.",
+    "example": "L'hyperbate crée un effet de surprise, de relance ou d'insistance finale.",
+    "relatedTerms": []
+  },
+  {
+    "id": "hyperbole",
+    "term": "Hyperbole",
+    "category": "Figure d'exagération",
+    "definition": "Exagération volontaire qui amplifie une réalité pour produire un effet expressif.",
+    "example": "Dire mourir de rire relève de l'hyperbole.",
+    "relatedTerms": []
+  },
+  {
+    "id": "hypotypose",
+    "term": "Hypotypose",
+    "category": "Figure de description",
+    "definition": "Description si vive et détaillée qu'elle donne l'impression de faire voir la scène au lecteur.",
+    "example": "Une bataille racontée au présent avec des détails sensoriels peut devenir une hypotypose.",
+    "relatedTerms": []
+  },
+  {
     "id": "incipit",
     "term": "Incipit",
     "category": "Structure",
@@ -111,8 +869,8 @@
       "narrateur"
     ],
     "relatedWorks": [
-      "madame_bovary",
-      "l_etranger"
+      "madame-bovary",
+      "l-etranger"
     ]
   },
   {
@@ -128,8 +886,104 @@
     ],
     "relatedMovements": [
       "surréalisme",
-      "litterature_contemporaine"
+      "contemporain"
     ]
+  },
+  {
+    "id": "intrigue",
+    "term": "Intrigue",
+    "category": "Structure",
+    "definition": "Enchaînement organisé des événements, tensions et actions qui font progresser un récit ou une pièce.",
+    "example": "Une intrigue repose souvent sur un conflit, des obstacles et des retournements.",
+    "relatedTerms": []
+  },
+  {
+    "id": "inversion",
+    "term": "Inversion",
+    "category": "Figure de construction",
+    "definition": "Modification de l'ordre habituel des mots dans une phrase, souvent pour créer un effet de rythme ou de mise en valeur.",
+    "example": "En poésie, l'inversion peut aider la mesure du vers ou accentuer un mot.",
+    "relatedTerms": []
+  },
+  {
+    "id": "ironie",
+    "term": "Ironie",
+    "category": "Figure d'ironie",
+    "definition": "Procédé qui fait entendre un sens différent, souvent contraire, de ce qui est explicitement dit.",
+    "example": "L'ironie suppose un décalage que le lecteur doit reconnaître.",
+    "relatedTerms": []
+  },
+  {
+    "id": "journal-intime",
+    "term": "Journal intime",
+    "category": "Genre",
+    "definition": "Écriture personnelle tenue au fil des jours, où un sujet note ses pensées, événements et impressions.",
+    "example": "Le journal intime donne accès à une conscience en train de se construire dans le temps.",
+    "relatedTerms": []
+  },
+  {
+    "id": "lai",
+    "term": "Lai",
+    "category": "Genre",
+    "definition": "Court récit médiéval en vers, souvent lié à l'amour courtois, au merveilleux et à l'aventure.",
+    "example": "Les lais de Marie de France associent brièveté narrative et intensité symbolique.",
+    "relatedTerms": []
+  },
+  {
+    "id": "lecture-analytique",
+    "term": "Lecture analytique",
+    "category": "Analyse",
+    "definition": "Lecture détaillée d'un passage qui met en relation observations de langue, procédés et interprétation globale.",
+    "example": "Elle avance du repérage précis vers une compréhension organisée des enjeux du texte.",
+    "relatedTerms": []
+  },
+  {
+    "id": "lettrisme",
+    "term": "Lettrisme",
+    "category": "Mouvement",
+    "definition": "Avant-garde poétique qui prend la lettre, le son et la matérialité du langage comme éléments premiers de création.",
+    "example": "Un poème lettriste peut privilégier les signes et les sons plutôt que le sens immédiatement lisible.",
+    "relatedTerms": []
+  },
+  {
+    "id": "litote",
+    "term": "Litote",
+    "category": "Figure d'atténuation",
+    "definition": "Expression atténuée qui suggère plus qu'elle ne dit, souvent par négation du contraire.",
+    "example": "Dire ce n'est pas mauvais peut signifier que c'est très bon.",
+    "relatedTerms": []
+  },
+  {
+    "id": "litterature-engagee",
+    "term": "Littérature engagée",
+    "category": "Mouvement",
+    "definition": "Littérature qui prend position dans les débats politiques, sociaux ou moraux de son temps.",
+    "example": "Un texte engagé cherche souvent à dénoncer une injustice ou à transformer le regard du lecteur.",
+    "relatedTerms": []
+  },
+  {
+    "id": "litterature-numerique",
+    "term": "Littérature numérique",
+    "category": "Mouvement",
+    "definition": "Création littéraire conçue pour des supports numériques et utilisant parfois l'hypertexte, l'interactivité ou le code.",
+    "example": "Elle peut proposer une lecture non linéaire, animée ou dépendante des choix du lecteur.",
+    "relatedTerms": []
+  },
+  {
+    "id": "litterature-potentielle",
+    "term": "Littérature potentielle",
+    "category": "Mouvement",
+    "definition": "Conception de l'écriture fondée sur des contraintes formelles capables de produire de nouvelles possibilités littéraires.",
+    "example": "Les jeux combinatoires de l'Oulipo relèvent de cette recherche de formes potentielles.",
+    "relatedTerms": []
+  },
+  {
+    "id": "lumieres",
+    "term": "Lumières",
+    "category": "Mouvement",
+    "definition": "Mouvement intellectuel du XVIIIe siècle qui valorise la raison, la critique des préjugés, le progrès et la liberté de pensée.",
+    "example": "Le conte philosophique et l'essai servent souvent à contester l'intolérance ou l'absolutisme.",
+    "relatedTerms": []
   },
   {
     "id": "lyrisme",
@@ -142,12 +996,44 @@
       "elegie"
     ],
     "relatedWorks": [
-      "les_fleurs_du_mal"
+      "les-fleurs-du-mal"
     ],
     "relatedMovements": [
       "romantisme",
       "symbolisme"
     ]
+  },
+  {
+    "id": "madrigal",
+    "term": "Madrigal",
+    "category": "Forme poétique",
+    "definition": "Court poème galant ou spirituel, généralement destiné à exprimer un compliment amoureux avec finesse.",
+    "example": "Le madrigal recherche l'élégance de la pointe et la délicatesse de l'adresse.",
+    "relatedTerms": []
+  },
+  {
+    "id": "maxime",
+    "term": "Maxime",
+    "category": "Genre",
+    "definition": "Formule brève qui énonce une vérité générale sur la conduite humaine, souvent avec esprit et densité.",
+    "example": "La maxime condense une observation morale en une phrase mémorable.",
+    "relatedTerms": []
+  },
+  {
+    "id": "melodrame",
+    "term": "Mélodrame",
+    "category": "Genre",
+    "definition": "Genre dramatique qui oppose fortement bons et méchants et recherche une émotion intense par des situations pathétiques.",
+    "example": "Le mélodrame accentue les périls, les reconnaissances et les retournements spectaculaires.",
+    "relatedTerms": []
+  },
+  {
+    "id": "memoires",
+    "term": "Mémoires",
+    "category": "Genre",
+    "definition": "Récit rétrospectif dans lequel un auteur témoigne de sa vie en insistant sur les événements historiques ou publics auxquels il a participé.",
+    "example": "Les mémoires mêlent expérience personnelle, regard politique et justification de soi.",
+    "relatedTerms": []
   },
   {
     "id": "metaphore",
@@ -166,6 +1052,30 @@
     ]
   },
   {
+    "id": "metaphore-filee",
+    "term": "Métaphore filée",
+    "category": "Figure de sens",
+    "definition": "Métaphore développée sur plusieurs mots, phrases ou passages grâce à un même réseau d'images.",
+    "example": "Comparer durablement la vie à un voyage construit une métaphore filée.",
+    "relatedTerms": []
+  },
+  {
+    "id": "metonymie",
+    "term": "Métonymie",
+    "category": "Figure de substitution",
+    "definition": "Désignation d'une réalité par une autre qui lui est liée par un rapport logique, matériel ou culturel.",
+    "example": "Boire un verre désigne le contenu par le contenant.",
+    "relatedTerms": []
+  },
+  {
+    "id": "metre",
+    "term": "Mètre",
+    "category": "Versification",
+    "definition": "Mesure d'un vers selon le nombre de syllabes ou, dans d'autres traditions, selon l'organisation des longues et des brèves.",
+    "example": "Identifier le mètre aide à comprendre le rythme d'un poème.",
+    "relatedTerms": []
+  },
+  {
     "id": "mise-en-abyme",
     "term": "Mise en abyme",
     "category": "Structure",
@@ -177,8 +1087,32 @@
     ],
     "relatedMovements": [
       "nouveau_roman",
-      "litterature_contemporaine"
+      "contemporain"
     ]
+  },
+  {
+    "id": "modernisme",
+    "term": "Modernisme",
+    "category": "Mouvement",
+    "definition": "Ensemble de ruptures esthétiques qui renouvellent les formes littéraires face aux transformations du monde moderne.",
+    "example": "Le modernisme expérimente la fragmentation, la subjectivité et de nouvelles représentations du temps.",
+    "relatedTerms": []
+  },
+  {
+    "id": "monologue",
+    "term": "Monologue",
+    "category": "Théâtre",
+    "definition": "Longue réplique prononcée par un personnage seul ou se croyant seul, qui expose ses pensées ou ses émotions.",
+    "example": "Le monologue permet d'entendre un dilemme intérieur ou une décision en train de naître.",
+    "relatedTerms": []
+  },
+  {
+    "id": "narrataire",
+    "term": "Narrataire",
+    "category": "Narration",
+    "definition": "Destinataire interne auquel le narrateur semble adresser son récit, explicitement ou implicitement.",
+    "example": "Un narrataire peut être nommé dans le texte ou seulement suggéré par les marques d'adresse.",
+    "relatedTerms": []
   },
   {
     "id": "narrateur",
@@ -191,6 +1125,126 @@
       "point-de-vue",
       "discours-indirect-libre"
     ]
+  },
+  {
+    "id": "narrateur-omniscient",
+    "term": "Narrateur omniscient",
+    "category": "Narration",
+    "definition": "Narrateur qui semble tout savoir des personnages, de leurs pensées, du passé, de l'avenir et des lieux du récit.",
+    "example": "Ce narrateur peut commenter l'action et circuler librement dans l'univers fictionnel.",
+    "relatedTerms": []
+  },
+  {
+    "id": "narration",
+    "term": "Narration",
+    "category": "Narration",
+    "definition": "Acte de raconter une histoire, ainsi que l'ensemble des choix de voix, d'ordre, de rythme et de point de vue qui l'organisent.",
+    "example": "Analyser la narration suppose d'étudier qui raconte, quand, comment et avec quel savoir.",
+    "relatedTerms": []
+  },
+  {
+    "id": "narratologie",
+    "term": "Narratologie",
+    "category": "Critique",
+    "definition": "Étude des structures du récit, de la narration, des points de vue, du temps et des fonctions narratives.",
+    "example": "La narratologie distingue notamment histoire, récit et narration.",
+    "relatedTerms": []
+  },
+  {
+    "id": "naturalisme",
+    "term": "Naturalisme",
+    "category": "Mouvement",
+    "definition": "Prolongement du réalisme qui cherche à étudier les personnages sous l'influence du milieu, de l'hérédité et des conditions sociales.",
+    "example": "Chez Zola, le roman observe les mécanismes sociaux comme une enquête sur le réel.",
+    "relatedTerms": []
+  },
+  {
+    "id": "negritude",
+    "term": "Négritude",
+    "category": "Mouvement",
+    "definition": "Mouvement littéraire et politique qui affirme la dignité, la mémoire et les cultures des peuples noirs face au colonialisme.",
+    "example": "La négritude réinvestit la langue poétique pour célébrer une identité longtemps dévalorisée.",
+    "relatedTerms": []
+  },
+  {
+    "id": "neo-classicisme",
+    "term": "Néo-classicisme",
+    "category": "Mouvement",
+    "definition": "Retour à des modèles antiques ou classiques, associé à la recherche de mesure, de clarté et d'équilibre.",
+    "example": "Il peut apparaître comme réaction à des formes jugées trop libres ou trop excessives.",
+    "relatedTerms": []
+  },
+  {
+    "id": "neo-romantisme",
+    "term": "Néo-romantisme",
+    "category": "Mouvement",
+    "definition": "Reprise moderne de motifs romantiques comme l'élan subjectif, le rêve, la mélancolie ou le désir d'absolu.",
+    "example": "Le néo-romantisme réactive l'expression du moi dans un contexte esthétique plus tardif.",
+    "relatedTerms": []
+  },
+  {
+    "id": "noeud",
+    "term": "Nœud",
+    "category": "Structure",
+    "definition": "Moment ou ensemble de complications où le conflit principal atteint une tension forte avant sa résolution.",
+    "example": "Au théâtre, le nœud concentre les obstacles qui empêchent le dénouement.",
+    "relatedTerms": []
+  },
+  {
+    "id": "nouveau-roman",
+    "term": "Nouveau Roman",
+    "category": "Mouvement",
+    "definition": "Courant romanesque du XXe siècle qui remet en cause l'intrigue traditionnelle, le personnage psychologique et la narration linéaire.",
+    "example": "Il accorde souvent une place centrale aux objets, aux perceptions et aux structures du récit.",
+    "relatedTerms": []
+  },
+  {
+    "id": "nouvelle",
+    "term": "Nouvelle",
+    "category": "Genre",
+    "definition": "Récit bref en prose, centré sur une intrigue resserrée, peu de personnages et souvent une chute marquante.",
+    "example": "La nouvelle concentre ses effets pour produire une impression rapide et forte.",
+    "relatedTerms": []
+  },
+  {
+    "id": "octosyllabe",
+    "term": "Octosyllabe",
+    "category": "Versification",
+    "definition": "Vers de huit syllabes, fréquent dans la poésie narrative, lyrique et théâtrale.",
+    "example": "Sa brièveté donne souvent au vers une allure vive et souple.",
+    "relatedTerms": []
+  },
+  {
+    "id": "ode",
+    "term": "Ode",
+    "category": "Genre",
+    "definition": "Poème lyrique de ton élevé, destiné à célébrer une personne, une idée, un événement ou une puissance.",
+    "example": "Une ode peut chanter la liberté, l'amour, la nature ou la gloire.",
+    "relatedTerms": []
+  },
+  {
+    "id": "onomatopee",
+    "term": "Onomatopée",
+    "category": "Figure de son",
+    "definition": "Mot qui imite ou évoque directement un bruit.",
+    "example": "Boum, tic-tac ou crac sont des onomatopées.",
+    "relatedTerms": []
+  },
+  {
+    "id": "ordre-narratif",
+    "term": "Ordre narratif",
+    "category": "Narration",
+    "definition": "Organisation temporelle des événements dans le récit par rapport à leur chronologie dans l'histoire.",
+    "example": "Les analepses et les prolepses modifient l'ordre narratif.",
+    "relatedTerms": []
+  },
+  {
+    "id": "oulipo",
+    "term": "Oulipo",
+    "category": "Mouvement",
+    "definition": "Groupe littéraire qui explore les contraintes formelles, mathématiques ou linguistiques comme moteurs de création.",
+    "example": "Écrire un roman sans une lettre donnée est un exemple de contrainte oulipienne.",
+    "relatedTerms": []
   },
   {
     "id": "oxymore",
@@ -208,144 +1262,20 @@
     ]
   },
   {
-    "id": "parodie",
-    "term": "Parodie",
-    "category": "Réécriture",
-    "definition": "Imitation détournée d'un texte, d'un genre ou d'un style, souvent dans une intention critique ou comique.",
-    "example": "La parodie révèle les codes d'un modèle en les exagérant ou en les déplaçant.",
-    "relatedTerms": [
-      "intertextualite",
-      "pastiche",
-      "reecriture"
-    ]
+    "id": "pamphlet",
+    "term": "Pamphlet",
+    "category": "Genre",
+    "definition": "Texte polémique court et virulent qui attaque une personne, une institution, une idée ou une situation.",
+    "example": "Le pamphlet emploie volontiers l'ironie, l'invective et l'exagération.",
+    "relatedTerms": []
   },
   {
-    "id": "pathétique",
-    "term": "Pathétique",
-    "category": "Registre",
-    "definition": "Registre qui cherche à émouvoir le lecteur par la souffrance, la fragilité ou l'injustice subie par un personnage.",
-    "example": "Les scènes de misère sociale dans Les Misérables mobilisent souvent des effets pathétiques.",
-    "relatedTerms": [
-      "registre",
-      "tragique"
-    ],
-    "relatedWorks": [
-      "les_miserables"
-    ],
-    "relatedMovements": [
-      "romantisme",
-      "realisme"
-    ]
-  },
-  {
-    "id": "realisme",
-    "term": "Réalisme",
-    "category": "Mouvement",
-    "definition": "Esthétique qui vise à représenter la société, les milieux, les gestes et les contraintes matérielles avec précision.",
-    "example": "Le roman réaliste observe les rapports sociaux, l'argent, les ambitions et les limites d'une époque.",
-    "relatedTerms": [
-      "description",
-      "discours-indirect-libre",
-      "champ-lexical"
-    ],
-    "relatedWorks": [
-      "madame_bovary",
-      "l_education_sentimentale"
-    ],
-    "relatedMovements": [
-      "realisme"
-    ]
-  },
-  {
-    "id": "registre",
-    "term": "Registre",
-    "category": "Analyse",
-    "definition": "Effet dominant produit par un texte sur le lecteur: comique, tragique, pathétique, lyrique, polémique ou fantastique.",
-    "example": "Identifier un registre suppose d'observer le vocabulaire, les images, la situation et le rythme du passage.",
-    "relatedTerms": [
-      "lyrisme",
-      "pathétique",
-      "tragique"
-    ]
-  },
-  {
-    "id": "symbole",
-    "term": "Symbole",
-    "category": "Figure de sens",
-    "definition": "Élément concret qui renvoie à une signification plus large, souvent suggérée plutôt qu'expliquée.",
-    "example": "Chez les symbolistes, l'image poétique invite à dépasser le sens immédiat pour atteindre une réalité intérieure ou spirituelle.",
-    "relatedTerms": [
-      "allegorie",
-      "metaphore"
-    ],
-    "relatedWorks": [
-      "les_fleurs_du_mal"
-    ],
-    "relatedMovements": [
-      "symbolisme"
-    ]
-  },
-  {
-    "id": "antithese",
-    "term": "Antithèse",
-    "category": "Figure d'opposition",
-    "definition": "Rapprochement de deux idées opposées dans une phrase, un vers, un paragraphe ou une scène.",
-    "example": "Elle rend visible un conflit moral, social ou affectif en construisant une opposition nette.",
-    "relatedTerms": [
-      "oxymore",
-      "paradoxe"
-    ]
-  },
-  {
-    "id": "comparaison",
-    "term": "Comparaison",
-    "category": "Figure de sens",
-    "definition": "Rapprochement explicite entre deux réalités au moyen d'un outil de comparaison.",
-    "example": "Elle éclaire une idée par une image plus concrète ou plus frappante.",
-    "relatedTerms": [
-      "metaphore",
-      "symbole"
-    ]
-  },
-  {
-    "id": "description",
-    "term": "Description",
-    "category": "Narration",
-    "definition": "Passage qui donne à voir un lieu, un personnage, un objet ou un milieu par une série de détails organisés.",
-    "example": "Dans le roman réaliste, la description renseigne souvent sur la condition sociale et l'époque.",
-    "relatedTerms": [
-      "champ-lexical",
-      "realisme"
-    ],
-    "relatedMovements": [
-      "realisme",
-      "naturalisme"
-    ]
-  },
-  {
-    "id": "elegie",
-    "term": "Élégie",
-    "category": "Registre",
-    "definition": "Expression poétique de la plainte, du deuil, de la nostalgie ou de la mélancolie.",
-    "example": "Elle associe souvent le souvenir personnel à une méditation sur le temps.",
-    "relatedTerms": [
-      "lyrisme",
-      "registre"
-    ],
-    "relatedMovements": [
-      "romantisme"
-    ]
-  },
-  {
-    "id": "excipit",
-    "term": "Excipit",
-    "category": "Structure",
-    "definition": "Fin d'une œuvre narrative, qui peut fermer l'intrigue, ouvrir une interprétation ou produire un effet de rupture.",
-    "example": "Un excipit peut confirmer le sens du récit ou laisser le lecteur face à une ambiguïté.",
-    "relatedTerms": [
-      "incipit",
-      "narrateur"
-    ]
+    "id": "parabole",
+    "term": "Parabole",
+    "category": "Genre",
+    "definition": "Récit bref et imagé qui transmet une leçon morale, spirituelle ou philosophique par une situation concrète.",
+    "example": "La parabole invite le lecteur à interpréter le sens au-delà de l'histoire racontée.",
+    "relatedTerms": []
   },
   {
     "id": "paradoxe",
@@ -370,6 +1300,34 @@
     ]
   },
   {
+    "id": "paratexte",
+    "term": "Paratexte",
+    "category": "Analyse",
+    "definition": "Ensemble des éléments qui entourent le texte principal et orientent sa lecture: titre, préface, notes, couverture ou dédicace.",
+    "example": "Un titre ou une préface peut créer des attentes avant même le début du récit.",
+    "relatedTerms": []
+  },
+  {
+    "id": "parnasse",
+    "term": "Parnasse",
+    "category": "Mouvement",
+    "definition": "Mouvement poétique du XIXe siècle qui valorise l'impersonnalité, la perfection formelle et la beauté maîtrisée.",
+    "example": "Le poète parnassien travaille le vers comme un objet précis, souvent détaché de l'effusion personnelle.",
+    "relatedTerms": []
+  },
+  {
+    "id": "parodie",
+    "term": "Parodie",
+    "category": "Réécriture",
+    "definition": "Imitation détournée d'un texte, d'un genre ou d'un style, souvent dans une intention critique ou comique.",
+    "example": "La parodie révèle les codes d'un modèle en les exagérant ou en les déplaçant.",
+    "relatedTerms": [
+      "intertextualite",
+      "pastiche",
+      "reecriture"
+    ]
+  },
+  {
     "id": "pastiche",
     "term": "Pastiche",
     "category": "Réécriture",
@@ -379,6 +1337,64 @@
       "parodie",
       "intertextualite"
     ]
+  },
+  {
+    "id": "pathétique",
+    "term": "Pathétique",
+    "category": "Registre",
+    "definition": "Registre qui cherche à émouvoir le lecteur par la souffrance, la fragilité ou l'injustice subie par un personnage.",
+    "example": "Les scènes de misère sociale dans Les Misérables mobilisent souvent des effets pathétiques.",
+    "relatedTerms": [
+      "registre",
+      "tragique"
+    ],
+    "relatedWorks": [
+      "les-miserables"
+    ],
+    "relatedMovements": [
+      "romantisme",
+      "realisme"
+    ]
+  },
+  {
+    "id": "pause",
+    "term": "Pause",
+    "category": "Narration",
+    "definition": "Moment où la progression des événements s'interrompt au profit d'une description, d'un commentaire ou d'une réflexion.",
+    "example": "Une pause descriptive ralentit le récit et attire l'attention sur un lieu ou un personnage.",
+    "relatedTerms": []
+  },
+  {
+    "id": "pensee",
+    "term": "Pensée",
+    "category": "Genre",
+    "definition": "Fragment bref de réflexion morale, philosophique ou spirituelle, souvent autonome et dense.",
+    "example": "Une pensée peut saisir une intuition en quelques lignes plutôt que développer un raisonnement complet.",
+    "relatedTerms": []
+  },
+  {
+    "id": "peripetie",
+    "term": "Péripétie",
+    "category": "Structure",
+    "definition": "Événement imprévu qui modifie la situation et relance l'action.",
+    "example": "Une péripétie peut aggraver un conflit, déplacer un objectif ou révéler une information décisive.",
+    "relatedTerms": []
+  },
+  {
+    "id": "periphrase",
+    "term": "Périphrase",
+    "category": "Figure de substitution",
+    "definition": "Expression détournée et plus longue qui remplace un mot simple en soulignant une caractéristique.",
+    "example": "La capitale de la France est une périphrase pour Paris.",
+    "relatedTerms": []
+  },
+  {
+    "id": "personnage",
+    "term": "Personnage",
+    "category": "Narration",
+    "definition": "Être fictif ou représenté qui participe à l'action, porte des valeurs et permet au lecteur d'entrer dans l'univers de l'œuvre.",
+    "example": "Un personnage se construit par ses actes, ses paroles, son portrait et le regard des autres.",
+    "relatedTerms": []
   },
   {
     "id": "personnification",
@@ -392,6 +1408,46 @@
     ]
   },
   {
+    "id": "plaidoyer",
+    "term": "Plaidoyer",
+    "category": "Genre",
+    "definition": "Discours ou texte argumentatif qui défend une personne, une cause ou une thèse devant un public réel ou symbolique.",
+    "example": "Un plaidoyer mobilise preuves, émotions et valeurs pour obtenir l'adhésion.",
+    "relatedTerms": []
+  },
+  {
+    "id": "pleonasme",
+    "term": "Pléonasme",
+    "category": "Figure d'insistance",
+    "definition": "Redondance volontaire ou involontaire dans laquelle une idée est exprimée deux fois.",
+    "example": "Je l'ai vu de mes yeux est un pléonasme d'insistance.",
+    "relatedTerms": []
+  },
+  {
+    "id": "poeme",
+    "term": "Poème",
+    "category": "Genre",
+    "definition": "Texte littéraire qui travaille la langue par le rythme, les images, les sons et la disposition, en vers ou en prose.",
+    "example": "Un poème peut raconter, méditer, célébrer ou faire entendre une voix singulière.",
+    "relatedTerms": []
+  },
+  {
+    "id": "poeme-en-prose",
+    "term": "Poème en prose",
+    "category": "Forme poétique",
+    "definition": "Texte poétique écrit sans vers réguliers, mais travaillé par le rythme, les images et la densité de la langue.",
+    "example": "Le poème en prose emprunte à la prose sa continuité et à la poésie son intensité.",
+    "relatedTerms": []
+  },
+  {
+    "id": "poetique",
+    "term": "Poétique",
+    "category": "Critique",
+    "definition": "Étude des formes, des genres et des principes qui organisent la création littéraire.",
+    "example": "La poétique cherche à comprendre comment une œuvre produit ses effets par ses choix de forme.",
+    "relatedTerms": []
+  },
+  {
     "id": "point-de-vue",
     "term": "Point de vue",
     "category": "Narration",
@@ -401,6 +1457,145 @@
       "focalisation",
       "narrateur"
     ]
+  },
+  {
+    "id": "polysyndete",
+    "term": "Polysyndète",
+    "category": "Figure de construction",
+    "definition": "Répétition volontaire de conjonctions de coordination là où elles pourraient être omises.",
+    "example": "La polysyndète ralentit le rythme et donne du poids à chaque élément.",
+    "relatedTerms": []
+  },
+  {
+    "id": "portrait",
+    "term": "Portrait",
+    "category": "Genre",
+    "definition": "Description organisée d'une personne, portant sur son apparence, son caractère, ses gestes ou sa place sociale.",
+    "example": "Le portrait peut être réaliste, satirique, élogieux ou moral.",
+    "relatedTerms": []
+  },
+  {
+    "id": "post-structuralisme",
+    "term": "Post-structuralisme",
+    "category": "Critique",
+    "definition": "Courant critique qui prolonge et conteste le structuralisme en insistant sur l'instabilité du sens et des systèmes de signes.",
+    "example": "Il invite à lire les textes comme des espaces de tensions plutôt que comme des structures closes.",
+    "relatedTerms": []
+  },
+  {
+    "id": "postcolonialisme",
+    "term": "Postcolonialisme",
+    "category": "Critique",
+    "definition": "Approche qui étudie les effets culturels, politiques et symboliques de la colonisation et de ses héritages.",
+    "example": "Elle analyse les voix dominées, les identités hybrides et les récits produits après ou contre l'empire.",
+    "relatedTerms": []
+  },
+  {
+    "id": "postmodernisme",
+    "term": "Postmodernisme",
+    "category": "Mouvement",
+    "definition": "Esthétique marquée par le mélange des genres, l'ironie, la citation, la fragmentation et la méfiance envers les grands récits.",
+    "example": "Un texte postmoderne peut jouer avec ses propres codes et multiplier les références.",
+    "relatedTerms": []
+  },
+  {
+    "id": "preciosite",
+    "term": "Préciosité",
+    "category": "Mouvement",
+    "definition": "Courant mondain du XVIIe siècle qui recherche le raffinement de la langue, des manières et de l'expression amoureuse.",
+    "example": "La préciosité affectionne les périphrases, les conversations spirituelles et les codes galants.",
+    "relatedTerms": []
+  },
+  {
+    "id": "preterition",
+    "term": "Prétérition",
+    "category": "Figure d'énonciation",
+    "definition": "Procédé qui consiste à dire que l'on ne parlera pas d'une chose tout en en parlant quand même.",
+    "example": "Je ne rappellerai pas ses erreurs permet précisément de les évoquer.",
+    "relatedTerms": []
+  },
+  {
+    "id": "prolepse",
+    "term": "Prolepse",
+    "category": "Narration",
+    "definition": "Anticipation narrative qui annonce ou raconte à l'avance un événement futur de l'histoire.",
+    "example": "Une prolepse crée une attente, une ironie dramatique ou un effet de destin.",
+    "relatedTerms": []
+  },
+  {
+    "id": "prosodie",
+    "term": "Prosodie",
+    "category": "Versification",
+    "definition": "Étude du rythme, des accents, des sons, des pauses et de la mesure dans la langue poétique.",
+    "example": "La prosodie permet d'analyser la musicalité d'un vers ou d'une strophe.",
+    "relatedTerms": []
+  },
+  {
+    "id": "prosopopee",
+    "term": "Prosopopée",
+    "category": "Figure d'énonciation",
+    "definition": "Procédé qui fait parler une personne absente, morte, une idée, un objet ou une entité abstraite.",
+    "example": "Faire parler la Justice ou la Patrie constitue une prosopopée.",
+    "relatedTerms": []
+  },
+  {
+    "id": "proverbe",
+    "term": "Proverbe",
+    "category": "Genre",
+    "definition": "Formule brève et traditionnelle qui exprime une sagesse collective ou une règle de conduite.",
+    "example": "Le proverbe tire son autorité de sa concision et de sa circulation dans l'usage.",
+    "relatedTerms": []
+  },
+  {
+    "id": "quatrain",
+    "term": "Quatrain",
+    "category": "Forme poétique",
+    "definition": "Strophe de quatre vers, très fréquente dans les formes régulières comme le sonnet.",
+    "example": "Un quatrain peut développer une image, une opposition ou une étape du raisonnement poétique.",
+    "relatedTerms": []
+  },
+  {
+    "id": "quiproquo",
+    "term": "Quiproquo",
+    "category": "Théâtre",
+    "definition": "Malentendu où un personnage, une parole ou une situation est pris pour un autre, entraînant comique ou tension dramatique.",
+    "example": "Le quiproquo nourrit souvent les intrigues de comédie.",
+    "relatedTerms": []
+  },
+  {
+    "id": "realisme",
+    "term": "Réalisme",
+    "category": "Mouvement",
+    "definition": "Esthétique qui vise à représenter la société, les milieux, les gestes et les contraintes matérielles avec précision.",
+    "example": "Le roman réaliste observe les rapports sociaux, l'argent, les ambitions et les limites d'une époque.",
+    "relatedTerms": [
+      "description",
+      "discours-indirect-libre",
+      "champ-lexical"
+    ],
+    "relatedWorks": [
+      "madame-bovary",
+      "l-education-sentimentale"
+    ],
+    "relatedMovements": [
+      "realisme"
+    ]
+  },
+  {
+    "id": "recit",
+    "term": "Récit",
+    "category": "Narration",
+    "definition": "Texte ou discours qui organise et raconte une suite d'événements réels ou fictifs.",
+    "example": "Le récit transforme une histoire en forme lisible par des choix d'ordre, de rythme et de voix.",
+    "relatedTerms": []
+  },
+  {
+    "id": "recit-cadre",
+    "term": "Récit cadre",
+    "category": "Structure",
+    "definition": "Récit principal qui englobe un ou plusieurs récits secondaires racontés par des personnages ou des narrateurs internes.",
+    "example": "Les Mille et Une Nuits reposent sur un dispositif de récit cadre.",
+    "relatedTerms": []
   },
   {
     "id": "reecriture",
@@ -415,6 +1610,58 @@
     ]
   },
   {
+    "id": "refrain",
+    "term": "Refrain",
+    "category": "Forme poétique",
+    "definition": "Vers ou groupe de vers répété à intervalles réguliers dans un poème ou une chanson.",
+    "example": "Le refrain crée une mémoire sonore et insiste sur un motif central.",
+    "relatedTerms": []
+  },
+  {
+    "id": "registre",
+    "term": "Registre",
+    "category": "Analyse",
+    "definition": "Effet dominant produit par un texte sur le lecteur: comique, tragique, pathétique, lyrique, polémique ou fantastique.",
+    "example": "Identifier un registre suppose d'observer le vocabulaire, les images, la situation et le rythme du passage.",
+    "relatedTerms": [
+      "lyrisme",
+      "pathétique",
+      "tragique"
+    ]
+  },
+  {
+    "id": "registre-lyrique",
+    "term": "Registre lyrique",
+    "category": "Registre",
+    "definition": "Registre centré sur l'expression personnelle des sentiments, de l'émotion et de la subjectivité.",
+    "example": "Il se reconnaît souvent aux marques de première personne, aux exclamations et aux images de la nature ou du temps.",
+    "relatedTerms": []
+  },
+  {
+    "id": "registre-pathetique",
+    "term": "Registre pathétique",
+    "category": "Registre",
+    "definition": "Registre qui cherche à susciter la compassion par la représentation de la souffrance, de la faiblesse ou de l'injustice.",
+    "example": "Une scène d'abandon ou de misère peut produire un effet pathétique.",
+    "relatedTerms": []
+  },
+  {
+    "id": "registre-tragique",
+    "term": "Registre tragique",
+    "category": "Registre",
+    "definition": "Registre qui fait sentir l'impuissance d'un personnage face à la fatalité, au destin ou à un conflit sans issue.",
+    "example": "Le registre tragique associe souvent gravité, tension et annonce d'une catastrophe.",
+    "relatedTerms": []
+  },
+  {
+    "id": "regle-des-trois-unites",
+    "term": "Règle des trois unités",
+    "category": "Théâtre",
+    "definition": "Principe classique imposant idéalement une seule action, en un seul lieu et dans une durée limitée à vingt-quatre heures.",
+    "example": "Cette règle vise la concentration dramatique et la vraisemblance.",
+    "relatedTerms": []
+  },
+  {
     "id": "repetition",
     "term": "Répétition",
     "category": "Figure de construction",
@@ -426,6 +1673,255 @@
     ]
   },
   {
+    "id": "rhetorique",
+    "term": "Rhétorique",
+    "category": "Critique",
+    "definition": "Art et étude des moyens de persuader, convaincre ou émouvoir par le discours.",
+    "example": "La rhétorique analyse les arguments, les figures et l'organisation d'une prise de parole.",
+    "relatedTerms": []
+  },
+  {
+    "id": "rime",
+    "term": "Rime",
+    "category": "Versification",
+    "definition": "Retour d'un même son ou de sons proches à la fin de plusieurs vers.",
+    "example": "La rime contribue à la musicalité, à la structure et aux effets d'écho du poème.",
+    "relatedTerms": []
+  },
+  {
+    "id": "rime-croisee",
+    "term": "Rime croisée",
+    "category": "Versification",
+    "definition": "Disposition de rimes alternées selon le schéma ABAB.",
+    "example": "Dans un quatrain, les vers 1 et 3 riment ensemble, de même que les vers 2 et 4.",
+    "relatedTerms": []
+  },
+  {
+    "id": "rime-embrassee",
+    "term": "Rime embrassée",
+    "category": "Versification",
+    "definition": "Disposition de rimes selon le schéma ABBA, où deux rimes en encadrent une autre.",
+    "example": "Cette organisation donne souvent au quatrain un effet de clôture.",
+    "relatedTerms": []
+  },
+  {
+    "id": "rime-plate",
+    "term": "Rime plate",
+    "category": "Versification",
+    "definition": "Disposition de rimes suivies selon le schéma AABB.",
+    "example": "Les rimes plates peuvent soutenir un récit versifié ou une progression rapide.",
+    "relatedTerms": []
+  },
+  {
+    "id": "roman",
+    "term": "Roman",
+    "category": "Genre",
+    "definition": "Récit long en prose qui développe une intrigue, des personnages, un univers et une progression dans le temps.",
+    "example": "Le roman peut prendre des formes réalistes, historiques, policières, épistolaires ou expérimentales.",
+    "relatedTerms": []
+  },
+  {
+    "id": "roman-d-apprentissage",
+    "term": "Roman d'apprentissage",
+    "category": "Genre",
+    "definition": "Roman qui suit la formation intellectuelle, morale, sociale ou affective d'un personnage, souvent de la jeunesse à l'âge adulte.",
+    "example": "Le héros découvre le monde, ses illusions et les limites de ses ambitions.",
+    "relatedTerms": []
+  },
+  {
+    "id": "roman-epistolaire",
+    "term": "Roman épistolaire",
+    "category": "Genre",
+    "definition": "Roman composé de lettres, parfois de plusieurs correspondants, qui construisent l'intrigue par points de vue successifs.",
+    "example": "Ce dispositif multiplie les voix et peut créer des décalages entre ce qui est dit et ce que le lecteur comprend.",
+    "relatedTerms": []
+  },
+  {
+    "id": "roman-historique",
+    "term": "Roman historique",
+    "category": "Genre",
+    "definition": "Roman qui situe son intrigue dans une époque passée et articule fiction individuelle et contexte historique documenté.",
+    "example": "Il fait dialoguer personnages inventés, événements réels et restitution d'un monde disparu.",
+    "relatedTerms": []
+  },
+  {
+    "id": "roman-policier",
+    "term": "Roman policier",
+    "category": "Genre",
+    "definition": "Roman centré sur une enquête, un crime, un mystère et la recherche progressive d'une vérité.",
+    "example": "Le lecteur suit indices, suspects et fausses pistes jusqu'à la résolution.",
+    "relatedTerms": []
+  },
+  {
+    "id": "roman-feuilleton",
+    "term": "Roman-feuilleton",
+    "category": "Genre",
+    "definition": "Roman publié par épisodes dans la presse, conçu pour maintenir l'attente du lecteur d'une livraison à l'autre.",
+    "example": "Le suspense, les rebondissements et les personnages fortement typés y jouent un rôle essentiel.",
+    "relatedTerms": []
+  },
+  {
+    "id": "romantisme",
+    "term": "Romantisme",
+    "category": "Mouvement",
+    "definition": "Mouvement du XIXe siècle qui valorise l'expression du moi, l'imagination, la nature, l'histoire et les passions.",
+    "example": "Le romantisme donne une place forte au lyrisme, à la mélancolie et à la quête d'absolu.",
+    "relatedTerms": []
+  },
+  {
+    "id": "rondeau",
+    "term": "Rondeau",
+    "category": "Forme poétique",
+    "definition": "Forme fixe médiévale et renaissante fondée sur le retour d'un refrain et un système régulier de rimes.",
+    "example": "Le rondeau joue sur la répétition et la circularité de sa structure.",
+    "relatedTerms": []
+  },
+  {
+    "id": "satire",
+    "term": "Satire",
+    "category": "Genre",
+    "definition": "Texte ou registre qui critique les défauts d'une société, d'un groupe ou d'un individu par le rire, l'ironie ou la caricature.",
+    "example": "La satire vise à dénoncer en ridiculisant ce qu'elle attaque.",
+    "relatedTerms": []
+  },
+  {
+    "id": "scene",
+    "term": "Scène",
+    "category": "Narration",
+    "definition": "Mode de récit qui donne l'impression que le temps de l'histoire et le temps de la lecture se rapprochent, souvent grâce au dialogue.",
+    "example": "Une scène dialoguée ralentit le récit et rend l'action plus présente.",
+    "relatedTerms": []
+  },
+  {
+    "id": "schema-narratif",
+    "term": "Schéma narratif",
+    "category": "Structure",
+    "definition": "Modèle qui décrit les grandes étapes d'un récit: situation initiale, perturbation, actions, résolution et situation finale.",
+    "example": "Il aide à repérer la progression d'une intrigue simple ou traditionnelle.",
+    "relatedTerms": []
+  },
+  {
+    "id": "situation-initiale",
+    "term": "Situation initiale",
+    "category": "Structure",
+    "definition": "État de départ d'un récit, avant l'événement qui vient rompre l'équilibre établi.",
+    "example": "Elle présente souvent le cadre, les personnages principaux et les conditions de l'action.",
+    "relatedTerms": []
+  },
+  {
+    "id": "sommaire",
+    "term": "Sommaire",
+    "category": "Narration",
+    "definition": "Résumé narratif qui condense une durée longue de l'histoire en quelques lignes ou paragraphes.",
+    "example": "Le sommaire accélère le rythme en regroupant des événements secondaires.",
+    "relatedTerms": []
+  },
+  {
+    "id": "sonnet",
+    "term": "Sonnet",
+    "category": "Forme poétique",
+    "definition": "Poème de quatorze vers, généralement composé de deux quatrains et de deux tercets.",
+    "example": "Le sonnet organise souvent une progression qui mène à une pointe finale.",
+    "relatedTerms": []
+  },
+  {
+    "id": "strophe",
+    "term": "Strophe",
+    "category": "Forme poétique",
+    "definition": "Groupement de vers formant une unité dans un poème, comparable à un paragraphe rythmique.",
+    "example": "Une strophe peut être un tercet, un quatrain, un sizain ou une forme plus libre.",
+    "relatedTerms": []
+  },
+  {
+    "id": "structuralisme",
+    "term": "Structuralisme",
+    "category": "Critique",
+    "definition": "Approche qui étudie les œuvres comme des systèmes de relations entre signes, fonctions et structures.",
+    "example": "Une lecture structuraliste peut analyser les oppositions, les rôles narratifs ou l'organisation d'un récit.",
+    "relatedTerms": []
+  },
+  {
+    "id": "stylistique",
+    "term": "Stylistique",
+    "category": "Analyse",
+    "definition": "Étude des choix d'écriture d'un texte: lexique, syntaxe, figures, rythme, tonalité et effets produits.",
+    "example": "La stylistique relie les procédés de langue à l'interprétation littéraire.",
+    "relatedTerms": []
+  },
+  {
+    "id": "surrealisme",
+    "term": "Surréalisme",
+    "category": "Mouvement",
+    "definition": "Mouvement d'avant-garde qui explore le rêve, l'inconscient, l'association libre et la puissance libératrice de l'imagination.",
+    "example": "L'écriture automatique cherche à faire surgir des images échappant au contrôle rationnel.",
+    "relatedTerms": []
+  },
+  {
+    "id": "symbole",
+    "term": "Symbole",
+    "category": "Figure de sens",
+    "definition": "Élément concret qui renvoie à une signification plus large, souvent suggérée plutôt qu'expliquée.",
+    "example": "Chez les symbolistes, l'image poétique invite à dépasser le sens immédiat pour atteindre une réalité intérieure ou spirituelle.",
+    "relatedTerms": [
+      "allegorie",
+      "metaphore"
+    ],
+    "relatedWorks": [
+      "les-fleurs-du-mal"
+    ],
+    "relatedMovements": [
+      "symbolisme"
+    ]
+  },
+  {
+    "id": "symbolisme",
+    "term": "Symbolisme",
+    "category": "Mouvement",
+    "definition": "Mouvement poétique qui privilégie la suggestion, les correspondances et les images capables d'évoquer l'invisible.",
+    "example": "Le symbole ouvre le texte à des significations indirectes plutôt qu'à une description explicite.",
+    "relatedTerms": []
+  },
+  {
+    "id": "synecdoque",
+    "term": "Synecdoque",
+    "category": "Figure de substitution",
+    "definition": "Forme de métonymie qui désigne une réalité par une partie, le tout, la matière ou l'espèce.",
+    "example": "Dire une voile pour un bateau est une synecdoque.",
+    "relatedTerms": []
+  },
+  {
+    "id": "synesthesie",
+    "term": "Synesthésie",
+    "category": "Figure de sens",
+    "definition": "Association de sensations appartenant à des domaines sensoriels différents.",
+    "example": "Un parfum sombre ou une couleur criarde relèvent de la synesthésie.",
+    "relatedTerms": []
+  },
+  {
+    "id": "temps-du-recit",
+    "term": "Temps du récit",
+    "category": "Narration",
+    "definition": "Organisation temporelle choisie par le récit: ordre, durée, fréquence et rapport au moment de narration.",
+    "example": "L'étude du temps du récit observe les retours en arrière, les ellipses et les ralentissements.",
+    "relatedTerms": []
+  },
+  {
+    "id": "tercet",
+    "term": "Tercet",
+    "category": "Forme poétique",
+    "definition": "Strophe de trois vers, fréquente notamment dans la fin du sonnet.",
+    "example": "Le tercet peut relancer ou conclure le mouvement du poème.",
+    "relatedTerms": []
+  },
+  {
+    "id": "theatre-de-l-absurde",
+    "term": "Théâtre de l'absurde",
+    "category": "Mouvement",
+    "definition": "Théâtre du XXe siècle qui met en scène l'absence de sens stable, la crise du langage et l'étrangeté de l'existence.",
+    "example": "Les dialogues peuvent y devenir circulaires, incohérents ou incapables de communiquer réellement.",
+    "relatedTerms": []
+  },
+  {
     "id": "theme",
     "term": "Thème",
     "category": "Analyse",
@@ -435,6 +1931,22 @@
       "champ-lexical",
       "registre"
     ]
+  },
+  {
+    "id": "tragedie",
+    "term": "Tragédie",
+    "category": "Genre",
+    "definition": "Pièce de théâtre qui met en scène un conflit grave conduisant souvent à la catastrophe ou à la mort.",
+    "example": "La tragédie classique confronte les personnages à la passion, au devoir et à la fatalité.",
+    "relatedTerms": []
+  },
+  {
+    "id": "tragicomedie",
+    "term": "Tragicomédie",
+    "category": "Genre",
+    "definition": "Genre dramatique mêlant périls tragiques et issue généralement heureuse ou romanesque.",
+    "example": "La tragicomédie brouille la séparation stricte entre le rire, le danger et l'émotion grave.",
+    "relatedTerms": []
   },
   {
     "id": "tragique",
@@ -449,5 +1961,29 @@
     "relatedMovements": [
       "existentialisme"
     ]
+  },
+  {
+    "id": "vers-libre",
+    "term": "Vers libre",
+    "category": "Versification",
+    "definition": "Vers qui ne respecte pas une mesure régulière fixe ni un système traditionnel de rimes obligatoires.",
+    "example": "Le vers libre permet de rapprocher le rythme poétique des mouvements de la parole.",
+    "relatedTerms": []
+  },
+  {
+    "id": "verset",
+    "term": "Verset",
+    "category": "Forme poétique",
+    "definition": "Unité poétique longue et rythmée, proche de la phrase ample, sans mesure syllabique régulière.",
+    "example": "Le verset donne souvent au poème un souffle oratoire ou méditatif.",
+    "relatedTerms": []
+  },
+  {
+    "id": "voix-narrative",
+    "term": "Voix narrative",
+    "category": "Narration",
+    "definition": "Manière dont le récit est pris en charge par une instance narrative, selon sa place, son statut et son degré d'implication.",
+    "example": "La voix narrative peut être interne, externe, témoin ou participante.",
+    "relatedTerms": []
   }
 ]

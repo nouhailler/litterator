@@ -3,232 +3,969 @@
     "id": "romantisme",
     "name": "Romantisme",
     "period": {
-      "start": 1820,
-      "end": 1850
+      "start": 1800,
+      "end": 1865
     },
-    "description": "Mouvement littéraire et artistique du XIXe siècle qui exalte les émotions, la nature, et la liberté. Réaction contre le classicisme et le rationalisme des Lumières.",
+    "description": "Romantisme regroupe les auteurs et œuvres majeurs du corpus fourni pour ce courant ou cette période littéraire.",
     "context": {
-      "historical": "Révolution industrielle, chute de Napoléon, Restauration monarchique, révolution de 1830.",
-      "cultural": "Influence du préromantisme allemand et anglais (Goethe, Byron). Essor du 'moi' et de l'individualisme."
+      "historical": "Repère chronologique principal: 1800-1865.",
+      "cultural": "Courant associé aux genres et pratiques dominants du corpus: roman, poésie, théâtre, nouvelle, mémoires."
     },
-    "key_authors": ["victor_hugo", "alphonse_de_lamartine", "gerard_de_nerval", "alexandre_dumas", "george_sand"],
-    "key_works": ["les_miserables", "notre_dame_de_paris", "meditations_poetiques", "les_caprices_de_marianne", "sylvie"],
-    "themes": ["émotion", "nature", "mélancolie", "liberté", "amour", "révolte"],
-    "influences": {
-      "predecessors": ["preromantisme"],
-      "successors": ["realisme", "symbolisme"]
-    },
-    "quotes": [
-      {
-        "text": "La vie, c'est une fleur ; l'amour en est le miel.",
-        "author": "victor_hugo"
-      },
-      {
-        "text": "Un seul être vous manque, et tout est dépeuplé.",
-        "author": "alphonse_de_lamartine"
-      }
+    "key_authors": [
+      "stael",
+      "constant",
+      "chateaubriand",
+      "desbordes-valmore",
+      "lamartine",
+      "vigny",
+      "hugo",
+      "dumas",
+      "sand",
+      "nerval",
+      "musset"
     ],
+    "key_works": [
+      "atala",
+      "rene",
+      "corinne-ou-l-italie",
+      "adolphe",
+      "meditations-poetiques",
+      "hernani",
+      "notre-dame-de-paris",
+      "indiana",
+      "les-pleurs",
+      "lorenzaccio",
+      "chatterton",
+      "mademoiselle-de-maupin",
+      "colomba",
+      "les-trois-mousquetaires",
+      "le-comte-de-monte-cristo",
+      "la-mare-au-diable",
+      "memoires-d-outre-tombe",
+      "les-chatiments",
+      "aurelia",
+      "les-contemplations",
+      "la-legende-des-siecles",
+      "les-miserables",
+      "les-destinees"
+    ],
+    "themes": [
+      "moi",
+      "lyrisme",
+      "nature",
+      "histoire",
+      "liberté",
+      "mélancolie"
+    ],
+    "influences": {
+      "predecessors": [],
+      "successors": [
+        "realisme",
+        "parnasse",
+        "symbolisme"
+      ]
+    },
+    "quotes": [],
     "color": "#e91e63"
   },
   {
     "id": "realisme",
     "name": "Réalisme",
     "period": {
-      "start": 1850,
-      "end": 1880
+      "start": 1830,
+      "end": 1922
     },
-    "description": "Mouvement littéraire qui cherche à dépeindre la réalité de manière objective, sans idéalisation. Focus sur la société contemporaine et les classes populaires.",
+    "description": "Réalisme regroupe les auteurs et œuvres majeurs du corpus fourni pour ce courant ou cette période littéraire.",
     "context": {
-      "historical": "Industrialisation, urbanisation, inégalités sociales sous le Second Empire.",
-      "cultural": "Influence de la photographie et des sciences (positivisme). Réaction contre le romantisme."
+      "historical": "Repère chronologique principal: 1830-1922.",
+      "cultural": "Courant associé aux genres et pratiques dominants du corpus: roman, nouvelle, conte."
     },
-    "key_authors": ["gustave_flaubert", "emile_zola", "honore_de_balzac", "guy_de_maupassant", "stendhal"],
-    "key_works": ["madame_bovary", "l_education_sentimentale", "le_pere_goriot", "l_assommoir", "le_rouge_et_le_noir"],
-    "themes": ["réalité sociale", "critique des mœurs", "déterminisme", "observation", "ironie"],
-    "influences": {
-      "predecessors": ["romantisme"],
-      "successors": ["naturalisme"]
-    },
-    "quotes": [
-      {
-        "text": "Madame Bovary, c'est moi.",
-        "author": "gustave_flaubert"
-      },
-      {
-        "text": "Le réalisme est la reproduction exacte de la société.",
-        "author": "emile_zola"
-      }
+    "key_authors": [
+      "stendhal",
+      "balzac",
+      "merimee",
+      "sue",
+      "flaubert",
+      "verne",
+      "valles",
+      "france",
+      "loti",
+      "martin-du-gard"
     ],
+    "key_works": [
+      "le-rouge-et-le-noir",
+      "la-peau-de-chagrin",
+      "eugenie-grandet",
+      "le-pere-goriot",
+      "la-chartreuse-de-parme",
+      "illusions-perdues",
+      "les-mysteres-de-paris",
+      "carmen",
+      "la-cousine-bette",
+      "madame-bovary",
+      "salammbô",
+      "l-education-sentimentale",
+      "lettres-de-mon-moulin",
+      "vingt-mille-lieues-sous-les-mers",
+      "le-tour-du-monde-en-quatre-vingts-jours",
+      "trois-contes",
+      "l-enfant",
+      "le-crime-de-sylvestre-bonnard",
+      "bouvard-et-pecuchet",
+      "pecheur-d-islande",
+      "les-thibault"
+    ],
+    "themes": [
+      "société",
+      "observation",
+      "argent",
+      "ambition",
+      "mœurs",
+      "désillusion"
+    ],
+    "influences": {
+      "predecessors": [
+        "romantisme"
+      ],
+      "successors": [
+        "naturalisme",
+        "modernite"
+      ]
+    },
+    "quotes": [],
     "color": "#4caf50"
   },
   {
-    "id": "naturalisme",
-    "name": "Naturalisme",
+    "id": "parnasse",
+    "name": "Parnasse",
     "period": {
-      "start": 1870,
-      "end": 1890
+      "start": 1852,
+      "end": 1875
     },
-    "description": "Mouvement littéraire qui applique les méthodes scientifiques à la littérature. Étude des comportements humains sous l'influence de l'hérédité et du milieu social.",
+    "description": "Parnasse regroupe les auteurs et œuvres majeurs du corpus fourni pour ce courant ou cette période littéraire.",
     "context": {
-      "historical": "Développement des sciences (Darwin, Pasteur), misère ouvrière, Commune de Paris (1871).",
-      "cultural": "Influence du positivisme d'Auguste Comte. Le roman devient un 'laboratoire' social."
+      "historical": "Repère chronologique principal: 1852-1875.",
+      "cultural": "Courant associé aux genres et pratiques dominants du corpus: poésie."
     },
-    "key_authors": ["emile_zola", "guy_de_maupassant", "jules_de_goncourt", "edmond_de_goncourt"],
-    "key_works": ["l_assommoir", "germinal", "nana", "bel_ami", "la_bete_humaine"],
-    "themes": ["hérédité", "milieu social", "déterminisme", "misère", "alcoolisme", "prostitution"],
-    "influences": {
-      "predecessors": ["realisme"],
-      "successors": ["symbolisme"]
-    },
-    "quotes": [
-      {
-        "text": "Le naturalisme est un retour à la nature, mais une nature vue à travers les découvertes scientifiques.",
-        "author": "emile_zola"
-      }
+    "key_authors": [
+      "gautier"
     ],
-    "color": "#ff9800"
+    "key_works": [
+      "emaux-et-camees",
+      "poemes-saturniens"
+    ],
+    "themes": [
+      "forme",
+      "impersonnalité",
+      "beauté",
+      "art pour l’art",
+      "maîtrise"
+    ],
+    "influences": {
+      "predecessors": [
+        "romantisme"
+      ],
+      "successors": [
+        "symbolisme"
+      ]
+    },
+    "quotes": [],
+    "color": "#556b2f"
   },
   {
     "id": "symbolisme",
     "name": "Symbolisme",
     "period": {
-      "start": 1880,
+      "start": 1854,
       "end": 1900
     },
-    "description": "Mouvement littéraire qui privilégie l'expression des idées et des émotions à travers des symboles, des métaphores et des suggestions, plutôt que par une description directe.",
+    "description": "Symbolisme regroupe les auteurs et œuvres majeurs du corpus fourni pour ce courant ou cette période littéraire.",
     "context": {
-      "historical": "Fin du XIXe siècle, crise des valeurs traditionnelles, essor de la psychanalyse.",
-      "cultural": "Réaction contre le naturalisme. Influence de la musique (Wagner) et des arts visuels (impressionnisme)."
+      "historical": "Repère chronologique principal: 1854-1900.",
+      "cultural": "Courant associé aux genres et pratiques dominants du corpus: poésie."
     },
-    "key_authors": ["charles_baudelaire", "paul_verlaine", "arthur_rimbaud", "stephane_mallarme", "paul_valery"],
-    "key_works": ["les_fleurs_du_mal", "fetes_galantes", "une_saison_en_enfer", "l_apres_midi_d_un_faune"],
-    "themes": ["rêve", "mystère", "beauté", "décadence", "spiritualité"],
-    "influences": {
-      "predecessors": ["romantisme", "parnasse"],
-      "successors": ["surréalisme"]
-    },
-    "quotes": [
-      {
-        "text": "La poésie est un art qui se fait avec des mots.",
-        "author": "stephane_mallarme"
-      },
-      {
-        "text": "Je est un autre.",
-        "author": "arthur_rimbaud"
-      }
+    "key_authors": [
+      "nerval",
+      "mallarme",
+      "verlaine",
+      "corbiere",
+      "rimbaud",
+      "laforgue"
     ],
+    "key_works": [
+      "les-chimeres",
+      "fetes-galantes",
+      "le-bateau-ivre",
+      "une-saison-en-enfer",
+      "les-amours-jaunes",
+      "romances-sans-paroles",
+      "l-apres-midi-d-un-faune",
+      "sagesse",
+      "les-complaintes",
+      "illuminations",
+      "poesies-mallarme",
+      "un-coup-de-des"
+    ],
+    "themes": [
+      "suggestion",
+      "correspondances",
+      "mystère",
+      "musicalité",
+      "rêve"
+    ],
+    "influences": {
+      "predecessors": [
+        "parnasse",
+        "modernite"
+      ],
+      "successors": [
+        "surréalisme"
+      ]
+    },
+    "quotes": [],
     "color": "#9c27b0"
+  },
+  {
+    "id": "modernite",
+    "name": "Modernité",
+    "period": {
+      "start": 1857,
+      "end": 1968
+    },
+    "description": "Modernité regroupe les auteurs et œuvres majeurs du corpus fourni pour ce courant ou cette période littéraire.",
+    "context": {
+      "historical": "Repère chronologique principal: 1857-1968.",
+      "cultural": "Courant associé aux genres et pratiques dominants du corpus: poésie, prose poétique, roman, théâtre, autobiographie."
+    },
+    "key_authors": [
+      "baudelaire",
+      "lautreamont",
+      "rolland",
+      "claudel",
+      "gide",
+      "proust",
+      "valery",
+      "peguy",
+      "colette",
+      "noailles",
+      "apollinaire",
+      "giraudoux",
+      "mauriac",
+      "saint-john-perse",
+      "cendrars",
+      "bernanos",
+      "cocteau",
+      "celine",
+      "giono",
+      "cohen",
+      "ponge",
+      "michaux",
+      "prevert",
+      "saint-exupery",
+      "malraux",
+      "ayme",
+      "yourcenar",
+      "char",
+      "genet",
+      "anouilh",
+      "vian"
+    ],
+    "key_works": [
+      "les-fleurs-du-mal",
+      "les-chants-de-maldoror",
+      "le-spleen-de-paris",
+      "les-nourritures-terrestres",
+      "claudine-a-l-ecole",
+      "le-coeur-innombrable",
+      "l-immoraliste",
+      "jean-christophe",
+      "partage-de-midi",
+      "la-porte-etroite",
+      "la-vagabonde",
+      "le-porche-du-mystere",
+      "l-annonce-faite-a-marie",
+      "prose-du-transsiberien",
+      "du-cote-de-chez-swann",
+      "alcools",
+      "la-jeune-parque",
+      "a-l-ombre-des-jeunes-filles-en-fleurs",
+      "cheri",
+      "sodome-et-gomorrhe",
+      "charmes",
+      "anabase",
+      "les-faux-monnayeurs",
+      "sous-le-soleil-de-satan",
+      "si-le-grain-ne-meurt",
+      "therese-desqueyroux",
+      "le-temps-retrouve",
+      "les-enfants-terribles",
+      "vol-de-nuit",
+      "voyage-au-bout-de-la-nuit",
+      "la-condition-humaine",
+      "le-chant-du-monde",
+      "la-guerre-de-troie-n-aura-pas-lieu",
+      "mort-a-credit",
+      "journal-d-un-cure-de-campagne",
+      "l-espoir",
+      "plume",
+      "le-theatre-et-son-double",
+      "terre-des-hommes",
+      "le-parti-pris-des-choses",
+      "notre-dame-des-fleurs",
+      "le-passe-muraille",
+      "le-petit-prince",
+      "aurelien",
+      "antigone",
+      "feuillets-d-hypnos",
+      "paroles",
+      "l-ecume-des-jours",
+      "les-bonnes",
+      "fureur-et-mystere",
+      "bourlinguer",
+      "memoires-d-hadrien",
+      "amers",
+      "belle-du-seigneur",
+      "l-oeuvre-au-noir"
+    ],
+    "themes": [
+      "ville",
+      "rupture formelle",
+      "mémoire",
+      "langage",
+      "subjectivité",
+      "expérimentation"
+    ],
+    "influences": {
+      "predecessors": [
+        "symbolisme",
+        "decadentisme"
+      ],
+      "successors": [
+        "surréalisme",
+        "existentialisme",
+        "nouveau_roman"
+      ]
+    },
+    "quotes": [],
+    "color": "#2563eb"
+  },
+  {
+    "id": "naturalisme",
+    "name": "Naturalisme",
+    "period": {
+      "start": 1865,
+      "end": 1900
+    },
+    "description": "Naturalisme regroupe les auteurs et œuvres majeurs du corpus fourni pour ce courant ou cette période littéraire.",
+    "context": {
+      "historical": "Repère chronologique principal: 1865-1900.",
+      "cultural": "Courant associé aux genres et pratiques dominants du corpus: roman, nouvelle."
+    },
+    "key_authors": [
+      "goncourt",
+      "zola",
+      "daudet",
+      "mirbeau",
+      "maupassant"
+    ],
+    "key_works": [
+      "germinie-lacerteux",
+      "therese-raquin",
+      "l-assommoir",
+      "nana",
+      "boule-de-suif",
+      "une-vie",
+      "au-bonheur-des-dames",
+      "germinal",
+      "bel-ami",
+      "le-horla",
+      "la-bete-humaine",
+      "le-journal-d-une-femme-de-chambre"
+    ],
+    "themes": [
+      "déterminisme",
+      "milieu social",
+      "hérédité",
+      "corps",
+      "misère",
+      "document"
+    ],
+    "influences": {
+      "predecessors": [
+        "realisme"
+      ],
+      "successors": [
+        "decadentisme",
+        "symbolisme"
+      ]
+    },
+    "quotes": [],
+    "color": "#ff9800"
+  },
+  {
+    "id": "decadentisme",
+    "name": "Décadentisme",
+    "period": {
+      "start": 1884,
+      "end": 1907
+    },
+    "description": "Décadentisme regroupe les auteurs et œuvres majeurs du corpus fourni pour ce courant ou cette période littéraire.",
+    "context": {
+      "historical": "Repère chronologique principal: 1884-1907.",
+      "cultural": "Courant associé aux genres et pratiques dominants du corpus: roman."
+    },
+    "key_authors": [
+      "huysmans"
+    ],
+    "key_works": [
+      "a-rebours"
+    ],
+    "themes": [
+      "artifice",
+      "raffinement",
+      "ennui",
+      "décadence",
+      "crise des valeurs"
+    ],
+    "influences": {
+      "predecessors": [
+        "naturalisme",
+        "symbolisme"
+      ],
+      "successors": [
+        "modernite"
+      ]
+    },
+    "quotes": [],
+    "color": "#7f1d1d"
+  },
+  {
+    "id": "neo_romantisme",
+    "name": "Néo-romantisme",
+    "period": {
+      "start": 1897,
+      "end": 1918
+    },
+    "description": "Néo-romantisme regroupe les auteurs et œuvres majeurs du corpus fourni pour ce courant ou cette période littéraire.",
+    "context": {
+      "historical": "Repère chronologique principal: 1897-1918.",
+      "cultural": "Courant associé aux genres et pratiques dominants du corpus: théâtre."
+    },
+    "key_authors": [
+      "rostand"
+    ],
+    "key_works": [
+      "cyrano-de-bergerac"
+    ],
+    "themes": [
+      "panache",
+      "idéalisme",
+      "théâtre",
+      "héroïsme",
+      "sentiment"
+    ],
+    "influences": {
+      "predecessors": [
+        "romantisme"
+      ],
+      "successors": [
+        "modernite"
+      ]
+    },
+    "quotes": [],
+    "color": "#b56576"
   },
   {
     "id": "surréalisme",
     "name": "Surréalisme",
     "period": {
-      "start": 1920,
-      "end": 1940
+      "start": 1917,
+      "end": 1938
     },
-    "description": "Mouvement littéraire et artistique qui cherche à libérer l'inconscient et à explorer les rêves, l'irrationnel et l'imaginaire. Influencé par Freud et la psychanalyse.",
+    "description": "Surréalisme regroupe les auteurs et œuvres majeurs du corpus fourni pour ce courant ou cette période littéraire.",
     "context": {
-      "historical": "Première Guerre mondiale, désillusion, montée des totalitarismes.",
-      "cultural": "Influence de la psychanalyse (Freud), du dadaïsme. Manifestes d'André Breton."
+      "historical": "Repère chronologique principal: 1917-1938.",
+      "cultural": "Courant associé aux genres et pratiques dominants du corpus: théâtre, poésie, essai, roman, récit."
     },
-    "key_authors": ["andre_breton", "louis_aragon", "paul_elouard", "rene_char", "antonin_artaud"],
-    "key_works": ["nadja", "les_champs_magnetiques", "le_paysan_de_paris", "le_theatre_et_son_double"],
-    "themes": ["rêve", "inconscient", "amour fou", "révolte", "liberté", "hasard"],
-    "influences": {
-      "predecessors": ["dadaisme", "symbolisme"],
-      "successors": ["existentialisme"]
-    },
-    "quotes": [
-      {
-        "text": "La beauté sera CONVULSIVE ou ne sera pas.",
-        "author": "andre_breton"
-      }
+    "key_authors": [
+      "eluard",
+      "breton",
+      "artaud",
+      "aragon",
+      "desnos"
     ],
+    "key_works": [
+      "les-mamelles-de-tiresias",
+      "les-champs-magnetiques",
+      "clair-de-terre",
+      "manifeste-du-surrealisme",
+      "capitale-de-la-douleur",
+      "le-paysan-de-paris",
+      "nadja",
+      "l-amour-la-poesie",
+      "corps-et-biens",
+      "l-amour-fou"
+    ],
+    "themes": [
+      "rêve",
+      "inconscient",
+      "hasard",
+      "amour fou",
+      "révolte",
+      "image"
+    ],
+    "influences": {
+      "predecessors": [
+        "symbolisme",
+        "modernite"
+      ],
+      "successors": [
+        "negritude",
+        "absurde"
+      ]
+    },
+    "quotes": [],
     "color": "#2196f3"
   },
   {
     "id": "existentialisme",
     "name": "Existentialisme",
     "period": {
-      "start": 1940,
-      "end": 1960
+      "start": 1938,
+      "end": 1964
     },
-    "description": "Mouvement philosophique et littéraire qui met l'accent sur la liberté, la responsabilité et le choix individuel. L'existence précède l'essence.",
+    "description": "Existentialisme regroupe les auteurs et œuvres majeurs du corpus fourni pour ce courant ou cette période littéraire.",
     "context": {
-      "historical": "Seconde Guerre mondiale, occupation allemande, Libération, guerre froide.",
-      "cultural": "Influence de la phénoménologie (Husserl, Heidegger). Réflexion sur l'absurdité de la condition humaine."
+      "historical": "Repère chronologique principal: 1938-1964.",
+      "cultural": "Courant associé aux genres et pratiques dominants du corpus: roman, théâtre, essai, autobiographie."
     },
-    "key_authors": ["jean_paul_sartre", "simone_de_beauvoir", "albert_camus", "maurice_merleau_ponty"],
-    "key_works": ["la_nausee", "l_etre_et_le_neant", "le_deuxieme_sexe", "l_etranger", "le_mythe_de_sisyphe"],
-    "themes": ["liberté", "responsabilité", "absurdité", "angoisse", "engagement", "authenticité"],
-    "influences": {
-      "predecessors": ["surréalisme"],
-      "successors": ["nouveau_roman"]
-    },
-    "quotes": [
-      {
-        "text": "L'homme est condamné à être libre.",
-        "author": "jean_paul_sartre"
-      },
-      {
-        "text": "Il n'y a qu'un problème philosophique vraiment sérieux : c'est le suicide.",
-        "author": "albert_camus"
-      }
+    "key_authors": [
+      "sartre",
+      "beauvoir",
+      "camus"
     ],
+    "key_works": [
+      "la-nausee",
+      "huis-clos",
+      "la-peste",
+      "le-deuxieme-sexe",
+      "memoires-d-une-jeune-fille-rangee",
+      "les-mots"
+    ],
+    "themes": [
+      "liberté",
+      "responsabilité",
+      "engagement",
+      "angoisse",
+      "choix"
+    ],
+    "influences": {
+      "predecessors": [
+        "modernite"
+      ],
+      "successors": [
+        "absurde",
+        "nouveau_roman"
+      ]
+    },
+    "quotes": [],
     "color": "#ff5722"
   },
   {
     "id": "nouveau_roman",
     "name": "Nouveau Roman",
     "period": {
-      "start": 1950,
-      "end": 1970
+      "start": 1939,
+      "end": 1965
     },
-    "description": "Mouvement littéraire qui remet en cause les formes traditionnelles du roman (intrigue, personnages, chronologie). Expérimentation narrative et focus sur l'écriture elle-même.",
+    "description": "Nouveau Roman regroupe les auteurs et œuvres majeurs du corpus fourni pour ce courant ou cette période littéraire.",
     "context": {
-      "historical": "Trente Glorieuses, guerre d'Algérie, mai 68.",
-      "cultural": "Influence du cinéma (Nouvelle Vague), de la psychanalyse, et de la philosophie (structuralisme)."
+      "historical": "Repère chronologique principal: 1939-1965.",
+      "cultural": "Courant associé aux genres et pratiques dominants du corpus: récit, roman."
     },
-    "key_authors": ["alain_robbe_grillet", "marguerite_duras", "michel_butor", "claude_simon", "nathalie_sarraute"],
-    "key_works": ["la_jalousie", "l_annee_derniere_a_marienbad", "la_modification", "l_herbe", "l_ere_du_soupcon"],
-    "themes": ["expérimentation", "subjectivité", "temps", "mémoire", "perception"],
-    "influences": {
-      "predecessors": ["existentialisme"],
-      "successors": ["litterature_contemporaine"]
-    },
-    "quotes": [
-      {
-        "text": "Le roman est une machine à penser la réalité.",
-        "author": "alain_robbe_grillet"
-      }
+    "key_authors": [
+      "sarraute",
+      "simon",
+      "duras",
+      "robbe-grillet"
     ],
+    "key_works": [
+      "tropismes",
+      "portrait-d-un-inconnu",
+      "la-jalousie",
+      "moderato-cantabile",
+      "la-route-des-flandres",
+      "le-proces-verbal",
+      "les-choses"
+    ],
+    "themes": [
+      "perception",
+      "fragmentation",
+      "objet",
+      "mémoire",
+      "anti-intrigue"
+    ],
+    "influences": {
+      "predecessors": [
+        "modernite",
+        "absurde"
+      ],
+      "successors": [
+        "contemporain"
+      ]
+    },
+    "quotes": [],
     "color": "#795548"
   },
   {
-    "id": "litterature_contemporaine",
-    "name": "Littérature Contemporaine",
+    "id": "negritude",
+    "name": "Négritude",
     "period": {
-      "start": 1980,
-      "end": 2025
+      "start": 1939,
+      "end": 1969
     },
-    "description": "La littérature contemporaine explore des thèmes variés comme l'autofiction, l'identité, la mémoire, et les enjeux sociétaux. Diversification des formes (numérique, hybride).",
+    "description": "Négritude regroupe les auteurs et œuvres majeurs du corpus fourni pour ce courant ou cette période littéraire.",
     "context": {
-      "historical": "Chute du mur de Berlin, mondialisation, révolution numérique, crises écologiques.",
-      "cultural": "Influence des médias de masse, d'Internet, et des questions postcoloniales."
+      "historical": "Repère chronologique principal: 1939-1969.",
+      "cultural": "Courant associé aux genres et pratiques dominants du corpus: poésie, théâtre."
     },
-    "key_authors": ["christophe_boltanski", "emmanuel_carrere", "leila_slimani", "edouard_louis", "maylis_de_kerangal"],
-    "key_works": ["les_particules_elementaires", "d_apres_une_histoire_vraie", "chanson_douce", "qui_a_tue_mon_pere", "reparer_les_vivants"],
-    "themes": ["autofiction", "mémoire", "identité", "mondialisation", "écologie", "genre"],
+    "key_authors": [
+      "senghor",
+      "cesaire"
+    ],
+    "key_works": [
+      "cahier-d-un-retour-au-pays-natal",
+      "chants-d-ombre",
+      "une-tempete"
+    ],
+    "themes": [
+      "identité noire",
+      "colonialisme",
+      "mémoire",
+      "révolte",
+      "dignité"
+    ],
     "influences": {
-      "predecessors": ["nouveau_roman"],
+      "predecessors": [
+        "surréalisme"
+      ],
+      "successors": [
+        "postcolonialisme",
+        "francophonie"
+      ]
+    },
+    "quotes": [],
+    "color": "#374151"
+  },
+  {
+    "id": "absurde",
+    "name": "Absurde",
+    "period": {
+      "start": 1942,
+      "end": 1959
+    },
+    "description": "Absurde regroupe les auteurs et œuvres majeurs du corpus fourni pour ce courant ou cette période littéraire.",
+    "context": {
+      "historical": "Repère chronologique principal: 1942-1959.",
+      "cultural": "Courant associé aux genres et pratiques dominants du corpus: roman, essai, théâtre."
+    },
+    "key_authors": [
+      "beckett",
+      "ionesco",
+      "camus"
+    ],
+    "key_works": [
+      "l-etranger",
+      "le-mythe-de-sisyphe",
+      "la-cantatrice-chauve",
+      "molloy",
+      "en-attendant-godot",
+      "rhinoceros"
+    ],
+    "themes": [
+      "non-sens",
+      "condition humaine",
+      "langage",
+      "attente",
+      "révolte"
+    ],
+    "influences": {
+      "predecessors": [
+        "existentialisme",
+        "surréalisme"
+      ],
+      "successors": [
+        "nouveau_roman"
+      ]
+    },
+    "quotes": [],
+    "color": "#4338ca"
+  },
+  {
+    "id": "oulipo",
+    "name": "Oulipo",
+    "period": {
+      "start": 1947,
+      "end": 1978
+    },
+    "description": "Oulipo regroupe les auteurs et œuvres majeurs du corpus fourni pour ce courant ou cette période littéraire.",
+    "context": {
+      "historical": "Repère chronologique principal: 1947-1978.",
+      "cultural": "Courant associé aux genres et pratiques dominants du corpus: récit, roman, autobiographie."
+    },
+    "key_authors": [
+      "queneau",
+      "perec"
+    ],
+    "key_works": [
+      "exercices-de-style",
+      "zazie-dans-le-metro",
+      "w-ou-le-souvenir-d-enfance",
+      "la-vie-mode-d-emploi"
+    ],
+    "themes": [
+      "contrainte",
+      "jeu",
+      "combinatoire",
+      "langage",
+      "mémoire"
+    ],
+    "influences": {
+      "predecessors": [
+        "modernite",
+        "nouveau_roman"
+      ],
+      "successors": [
+        "contemporain"
+      ]
+    },
+    "quotes": [],
+    "color": "#00897b"
+  },
+  {
+    "id": "postcolonialisme",
+    "name": "Postcolonialisme",
+    "period": {
+      "start": 1952,
+      "end": 1981
+    },
+    "description": "Postcolonialisme regroupe les auteurs et œuvres majeurs du corpus fourni pour ce courant ou cette période littéraire.",
+    "context": {
+      "historical": "Repère chronologique principal: 1952-1981.",
+      "cultural": "Courant associé aux genres et pratiques dominants du corpus: essai."
+    },
+    "key_authors": [
+      "fanon",
+      "glissant"
+    ],
+    "key_works": [
+      "peau-noire-masques-blancs",
+      "les-damnes-de-la-terre",
+      "le-discours-antillais"
+    ],
+    "themes": [
+      "colonialisme",
+      "aliénation",
+      "langue",
+      "identité",
+      "histoire"
+    ],
+    "influences": {
+      "predecessors": [
+        "negritude"
+      ],
+      "successors": [
+        "creolite",
+        "francophonie"
+      ]
+    },
+    "quotes": [],
+    "color": "#7c3aed"
+  },
+  {
+    "id": "critique",
+    "name": "Critique",
+    "period": {
+      "start": 1953,
+      "end": 1957
+    },
+    "description": "Critique regroupe les auteurs et œuvres majeurs du corpus fourni pour ce courant ou cette période littéraire.",
+    "context": {
+      "historical": "Repère chronologique principal: 1953-1957.",
+      "cultural": "Courant associé aux genres et pratiques dominants du corpus: essai."
+    },
+    "key_authors": [
+      "barthes"
+    ],
+    "key_works": [
+      "le-degre-zero-de-l-ecriture",
+      "mythologies"
+    ],
+    "themes": [
+      "signes",
+      "mythes",
+      "langage",
+      "lecture",
+      "théorie"
+    ],
+    "influences": {
+      "predecessors": [
+        "modernite"
+      ],
+      "successors": [
+        "contemporain"
+      ]
+    },
+    "quotes": [],
+    "color": "#6b7280"
+  },
+  {
+    "id": "contemporain",
+    "name": "Contemporain",
+    "period": {
+      "start": 1967,
+      "end": 2022
+    },
+    "description": "Contemporain regroupe les auteurs et œuvres majeurs du corpus fourni pour ce courant ou cette période littéraire.",
+    "context": {
+      "historical": "Repère chronologique principal: 1967-2022.",
+      "cultural": "Courant associé aux genres et pratiques dominants du corpus: roman, autobiographie, récit."
+    },
+    "key_authors": [
+      "tournier",
+      "kundera",
+      "le-clezio",
+      "ernaux",
+      "modiano",
+      "michon",
+      "echenoz",
+      "quignard",
+      "houellebecq",
+      "ndiaye"
+    ],
+    "key_works": [
+      "vendredi-ou-les-limbes-du-pacifique",
+      "le-roi-des-aulnes",
+      "rue-des-boutiques-obscures",
+      "la-place",
+      "l-amant",
+      "vies-minuscules",
+      "l-insoutenable-legerete-de-l-etre",
+      "lac",
+      "tous-les-matins-du-monde",
+      "fleurs-de-ruine",
+      "extension-du-domaine-de-la-lutte",
+      "la-honte",
+      "dora-bruder",
+      "les-particules-elementaires",
+      "je-m-en-vais",
+      "l-evenement",
+      "l-ignorance",
+      "rosie-carpe",
+      "courir",
+      "les-annees",
+      "trois-femmes-puissantes",
+      "la-carte-et-le-territoire",
+      "pour-que-tu-ne-te-perdes-pas-dans-le-quartier",
+      "soumission",
+      "memoire-de-fille",
+      "envoyee-speciale",
+      "serotonine",
+      "aneantir"
+    ],
+    "themes": [
+      "mémoire",
+      "autofiction",
+      "société",
+      "identité",
+      "histoire récente"
+    ],
+    "influences": {
+      "predecessors": [
+        "nouveau_roman",
+        "oulipo",
+        "francophonie"
+      ],
       "successors": []
     },
-    "quotes": [
-      {
-        "text": "Écrire, c'est aussi ne pas savoir.",
-        "author": "emmanuel_carrere"
-      }
-    ],
+    "quotes": [],
     "color": "#607d8b"
+  },
+  {
+    "id": "francophonie",
+    "name": "Francophonie",
+    "period": {
+      "start": 1984,
+      "end": 1987
+    },
+    "description": "Francophonie regroupe les auteurs et œuvres majeurs du corpus fourni pour ce courant ou cette période littéraire.",
+    "context": {
+      "historical": "Repère chronologique principal: 1984-1987.",
+      "cultural": "Courant associé aux genres et pratiques dominants du corpus: roman."
+    },
+    "key_authors": [
+      "conde",
+      "djebar",
+      "ben-jelloun"
+    ],
+    "key_works": [
+      "segou",
+      "l-amour-la-fantasia",
+      "la-nuit-sacree"
+    ],
+    "themes": [
+      "langue française",
+      "exil",
+      "colonisation",
+      "mémoire",
+      "identité"
+    ],
+    "influences": {
+      "predecessors": [
+        "negritude",
+        "postcolonialisme"
+      ],
+      "successors": [
+        "contemporain"
+      ]
+    },
+    "quotes": [],
+    "color": "#be123c"
+  },
+  {
+    "id": "creolite",
+    "name": "Créolité",
+    "period": {
+      "start": 1992,
+      "end": 1992
+    },
+    "description": "Créolité regroupe les auteurs et œuvres majeurs du corpus fourni pour ce courant ou cette période littéraire.",
+    "context": {
+      "historical": "Repère chronologique principal: 1992-1992.",
+      "cultural": "Courant associé aux genres et pratiques dominants du corpus: roman."
+    },
+    "key_authors": [
+      "chamoiseau"
+    ],
+    "key_works": [
+      "texaco"
+    ],
+    "themes": [
+      "créole",
+      "mémoire antillaise",
+      "oralité",
+      "métissage",
+      "ville"
+    ],
+    "influences": {
+      "predecessors": [
+        "postcolonialisme"
+      ],
+      "successors": [
+        "contemporain"
+      ]
+    },
+    "quotes": [],
+    "color": "#0f766e"
   }
 ]

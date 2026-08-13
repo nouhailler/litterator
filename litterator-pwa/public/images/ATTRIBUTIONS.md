@@ -19,3 +19,9 @@ Les portraits et visuels historiques ci-dessous proviennent de Wikimedia Commons
 | `/images/works/germinal.jpg` | [File:Zola - Germinal (Charpentier).djvu](https://commons.wikimedia.org/wiki/File%3AZola%20-%20Germinal%20(Charpentier).djvu) | Émile Zola - Bibliothèque nationale de France | Public domain |
 | `/images/works/les_fleurs_du_mal.jpg` | [File:Les fleurs small.jpg](https://commons.wikimedia.org/wiki/File%3ALes%20fleurs%20small.jpg) | hrc - http://www.hrc.utexas.edu | Public domain |
 | `/images/works/l_education_sentimentale.jpg` | [File:Education sentimentale flaubert.jpg](https://commons.wikimedia.org/wiki/File:Education%20sentimentale%20flaubert.jpg) | Flaubert - www.liberlibri.com/laurentcoulet/flaubert.jpg | Public domain |
+
+## Images ajoutées automatiquement
+
+- Les nouveaux portraits distants proviennent de Wikimedia Commons via la propriété image (P18) de Wikidata. Les pages Commons individuelles contiennent les crédits et licences détaillés.
+- Les couvertures typographiques manquantes des œuvres sont générées localement par Littérator en SVG original; elles ne reproduisent aucune jaquette commerciale.
+- Les lieux biographiques et coordonnées ajoutés dans `public/data/authors.json` et `public/data/place-coordinates.json` proviennent de Wikidata, lue comme base structurée liée à Wikipédia.

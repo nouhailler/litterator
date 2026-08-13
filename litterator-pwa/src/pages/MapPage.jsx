@@ -1,7 +1,10 @@
 import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
+import { getHashId } from '../utils/hashNavigation';
+import { getLocationId, isSpecificLocation } from '../utils/locationIds';
 
 // Correction pour les icônes Leaflet (nécessaire avec Webpack/Vite)
 delete L.Icon.Default.prototype._getIconUrl;
@@ -15,8 +18,23 @@ L.Icon.Default.mergeOptions({
 function ChangeView({ center, zoom }) {
   const map = useMap();
   useEffect(() => {
+    map.invalidateSize();
     map.setView(center, zoom);
   }, [center, zoom, map]);
+  return null;
+}
+
+function ResizeMap() {
+  const map = useMap();
+
+  useEffect(() => {
+    const resizeFrame = window.requestAnimationFrame(() => {
+      map.invalidateSize();
+    });
+
+    return () => window.cancelAnimationFrame(resizeFrame);
+  }, [map]);
+
   return null;
 }
 
@@ -53,34 +71,40 @@ function createCustomIcon() {
 }
 
 function MapPage() {
+  const routeLocation = useLocation();
   const [locations, setLocations] = useState([]);
   const [selectedLocation, setSelectedLocation] = useState(null);
   const [selectedMovement, setSelectedMovement] = useState('');
   const [selectedAuthor, setSelectedAuthor] = useState('');
   const [movements, setMovements] = useState([]);
   const [authors, setAuthors] = useState([]);
+  const [placeCoordinates, setPlaceCoordinates] = useState({});
   const [isLoading, setIsLoading] = useState(true);
 
   // Position par défaut (Paris)
   const defaultCenter = [48.8566, 2.3522];
   const defaultZoom = 6;
+  const activeLocationId = getLocationId(getHashId(routeLocation.hash));
 
   useEffect(() => {
     const loadData = async () => {
       try {
-        const [locationsRes, movementsRes, authorsRes] = await Promise.all([
+        const [locationsRes, movementsRes, authorsRes, placeCoordinatesRes] = await Promise.all([
           fetch('/data/locations.json'),
           fetch('/data/movements.json'),
           fetch('/data/authors.json'),
+          fetch('/data/place-coordinates.json'),
         ]);
         
         const locationsData = await locationsRes.json();
         const movementsData = await movementsRes.json();
         const authorsData = await authorsRes.json();
+        const placeCoordinatesData = await placeCoordinatesRes.json();
 
         setLocations(locationsData);
         setMovements(movementsData);
         setAuthors(authorsData);
+        setPlaceCoordinates(placeCoordinatesData.coordinates || {});
         setIsLoading(false);
       } catch (error) {
         console.error('Erreur lors du chargement des données:', error);
@@ -91,8 +115,70 @@ function MapPage() {
     loadData();
   }, []);
 
+  const allLocations = [...locations];
+  const locationsById = new Map(allLocations.map((location) => [location.id, location]));
+
+  authors.forEach((author) => {
+    [author.birth?.place, author.death?.place].filter(Boolean).forEach((place) => {
+      if (!isSpecificLocation(place)) {
+        return;
+      }
+
+      const id = getLocationId(place);
+      const coordinates = placeCoordinates[id]
+        ? { lat: placeCoordinates[id].lat, lng: placeCoordinates[id].lng }
+        : null;
+
+      if (!coordinates) {
+        return;
+      }
+
+      if (locationsById.has(id)) {
+        const existingLocation = locationsById.get(id);
+        if (!existingLocation.authors.includes(author.id)) {
+          existingLocation.authors = [...existingLocation.authors, author.id];
+        }
+        author.movements?.forEach((movementId) => {
+          if (!existingLocation.movements.includes(movementId)) {
+            existingLocation.movements = [...existingLocation.movements, movementId];
+          }
+        });
+        return;
+      }
+
+      const generatedLocation = {
+        id,
+        name: place,
+        description: `Lieu biographique associé à ${author.name}.`,
+        type: 'lieu biographique',
+        coordinates,
+        zoom: id === 'france' ? 6 : 11,
+        period: {
+          start: author.birth?.year || author.death?.year || 1800,
+          end: author.death?.year || author.birth?.year || 2000,
+        },
+        movements: author.movements || [],
+        authors: [author.id],
+        works: [],
+        places: [],
+        color: '#6f1d1b',
+      };
+
+      locationsById.set(id, generatedLocation);
+      allLocations.push(generatedLocation);
+    });
+  });
+
+  const activeLocation = activeLocationId
+    ? allLocations.find((location) => location.id === activeLocationId)
+    : null;
+  const highlightedLocation = selectedLocation || activeLocation;
+
   // Filtrer les lieux en fonction des filtres
-  const filteredLocations = locations.filter((location) => {
+  const filteredLocations = allLocations.filter((location) => {
+    if (activeLocation && location.id !== activeLocation.id) {
+      return false;
+    }
     if (selectedMovement && !location.movements.includes(selectedMovement)) {
       return false;
     }
@@ -104,6 +190,10 @@ function MapPage() {
 
   // Calculer le centre de la carte en fonction des lieux filtrés
   const getMapCenter = () => {
+    if (activeLocation) {
+      return [activeLocation.coordinates.lat, activeLocation.coordinates.lng];
+    }
+
     if (filteredLocations.length === 0) {
       return defaultCenter;
     }
@@ -124,6 +214,10 @@ function MapPage() {
 
   // Calculer le zoom en fonction des lieux filtrés
   const getMapZoom = () => {
+    if (activeLocation) {
+      return activeLocation.zoom || 11;
+    }
+
     if (filteredLocations.length <= 1) {
       return 10;
     }
@@ -191,7 +285,7 @@ function MapPage() {
         </div>
 
         <button 
-          onClick={() => { setSelectedMovement(''); setSelectedAuthor(''); }}
+          onClick={() => { setSelectedMovement(''); setSelectedAuthor(''); setSelectedLocation(null); }}
           className="button button-secondary"
           style={{ alignSelf: 'flex-end' }}
         >
@@ -201,6 +295,7 @@ function MapPage() {
 
       <div className="result-count">
         {filteredLocations.length} lieux affichés
+        {highlightedLocation ? ` · ${highlightedLocation.name}` : ''}
       </div>
 
       <div className="map-container">
@@ -210,11 +305,12 @@ function MapPage() {
           style={{ height: '100%', width: '100%' }}
           scrollWheelZoom={true}
         >
+          <ResizeMap />
           <ChangeView center={getMapCenter()} zoom={getMapZoom()} />
           
           <TileLayer 
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" 
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
           />
 
           {filteredLocations.map((location) => (
