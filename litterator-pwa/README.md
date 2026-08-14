@@ -39,14 +39,14 @@ Littérator rassemble mouvements, auteurs, œuvres, notions de glossaire et lieu
 
 | Type | Volume |
 | --- | ---: |
-| Mouvements littéraires | 24 |
-| Auteurs | 200 |
-| Œuvres | 400 |
+| Mouvements littéraires | 28 |
+| Auteurs | 300 |
+| Œuvres | 600 |
 | Entrées de glossaire | 224 |
 | Lieux littéraires éditoriaux | 8 |
 | Lieux biographiques géocodés | 117 |
 
-Le corpus inclut désormais les auteurs et œuvres de premier plan ainsi qu'un ensemble de second plan relié aux mêmes filtres, fiches, mouvements et vues chronologiques.
+Le corpus inclut désormais les auteurs et œuvres de premier plan ainsi que des ensembles de second et troisième plan reliés aux mêmes filtres, fiches, mouvements et vues chronologiques.
 
 ## Stack
 

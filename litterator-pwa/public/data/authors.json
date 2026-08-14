@@ -179,6 +179,45 @@
     "notable_facts": []
   },
   {
+    "id": "beranger",
+    "name": "Béranger",
+    "full_name": "Béranger",
+    "birth": {
+      "year": 1780,
+      "date": "1780",
+      "place": ""
+    },
+    "death": {
+      "year": 1857,
+      "date": "1857",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Pierre-Jean_B%C3%A9ranger.jpg",
+    "bio": "Béranger est un auteur de troisième plan de la littérature française ou francophone, associé à Chanson et aux genres Poésie.",
+    "period": "XIXe",
+    "movements": [
+      "chanson"
+    ],
+    "genres": [
+      "poésie"
+    ],
+    "works": [
+      {
+        "id": "chansons-beranger",
+        "title": "Chansons",
+        "year": 1833,
+        "genre": "poésie"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "stendhal",
     "name": "Stendhal",
     "full_name": "Stendhal",
@@ -315,6 +354,45 @@
     ]
   },
   {
+    "id": "tastu",
+    "name": "Amable Tastu",
+    "full_name": "Amable Tastu",
+    "birth": {
+      "year": 1795,
+      "date": "1795",
+      "place": ""
+    },
+    "death": {
+      "year": 1885,
+      "date": "1885",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Amable_Tastu_by_Constance_Mayer.jpg",
+    "bio": "Amable Tastu est un auteur de troisième plan de la littérature française ou francophone, associé à Romantisme et aux genres Poésie.",
+    "period": "XIXe",
+    "movements": [
+      "romantisme"
+    ],
+    "genres": [
+      "poésie"
+    ],
+    "works": [
+      {
+        "id": "poesies-tastu",
+        "title": "Poésies",
+        "year": 1826,
+        "genre": "poésie"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "vigny",
     "name": "Alfred de Vigny",
     "full_name": "Alfred de Vigny",
@@ -350,6 +428,57 @@
         "title": "Les Destinées",
         "year": 1864,
         "genre": "poésie"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "michelet",
+    "name": "Jules Michelet",
+    "full_name": "Jules Michelet",
+    "birth": {
+      "year": 1798,
+      "date": "1798",
+      "place": ""
+    },
+    "death": {
+      "year": 1874,
+      "date": "1874",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Jules_Michelet_by_Nadar.png",
+    "bio": "Jules Michelet est un auteur de troisième plan de la littérature française ou francophone, associé à Romantisme et aux genres Essai.",
+    "period": "XIXe",
+    "movements": [
+      "romantisme"
+    ],
+    "genres": [
+      "essai"
+    ],
+    "works": [
+      {
+        "id": "la-sorciere",
+        "title": "La Sorcière",
+        "year": 1862,
+        "genre": "essai"
+      },
+      {
+        "id": "le-peuple",
+        "title": "Le Peuple",
+        "year": 1846,
+        "genre": "essai"
+      },
+      {
+        "id": "histoire-de-france",
+        "title": "Histoire de France",
+        "year": 1833,
+        "genre": "essai"
       }
     ],
     "quotes": [],
@@ -412,6 +541,45 @@
         "id": "la-cousine-bette",
         "title": "La Cousine Bette",
         "year": 1846,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "soulie",
+    "name": "Frédéric Soulié",
+    "full_name": "Frédéric Soulié",
+    "birth": {
+      "year": 1800,
+      "date": "1800",
+      "place": ""
+    },
+    "death": {
+      "year": 1847,
+      "date": "1847",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Souli%C3%A9%2C_Fr%C3%A9d%C3%A9ric.jpg",
+    "bio": "Frédéric Soulié est un auteur de troisième plan de la littérature française ou francophone, associé à Romantisme et aux genres Roman.",
+    "period": "XIXe",
+    "movements": [
+      "romantisme"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "les-memoires-du-diable",
+        "title": "Les Mémoires du diable",
+        "year": 1837,
         "genre": "roman"
       }
     ],
@@ -733,6 +901,144 @@
     "notable_facts": []
   },
   {
+    "id": "sainte-beuve",
+    "name": "Sainte-Beuve",
+    "full_name": "Sainte-Beuve",
+    "birth": {
+      "year": 1804,
+      "date": "1804",
+      "place": ""
+    },
+    "death": {
+      "year": 1869,
+      "date": "1869",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Sainte-Beuve.jpg",
+    "bio": "Sainte-Beuve est un auteur de troisième plan de la littérature française ou francophone, associé à Romantisme, Critique et aux genres Roman, Essai.",
+    "period": "XIXe",
+    "movements": [
+      "romantisme",
+      "critique"
+    ],
+    "genres": [
+      "roman",
+      "essai"
+    ],
+    "works": [
+      {
+        "id": "volupte",
+        "title": "Volupté",
+        "year": 1834,
+        "genre": "roman"
+      },
+      {
+        "id": "causeries-du-lundi",
+        "title": "Causeries du lundi",
+        "year": 1851,
+        "genre": "essai"
+      },
+      {
+        "id": "port-royal",
+        "title": "Port-Royal",
+        "year": 1840,
+        "genre": "essai"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "dagoult",
+    "name": "Marie d'Agoult (Daniel Stern)",
+    "full_name": "Marie d'Agoult (Daniel Stern)",
+    "birth": {
+      "year": 1805,
+      "date": "1805",
+      "place": ""
+    },
+    "death": {
+      "year": 1876,
+      "date": "1876",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/%22Marie_de_Flavigny%22_de_Henri_Lehmann_(Petit_Palais%2C_Paris)_(48740090161).jpg",
+    "bio": "Marie d'Agoult (Daniel Stern) est un auteur de troisième plan de la littérature française ou francophone, associé à Réalisme et aux genres Essai, Mémoires.",
+    "period": "XIXe",
+    "movements": [
+      "realisme"
+    ],
+    "genres": [
+      "essai",
+      "mémoires"
+    ],
+    "works": [
+      {
+        "id": "histoire-de-la-revolution-de-1848",
+        "title": "Histoire de la révolution de 1848",
+        "year": 1850,
+        "genre": "essai"
+      },
+      {
+        "id": "memoires-souvenirs-et-journaux",
+        "title": "Mémoires, souvenirs et journaux",
+        "year": 1877,
+        "genre": "mémoires"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "barbier",
+    "name": "Auguste Barbier",
+    "full_name": "Auguste Barbier",
+    "birth": {
+      "year": 1805,
+      "date": "1805",
+      "place": ""
+    },
+    "death": {
+      "year": 1882,
+      "date": "1882",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Auguste_Barbier.png",
+    "bio": "Auguste Barbier est un auteur de troisième plan de la littérature française ou francophone, associé à Romantisme et aux genres Poésie.",
+    "period": "XIXe",
+    "movements": [
+      "romantisme"
+    ],
+    "genres": [
+      "poésie"
+    ],
+    "works": [
+      {
+        "id": "iambes",
+        "title": "Iambes",
+        "year": 1831,
+        "genre": "poésie"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "nerval",
     "name": "Gérard de Nerval",
     "full_name": "Gérard de Nerval",
@@ -815,6 +1121,98 @@
         "title": "Les Diaboliques",
         "year": 1874,
         "genre": "nouvelle"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "karr",
+    "name": "Alphonse Karr",
+    "full_name": "Alphonse Karr",
+    "birth": {
+      "year": 1808,
+      "date": "1808",
+      "place": ""
+    },
+    "death": {
+      "year": 1890,
+      "date": "1890",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Alphonse_Karr_Nadar.jpg",
+    "bio": "Alphonse Karr est un auteur de troisième plan de la littérature française ou francophone, associé à Réalisme et aux genres Roman, Essai.",
+    "period": "XIXe",
+    "movements": [
+      "realisme"
+    ],
+    "genres": [
+      "roman",
+      "essai"
+    ],
+    "works": [
+      {
+        "id": "voyage-autour-de-mon-jardin",
+        "title": "Voyage autour de mon jardin",
+        "year": 1845,
+        "genre": "roman"
+      },
+      {
+        "id": "les-guepes",
+        "title": "Les Guêpes",
+        "year": 1840,
+        "genre": "essai"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "borel",
+    "name": "Petrus Borel",
+    "full_name": "Petrus Borel",
+    "birth": {
+      "year": 1809,
+      "date": "1809",
+      "place": ""
+    },
+    "death": {
+      "year": 1859,
+      "date": "1859",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/P%C3%A9trus_Borel_par_Marcellin_Gilbert_Desboutin.jpg",
+    "bio": "Petrus Borel est un auteur de troisième plan de la littérature française ou francophone, associé à Romantisme et aux genres Roman, Poésie.",
+    "period": "XIXe",
+    "movements": [
+      "romantisme"
+    ],
+    "genres": [
+      "roman",
+      "poésie"
+    ],
+    "works": [
+      {
+        "id": "madame-putiphar",
+        "title": "Madame Putiphar",
+        "year": 1839,
+        "genre": "roman"
+      },
+      {
+        "id": "rhapsodies",
+        "title": "Rhapsodies",
+        "year": 1831,
+        "genre": "poésie"
       }
     ],
     "quotes": [],
@@ -992,6 +1390,52 @@
         "title": "La Cagnotte",
         "year": 1864,
         "genre": "théâtre"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "feval",
+    "name": "Paul Féval",
+    "full_name": "Paul Féval",
+    "birth": {
+      "year": 1816,
+      "date": "1816",
+      "place": ""
+    },
+    "death": {
+      "year": 1887,
+      "date": "1887",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Paul_F%C3%A9val.jpg",
+    "bio": "Paul Féval est un auteur de troisième plan de la littérature française ou francophone, associé à Policier, Aventures et aux genres Roman.",
+    "period": "XIXe",
+    "movements": [
+      "policier",
+      "aventures"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "le-bossu",
+        "title": "Le Bossu",
+        "year": 1858,
+        "genre": "roman"
+      },
+      {
+        "id": "les-habits-noirs",
+        "title": "Les Habits noirs",
+        "year": 1863,
+        "genre": "roman"
       }
     ],
     "quotes": [],
@@ -1406,6 +1850,51 @@
     "notable_facts": []
   },
   {
+    "id": "ponson-du-terrail",
+    "name": "Ponson du Terrail",
+    "full_name": "Ponson du Terrail",
+    "birth": {
+      "year": 1829,
+      "date": "1829",
+      "place": ""
+    },
+    "death": {
+      "year": 1871,
+      "date": "1871",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Ponson_du_Terrail_Nadar.jpg",
+    "bio": "Ponson du Terrail est un auteur de troisième plan de la littérature française ou francophone, associé à Policier et aux genres Roman.",
+    "period": "XIXe",
+    "movements": [
+      "policier"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "les-drames-de-paris",
+        "title": "Les Drames de Paris (Rocambole)",
+        "year": 1857,
+        "genre": "roman"
+      },
+      {
+        "id": "la-resurrection-de-rocambole",
+        "title": "La Résurrection de Rocambole",
+        "year": 1866,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "malot",
     "name": "Hector Malot",
     "full_name": "Hector Malot",
@@ -1749,6 +2238,52 @@
     "notable_facts": []
   },
   {
+    "id": "mendes",
+    "name": "Catulle Mendès",
+    "full_name": "Catulle Mendès",
+    "birth": {
+      "year": 1841,
+      "date": "1841",
+      "place": ""
+    },
+    "death": {
+      "year": 1909,
+      "date": "1909",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait_of_Catulle_Mend%C3%A8s.jpg",
+    "bio": "Catulle Mendès est un auteur de troisième plan de la littérature française ou francophone, associé à Parnasse et aux genres Poésie, Essai.",
+    "period": "XIXe",
+    "movements": [
+      "parnasse"
+    ],
+    "genres": [
+      "poésie",
+      "essai"
+    ],
+    "works": [
+      {
+        "id": "philomela",
+        "title": "Philoméla",
+        "year": 1863,
+        "genre": "poésie"
+      },
+      {
+        "id": "le-mouvement-poetique-francais",
+        "title": "Le Mouvement poétique français",
+        "year": 1903,
+        "genre": "essai"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "mallarme",
     "name": "Stéphane Mallarmé",
     "full_name": "Stéphane Mallarmé",
@@ -1833,6 +2368,52 @@
         "id": "les-conquerants",
         "title": "Les Conquérants",
         "year": 1877,
+        "genre": "poésie"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "coppee",
+    "name": "François Coppée",
+    "full_name": "François Coppée",
+    "birth": {
+      "year": 1842,
+      "date": "1842",
+      "place": ""
+    },
+    "death": {
+      "year": 1908,
+      "date": "1908",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/M._Fran%C3%A7ois_Copp%C3%A9e_(auteur)_-_btv1b53111903w_restaured.jpg",
+    "bio": "François Coppée est un auteur de troisième plan de la littérature française ou francophone, associé à Parnasse et aux genres Poésie, Théâtre.",
+    "period": "XIXe",
+    "movements": [
+      "parnasse"
+    ],
+    "genres": [
+      "poésie",
+      "théâtre"
+    ],
+    "works": [
+      {
+        "id": "le-passant",
+        "title": "Le Passant",
+        "year": 1869,
+        "genre": "théâtre"
+      },
+      {
+        "id": "les-humbles",
+        "title": "Les Humbles",
+        "year": 1872,
         "genre": "poésie"
       }
     ],
@@ -2290,6 +2871,188 @@
     "notable_facts": []
   },
   {
+    "id": "lorrain",
+    "name": "Jean Lorrain",
+    "full_name": "Jean Lorrain",
+    "birth": {
+      "year": 1855,
+      "date": "1855",
+      "place": ""
+    },
+    "death": {
+      "year": 1906,
+      "date": "1906",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Lorrain_(1855-1906).jpg",
+    "bio": "Jean Lorrain est un auteur de troisième plan de la littérature française ou francophone, associé à Décadentisme et aux genres Roman, Essai.",
+    "period": "XIXe",
+    "movements": [
+      "decadentisme"
+    ],
+    "genres": [
+      "roman",
+      "essai"
+    ],
+    "works": [
+      {
+        "id": "monsieur-de-phocas",
+        "title": "Monsieur de Phocas",
+        "year": 1901,
+        "genre": "roman"
+      },
+      {
+        "id": "sensations-et-souvenirs",
+        "title": "Sensations et souvenirs",
+        "year": 1895,
+        "genre": "essai"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "verhaeren",
+    "name": "Émile Verhaeren",
+    "full_name": "Émile Verhaeren",
+    "birth": {
+      "year": 1855,
+      "date": "1855",
+      "place": ""
+    },
+    "death": {
+      "year": 1916,
+      "date": "1916",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Emile_Verhaeren01.jpg",
+    "bio": "Émile Verhaeren est un auteur de troisième plan de la littérature française ou francophone, associé à Symbolisme et aux genres Poésie.",
+    "period": "XXe-1",
+    "movements": [
+      "symbolisme"
+    ],
+    "genres": [
+      "poésie"
+    ],
+    "works": [
+      {
+        "id": "les-villes-tentaculaires",
+        "title": "Les Villes tentaculaires",
+        "year": 1895,
+        "genre": "poésie"
+      },
+      {
+        "id": "les-campagnes-hallucinees",
+        "title": "Les Campagnes hallucinées",
+        "year": 1893,
+        "genre": "poésie"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "rodenbach",
+    "name": "Georges Rodenbach",
+    "full_name": "Georges Rodenbach",
+    "birth": {
+      "year": 1855,
+      "date": "1855",
+      "place": ""
+    },
+    "death": {
+      "year": 1898,
+      "date": "1898",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Georges_Rodenbach%2C_portrait.jpg",
+    "bio": "Georges Rodenbach est un auteur de troisième plan de la littérature française ou francophone, associé à Symbolisme et aux genres Roman.",
+    "period": "XXe-1",
+    "movements": [
+      "symbolisme"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "bruges-la-morte",
+        "title": "Bruges-la-Morte",
+        "year": 1892,
+        "genre": "roman"
+      },
+      {
+        "id": "le-carillonneur",
+        "title": "Le Carillonneur",
+        "year": 1897,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "rosny-aine",
+    "name": "J.-H. Rosny aîné",
+    "full_name": "J.-H. Rosny aîné",
+    "birth": {
+      "year": 1856,
+      "date": "1856",
+      "place": ""
+    },
+    "death": {
+      "year": 1940,
+      "date": "1940",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/J.-H._Rosny_a%C3%AEn%C3%A9_(1856-1940).jpg",
+    "bio": "J.-H. Rosny aîné est un auteur de troisième plan de la littérature française ou francophone, associé à Science-fiction et aux genres Roman, Nouvelle.",
+    "period": "XIXe",
+    "movements": [
+      "science_fiction"
+    ],
+    "genres": [
+      "roman",
+      "nouvelle"
+    ],
+    "works": [
+      {
+        "id": "la-guerre-du-feu",
+        "title": "La Guerre du feu",
+        "year": 1909,
+        "genre": "roman"
+      },
+      {
+        "id": "les-xipehuz",
+        "title": "Les Xipéhuz",
+        "year": 1887,
+        "genre": "nouvelle"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "courteline",
     "name": "Georges Courteline",
     "full_name": "Georges Courteline",
@@ -2383,6 +3146,96 @@
     "notable_facts": []
   },
   {
+    "id": "samain",
+    "name": "Albert Samain",
+    "full_name": "Albert Samain",
+    "birth": {
+      "year": 1858,
+      "date": "1858",
+      "place": ""
+    },
+    "death": {
+      "year": 1900,
+      "date": "1900",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/PORTRAIT_DE_SAMAIN_PAR_GANDON.jpg",
+    "bio": "Albert Samain est un auteur de troisième plan de la littérature française ou francophone, associé à Symbolisme et aux genres Poésie.",
+    "period": "XIXe",
+    "movements": [
+      "symbolisme"
+    ],
+    "genres": [
+      "poésie"
+    ],
+    "works": [
+      {
+        "id": "au-jardin-de-l-infante",
+        "title": "Au jardin de l'infante",
+        "year": 1893,
+        "genre": "poésie"
+      },
+      {
+        "id": "le-chariot-d-or",
+        "title": "Le Chariot d'or",
+        "year": 1900,
+        "genre": "poésie"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "peladan",
+    "name": "Joséphin Péladan",
+    "full_name": "Joséphin Péladan",
+    "birth": {
+      "year": 1858,
+      "date": "1858",
+      "place": ""
+    },
+    "death": {
+      "year": 1918,
+      "date": "1918",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Marcellin_Desboutin_-_Portrait_du_S%C3%A2r_M%C3%A9rodack_Jos%C3%A9phin_P%C3%A9ladan.jpg",
+    "bio": "Joséphin Péladan est un auteur de troisième plan de la littérature française ou francophone, associé à Décadentisme et aux genres Roman.",
+    "period": "XIXe",
+    "movements": [
+      "decadentisme"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "le-vice-supreme",
+        "title": "Le Vice suprême",
+        "year": 1884,
+        "genre": "roman"
+      },
+      {
+        "id": "la-gynandre",
+        "title": "La Gynandre",
+        "year": 1891,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "laforgue",
     "name": "Jules Laforgue",
     "full_name": "Jules Laforgue",
@@ -2455,6 +3308,51 @@
         "id": "la-marquise-de-sade",
         "title": "La Marquise de Sade",
         "year": 1887,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "zevaco",
+    "name": "Michel Zévaco",
+    "full_name": "Michel Zévaco",
+    "birth": {
+      "year": 1860,
+      "date": "1860",
+      "place": ""
+    },
+    "death": {
+      "year": 1918,
+      "date": "1918",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Michel_Z%C3%A9vaco_(1860-1918).jpg",
+    "bio": "Michel Zévaco est un auteur de troisième plan de la littérature française ou francophone, associé à Aventures et aux genres Roman.",
+    "period": "XIXe",
+    "movements": [
+      "aventures"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "le-capitan",
+        "title": "Le Capitan",
+        "year": 1907,
+        "genre": "roman"
+      },
+      {
+        "id": "pardaillan",
+        "title": "Pardaillan",
+        "year": 1909,
         "genre": "roman"
       }
     ],
@@ -2557,6 +3455,58 @@
     "notable_facts": []
   },
   {
+    "id": "maeterlinck",
+    "name": "Maurice Maeterlinck",
+    "full_name": "Maurice Maeterlinck",
+    "birth": {
+      "year": 1862,
+      "date": "1862",
+      "place": ""
+    },
+    "death": {
+      "year": 1949,
+      "date": "1949",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Maurice_de_Maeterlinck%2C_crop.jpg",
+    "bio": "Maurice Maeterlinck est un auteur de troisième plan de la littérature française ou francophone, associé à Symbolisme et aux genres Théâtre, Essai.",
+    "period": "XXe-1",
+    "movements": [
+      "symbolisme"
+    ],
+    "genres": [
+      "théâtre",
+      "essai"
+    ],
+    "works": [
+      {
+        "id": "pelleas-et-melisande",
+        "title": "Pelléas et Mélisande",
+        "year": 1892,
+        "genre": "théâtre"
+      },
+      {
+        "id": "l-oiseau-bleu",
+        "title": "L'Oiseau bleu",
+        "year": 1908,
+        "genre": "théâtre"
+      },
+      {
+        "id": "la-vie-des-abeilles",
+        "title": "La Vie des abeilles",
+        "year": 1901,
+        "genre": "essai"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "renard",
     "name": "Jules Renard",
     "full_name": "Jules Renard",
@@ -2637,6 +3587,52 @@
         "id": "l-aiguille-creuse",
         "title": "L'Aiguille creuse",
         "year": 1909,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "regnier",
+    "name": "Henri de Régnier",
+    "full_name": "Henri de Régnier",
+    "birth": {
+      "year": 1864,
+      "date": "1864",
+      "place": ""
+    },
+    "death": {
+      "year": 1936,
+      "date": "1936",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait_de_Henri_de_R%C3%A9gnier.png",
+    "bio": "Henri de Régnier est un auteur de troisième plan de la littérature française ou francophone, associé à Symbolisme et aux genres Poésie, Roman.",
+    "period": "XIXe",
+    "movements": [
+      "symbolisme"
+    ],
+    "genres": [
+      "poésie",
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "les-jeux-rustiques-et-divins",
+        "title": "Les Jeux rustiques et divins",
+        "year": 1897,
+        "genre": "poésie"
+      },
+      {
+        "id": "la-double-maitresse",
+        "title": "La Double Maîtresse",
+        "year": 1900,
         "genre": "roman"
       }
     ],
@@ -2955,6 +3951,90 @@
     "notable_facts": []
   },
   {
+    "id": "suares",
+    "name": "André Suarès",
+    "full_name": "André Suarès",
+    "birth": {
+      "year": 1868,
+      "date": "1868",
+      "place": ""
+    },
+    "death": {
+      "year": 1948,
+      "date": "1948",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Andr%C3%A9_Suar%C3%A8s_en_Italie_(1898).jpg",
+    "bio": "André Suarès est un auteur de troisième plan de la littérature française ou francophone, associé à Modernité et aux genres Essai.",
+    "period": "XXe-1",
+    "movements": [
+      "modernite"
+    ],
+    "genres": [
+      "essai"
+    ],
+    "works": [
+      {
+        "id": "trois-hommes",
+        "title": "Trois hommes",
+        "year": 1927,
+        "genre": "essai"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "alain",
+    "name": "Alain (Émile Chartier)",
+    "full_name": "Alain (Émile Chartier)",
+    "birth": {
+      "year": 1868,
+      "date": "1868",
+      "place": ""
+    },
+    "death": {
+      "year": 1951,
+      "date": "1951",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%89mile_Chartier_portrait.jpg",
+    "bio": "Alain (Émile Chartier) est un auteur de troisième plan de la littérature française ou francophone, associé à Modernité et aux genres Essai.",
+    "period": "XXe-1",
+    "movements": [
+      "modernite"
+    ],
+    "genres": [
+      "essai"
+    ],
+    "works": [
+      {
+        "id": "propos-sur-le-bonheur",
+        "title": "Propos sur le bonheur",
+        "year": 1925,
+        "genre": "essai"
+      },
+      {
+        "id": "mars-ou-la-guerre-jugee",
+        "title": "Mars ou la Guerre jugée",
+        "year": 1921,
+        "genre": "essai"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "gide",
     "name": "André Gide",
     "full_name": "André Gide",
@@ -3066,6 +4146,45 @@
     "notable_facts": []
   },
   {
+    "id": "bordeaux",
+    "name": "Henry Bordeaux",
+    "full_name": "Henry Bordeaux",
+    "birth": {
+      "year": 1870,
+      "date": "1870",
+      "place": ""
+    },
+    "death": {
+      "year": 1963,
+      "date": "1963",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Henry_Bordeaux_1919.jpg",
+    "bio": "Henry Bordeaux est un auteur de troisième plan de la littérature française ou francophone, associé à Réalisme et aux genres Roman.",
+    "period": "XXe-1",
+    "movements": [
+      "realisme"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "la-peur-de-vivre",
+        "title": "La Peur de vivre",
+        "year": 1902,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "proust",
     "name": "Marcel Proust",
     "full_name": "Marcel Proust",
@@ -3157,6 +4276,45 @@
         "id": "charmes",
         "title": "Charmes",
         "year": 1922,
+        "genre": "poésie"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "paul-fort",
+    "name": "Paul Fort",
+    "full_name": "Paul Fort",
+    "birth": {
+      "year": 1872,
+      "date": "1872",
+      "place": ""
+    },
+    "death": {
+      "year": 1960,
+      "date": "1960",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Paul_Fort_1922.jpg",
+    "bio": "Paul Fort est un auteur de troisième plan de la littérature française ou francophone, associé à Symbolisme et aux genres Poésie.",
+    "period": "XXe-1",
+    "movements": [
+      "symbolisme"
+    ],
+    "genres": [
+      "poésie"
+    ],
+    "works": [
+      {
+        "id": "ballades-francaises",
+        "title": "Ballades françaises",
+        "year": 1897,
         "genre": "poésie"
       }
     ],
@@ -3295,6 +4453,97 @@
         "id": "docteur-faustroll",
         "title": "Gestes et opinions du docteur Faustroll, pataphysicien",
         "year": 1911,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "delarue-mardrus",
+    "name": "Lucie Delarue-Mardrus",
+    "full_name": "Lucie Delarue-Mardrus",
+    "birth": {
+      "year": 1874,
+      "date": "1874",
+      "place": ""
+    },
+    "death": {
+      "year": 1945,
+      "date": "1945",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Lucie_Delarue-Mardrus_by_Henri_Manuel.jpg",
+    "bio": "Lucie Delarue-Mardrus est un auteur de troisième plan de la littérature française ou francophone, associé à Symbolisme et aux genres Poésie, Roman.",
+    "period": "XIXe",
+    "movements": [
+      "symbolisme"
+    ],
+    "genres": [
+      "poésie",
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "occidents",
+        "title": "Occidents",
+        "year": 1901,
+        "genre": "poésie"
+      },
+      {
+        "id": "l-ange-et-les-pervers",
+        "title": "L'Ange et les pervers",
+        "year": 1931,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "dhouville",
+    "name": "Gérard d'Houville",
+    "full_name": "Gérard d'Houville",
+    "birth": {
+      "year": 1875,
+      "date": "1875",
+      "place": ""
+    },
+    "death": {
+      "year": 1963,
+      "date": "1963",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Marie_de_Heredia_1889.jpg",
+    "bio": "Gérard d'Houville est un auteur de troisième plan de la littérature française ou francophone, associé à Symbolisme et aux genres Roman.",
+    "period": "XIXe",
+    "movements": [
+      "symbolisme"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "l-inconstante",
+        "title": "L'Inconstante",
+        "year": 1903,
+        "genre": "roman"
+      },
+      {
+        "id": "temps-d-amour",
+        "title": "Temps d'amour",
+        "year": 1908,
         "genre": "roman"
       }
     ],
@@ -3482,6 +4731,51 @@
     "notable_facts": []
   },
   {
+    "id": "vivien",
+    "name": "Renée Vivien",
+    "full_name": "Renée Vivien",
+    "birth": {
+      "year": 1877,
+      "date": "1877",
+      "place": ""
+    },
+    "death": {
+      "year": 1909,
+      "date": "1909",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Ren%C3%A9e_Vivien_1.png",
+    "bio": "Renée Vivien est un auteur de troisième plan de la littérature française ou francophone, associé à Symbolisme et aux genres Poésie.",
+    "period": "XIXe",
+    "movements": [
+      "symbolisme"
+    ],
+    "genres": [
+      "poésie"
+    ],
+    "works": [
+      {
+        "id": "etudes-et-preludes",
+        "title": "Études et Préludes",
+        "year": 1901,
+        "genre": "poésie"
+      },
+      {
+        "id": "a-l-heure-des-mains-jointes",
+        "title": "À l'heure des mains jointes",
+        "year": 1906,
+        "genre": "poésie"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "ramuz",
     "name": "Charles-Ferdinand Ramuz",
     "full_name": "Charles-Ferdinand Ramuz",
@@ -3560,6 +4854,52 @@
         "id": "deux-anglaises-et-le-continent",
         "title": "Deux Anglaises et le Continent",
         "year": 1956,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "picabia",
+    "name": "Francis Picabia",
+    "full_name": "Francis Picabia",
+    "birth": {
+      "year": 1879,
+      "date": "1879",
+      "place": ""
+    },
+    "death": {
+      "year": 1953,
+      "date": "1953",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Francis_Picabia%2C_photograph_published_in_Les_Peintres_Cubistes%2C_1913.jpg",
+    "bio": "Francis Picabia est un auteur de troisième plan de la littérature française ou francophone, associé à Dadaïsme et aux genres Poésie, Roman.",
+    "period": "XXe-1",
+    "movements": [
+      "dadaisme"
+    ],
+    "genres": [
+      "poésie",
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "poemes-et-dessins",
+        "title": "Poèmes et dessins de la fille née sans mère",
+        "year": 1918,
+        "genre": "poésie"
+      },
+      {
+        "id": "caravanserail",
+        "title": "Caravansérail",
+        "year": 1924,
         "genre": "roman"
       }
     ],
@@ -3775,6 +5115,51 @@
         "title": "Quai des brumes",
         "year": 1927,
         "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "marie-noel",
+    "name": "Marie Noël",
+    "full_name": "Marie Noël",
+    "birth": {
+      "year": 1883,
+      "date": "1883",
+      "place": ""
+    },
+    "death": {
+      "year": 1967,
+      "date": "1967",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Marie-Noel.png",
+    "bio": "Marie Noël est un auteur de troisième plan de la littérature française ou francophone, associé à Modernité et aux genres Poésie.",
+    "period": "XXe-1",
+    "movements": [
+      "modernite"
+    ],
+    "genres": [
+      "poésie"
+    ],
+    "works": [
+      {
+        "id": "les-chansons-et-les-heures",
+        "title": "Les Chansons et les Heures",
+        "year": 1922,
+        "genre": "poésie"
+      },
+      {
+        "id": "le-rosaire-des-joies",
+        "title": "Le Rosaire des joies",
+        "year": 1930,
+        "genre": "poésie"
       }
     ],
     "quotes": [],
@@ -4008,6 +5393,51 @@
     "notable_facts": []
   },
   {
+    "id": "maurois",
+    "name": "André Maurois",
+    "full_name": "André Maurois",
+    "birth": {
+      "year": 1885,
+      "date": "1885",
+      "place": ""
+    },
+    "death": {
+      "year": 1967,
+      "date": "1967",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Maurois_Harcourt_1936.jpg",
+    "bio": "André Maurois est un auteur de troisième plan de la littérature française ou francophone, associé à Modernité et aux genres Roman.",
+    "period": "XXe-1",
+    "movements": [
+      "modernite"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "les-silences-du-colonel-bramble",
+        "title": "Les Silences du colonel Bramble",
+        "year": 1918,
+        "genre": "roman"
+      },
+      {
+        "id": "climats",
+        "title": "Climats",
+        "year": 1928,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "alain-fournier",
     "name": "Alain-Fournier",
     "full_name": "Alain-Fournier",
@@ -4043,6 +5473,51 @@
         "title": "Miracles",
         "year": 1924,
         "genre": "poésie"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "riviere",
+    "name": "Jacques Rivière",
+    "full_name": "Jacques Rivière",
+    "birth": {
+      "year": 1886,
+      "date": "1886",
+      "place": ""
+    },
+    "death": {
+      "year": 1925,
+      "date": "1925",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Jacques_Rivi%C3%A8re_vers_1914_-_220e_r%C3%A9giment_d'infanterie..jpg",
+    "bio": "Jacques Rivière est un auteur de troisième plan de la littérature française ou francophone, associé à Critique et aux genres Essai.",
+    "period": "XXe-1",
+    "movements": [
+      "critique"
+    ],
+    "genres": [
+      "essai"
+    ],
+    "works": [
+      {
+        "id": "etudes-riviere",
+        "title": "Études",
+        "year": 1912,
+        "genre": "essai"
+      },
+      {
+        "id": "le-pas-gagne",
+        "title": "Le Pas gagné",
+        "year": 1923,
+        "genre": "essai"
       }
     ],
     "quotes": [],
@@ -4191,6 +5666,91 @@
     "notable_facts": []
   },
   {
+    "id": "jouve",
+    "name": "Pierre Jean Jouve",
+    "full_name": "Pierre Jean Jouve",
+    "birth": {
+      "year": 1887,
+      "date": "1887",
+      "place": ""
+    },
+    "death": {
+      "year": 1976,
+      "date": "1976",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait_de_Pierre_Jean_Jouve.jpg",
+    "bio": "Pierre Jean Jouve est un auteur de troisième plan de la littérature française ou francophone, associé à Modernité et aux genres Roman, Poésie.",
+    "period": "XXe-1",
+    "movements": [
+      "modernite"
+    ],
+    "genres": [
+      "roman",
+      "poésie"
+    ],
+    "works": [
+      {
+        "id": "paulina-1880",
+        "title": "Paulina 1880",
+        "year": 1925,
+        "genre": "roman"
+      },
+      {
+        "id": "sueur-de-sang",
+        "title": "Sueur de sang",
+        "year": 1935,
+        "genre": "poésie"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "cravan",
+    "name": "Arthur Cravan",
+    "full_name": "Arthur Cravan",
+    "birth": {
+      "year": 1887,
+      "date": "1887",
+      "place": ""
+    },
+    "death": {
+      "year": 1918,
+      "date": "1918",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Arthur-cravan.jpg",
+    "bio": "Arthur Cravan est un auteur de troisième plan de la littérature française ou francophone, associé à Dadaïsme et aux genres Essai.",
+    "period": "XXe-1",
+    "movements": [
+      "dadaisme"
+    ],
+    "genres": [
+      "essai"
+    ],
+    "works": [
+      {
+        "id": "maintenant",
+        "title": "Maintenant",
+        "year": 1915,
+        "genre": "essai"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "bernanos",
     "name": "Georges Bernanos",
     "full_name": "Georges Bernanos",
@@ -4316,6 +5876,52 @@
         "title": "Chaminadour",
         "year": 1934,
         "genre": "nouvelle"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "morand",
+    "name": "Paul Morand",
+    "full_name": "Paul Morand",
+    "birth": {
+      "year": 1888,
+      "date": "1888",
+      "place": ""
+    },
+    "death": {
+      "year": 1976,
+      "date": "1976",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Paul_Morand.jpg",
+    "bio": "Paul Morand est un auteur de troisième plan de la littérature française ou francophone, associé à Modernité et aux genres Roman, Nouvelle.",
+    "period": "XXe-1",
+    "movements": [
+      "modernite"
+    ],
+    "genres": [
+      "roman",
+      "nouvelle"
+    ],
+    "works": [
+      {
+        "id": "tendres-stocks",
+        "title": "Tendres Stocks",
+        "year": 1921,
+        "genre": "nouvelle"
+      },
+      {
+        "id": "lewis-et-irene",
+        "title": "Lewis et Irène",
+        "year": 1924,
+        "genre": "roman"
       }
     ],
     "quotes": [],
@@ -4660,6 +6266,45 @@
         "title": "La Reine morte",
         "year": 1942,
         "genre": "théâtre"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "vache",
+    "name": "Jacques Vaché",
+    "full_name": "Jacques Vaché",
+    "birth": {
+      "year": 1895,
+      "date": "1895",
+      "place": ""
+    },
+    "death": {
+      "year": 1919,
+      "date": "1919",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Vach%C3%A9_anglais.jpg",
+    "bio": "Jacques Vaché est un auteur de troisième plan de la littérature française ou francophone, associé à Dadaïsme et aux genres Essai.",
+    "period": "XXe-1",
+    "movements": [
+      "dadaisme"
+    ],
+    "genres": [
+      "essai"
+    ],
+    "works": [
+      {
+        "id": "lettres-de-guerre",
+        "title": "Lettres de guerre",
+        "year": 1919,
+        "genre": "essai"
       }
     ],
     "quotes": [],
@@ -5051,6 +6696,96 @@
     "notable_facts": []
   },
   {
+    "id": "bove",
+    "name": "Emmanuel Bove",
+    "full_name": "Emmanuel Bove",
+    "birth": {
+      "year": 1898,
+      "date": "1898",
+      "place": ""
+    },
+    "death": {
+      "year": 1945,
+      "date": "1945",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Emmanuel_Bove_1928.jpg",
+    "bio": "Emmanuel Bove est un auteur de troisième plan de la littérature française ou francophone, associé à Réalisme et aux genres Roman.",
+    "period": "XXe-1",
+    "movements": [
+      "realisme"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "mes-amis",
+        "title": "Mes Amis",
+        "year": 1924,
+        "genre": "roman"
+      },
+      {
+        "id": "la-derniere-nuit",
+        "title": "La Dernière Nuit",
+        "year": 1928,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "dabit",
+    "name": "Eugène Dabit",
+    "full_name": "Eugène Dabit",
+    "birth": {
+      "year": 1898,
+      "date": "1898",
+      "place": ""
+    },
+    "death": {
+      "year": 1936,
+      "date": "1936",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Eug%C3%A8ne_Dabit_3.jpg",
+    "bio": "Eugène Dabit est un auteur de troisième plan de la littérature française ou francophone, associé à Réalisme et aux genres Roman.",
+    "period": "XXe-1",
+    "movements": [
+      "realisme"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "hotel-du-nord",
+        "title": "Hôtel du Nord",
+        "year": 1929,
+        "genre": "roman"
+      },
+      {
+        "id": "faubourgs-de-paris",
+        "title": "Faubourgs de Paris",
+        "year": 1933,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "ponge",
     "name": "Francis Ponge",
     "full_name": "Francis Ponge",
@@ -5163,6 +6898,186 @@
         "id": "le-jeu-de-patience",
         "title": "Le Jeu de patience",
         "year": 1949,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "achard",
+    "name": "Marcel Achard",
+    "full_name": "Marcel Achard",
+    "birth": {
+      "year": 1899,
+      "date": "1899",
+      "place": ""
+    },
+    "death": {
+      "year": 1974,
+      "date": "1974",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Achard_Harcourt_1936.jpg",
+    "bio": "Marcel Achard est un auteur de troisième plan de la littérature française ou francophone, associé à Modernité et aux genres Théâtre.",
+    "period": "XXe-1",
+    "movements": [
+      "modernite"
+    ],
+    "genres": [
+      "théâtre"
+    ],
+    "works": [
+      {
+        "id": "voulez-vous-jouer-avec-moa",
+        "title": "Voulez-vous jouer avec moâ ?",
+        "year": 1924,
+        "genre": "théâtre"
+      },
+      {
+        "id": "domino",
+        "title": "Domino",
+        "year": 1932,
+        "genre": "théâtre"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "salacrou",
+    "name": "Armand Salacrou",
+    "full_name": "Armand Salacrou",
+    "birth": {
+      "year": 1899,
+      "date": "1899",
+      "place": ""
+    },
+    "death": {
+      "year": 1989,
+      "date": "1989",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Salacrou_Harcourt_1946.jpg",
+    "bio": "Armand Salacrou est un auteur de troisième plan de la littérature française ou francophone, associé à Modernité et aux genres Théâtre.",
+    "period": "XXe-1",
+    "movements": [
+      "modernite"
+    ],
+    "genres": [
+      "théâtre"
+    ],
+    "works": [
+      {
+        "id": "atlas-hotel",
+        "title": "Atlas-Hôtel",
+        "year": 1931,
+        "genre": "théâtre"
+      },
+      {
+        "id": "l-inconnue-d-arras",
+        "title": "L'Inconnue d'Arras",
+        "year": 1935,
+        "genre": "théâtre"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "peret",
+    "name": "Benjamin Péret",
+    "full_name": "Benjamin Péret",
+    "birth": {
+      "year": 1899,
+      "date": "1899",
+      "place": ""
+    },
+    "death": {
+      "year": 1959,
+      "date": "1959",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/BenjaminP%C3%A9ret.jpg",
+    "bio": "Benjamin Péret est un auteur de troisième plan de la littérature française ou francophone, associé à Surréalisme et aux genres Poésie.",
+    "period": "XXe-1",
+    "movements": [
+      "surréalisme"
+    ],
+    "genres": [
+      "poésie"
+    ],
+    "works": [
+      {
+        "id": "le-passager-du-transatlantique",
+        "title": "Le Passager du transatlantique",
+        "year": 1921,
+        "genre": "poésie"
+      },
+      {
+        "id": "immortelle-maladie",
+        "title": "Immortelle maladie",
+        "year": 1924,
+        "genre": "poésie"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "audiberti",
+    "name": "Jacques Audiberti",
+    "full_name": "Jacques Audiberti",
+    "birth": {
+      "year": 1899,
+      "date": "1899",
+      "place": ""
+    },
+    "death": {
+      "year": 1965,
+      "date": "1965",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/JacquesAudiberti-StudioHarcourt-1957.png",
+    "bio": "Jacques Audiberti est un auteur de troisième plan de la littérature française ou francophone, associé à Modernité et aux genres Roman.",
+    "period": "XXe-2",
+    "movements": [
+      "modernite"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "le-maitre-de-milan",
+        "title": "Le Maître de Milan",
+        "year": 1952,
+        "genre": "roman"
+      },
+      {
+        "id": "monstre",
+        "title": "Monstre",
+        "year": 1957,
         "genre": "roman"
       }
     ],
@@ -5397,6 +7312,141 @@
     "notable_facts": []
   },
   {
+    "id": "chamson",
+    "name": "André Chamson",
+    "full_name": "André Chamson",
+    "birth": {
+      "year": 1900,
+      "date": "1900",
+      "place": ""
+    },
+    "death": {
+      "year": 1983,
+      "date": "1983",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Andre_Chamson_1962.jpg",
+    "bio": "André Chamson est un auteur de troisième plan de la littérature française ou francophone, associé à Réalisme et aux genres Roman.",
+    "period": "XXe-1",
+    "movements": [
+      "realisme"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "roux-le-bandit",
+        "title": "Roux le bandit",
+        "year": 1925,
+        "genre": "roman"
+      },
+      {
+        "id": "le-crime-des-justes",
+        "title": "Le Crime des justes",
+        "year": 1950,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "crevel",
+    "name": "René Crevel",
+    "full_name": "René Crevel",
+    "birth": {
+      "year": 1900,
+      "date": "1900",
+      "place": ""
+    },
+    "death": {
+      "year": 1935,
+      "date": "1935",
+      "place": ""
+    },
+    "portrait": "",
+    "bio": "René Crevel est un auteur de troisième plan de la littérature française ou francophone, associé à Surréalisme et aux genres Roman.",
+    "period": "XXe-1",
+    "movements": [
+      "surréalisme"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "mon-corps-et-moi",
+        "title": "Mon corps et moi",
+        "year": 1925,
+        "genre": "roman"
+      },
+      {
+        "id": "la-mort-difficile",
+        "title": "La Mort difficile",
+        "year": 1926,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "dhotel",
+    "name": "André Dhôtel",
+    "full_name": "André Dhôtel",
+    "birth": {
+      "year": 1900,
+      "date": "1900",
+      "place": ""
+    },
+    "death": {
+      "year": 1991,
+      "date": "1991",
+      "place": ""
+    },
+    "portrait": "",
+    "bio": "André Dhôtel est un auteur de troisième plan de la littérature française ou francophone, associé à Fantastique et aux genres Roman.",
+    "period": "XXe-2",
+    "movements": [
+      "fantastique"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "le-pays-ou-l-on-n-arrive-jamais",
+        "title": "Le Pays où l'on n'arrive jamais",
+        "year": 1955,
+        "genre": "roman"
+      },
+      {
+        "id": "la-chronique-fabuleuse",
+        "title": "La Chronique fabuleuse",
+        "year": 1965,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "malraux",
     "name": "André Malraux",
     "full_name": "André Malraux",
@@ -5476,6 +7526,52 @@
         "title": "Fourbis",
         "year": 1955,
         "genre": "autobiographie"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "prevost",
+    "name": "Jean Prévost",
+    "full_name": "Jean Prévost",
+    "birth": {
+      "year": 1901,
+      "date": "1901",
+      "place": ""
+    },
+    "death": {
+      "year": 1944,
+      "date": "1944",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris_13e_-_Rue_S%C5%93ur_Catherine_Marie_-_Plaque_%C3%A0_Jean_Pr%C3%A9vost.jpg",
+    "bio": "Jean Prévost est un auteur de troisième plan de la littérature française ou francophone, associé à Réalisme et aux genres Essai, Roman.",
+    "period": "XXe-1",
+    "movements": [
+      "realisme"
+    ],
+    "genres": [
+      "essai",
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "dix-huitieme-annee",
+        "title": "Dix-huitième année",
+        "year": 1928,
+        "genre": "essai"
+      },
+      {
+        "id": "les-freres-bouquinquant",
+        "title": "Les Frères Bouquinquant",
+        "year": 1930,
+        "genre": "roman"
       }
     ],
     "quotes": [],
@@ -5799,6 +7895,51 @@
     "notable_facts": []
   },
   {
+    "id": "follain",
+    "name": "Jean Follain",
+    "full_name": "Jean Follain",
+    "birth": {
+      "year": 1903,
+      "date": "1903",
+      "place": ""
+    },
+    "death": {
+      "year": 1971,
+      "date": "1971",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Follain%2C_portrait_par_Josette_Bournet.jpg",
+    "bio": "Jean Follain est un auteur de troisième plan de la littérature française ou francophone, associé à Modernité et aux genres Poésie.",
+    "period": "XXe-2",
+    "movements": [
+      "modernite"
+    ],
+    "genres": [
+      "poésie"
+    ],
+    "works": [
+      {
+        "id": "usage-du-temps",
+        "title": "Usage du temps",
+        "year": 1943,
+        "genre": "poésie"
+      },
+      {
+        "id": "chef-lieu",
+        "title": "Chef-lieu",
+        "year": 1950,
+        "genre": "poésie"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "calet",
     "name": "Henri Calet",
     "full_name": "Henri Calet",
@@ -5933,6 +8074,52 @@
         "title": "Les Lois de l'hospitalité",
         "year": 1965,
         "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "nizan",
+    "name": "Paul Nizan",
+    "full_name": "Paul Nizan",
+    "birth": {
+      "year": 1905,
+      "date": "1905",
+      "place": ""
+    },
+    "death": {
+      "year": 1940,
+      "date": "1940",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Nizanpaul.jpg",
+    "bio": "Paul Nizan est un auteur de troisième plan de la littérature française ou francophone, associé à Modernité, Critique et aux genres Essai.",
+    "period": "XXe-1",
+    "movements": [
+      "modernite",
+      "critique"
+    ],
+    "genres": [
+      "essai"
+    ],
+    "works": [
+      {
+        "id": "aden-arabie",
+        "title": "Aden Arabie",
+        "year": 1931,
+        "genre": "essai"
+      },
+      {
+        "id": "les-chiens-de-garde",
+        "title": "Les Chiens de garde",
+        "year": 1932,
+        "genre": "essai"
       }
     ],
     "quotes": [],
@@ -6246,6 +8433,97 @@
         "title": "L'Espace littéraire",
         "year": 1955,
         "genre": "essai"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "aury",
+    "name": "Dominique Aury",
+    "full_name": "Dominique Aury",
+    "birth": {
+      "year": 1907,
+      "date": "1907",
+      "place": ""
+    },
+    "death": {
+      "year": 1998,
+      "date": "1998",
+      "place": ""
+    },
+    "portrait": "",
+    "bio": "Dominique Aury est un auteur de troisième plan de la littérature française ou francophone, associé à Modernité et aux genres Roman.",
+    "period": "XXe-2",
+    "movements": [
+      "modernite"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "histoire-d-o",
+        "title": "Histoire d'O",
+        "year": 1954,
+        "genre": "roman"
+      },
+      {
+        "id": "retour-a-roissy",
+        "title": "Retour à Roissy",
+        "year": 1969,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "herge",
+    "name": "Hergé",
+    "full_name": "Hergé",
+    "birth": {
+      "year": 1907,
+      "date": "1907",
+      "place": ""
+    },
+    "death": {
+      "year": 1983,
+      "date": "1983",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Herge-Italie-1965-Linus.png",
+    "bio": "Hergé est un auteur de troisième plan de la littérature française ou francophone, associé à Jeunesse, Bande dessinée et aux genres Bande dessinée.",
+    "period": "XXe-2",
+    "movements": [
+      "jeunesse",
+      "bande_dessinee"
+    ],
+    "genres": [
+      "bande dessinée"
+    ],
+    "works": [
+      {
+        "id": "tintin-au-pays-des-soviets",
+        "title": "Tintin au pays des Soviets",
+        "year": 1930,
+        "genre": "bande dessinée"
+      },
+      {
+        "id": "le-lotus-bleu",
+        "title": "Le Lotus bleu",
+        "year": 1936,
+        "genre": "bande dessinée"
       }
     ],
     "quotes": [],
@@ -6590,6 +8868,51 @@
     "notable_facts": []
   },
   {
+    "id": "malet",
+    "name": "Léo Malet",
+    "full_name": "Léo Malet",
+    "birth": {
+      "year": 1909,
+      "date": "1909",
+      "place": ""
+    },
+    "death": {
+      "year": 1996,
+      "date": "1996",
+      "place": ""
+    },
+    "portrait": "",
+    "bio": "Léo Malet est un auteur de troisième plan de la littérature française ou francophone, associé à Policier et aux genres Roman.",
+    "period": "XXe-2",
+    "movements": [
+      "policier"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "brouillard-au-pont-de-tolbiac",
+        "title": "Brouillard au pont de Tolbiac",
+        "year": 1956,
+        "genre": "roman"
+      },
+      {
+        "id": "casse-pipe-a-la-nation",
+        "title": "Casse-pipe à la Nation",
+        "year": 1957,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "genet",
     "name": "Jean Genet",
     "full_name": "Jean Genet",
@@ -6810,6 +9133,51 @@
     "notable_facts": []
   },
   {
+    "id": "troyat",
+    "name": "Henri Troyat",
+    "full_name": "Henri Troyat",
+    "birth": {
+      "year": 1911,
+      "date": "1911",
+      "place": ""
+    },
+    "death": {
+      "year": 2007,
+      "date": "2007",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Troyat_Harcourt_1943.jpg",
+    "bio": "Henri Troyat est un auteur de troisième plan de la littérature française ou francophone, associé à Réalisme et aux genres Roman.",
+    "period": "XXe-2",
+    "movements": [
+      "realisme"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "faux-jour",
+        "title": "Faux Jour",
+        "year": 1935,
+        "genre": "roman"
+      },
+      {
+        "id": "tant-que-la-terre-durera",
+        "title": "Tant que la terre durera",
+        "year": 1947,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "boulle",
     "name": "Pierre Boulle",
     "full_name": "Pierre Boulle",
@@ -6889,6 +9257,52 @@
         "title": "Graffiti",
         "year": 1952,
         "genre": "poésie"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "robin",
+    "name": "Armand Robin",
+    "full_name": "Armand Robin",
+    "birth": {
+      "year": 1912,
+      "date": "1912",
+      "place": ""
+    },
+    "death": {
+      "year": 1961,
+      "date": "1961",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Armand_Robin.jpg",
+    "bio": "Armand Robin est un auteur de troisième plan de la littérature française ou francophone, associé à Modernité et aux genres Poésie, Essai.",
+    "period": "XXe-2",
+    "movements": [
+      "modernite"
+    ],
+    "genres": [
+      "poésie",
+      "essai"
+    ],
+    "works": [
+      {
+        "id": "le-temps-qu-il-fait",
+        "title": "Le Temps qu'il fait",
+        "year": 1942,
+        "genre": "poésie"
+      },
+      {
+        "id": "ma-vie-sans-moi",
+        "title": "Ma vie sans moi",
+        "year": 1968,
+        "genre": "essai"
       }
     ],
     "quotes": [],
@@ -7052,6 +9466,97 @@
     "notable_facts": []
   },
   {
+    "id": "cesbron",
+    "name": "Gilbert Cesbron",
+    "full_name": "Gilbert Cesbron",
+    "birth": {
+      "year": 1913,
+      "date": "1913",
+      "place": ""
+    },
+    "death": {
+      "year": 1979,
+      "date": "1979",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Cesbron_Harcourt_1947_3.jpg",
+    "bio": "Gilbert Cesbron est un auteur de troisième plan de la littérature française ou francophone, associé à Réalisme et aux genres Roman, Théâtre.",
+    "period": "XXe-2",
+    "movements": [
+      "realisme"
+    ],
+    "genres": [
+      "roman",
+      "théâtre"
+    ],
+    "works": [
+      {
+        "id": "chiens-perdus-sans-collier",
+        "title": "Chiens perdus sans collier",
+        "year": 1954,
+        "genre": "roman"
+      },
+      {
+        "id": "il-est-minuit-docteur-schweitzer",
+        "title": "Il est minuit, docteur Schweitzer",
+        "year": 1947,
+        "genre": "théâtre"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "feraoun",
+    "name": "Mouloud Feraoun",
+    "full_name": "Mouloud Feraoun",
+    "birth": {
+      "year": 1913,
+      "date": "1913",
+      "place": ""
+    },
+    "death": {
+      "year": 1962,
+      "date": "1962",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Mouloud-feraoun.jpg",
+    "bio": "Mouloud Feraoun est un auteur de troisième plan de la littérature française ou francophone, associé à Francophonie et aux genres Roman.",
+    "period": "XXe-2",
+    "movements": [
+      "francophonie"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "le-fils-du-pauvre",
+        "title": "Le Fils du pauvre",
+        "year": 1950,
+        "genre": "roman"
+      },
+      {
+        "id": "les-chemins-qui-montent",
+        "title": "Les Chemins qui montent",
+        "year": 1957,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "duras",
     "name": "Marguerite Duras",
     "full_name": "Marguerite Germaine Marie Donnadieu",
@@ -7156,6 +9661,51 @@
     "notable_facts": []
   },
   {
+    "id": "claude-roy",
+    "name": "Claude Roy",
+    "full_name": "Claude Roy",
+    "birth": {
+      "year": 1915,
+      "date": "1915",
+      "place": ""
+    },
+    "death": {
+      "year": 1997,
+      "date": "1997",
+      "place": ""
+    },
+    "portrait": "",
+    "bio": "Claude Roy est un auteur de troisième plan de la littérature française ou francophone, associé à Modernité et aux genres Poésie.",
+    "period": "XXe-2",
+    "movements": [
+      "modernite"
+    ],
+    "genres": [
+      "poésie"
+    ],
+    "works": [
+      {
+        "id": "la-france-de-profil",
+        "title": "La France de profil",
+        "year": 1943,
+        "genre": "poésie"
+      },
+      {
+        "id": "enfances",
+        "title": "Enfances",
+        "year": 1976,
+        "genre": "poésie"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "hebert",
     "name": "Anne Hébert",
     "full_name": "Anne Hébert",
@@ -7202,6 +9752,193 @@
     "notable_facts": []
   },
   {
+    "id": "emmanuel",
+    "name": "Pierre Emmanuel",
+    "full_name": "Pierre Emmanuel",
+    "birth": {
+      "year": 1916,
+      "date": "1916",
+      "place": ""
+    },
+    "death": {
+      "year": 1984,
+      "date": "1984",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/P%C3%A8re-Lachaise_-_Division_57_-_Emmanuel_02.jpg",
+    "bio": "Pierre Emmanuel est un auteur de troisième plan de la littérature française ou francophone, associé à Modernité et aux genres Poésie, Essai.",
+    "period": "XXe-2",
+    "movements": [
+      "modernite"
+    ],
+    "genres": [
+      "poésie",
+      "essai"
+    ],
+    "works": [
+      {
+        "id": "tombeau-d-orphee",
+        "title": "Tombeau d'Orphée",
+        "year": 1941,
+        "genre": "poésie"
+      },
+      {
+        "id": "une-conscience-aux-aguets",
+        "title": "Une conscience aux aguets",
+        "year": 1966,
+        "genre": "essai"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "leo-ferre",
+    "name": "Léo Ferré",
+    "full_name": "Léo Ferré",
+    "birth": {
+      "year": 1916,
+      "date": "1916",
+      "place": ""
+    },
+    "death": {
+      "year": 1993,
+      "date": "1993",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/LeoFerre-Rome-1972.png",
+    "bio": "Léo Ferré est un auteur de troisième plan de la littérature française ou francophone, associé à Chanson et aux genres Poésie.",
+    "period": "XXe-2",
+    "movements": [
+      "chanson"
+    ],
+    "genres": [
+      "poésie"
+    ],
+    "works": [
+      {
+        "id": "paris-canaille",
+        "title": "Paris canaille",
+        "year": 1953,
+        "genre": "poésie"
+      },
+      {
+        "id": "la-memoire-et-la-mer",
+        "title": "La Mémoire et la Mer",
+        "year": 1970,
+        "genre": "poésie"
+      },
+      {
+        "id": "avec-le-temps",
+        "title": "Avec le temps",
+        "year": 1971,
+        "genre": "poésie"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "curtis",
+    "name": "Jean-Louis Curtis",
+    "full_name": "Jean-Louis Curtis",
+    "birth": {
+      "year": 1917,
+      "date": "1917",
+      "place": ""
+    },
+    "death": {
+      "year": 1995,
+      "date": "1995",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Curtis_Harcourt_1947_2.jpg",
+    "bio": "Jean-Louis Curtis est un auteur de troisième plan de la littérature française ou francophone, associé à Réalisme et aux genres Roman.",
+    "period": "XXe-2",
+    "movements": [
+      "realisme"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "les-forets-de-la-nuit",
+        "title": "Les Forêts de la nuit",
+        "year": 1947,
+        "genre": "roman"
+      },
+      {
+        "id": "la-parade",
+        "title": "La Parade",
+        "year": 1960,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "rochefort",
+    "name": "Christiane Rochefort",
+    "full_name": "Christiane Rochefort",
+    "birth": {
+      "year": 1917,
+      "date": "1917",
+      "place": ""
+    },
+    "death": {
+      "year": 1998,
+      "date": "1998",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Rochefort-ch4.JPG",
+    "bio": "Christiane Rochefort est un auteur de troisième plan de la littérature française ou francophone, associé à Modernité et aux genres Roman.",
+    "period": "XXe-2",
+    "movements": [
+      "modernite"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "le-repos-du-guerrier",
+        "title": "Le Repos du guerrier",
+        "year": 1958,
+        "genre": "roman"
+      },
+      {
+        "id": "les-stances-a-sophie",
+        "title": "Les Stances à Sophie",
+        "year": 1963,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "pinget",
     "name": "Robert Pinget",
     "full_name": "Robert Pinget",
@@ -7236,6 +9973,97 @@
         "title": "Passacaille",
         "year": 1969,
         "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "deon",
+    "name": "Michel Déon",
+    "full_name": "Michel Déon",
+    "birth": {
+      "year": 1919,
+      "date": "1919",
+      "place": ""
+    },
+    "death": {
+      "year": 2016,
+      "date": "2016",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Michel_D%C3%A9on_au_salon_du_livre_de_Paris_2012.jpg",
+    "bio": "Michel Déon est un auteur de troisième plan de la littérature française ou francophone, associé à Modernité et aux genres Roman.",
+    "period": "XXe-2",
+    "movements": [
+      "modernite"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "les-poneys-sauvages",
+        "title": "Les Poneys sauvages",
+        "year": 1970,
+        "genre": "roman"
+      },
+      {
+        "id": "un-taxi-mauve",
+        "title": "Un taxi mauve",
+        "year": 1973,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "jacques-laurent",
+    "name": "Jacques Laurent",
+    "full_name": "Jacques Laurent",
+    "birth": {
+      "year": 1919,
+      "date": "1919",
+      "place": ""
+    },
+    "death": {
+      "year": 2000,
+      "date": "2000",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Tombe_de_Jacques_Laurent_(1919%E2%80%932000)_3.jpg",
+    "bio": "Jacques Laurent est un auteur de troisième plan de la littérature française ou francophone, associé à Modernité et aux genres Roman, Essai.",
+    "period": "XXe-2",
+    "movements": [
+      "modernite"
+    ],
+    "genres": [
+      "roman",
+      "essai"
+    ],
+    "works": [
+      {
+        "id": "caroline-cherie",
+        "title": "Caroline chérie",
+        "year": 1947,
+        "genre": "roman"
+      },
+      {
+        "id": "les-betises",
+        "title": "Les Bêtises",
+        "year": 1976,
+        "genre": "essai"
       }
     ],
     "quotes": [],
@@ -7332,6 +10160,149 @@
     "notable_facts": []
   },
   {
+    "id": "dib",
+    "name": "Mohammed Dib",
+    "full_name": "Mohammed Dib",
+    "birth": {
+      "year": 1920,
+      "date": "1920",
+      "place": ""
+    },
+    "death": {
+      "year": 2003,
+      "date": "2003",
+      "place": ""
+    },
+    "portrait": "",
+    "bio": "Mohammed Dib est un auteur de troisième plan de la littérature française ou francophone, associé à Francophonie et aux genres Roman.",
+    "period": "XXe-2",
+    "movements": [
+      "francophonie"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "la-grande-maison",
+        "title": "La Grande Maison",
+        "year": 1952,
+        "genre": "roman"
+      },
+      {
+        "id": "un-ete-africain",
+        "title": "Un été africain",
+        "year": 1959,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "memmi",
+    "name": "Albert Memmi",
+    "full_name": "Albert Memmi",
+    "birth": {
+      "year": 1920,
+      "date": "1920",
+      "place": ""
+    },
+    "death": {
+      "year": 2020,
+      "date": "2020",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Albert_Memmi_par_Claude_Truong-Ngoc_d%C3%A9cembre_1982.jpg",
+    "bio": "Albert Memmi est un auteur de troisième plan de la littérature française ou francophone, associé à Francophonie, Postcolonialisme et aux genres Roman, Essai.",
+    "period": "XXe-2",
+    "movements": [
+      "francophonie",
+      "postcolonialisme"
+    ],
+    "genres": [
+      "roman",
+      "essai"
+    ],
+    "works": [
+      {
+        "id": "la-statue-de-sel",
+        "title": "La Statue de sel",
+        "year": 1953,
+        "genre": "roman"
+      },
+      {
+        "id": "portrait-du-colonise",
+        "title": "Portrait du colonisé",
+        "year": 1957,
+        "genre": "essai"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "brassens",
+    "name": "Georges Brassens",
+    "full_name": "Georges Brassens",
+    "birth": {
+      "year": 1921,
+      "date": "1921",
+      "place": ""
+    },
+    "death": {
+      "year": 1981,
+      "date": "1981",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Brassens-StudioHarcourt-1957.png",
+    "bio": "Georges Brassens est un auteur de troisième plan de la littérature française ou francophone, associé à Chanson et aux genres Poésie.",
+    "period": "XXe-2",
+    "movements": [
+      "chanson"
+    ],
+    "genres": [
+      "poésie"
+    ],
+    "works": [
+      {
+        "id": "la-mauvaise-reputation",
+        "title": "La Mauvaise Réputation",
+        "year": 1952,
+        "genre": "poésie"
+      },
+      {
+        "id": "les-copains-d-abord",
+        "title": "Les Copains d'abord",
+        "year": 1964,
+        "genre": "poésie"
+      },
+      {
+        "id": "supplique",
+        "title": "Supplique pour être enterré à la plage de Sète",
+        "year": 1966,
+        "genre": "poésie"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "robbe-grillet",
     "name": "Alain Robbe-Grillet",
     "full_name": "Alain Robbe-Grillet",
@@ -7358,6 +10329,96 @@
       {
         "id": "la-jalousie",
         "title": "La Jalousie",
+        "year": 1957,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "blondin",
+    "name": "Antoine Blondin",
+    "full_name": "Antoine Blondin",
+    "birth": {
+      "year": 1922,
+      "date": "1922",
+      "place": ""
+    },
+    "death": {
+      "year": 1991,
+      "date": "1991",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Panneau_Square_Antoine_Blondin_-_Paris_XX_(FR75)_-_2022-02-19_-_1.jpg",
+    "bio": "Antoine Blondin est un auteur de troisième plan de la littérature française ou francophone, associé à Modernité et aux genres Roman.",
+    "period": "XXe-2",
+    "movements": [
+      "modernite"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "l-europe-buissonniere",
+        "title": "L'Europe buissonnière",
+        "year": 1949,
+        "genre": "roman"
+      },
+      {
+        "id": "les-enfants-du-bon-dieu",
+        "title": "Les Enfants du Bon Dieu",
+        "year": 1952,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "wul",
+    "name": "Stefan Wul",
+    "full_name": "Stefan Wul",
+    "birth": {
+      "year": 1922,
+      "date": "1922",
+      "place": ""
+    },
+    "death": {
+      "year": 2003,
+      "date": "2003",
+      "place": ""
+    },
+    "portrait": "",
+    "bio": "Stefan Wul est un auteur de troisième plan de la littérature française ou francophone, associé à Science-fiction et aux genres Roman.",
+    "period": "XXe-2",
+    "movements": [
+      "science_fiction"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "niourk",
+        "title": "Niourk",
+        "year": 1957,
+        "genre": "roman"
+      },
+      {
+        "id": "oms-en-serie",
+        "title": "Oms en série",
         "year": 1957,
         "genre": "roman"
       }
@@ -7450,6 +10511,51 @@
         "title": "Les Planches courbes",
         "year": 2001,
         "genre": "poésie"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "sabatier",
+    "name": "Robert Sabatier",
+    "full_name": "Robert Sabatier",
+    "birth": {
+      "year": 1923,
+      "date": "1923",
+      "place": ""
+    },
+    "death": {
+      "year": 2012,
+      "date": "2012",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Salon_du_livre_de_Paris_2011_-_Robert_Sabatier_-_002.jpg",
+    "bio": "Robert Sabatier est un auteur de troisième plan de la littérature française ou francophone, associé à Réalisme et aux genres Roman.",
+    "period": "XXe-2",
+    "movements": [
+      "realisme"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "les-allumettes-suedoises",
+        "title": "Les Allumettes suédoises",
+        "year": 1969,
+        "genre": "roman"
+      },
+      {
+        "id": "trois-sucettes-a-la-menthe",
+        "title": "Trois sucettes à la menthe",
+        "year": 1972,
+        "genre": "roman"
       }
     ],
     "quotes": [],
@@ -7642,6 +10748,143 @@
     "notable_facts": []
   },
   {
+    "id": "nimier",
+    "name": "Roger Nimier",
+    "full_name": "Roger Nimier",
+    "birth": {
+      "year": 1925,
+      "date": "1925",
+      "place": ""
+    },
+    "death": {
+      "year": 1962,
+      "date": "1962",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Nimier.jpg",
+    "bio": "Roger Nimier est un auteur de troisième plan de la littérature française ou francophone, associé à Modernité et aux genres Roman.",
+    "period": "XXe-2",
+    "movements": [
+      "modernite"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "le-hussard-bleu",
+        "title": "Le Hussard bleu",
+        "year": 1950,
+        "genre": "roman"
+      },
+      {
+        "id": "les-enfants-tristes",
+        "title": "Les Enfants tristes",
+        "year": 1951,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "chraibi",
+    "name": "Driss Chraïbi",
+    "full_name": "Driss Chraïbi",
+    "birth": {
+      "year": 1926,
+      "date": "1926",
+      "place": ""
+    },
+    "death": {
+      "year": 2007,
+      "date": "2007",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/ChraibiDriss.jpg",
+    "bio": "Driss Chraïbi est un auteur de troisième plan de la littérature française ou francophone, associé à Francophonie et aux genres Roman.",
+    "period": "XXe-2",
+    "movements": [
+      "francophonie"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "le-passe-simple",
+        "title": "Le Passé simple",
+        "year": 1954,
+        "genre": "roman"
+      },
+      {
+        "id": "la-civilisation-ma-mere",
+        "title": "La Civilisation, ma Mère !...",
+        "year": 1972,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "goscinny",
+    "name": "René Goscinny",
+    "full_name": "René Goscinny",
+    "birth": {
+      "year": 1926,
+      "date": "1926",
+      "place": ""
+    },
+    "death": {
+      "year": 1977,
+      "date": "1977",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/ReneGoscinny-StudioHarcourt-1966.png",
+    "bio": "René Goscinny est un auteur de troisième plan de la littérature française ou francophone, associé à Jeunesse, Bande dessinée et aux genres Conte, Bande dessinée.",
+    "period": "XXe-2",
+    "movements": [
+      "jeunesse",
+      "bande_dessinee"
+    ],
+    "genres": [
+      "conte",
+      "bande dessinée"
+    ],
+    "works": [
+      {
+        "id": "le-petit-nicolas",
+        "title": "Le Petit Nicolas",
+        "year": 1959,
+        "genre": "conte"
+      },
+      {
+        "id": "asterix-le-gaulois",
+        "title": "Astérix le Gaulois",
+        "year": 1961,
+        "genre": "bande dessinée"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "kourouma",
     "name": "Ahmadou Kourouma",
     "full_name": "Ahmadou Kourouma",
@@ -7716,6 +10959,143 @@
         "title": "Le Discours antillais",
         "year": 1981,
         "genre": "essai"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "gainsbourg",
+    "name": "Serge Gainsbourg",
+    "full_name": "Serge Gainsbourg",
+    "birth": {
+      "year": 1928,
+      "date": "1928",
+      "place": ""
+    },
+    "death": {
+      "year": 1991,
+      "date": "1991",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Serge_Gainsbourg_par_Claude_Truong-Ngoc_1981.jpg",
+    "bio": "Serge Gainsbourg est un auteur de troisième plan de la littérature française ou francophone, associé à Chanson et aux genres Poésie.",
+    "period": "XXe-2",
+    "movements": [
+      "chanson"
+    ],
+    "genres": [
+      "poésie"
+    ],
+    "works": [
+      {
+        "id": "du-chant-a-la-une",
+        "title": "Du chant à la une !",
+        "year": 1958,
+        "genre": "poésie"
+      },
+      {
+        "id": "histoire-de-melody-nelson",
+        "title": "Histoire de Melody Nelson",
+        "year": 1971,
+        "genre": "poésie"
+      },
+      {
+        "id": "l-homme-a-tete-de-chou",
+        "title": "L'Homme à tête de chou",
+        "year": 1976,
+        "genre": "poésie"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "kane",
+    "name": "Cheikh Hamidou Kane",
+    "full_name": "Cheikh Hamidou Kane",
+    "birth": {
+      "year": 1928,
+      "date": "1928",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Cheikh_Hamidou_Kane.jpg",
+    "bio": "Cheikh Hamidou Kane est un auteur de troisième plan de la littérature française ou francophone, associé à Francophonie et aux genres Roman.",
+    "period": "XXe-2",
+    "movements": [
+      "francophonie"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "l-aventure-ambigue",
+        "title": "L'Aventure ambiguë",
+        "year": 1961,
+        "genre": "roman"
+      },
+      {
+        "id": "les-gardiens-du-temple",
+        "title": "Les Gardiens du temple",
+        "year": 1995,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "miron",
+    "name": "Gaston Miron",
+    "full_name": "Gaston Miron",
+    "birth": {
+      "year": 1928,
+      "date": "1928",
+      "place": ""
+    },
+    "death": {
+      "year": 1996,
+      "date": "1996",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Gaston_Miron.jpg",
+    "bio": "Gaston Miron est un auteur de troisième plan de la littérature française ou francophone, associé à Francophonie et aux genres Poésie.",
+    "period": "XXe-2",
+    "movements": [
+      "francophonie"
+    ],
+    "genres": [
+      "poésie"
+    ],
+    "works": [
+      {
+        "id": "l-homme-rapaille",
+        "title": "L'Homme rapaillé",
+        "year": 1970,
+        "genre": "poésie"
+      },
+      {
+        "id": "courtepointes",
+        "title": "Courtepointes",
+        "year": 1975,
+        "genre": "poésie"
       }
     ],
     "quotes": [],
@@ -7818,6 +11198,241 @@
     "notable_facts": []
   },
   {
+    "id": "brel",
+    "name": "Jacques Brel",
+    "full_name": "Jacques Brel",
+    "birth": {
+      "year": 1929,
+      "date": "1929",
+      "place": ""
+    },
+    "death": {
+      "year": 1978,
+      "date": "1978",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Jacques_Brel_(1962).jpg",
+    "bio": "Jacques Brel est un auteur de troisième plan de la littérature française ou francophone, associé à Chanson et aux genres Poésie.",
+    "period": "XXe-2",
+    "movements": [
+      "chanson"
+    ],
+    "genres": [
+      "poésie"
+    ],
+    "works": [
+      {
+        "id": "quand-on-n-a-que-l-amour",
+        "title": "Quand on n'a que l'amour",
+        "year": 1957,
+        "genre": "poésie"
+      },
+      {
+        "id": "ne-me-quitte-pas",
+        "title": "Ne me quitte pas",
+        "year": 1959,
+        "genre": "poésie"
+      },
+      {
+        "id": "amsterdam",
+        "title": "Amsterdam",
+        "year": 1964,
+        "genre": "poésie"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "aquin",
+    "name": "Hubert Aquin",
+    "full_name": "Hubert Aquin",
+    "birth": {
+      "year": 1929,
+      "date": "1929",
+      "place": ""
+    },
+    "death": {
+      "year": 1977,
+      "date": "1977",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Hubert_Aquin_1976.png",
+    "bio": "Hubert Aquin est un auteur de troisième plan de la littérature française ou francophone, associé à Francophonie et aux genres Roman.",
+    "period": "XXe-2",
+    "movements": [
+      "francophonie"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "prochain-episode",
+        "title": "Prochain épisode",
+        "year": 1965,
+        "genre": "roman"
+      },
+      {
+        "id": "trou-de-memoire",
+        "title": "Trou de mémoire",
+        "year": 1968,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "maillet",
+    "name": "Antonine Maillet",
+    "full_name": "Antonine Maillet",
+    "birth": {
+      "year": 1929,
+      "date": "1929",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Antonine_Maillet_redux.jpg",
+    "bio": "Antonine Maillet est un auteur de troisième plan de la littérature française ou francophone, associé à Francophonie et aux genres Théâtre, Roman.",
+    "period": "XXe-2",
+    "movements": [
+      "francophonie"
+    ],
+    "genres": [
+      "théâtre",
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "la-sagouine",
+        "title": "La Sagouine",
+        "year": 1971,
+        "genre": "théâtre"
+      },
+      {
+        "id": "pelagie-la-charrette",
+        "title": "Pélagie-la-Charrette",
+        "year": 1979,
+        "genre": "roman"
+      },
+      {
+        "id": "cent-ans-dans-les-bois",
+        "title": "Cent ans dans les bois",
+        "year": 1981,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "bouvier",
+    "name": "Nicolas Bouvier",
+    "full_name": "Nicolas Bouvier",
+    "birth": {
+      "year": 1929,
+      "date": "1929",
+      "place": ""
+    },
+    "death": {
+      "year": 1998,
+      "date": "1998",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Nicolas_Bouvier_(1987)_by_Erling_Mandelmann.jpg",
+    "bio": "Nicolas Bouvier est un auteur de troisième plan de la littérature française ou francophone, associé à Modernité et aux genres Récit.",
+    "period": "XXe-2",
+    "movements": [
+      "modernite"
+    ],
+    "genres": [
+      "récit"
+    ],
+    "works": [
+      {
+        "id": "l-usage-du-monde",
+        "title": "L'Usage du monde",
+        "year": 1963,
+        "genre": "récit"
+      },
+      {
+        "id": "chronique-japonaise",
+        "title": "Chronique japonaise",
+        "year": 1975,
+        "genre": "récit"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "mallet-joris",
+    "name": "Françoise Mallet-Joris",
+    "full_name": "Françoise Mallet-Joris",
+    "birth": {
+      "year": 1930,
+      "date": "1930",
+      "place": ""
+    },
+    "death": {
+      "year": 2016,
+      "date": "2016",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Fran%C3%A7oise_Mallet-Joris.jpg",
+    "bio": "Françoise Mallet-Joris est un auteur de troisième plan de la littérature française ou francophone, associé à Modernité et aux genres Roman, Essai.",
+    "period": "XXe-2",
+    "movements": [
+      "modernite"
+    ],
+    "genres": [
+      "roman",
+      "essai"
+    ],
+    "works": [
+      {
+        "id": "le-rempart-des-beguines",
+        "title": "Le Rempart des Béguines",
+        "year": 1951,
+        "genre": "roman"
+      },
+      {
+        "id": "lettre-a-moi-meme",
+        "title": "Lettre à moi-même",
+        "year": 1963,
+        "genre": "essai"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "arrabal",
     "name": "Fernando Arrabal",
     "full_name": "Fernando Arrabal",
@@ -7859,6 +11474,51 @@
     "notable_facts": []
   },
   {
+    "id": "beti",
+    "name": "Mongo Beti",
+    "full_name": "Mongo Beti",
+    "birth": {
+      "year": 1932,
+      "date": "1932",
+      "place": ""
+    },
+    "death": {
+      "year": 2001,
+      "date": "2001",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Mongo_Beti.jpg",
+    "bio": "Mongo Beti est un auteur de troisième plan de la littérature française ou francophone, associé à Francophonie et aux genres Roman.",
+    "period": "XXe-2",
+    "movements": [
+      "francophonie"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "ville-cruelle",
+        "title": "Ville cruelle",
+        "year": 1954,
+        "genre": "roman"
+      },
+      {
+        "id": "le-pauvre-christ-de-bomba",
+        "title": "Le Pauvre Christ de Bomba",
+        "year": 1956,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "conde",
     "name": "Maryse Condé",
     "full_name": "Maryse Condé",
@@ -7886,6 +11546,51 @@
         "id": "segou",
         "title": "Ségou",
         "year": 1984,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "chessex",
+    "name": "Jacques Chessex",
+    "full_name": "Jacques Chessex",
+    "birth": {
+      "year": 1934,
+      "date": "1934",
+      "place": ""
+    },
+    "death": {
+      "year": 2009,
+      "date": "2009",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Jacques_Chessex.jpg",
+    "bio": "Jacques Chessex est un auteur de troisième plan de la littérature française ou francophone, associé à Modernité et aux genres Roman.",
+    "period": "XXe-2",
+    "movements": [
+      "modernite"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "l-ogre",
+        "title": "L'Ogre",
+        "year": 1973,
+        "genre": "roman"
+      },
+      {
+        "id": "un-juif-pour-l-exemple",
+        "title": "Un Juif pour l'exemple",
+        "year": 2009,
         "genre": "roman"
       }
     ],
@@ -8121,6 +11826,226 @@
     "notable_facts": []
   },
   {
+    "id": "sarrazin",
+    "name": "Albertine Sarrazin",
+    "full_name": "Albertine Sarrazin",
+    "birth": {
+      "year": 1937,
+      "date": "1937",
+      "place": ""
+    },
+    "death": {
+      "year": 1967,
+      "date": "1967",
+      "place": ""
+    },
+    "portrait": "",
+    "bio": "Albertine Sarrazin est un auteur de troisième plan de la littérature française ou francophone, associé à Modernité et aux genres Autobiographie, Roman.",
+    "period": "XXe-2",
+    "movements": [
+      "modernite"
+    ],
+    "genres": [
+      "autobiographie",
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "l-astragale",
+        "title": "L'Astragale",
+        "year": 1965,
+        "genre": "autobiographie"
+      },
+      {
+        "id": "la-cavale",
+        "title": "La Cavale",
+        "year": 1965,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "gerard-klein",
+    "name": "Gérard Klein",
+    "full_name": "Gérard Klein",
+    "birth": {
+      "year": 1937,
+      "date": "1937",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Utos127-G%C3%A9rard_Klein.jpg",
+    "bio": "Gérard Klein est un auteur de troisième plan de la littérature française ou francophone, associé à Science-fiction et aux genres Roman, Nouvelle.",
+    "period": "XXe-2",
+    "movements": [
+      "science_fiction"
+    ],
+    "genres": [
+      "roman",
+      "nouvelle"
+    ],
+    "works": [
+      {
+        "id": "les-perles-du-temps",
+        "title": "Les Perles du temps",
+        "year": 1958,
+        "genre": "nouvelle"
+      },
+      {
+        "id": "le-gambit-des-etoiles",
+        "title": "Le Gambit des étoiles",
+        "year": 1973,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "lopes",
+    "name": "Henri Lopes",
+    "full_name": "Henri Lopes",
+    "birth": {
+      "year": 1937,
+      "date": "1937",
+      "place": ""
+    },
+    "death": {
+      "year": 2023,
+      "date": "2023",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Henri_Lopes.jpg",
+    "bio": "Henri Lopes est un auteur de troisième plan de la littérature française ou francophone, associé à Francophonie et aux genres Roman, Nouvelle.",
+    "period": "XXe-2",
+    "movements": [
+      "francophonie"
+    ],
+    "genres": [
+      "roman",
+      "nouvelle"
+    ],
+    "works": [
+      {
+        "id": "tribaliques",
+        "title": "Tribaliques",
+        "year": 1971,
+        "genre": "nouvelle"
+      },
+      {
+        "id": "le-pleurer-rire",
+        "title": "Le Pleurer-rire",
+        "year": 1982,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "schwarz-bart",
+    "name": "Simone Schwarz-Bart",
+    "full_name": "Simone Schwarz-Bart",
+    "birth": {
+      "year": 1938,
+      "date": "1938",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Simone_Schwarz-Bart_-_Claire_Gaudriot.jpg",
+    "bio": "Simone Schwarz-Bart est un auteur de troisième plan de la littérature française ou francophone, associé à Créolité et aux genres Roman.",
+    "period": "XXe-2",
+    "movements": [
+      "creolite"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "pluie-et-vent-sur-telumee-miracle",
+        "title": "Pluie et vent sur Télumée Miracle",
+        "year": 1972,
+        "genre": "roman"
+      },
+      {
+        "id": "un-plat-de-porc-aux-bananes-vertes",
+        "title": "Un plat de porc aux bananes vertes",
+        "year": 1967,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "blais",
+    "name": "Marie-Claire Blais",
+    "full_name": "Marie-Claire Blais",
+    "birth": {
+      "year": 1939,
+      "date": "1939",
+      "place": ""
+    },
+    "death": {
+      "year": 2021,
+      "date": "2021",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Marie-Claire_Blais_redux.jpg",
+    "bio": "Marie-Claire Blais est un auteur de troisième plan de la littérature française ou francophone, associé à Francophonie et aux genres Roman.",
+    "period": "XXe-2",
+    "movements": [
+      "francophonie"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "une-saison-dans-la-vie-d-emmanuel",
+        "title": "Une saison dans la vie d'Emmanuel",
+        "year": 1965,
+        "genre": "roman"
+      },
+      {
+        "id": "soifs",
+        "title": "Soifs",
+        "year": 1995,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "le-clezio",
     "name": "J.M.G. Le Clézio",
     "full_name": "J.M.G. Le Clézio",
@@ -8260,6 +12185,51 @@
     "notable_facts": []
   },
   {
+    "id": "ducharme",
+    "name": "Réjean Ducharme",
+    "full_name": "Réjean Ducharme",
+    "birth": {
+      "year": 1941,
+      "date": "1941",
+      "place": ""
+    },
+    "death": {
+      "year": 2017,
+      "date": "2017",
+      "place": ""
+    },
+    "portrait": "",
+    "bio": "Réjean Ducharme est un auteur de troisième plan de la littérature française ou francophone, associé à Francophonie et aux genres Roman.",
+    "period": "XXe-2",
+    "movements": [
+      "francophonie"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "l-avalee-des-avales",
+        "title": "L'Avalée des avalés",
+        "year": 1966,
+        "genre": "roman"
+      },
+      {
+        "id": "le-nez-qui-voque",
+        "title": "Le Nez qui voque",
+        "year": 1967,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "tremblay",
     "name": "Michel Tremblay",
     "full_name": "Michel Tremblay",
@@ -8290,6 +12260,51 @@
         "title": "Hosanna",
         "year": 1973,
         "genre": "théâtre"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "manchette",
+    "name": "Jean-Patrick Manchette",
+    "full_name": "Jean-Patrick Manchette",
+    "birth": {
+      "year": 1942,
+      "date": "1942",
+      "place": ""
+    },
+    "death": {
+      "year": 1995,
+      "date": "1995",
+      "place": ""
+    },
+    "portrait": "",
+    "bio": "Jean-Patrick Manchette est un auteur de troisième plan de la littérature française ou francophone, associé à Policier et aux genres Roman.",
+    "period": "XXe-2",
+    "movements": [
+      "policier"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "le-petit-bleu-de-la-cote-ouest",
+        "title": "Le Petit Bleu de la côte ouest",
+        "year": 1976,
+        "genre": "roman"
+      },
+      {
+        "id": "fatale",
+        "title": "Fatale",
+        "year": 1977,
+        "genre": "roman"
       }
     ],
     "quotes": [],
@@ -8424,6 +12439,47 @@
     "notable_facts": []
   },
   {
+    "id": "tardi",
+    "name": "Jacques Tardi",
+    "full_name": "Jacques Tardi",
+    "birth": {
+      "year": 1946,
+      "date": "1946",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Tardi-IMG_0181.JPG",
+    "bio": "Jacques Tardi est un auteur de troisième plan de la littérature française ou francophone, associé à Bande dessinée et aux genres Bande dessinée.",
+    "period": "Contemporain",
+    "movements": [
+      "bande_dessinee"
+    ],
+    "genres": [
+      "bande dessinée"
+    ],
+    "works": [
+      {
+        "id": "adele-blanc-sec",
+        "title": "Adèle Blanc-Sec",
+        "year": 1976,
+        "genre": "bande dessinée"
+      },
+      {
+        "id": "c-etait-la-guerre-des-tranchees",
+        "title": "C'était la guerre des tranchées",
+        "year": 1993,
+        "genre": "bande dessinée"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "echenoz",
     "name": "Jean Echenoz",
     "full_name": "Jean Echenoz",
@@ -8465,6 +12521,51 @@
         "id": "envoyee-speciale",
         "title": "Envoyée spéciale",
         "year": 2016,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "sony-labou-tansi",
+    "name": "Sony Labou Tansi",
+    "full_name": "Sony Labou Tansi",
+    "birth": {
+      "year": 1947,
+      "date": "1947",
+      "place": ""
+    },
+    "death": {
+      "year": 1995,
+      "date": "1995",
+      "place": ""
+    },
+    "portrait": "",
+    "bio": "Sony Labou Tansi est un auteur de troisième plan de la littérature française ou francophone, associé à Francophonie et aux genres Roman.",
+    "period": "XXe-2",
+    "movements": [
+      "francophonie"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "la-vie-et-demie",
+        "title": "La Vie et demie",
+        "year": 1979,
+        "genre": "roman"
+      },
+      {
+        "id": "l-etat-honteux",
+        "title": "L'État honteux",
+        "year": 1981,
         "genre": "roman"
       }
     ],
@@ -8542,6 +12643,95 @@
         "id": "bardo-or-not-bardo",
         "title": "Bardo or not Bardo",
         "year": 2004,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "maalouf",
+    "name": "Amin Maalouf",
+    "full_name": "Amin Maalouf",
+    "birth": {
+      "year": 1949,
+      "date": "1949",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Amin_Maalouf_par_Claude_Truong-Ngoc_novembre_2013.jpg",
+    "bio": "Amin Maalouf est un auteur de troisième plan de la littérature française ou francophone, associé à Francophonie et aux genres Roman, Essai.",
+    "period": "Contemporain",
+    "movements": [
+      "francophonie"
+    ],
+    "genres": [
+      "roman",
+      "essai"
+    ],
+    "works": [
+      {
+        "id": "les-croisades-vues-par-les-arabes",
+        "title": "Les Croisades vues par les Arabes",
+        "year": 1983,
+        "genre": "essai"
+      },
+      {
+        "id": "leon-l-africain",
+        "title": "Léon l'Africain",
+        "year": 1986,
+        "genre": "roman"
+      },
+      {
+        "id": "les-identites-meurtrieres",
+        "title": "Les Identités meurtrières",
+        "year": 1998,
+        "genre": "essai"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "confiant",
+    "name": "Raphaël Confiant",
+    "full_name": "Raphaël Confiant",
+    "birth": {
+      "year": 1951,
+      "date": "1951",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Rapha%C3%ABl_Confiant_au_festival_international_de_g%C3%A9ographie_2024.jpg",
+    "bio": "Raphaël Confiant est un auteur de troisième plan de la littérature française ou francophone, associé à Créolité et aux genres Roman.",
+    "period": "Contemporain",
+    "movements": [
+      "creolite"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "le-negre-et-l-amiral",
+        "title": "Le Nègre et l'Amiral",
+        "year": 1988,
+        "genre": "roman"
+      },
+      {
+        "id": "eau-de-cafe",
+        "title": "Eau de café",
+        "year": 1991,
         "genre": "roman"
       }
     ],
@@ -8820,6 +13010,89 @@
     "notable_facts": []
   },
   {
+    "id": "devi",
+    "name": "Ananda Devi",
+    "full_name": "Ananda Devi",
+    "birth": {
+      "year": 1957,
+      "date": "1957",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Photo_of_Mauritian_Writer_Ananda_Devi_(cropped).jpg",
+    "bio": "Ananda Devi est un auteur de troisième plan de la littérature française ou francophone, associé à Francophonie et aux genres Roman.",
+    "period": "Contemporain",
+    "movements": [
+      "francophonie"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "moi-l-interdite",
+        "title": "Moi, l'interdite",
+        "year": 2000,
+        "genre": "roman"
+      },
+      {
+        "id": "eve-de-ses-decombres",
+        "title": "Ève de ses décombres",
+        "year": 2006,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "waberi",
+    "name": "Abdourahman Waberi",
+    "full_name": "Abdourahman Waberi",
+    "birth": {
+      "year": 1965,
+      "date": "1965",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Abdourahmanwaberi.jpg",
+    "bio": "Abdourahman Waberi est un auteur de troisième plan de la littérature française ou francophone, associé à Francophonie et aux genres Poésie, Roman.",
+    "period": "Contemporain",
+    "movements": [
+      "francophonie"
+    ],
+    "genres": [
+      "poésie",
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "cahier-nomade",
+        "title": "Cahier nomade",
+        "year": 1996,
+        "genre": "poésie"
+      },
+      {
+        "id": "aux-etats-unis-d-afrique",
+        "title": "Aux États-Unis d'Afrique",
+        "year": 2006,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "nothomb",
     "name": "Amélie Nothomb",
     "full_name": "Amélie Nothomb",
@@ -8985,6 +13258,129 @@
     "notable_facts": []
   },
   {
+    "id": "diome",
+    "name": "Fatou Diome",
+    "full_name": "Fatou Diome",
+    "birth": {
+      "year": 1968,
+      "date": "1968",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Fatou_diome_LSlaP_101533.jpg",
+    "bio": "Fatou Diome est un auteur de troisième plan de la littérature française ou francophone, associé à Francophonie et aux genres Roman.",
+    "period": "Contemporain",
+    "movements": [
+      "francophonie"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "le-ventre-de-l-atlantique",
+        "title": "Le Ventre de l'Atlantique",
+        "year": 2003,
+        "genre": "roman"
+      },
+      {
+        "id": "ketala",
+        "title": "Kétala",
+        "year": 2006,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "thuy",
+    "name": "Kim Thúy",
+    "full_name": "Kim Thúy",
+    "birth": {
+      "year": 1968,
+      "date": "1968",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Kim_thuy_1006882_Reims.jpg",
+    "bio": "Kim Thúy est un auteur de troisième plan de la littérature française ou francophone, associé à Francophonie et aux genres Roman.",
+    "period": "Contemporain",
+    "movements": [
+      "francophonie"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "ru",
+        "title": "Ru",
+        "year": 2009,
+        "genre": "roman"
+      },
+      {
+        "id": "man",
+        "title": "Mãn",
+        "year": 2013,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "mouawad",
+    "name": "Wajdi Mouawad",
+    "full_name": "Wajdi Mouawad",
+    "birth": {
+      "year": 1968,
+      "date": "1968",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "",
+    "bio": "Wajdi Mouawad est un auteur de troisième plan de la littérature française ou francophone, associé à Francophonie et aux genres Théâtre.",
+    "period": "Contemporain",
+    "movements": [
+      "francophonie"
+    ],
+    "genres": [
+      "théâtre"
+    ],
+    "works": [
+      {
+        "id": "littoral",
+        "title": "Littoral",
+        "year": 1997,
+        "genre": "théâtre"
+      },
+      {
+        "id": "incendies",
+        "title": "Incendies",
+        "year": 2003,
+        "genre": "théâtre"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "darrieussecq",
     "name": "Marie Darrieussecq",
     "full_name": "Marie Darrieussecq",
@@ -9055,6 +13451,88 @@
         "id": "le-soleil-des-scorta",
         "title": "Le Soleil des Scorta",
         "year": 2004,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "miano",
+    "name": "Léonora Miano",
+    "full_name": "Léonora Miano",
+    "birth": {
+      "year": 1973,
+      "date": "1973",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Leonora_Miano_20100328_Salon_du_livre_de_Paris_2.jpg",
+    "bio": "Léonora Miano est un auteur de troisième plan de la littérature française ou francophone, associé à Francophonie et aux genres Roman.",
+    "period": "Contemporain",
+    "movements": [
+      "francophonie"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "l-interieur-de-la-nuit",
+        "title": "L'Intérieur de la nuit",
+        "year": 2005,
+        "genre": "roman"
+      },
+      {
+        "id": "contours-du-jour-qui-vient",
+        "title": "Contours du jour qui vient",
+        "year": 2006,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "appanah",
+    "name": "Nathacha Appanah",
+    "full_name": "Nathacha Appanah",
+    "birth": {
+      "year": 1973,
+      "date": "1973",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Nathacha_Appanah_(2021)_-_2.png",
+    "bio": "Nathacha Appanah est un auteur de troisième plan de la littérature française ou francophone, associé à Francophonie et aux genres Roman.",
+    "period": "Contemporain",
+    "movements": [
+      "francophonie"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "les-rochers-de-poudre-d-or",
+        "title": "Les Rochers de Poudre d'Or",
+        "year": 2003,
+        "genre": "roman"
+      },
+      {
+        "id": "tropique-de-la-beaute",
+        "title": "Tropique de la beauté",
+        "year": 2019,
         "genre": "roman"
       }
     ],

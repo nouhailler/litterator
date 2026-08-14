@@ -1,5 +1,52 @@
 [
   {
+    "id": "chanson",
+    "name": "Chanson",
+    "period": {
+      "start": 1780,
+      "end": 1991
+    },
+    "description": "Chanson regroupe les auteurs et œuvres du corpus associés à ce courant ou à cette pratique littéraire.",
+    "context": {
+      "historical": "Repère chronologique principal: 1780-1991.",
+      "cultural": "Courant associé aux genres et pratiques présents dans les corpus complémentaires."
+    },
+    "key_authors": [
+      "beranger",
+      "brassens",
+      "leo-ferre",
+      "brel",
+      "gainsbourg"
+    ],
+    "key_works": [
+      "chansons-beranger",
+      "la-mauvaise-reputation",
+      "les-copains-d-abord",
+      "supplique",
+      "paris-canaille",
+      "la-memoire-et-la-mer",
+      "avec-le-temps",
+      "quand-on-n-a-que-l-amour",
+      "ne-me-quitte-pas",
+      "amsterdam",
+      "du-chant-a-la-une",
+      "histoire-de-melody-nelson",
+      "l-homme-a-tete-de-chou"
+    ],
+    "themes": [
+      "forme littéraire",
+      "imaginaire",
+      "société",
+      "esthétique"
+    ],
+    "influences": {
+      "predecessors": [],
+      "successors": []
+    },
+    "quotes": [],
+    "color": "#be123c"
+  },
+  {
     "id": "fantastique",
     "name": "Fantastique",
     "period": {
@@ -13,13 +60,16 @@
     },
     "key_authors": [
       "nodier",
-      "bosco"
+      "bosco",
+      "dhotel"
     ],
     "key_works": [
       "smarra",
       "la-fee-aux-miettes",
       "l-ane-culotte",
-      "le-jardin-d-hyacinthe"
+      "le-jardin-d-hyacinthe",
+      "le-pays-ou-l-on-n-arrive-jamais",
+      "la-chronique-fabuleuse"
     ],
     "themes": [
       "forme littéraire",
@@ -60,7 +110,13 @@
       "musset",
       "nodier",
       "girardin",
-      "colet"
+      "colet",
+      "sainte-beuve",
+      "michelet",
+      "soulie",
+      "borel",
+      "tastu",
+      "barbier"
     ],
     "key_works": [
       "atala",
@@ -89,7 +145,16 @@
       "la-canne-de-m-balzac",
       "lettres-parisiennes",
       "fleurs-du-midi",
-      "lui"
+      "lui",
+      "volupte",
+      "la-sorciere",
+      "le-peuple",
+      "histoire-de-france",
+      "les-memoires-du-diable",
+      "madame-putiphar",
+      "rhapsodies",
+      "poesies-tastu",
+      "iambes"
     ],
     "themes": [
       "moi",
@@ -148,6 +213,40 @@
     "color": "#c77d19"
   },
   {
+    "id": "aventures",
+    "name": "Aventures",
+    "period": {
+      "start": 1816,
+      "end": 1918
+    },
+    "description": "Aventures regroupe les auteurs et œuvres du corpus associés à ce courant ou à cette pratique littéraire.",
+    "context": {
+      "historical": "Repère chronologique principal: 1816-1918.",
+      "cultural": "Courant associé aux genres et pratiques présents dans les corpus complémentaires."
+    },
+    "key_authors": [
+      "feval",
+      "zevaco"
+    ],
+    "key_works": [
+      "le-bossu",
+      "le-capitan",
+      "pardaillan"
+    ],
+    "themes": [
+      "forme littéraire",
+      "imaginaire",
+      "société",
+      "esthétique"
+    ],
+    "influences": {
+      "predecessors": [],
+      "successors": []
+    },
+    "quotes": [],
+    "color": "#a16207"
+  },
+  {
     "id": "realisme",
     "name": "Réalisme",
     "period": {
@@ -177,7 +276,18 @@
       "erckmann-chatriau",
       "guilloux",
       "bazin",
-      "merle"
+      "merle",
+      "karr",
+      "dagoult",
+      "bordeaux",
+      "prevost",
+      "chamson",
+      "bove",
+      "dabit",
+      "troyat",
+      "sabatier",
+      "cesbron",
+      "curtis"
     ],
     "key_works": [
       "le-rouge-et-le-noir",
@@ -214,7 +324,27 @@
       "le-jeu-de-patience",
       "vipere-au-poing",
       "la-tete-contre-les-murs",
-      "week-end-a-zuydcoote"
+      "week-end-a-zuydcoote",
+      "voyage-autour-de-mon-jardin",
+      "les-guepes",
+      "histoire-de-la-revolution-de-1848",
+      "memoires-souvenirs-et-journaux",
+      "la-peur-de-vivre",
+      "les-freres-bouquinquant",
+      "roux-le-bandit",
+      "le-crime-des-justes",
+      "mes-amis",
+      "la-derniere-nuit",
+      "hotel-du-nord",
+      "faubourgs-de-paris",
+      "faux-jour",
+      "tant-que-la-terre-durera",
+      "les-allumettes-suedoises",
+      "trois-sucettes-a-la-menthe",
+      "chiens-perdus-sans-collier",
+      "il-est-minuit-docteur-schweitzer",
+      "les-forets-de-la-nuit",
+      "la-parade"
     ],
     "themes": [
       "société",
@@ -253,7 +383,11 @@
       "leblanc",
       "leroux",
       "simenon",
-      "khadra"
+      "khadra",
+      "feval",
+      "ponson-du-terrail",
+      "malet",
+      "manchette"
     ],
     "key_works": [
       "l-affaire-lerouge",
@@ -264,7 +398,14 @@
       "le-parfum-de-la-dame-en-noir",
       "pietr-le-letton",
       "la-neige-etait-sale",
-      "morituri"
+      "morituri",
+      "les-habits-noirs",
+      "les-drames-de-paris",
+      "la-resurrection-de-rocambole",
+      "brouillard-au-pont-de-tolbiac",
+      "casse-pipe-a-la-nation",
+      "le-petit-bleu-de-la-cote-ouest",
+      "fatale"
     ],
     "themes": [
       "forme littéraire",
@@ -296,7 +437,9 @@
       "banville",
       "leconte-de-lisle",
       "heredia",
-      "sully-prudhomme"
+      "sully-prudhomme",
+      "mendes",
+      "coppee"
     ],
     "key_works": [
       "emaux-et-camees",
@@ -308,7 +451,11 @@
       "les-trophees",
       "les-conquerants",
       "stances-et-poemes",
-      "la-justice"
+      "la-justice",
+      "philomela",
+      "le-mouvement-poetique-francais",
+      "le-passant",
+      "les-humbles"
     ],
     "themes": [
       "forme",
@@ -352,7 +499,16 @@
       "jarry",
       "louys",
       "gourmont",
-      "jammes"
+      "jammes",
+      "samain",
+      "regnier",
+      "delarue-mardrus",
+      "vivien",
+      "dhouville",
+      "maeterlinck",
+      "verhaeren",
+      "rodenbach",
+      "paul-fort"
     ],
     "key_works": [
       "les-chimeres",
@@ -376,7 +532,25 @@
       "sixtine",
       "promenades-litteraires",
       "de-l-angelus-de-l-aube",
-      "le-deuil-des-primeveres"
+      "le-deuil-des-primeveres",
+      "au-jardin-de-l-infante",
+      "le-chariot-d-or",
+      "les-jeux-rustiques-et-divins",
+      "la-double-maitresse",
+      "occidents",
+      "l-ange-et-les-pervers",
+      "etudes-et-preludes",
+      "a-l-heure-des-mains-jointes",
+      "l-inconstante",
+      "temps-d-amour",
+      "pelleas-et-melisande",
+      "l-oiseau-bleu",
+      "la-vie-des-abeilles",
+      "les-villes-tentaculaires",
+      "les-campagnes-hallucinees",
+      "bruges-la-morte",
+      "le-carillonneur",
+      "ballades-francaises"
     ],
     "themes": [
       "suggestion",
@@ -471,7 +645,31 @@
       "jaccottet",
       "du-bouchet",
       "guillevic",
-      "la-tour-du-pin"
+      "la-tour-du-pin",
+      "jouve",
+      "marie-noel",
+      "maurois",
+      "morand",
+      "suares",
+      "nizan",
+      "achard",
+      "salacrou",
+      "alain",
+      "claude-roy",
+      "deon",
+      "blondin",
+      "nimier",
+      "jacques-laurent",
+      "sarrazin",
+      "rochefort",
+      "aury",
+      "mallet-joris",
+      "emmanuel",
+      "follain",
+      "audiberti",
+      "robin",
+      "bouvier",
+      "chessex"
     ],
     "key_works": [
       "les-fleurs-du-mal",
@@ -589,7 +787,54 @@
       "carnac",
       "euclidiennes",
       "la-quete-de-joie",
-      "une-somme-de-poesie"
+      "une-somme-de-poesie",
+      "paulina-1880",
+      "sueur-de-sang",
+      "les-chansons-et-les-heures",
+      "le-rosaire-des-joies",
+      "les-silences-du-colonel-bramble",
+      "climats",
+      "tendres-stocks",
+      "lewis-et-irene",
+      "trois-hommes",
+      "dix-huitieme-annee",
+      "aden-arabie",
+      "voulez-vous-jouer-avec-moa",
+      "domino",
+      "atlas-hotel",
+      "l-inconnue-d-arras",
+      "propos-sur-le-bonheur",
+      "mars-ou-la-guerre-jugee",
+      "la-france-de-profil",
+      "enfances",
+      "les-poneys-sauvages",
+      "un-taxi-mauve",
+      "l-europe-buissonniere",
+      "les-enfants-du-bon-dieu",
+      "le-hussard-bleu",
+      "les-enfants-tristes",
+      "caroline-cherie",
+      "les-betises",
+      "l-astragale",
+      "la-cavale",
+      "le-repos-du-guerrier",
+      "les-stances-a-sophie",
+      "histoire-d-o",
+      "retour-a-roissy",
+      "le-rempart-des-beguines",
+      "lettre-a-moi-meme",
+      "tombeau-d-orphee",
+      "une-conscience-aux-aguets",
+      "usage-du-temps",
+      "chef-lieu",
+      "le-maitre-de-milan",
+      "monstre",
+      "le-temps-qu-il-fait",
+      "ma-vie-sans-moi",
+      "l-usage-du-monde",
+      "chronique-japonaise",
+      "l-ogre",
+      "un-juif-pour-l-exemple"
     ],
     "themes": [
       "ville",
@@ -683,7 +928,9 @@
       "barbey",
       "bloy",
       "rachilde",
-      "barres"
+      "barres",
+      "lorrain",
+      "peladan"
     ],
     "key_works": [
       "a-rebours",
@@ -695,7 +942,11 @@
       "monsieur-venus",
       "la-marquise-de-sade",
       "sous-l-oeil-des-barbares",
-      "les-deracines"
+      "les-deracines",
+      "monsieur-de-phocas",
+      "sensations-et-souvenirs",
+      "le-vice-supreme",
+      "la-gynandre"
     ],
     "themes": [
       "artifice",
@@ -731,13 +982,20 @@
     "key_authors": [
       "jarry",
       "tzara",
-      "soupault"
+      "soupault",
+      "picabia",
+      "cravan",
+      "vache"
     ],
     "key_works": [
       "docteur-faustroll",
       "vingt-cinq-poemes",
       "l-homme-approximatif",
-      "les-champs-magnetiques-soupault"
+      "les-champs-magnetiques-soupault",
+      "poemes-et-dessins",
+      "caravanserail",
+      "maintenant",
+      "lettres-de-guerre"
     ],
     "themes": [
       "forme littéraire",
@@ -789,6 +1047,43 @@
     "color": "#b56576"
   },
   {
+    "id": "bande_dessinee",
+    "name": "Bande dessinée",
+    "period": {
+      "start": 1907,
+      "end": 2026
+    },
+    "description": "Bande dessinée regroupe les auteurs et œuvres du corpus associés à ce courant ou à cette pratique littéraire.",
+    "context": {
+      "historical": "Repère chronologique principal: 1907-2026.",
+      "cultural": "Courant associé aux genres et pratiques présents dans les corpus complémentaires."
+    },
+    "key_authors": [
+      "goscinny",
+      "herge",
+      "tardi"
+    ],
+    "key_works": [
+      "asterix-le-gaulois",
+      "tintin-au-pays-des-soviets",
+      "le-lotus-bleu",
+      "adele-blanc-sec",
+      "c-etait-la-guerre-des-tranchees"
+    ],
+    "themes": [
+      "forme littéraire",
+      "imaginaire",
+      "société",
+      "esthétique"
+    ],
+    "influences": {
+      "predecessors": [],
+      "successors": []
+    },
+    "quotes": [],
+    "color": "#7c3aed"
+  },
+  {
     "id": "science_fiction",
     "name": "Science-fiction",
     "period": {
@@ -803,14 +1098,23 @@
     "key_authors": [
       "merle",
       "barjavel",
-      "boulle"
+      "boulle",
+      "rosny-aine",
+      "wul",
+      "gerard-klein"
     ],
     "key_works": [
       "malevil",
       "ravage",
       "la-nuit-des-temps",
       "la-planete-des-singes",
-      "les-animaux-denatures"
+      "les-animaux-denatures",
+      "la-guerre-du-feu",
+      "les-xipehuz",
+      "niourk",
+      "oms-en-serie",
+      "les-perles-du-temps",
+      "le-gambit-des-etoiles"
     ],
     "themes": [
       "forme littéraire",
@@ -849,7 +1153,9 @@
       "bataille",
       "leiris",
       "triolet",
-      "mandiargues"
+      "mandiargues",
+      "peret",
+      "crevel"
     ],
     "key_works": [
       "les-mamelles-de-tiresias",
@@ -874,7 +1180,11 @@
       "le-cheval-blanc",
       "le-premier-accroc",
       "le-musee-noir",
-      "la-marge"
+      "la-marge",
+      "le-passager-du-transatlantique",
+      "immortelle-maladie",
+      "mon-corps-et-moi",
+      "la-mort-difficile"
     ],
     "themes": [
       "rêve",
@@ -896,6 +1206,38 @@
     },
     "quotes": [],
     "color": "#2196f3"
+  },
+  {
+    "id": "jeunesse",
+    "name": "Jeunesse",
+    "period": {
+      "start": 1926,
+      "end": 1977
+    },
+    "description": "Jeunesse regroupe les auteurs et œuvres du corpus associés à ce courant ou à cette pratique littéraire.",
+    "context": {
+      "historical": "Repère chronologique principal: 1926-1977.",
+      "cultural": "Courant associé aux genres et pratiques présents dans les corpus complémentaires."
+    },
+    "key_authors": [
+      "goscinny",
+      "herge"
+    ],
+    "key_works": [
+      "le-petit-nicolas"
+    ],
+    "themes": [
+      "forme littéraire",
+      "imaginaire",
+      "société",
+      "esthétique"
+    ],
+    "influences": {
+      "predecessors": [],
+      "successors": []
+    },
+    "quotes": [],
+    "color": "#0d9488"
   },
   {
     "id": "existentialisme",
@@ -1149,12 +1491,14 @@
     },
     "key_authors": [
       "fanon",
-      "glissant"
+      "glissant",
+      "memmi"
     ],
     "key_works": [
       "peau-noire-masques-blancs",
       "les-damnes-de-la-terre",
-      "le-discours-antillais"
+      "le-discours-antillais",
+      "portrait-du-colonise"
     ],
     "themes": [
       "colonialisme",
@@ -1190,13 +1534,21 @@
     "key_authors": [
       "barthes",
       "paulhan",
-      "blanchot"
+      "blanchot",
+      "sainte-beuve",
+      "riviere",
+      "nizan"
     ],
     "key_works": [
       "le-degre-zero-de-l-ecriture",
       "mythologies",
       "les-fleurs-de-tarbes",
-      "l-espace-litteraire"
+      "l-espace-litteraire",
+      "causeries-du-lundi",
+      "port-royal",
+      "etudes-riviere",
+      "le-pas-gagne",
+      "les-chiens-de-garde"
     ],
     "themes": [
       "signes",
@@ -1342,7 +1694,28 @@
       "mabanckou",
       "mukasonga",
       "kateb-yacine",
-      "khadra"
+      "khadra",
+      "maalouf",
+      "dib",
+      "feraoun",
+      "chraibi",
+      "memmi",
+      "beti",
+      "kane",
+      "sony-labou-tansi",
+      "lopes",
+      "waberi",
+      "miano",
+      "diome",
+      "devi",
+      "appanah",
+      "ducharme",
+      "aquin",
+      "blais",
+      "maillet",
+      "miron",
+      "thuy",
+      "mouawad"
     ],
     "key_works": [
       "segou",
@@ -1364,7 +1737,50 @@
       "notre-dame-du-nil",
       "nedjma",
       "le-polygone-etoile",
-      "l-attentat"
+      "l-attentat",
+      "les-croisades-vues-par-les-arabes",
+      "leon-l-africain",
+      "les-identites-meurtrieres",
+      "la-grande-maison",
+      "un-ete-africain",
+      "le-fils-du-pauvre",
+      "les-chemins-qui-montent",
+      "le-passe-simple",
+      "la-civilisation-ma-mere",
+      "la-statue-de-sel",
+      "ville-cruelle",
+      "le-pauvre-christ-de-bomba",
+      "l-aventure-ambigue",
+      "les-gardiens-du-temple",
+      "la-vie-et-demie",
+      "l-etat-honteux",
+      "tribaliques",
+      "le-pleurer-rire",
+      "cahier-nomade",
+      "aux-etats-unis-d-afrique",
+      "l-interieur-de-la-nuit",
+      "contours-du-jour-qui-vient",
+      "le-ventre-de-l-atlantique",
+      "ketala",
+      "moi-l-interdite",
+      "eve-de-ses-decombres",
+      "les-rochers-de-poudre-d-or",
+      "tropique-de-la-beaute",
+      "l-avalee-des-avales",
+      "le-nez-qui-voque",
+      "prochain-episode",
+      "trou-de-memoire",
+      "une-saison-dans-la-vie-d-emmanuel",
+      "soifs",
+      "la-sagouine",
+      "pelagie-la-charrette",
+      "cent-ans-dans-les-bois",
+      "l-homme-rapaille",
+      "courtepointes",
+      "ru",
+      "man",
+      "littoral",
+      "incendies"
     ],
     "themes": [
       "langue française",
@@ -1398,10 +1814,16 @@
       "cultural": "Courant associé aux genres et pratiques dominants du corpus: roman."
     },
     "key_authors": [
-      "chamoiseau"
+      "chamoiseau",
+      "confiant",
+      "schwarz-bart"
     ],
     "key_works": [
-      "texaco"
+      "texaco",
+      "le-negre-et-l-amiral",
+      "eau-de-cafe",
+      "pluie-et-vent-sur-telumee-miracle",
+      "un-plat-de-porc-aux-bananes-vertes"
     ],
     "themes": [
       "créole",

@@ -10,14 +10,14 @@ Les données principales sont locales et servies depuis `public/data/` :
 
 | Fichier | Rôle |
 | --- | --- |
-| `authors.json` | 200 auteurs de premier et second plan, portraits quand une image libre fiable existe, biographies, lieux, citations et relations. |
-| `works.json` | 400 œuvres liées aux auteurs via `author`, avec couvertures libres quand elles sont disponibles et couvertures typographiques générées sinon. |
-| `movements.json` | 24 mouvements littéraires avec thèmes, influences, auteurs et œuvres clés. |
+| `authors.json` | 300 auteurs de premier, second et troisième plan, portraits quand une image libre fiable existe, biographies, lieux, citations et relations. |
+| `works.json` | 600 œuvres liées aux auteurs via `author`, avec couvertures libres quand elles sont disponibles et couvertures typographiques générées sinon. |
+| `movements.json` | 28 mouvements littéraires avec thèmes, influences, auteurs et œuvres clés. |
 | `glossary.json` | 224 entrées de glossaire complétées. |
 | `locations.json` | Lieux littéraires éditoriaux. |
 | `place-coordinates.json` | Coordonnées de lieux biographiques, enrichies depuis Wikidata. |
 
-Le corpus de second plan est intégré dans les mêmes fichiers applicatifs que le corpus initial. Les identifiants doivent rester uniques car ils servent aux liens profonds, aux relations auteurs-œuvres et aux entrées de mouvements.
+Les corpus de second et troisième plan sont intégrés dans les mêmes fichiers applicatifs que le corpus initial. Les identifiants doivent rester uniques car ils servent aux liens profonds, aux relations auteurs-œuvres et aux entrées de mouvements.
 
 ## Navigation
 
