@@ -19,6 +19,8 @@ Les données principales sont locales et servies depuis `public/data/` :
 
 Les corpus de second plan, troisième plan et angles morts sont intégrés dans les mêmes fichiers applicatifs que le corpus initial. Les identifiants doivent rester uniques car ils servent aux liens profonds, aux relations auteurs-œuvres et aux entrées de mouvements.
 
+La page d'accueil affiche un résumé du corpus local. Ses compteurs doivent rester alignés avec `authors.json`, `works.json` et `movements.json`.
+
 ## Navigation
 
 Les fiches sont adressables par hash. Les liens doivent pointer directement vers l'entité cible, pas seulement vers l'écran :

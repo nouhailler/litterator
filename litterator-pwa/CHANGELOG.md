@@ -26,6 +26,7 @@
 
 ### Corrigé
 
+- Correction des compteurs du corpus affichés sur la page d'accueil.
 - Résolution de la collision d'identifiant `les-champs-magnetiques` en conservant l'entrée initiale et en utilisant `les-champs-magnetiques-soupault` pour l'œuvre de Soupault.
 - Reconstitution de la fin tronquée du corpus d'œuvres de troisième plan à partir des auteurs restants, afin de conserver le total attendu de 200 œuvres.
 

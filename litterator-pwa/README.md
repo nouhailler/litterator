@@ -47,6 +47,7 @@ Littérator rassemble mouvements, auteurs, œuvres, notions de glossaire et lieu
 | Lieux biographiques géocodés | 117 |
 
 Le corpus inclut désormais les auteurs et œuvres de premier plan ainsi que des ensembles de second plan, troisième plan et angles morts reliés aux mêmes filtres, fiches, mouvements et vues chronologiques.
+La page d'accueil reprend ces volumes dans le bloc `Corpus local`.
 
 ## Stack
 
