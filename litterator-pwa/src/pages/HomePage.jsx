@@ -46,15 +46,15 @@ function HomePage() {
           <div className="stat-list">
             <div className="stat-item">
               <span>Mouvements</span>
-              <span className="stat-number">19</span>
+              <span className="stat-number">34</span>
             </div>
             <div className="stat-item">
               <span>Auteurs</span>
-              <span className="stat-number">100</span>
+              <span className="stat-number">380</span>
             </div>
             <div className="stat-item">
               <span>Œuvres</span>
-              <span className="stat-number">200</span>
+              <span className="stat-number">760</span>
             </div>
             <div className="stat-item">
               <span>Lieux</span>
