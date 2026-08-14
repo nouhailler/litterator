@@ -13,9 +13,19 @@
       "start": 1820,
       "end": 1850
     },
-    "movements": ["romantisme"],
-    "authors": ["victor_hugo", "alphonse_de_lamartine", "alexandre_dumas", "gerard_de_nerval"],
-    "works": ["les_miserables", "notre_dame_de_paris"],
+    "movements": [
+      "romantisme"
+    ],
+    "authors": [
+      "hugo",
+      "lamartine",
+      "dumas",
+      "nerval"
+    ],
+    "works": [
+      "les-miserables",
+      "notre-dame-de-paris"
+    ],
     "places": [
       {
         "name": "Théâtre de la Porte-Saint-Martin",
@@ -59,9 +69,16 @@
       "start": 1850,
       "end": 1880
     },
-    "movements": ["realisme"],
-    "authors": ["gustave_flaubert"],
-    "works": ["madame_bovary", "l_education_sentimentale"],
+    "movements": [
+      "realisme"
+    ],
+    "authors": [
+      "flaubert"
+    ],
+    "works": [
+      "madame-bovary",
+      "l-education-sentimentale"
+    ],
     "places": [
       {
         "name": "Maison de Flaubert (Rouen)",
@@ -75,7 +92,7 @@
         "name": "Ry (Normandie)",
         "description": "Village où Flaubert a passé son enfance et qui a inspiré le cadre de 'Madame Bovary'.",
         "coordinates": {
-          "lat": 49.4500,
+          "lat": 49.45,
           "lng": 1.2167
         }
       },
@@ -84,7 +101,7 @@
         "description": "Propriété de Flaubert près de Rouen, où il a écrit la plupart de ses œuvres.",
         "coordinates": {
           "lat": 49.4267,
-          "lng": 1.0500
+          "lng": 1.05
         }
       }
     ],
@@ -105,9 +122,19 @@
       "start": 1870,
       "end": 1890
     },
-    "movements": ["naturalisme", "realisme"],
-    "authors": ["emile_zola", "guy_de_maupassant"],
-    "works": ["l_assommoir", "germinal", "bel_ami"],
+    "movements": [
+      "naturalisme",
+      "realisme"
+    ],
+    "authors": [
+      "zola",
+      "maupassant"
+    ],
+    "works": [
+      "l-assommoir",
+      "germinal",
+      "bel-ami"
+    ],
     "places": [
       {
         "name": "Montmartre",
@@ -151,9 +178,18 @@
       "start": 1920,
       "end": 1940
     },
-    "movements": ["surréalisme"],
-    "authors": ["andre_breton", "louis_aragon", "paul_elouard"],
-    "works": ["nadja", "le_paysan_de_paris"],
+    "movements": [
+      "surréalisme"
+    ],
+    "authors": [
+      "breton",
+      "aragon",
+      "eluard"
+    ],
+    "works": [
+      "nadja",
+      "le-paysan-de-paris"
+    ],
     "places": [
       {
         "name": "Le Lapin Agile",
@@ -197,9 +233,16 @@
       "start": 1940,
       "end": 1960
     },
-    "movements": ["existentialisme"],
-    "authors": ["albert_camus"],
-    "works": ["l_etranger", "la_peste"],
+    "movements": [
+      "existentialisme"
+    ],
+    "authors": [
+      "camus"
+    ],
+    "works": [
+      "l-etranger",
+      "la-peste"
+    ],
     "places": [
       {
         "name": "Mondovi (Dréan)",
@@ -243,15 +286,21 @@
       "start": 1980,
       "end": 1996
     },
-    "movements": ["nouveau_roman"],
-    "authors": ["marguerite_duras"],
-    "works": ["l_amant"],
+    "movements": [
+      "nouveau_roman"
+    ],
+    "authors": [
+      "duras"
+    ],
+    "works": [
+      "l-amant"
+    ],
     "places": [
       {
         "name": "Sadec (Vietnam)",
         "description": "Ville où Duras a passé une partie de son enfance. Cadre principal de 'L'Amant'.",
         "coordinates": {
-          "lat": 10.3000,
+          "lat": 10.3,
           "lng": 105.6667
         }
       },
@@ -267,8 +316,8 @@
         "name": "Mékong",
         "description": "Fleuve qui traverse l'Indochine et qui est souvent mentionné dans les œuvres de Duras.",
         "coordinates": {
-          "lat": 12.0000,
-          "lng": 105.0000
+          "lat": 12,
+          "lng": 105
         }
       }
     ],
@@ -289,9 +338,19 @@
       "start": 1940,
       "end": 1960
     },
-    "movements": ["existentialisme"],
-    "authors": ["jean_paul_sartre", "simone_de_beauvoir", "albert_camus"],
-    "works": ["la_nausee", "le_deuxieme_sexe", "l_etranger"],
+    "movements": [
+      "existentialisme"
+    ],
+    "authors": [
+      "sartre",
+      "beauvoir",
+      "camus"
+    ],
+    "works": [
+      "la-nausee",
+      "le-deuxieme-sexe",
+      "l-etranger"
+    ],
     "places": [
       {
         "name": "Les Deux Magots",
@@ -313,7 +372,7 @@
         "name": "Librairie Shakespeare and Company",
         "description": "Librairie historique fréquentée par les écrivains existentialistes.",
         "coordinates": {
-          "lat": 48.8520,
+          "lat": 48.852,
           "lng": 2.3463
         }
       }
@@ -335,16 +394,23 @@
       "start": 1820,
       "end": 1850
     },
-    "movements": ["realisme"],
-    "authors": ["honore_de_balzac"],
-    "works": ["le_pere_goriot", "eugenie_grandet"],
+    "movements": [
+      "realisme"
+    ],
+    "authors": [
+      "balzac"
+    ],
+    "works": [
+      "le-pere-goriot",
+      "eugenie-grandet"
+    ],
     "places": [
       {
         "name": "Rue de Varenne",
         "description": "Lieu de résidence de plusieurs personnages de 'La Comédie Humaine'.",
         "coordinates": {
-          "lat": 48.8500,
-          "lng": 2.3250
+          "lat": 48.85,
+          "lng": 2.325
         }
       },
       {

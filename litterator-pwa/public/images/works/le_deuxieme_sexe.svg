@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 960">
+  <rect width="720" height="960" fill="#fbf7ef"/>
+  <rect x="74" y="74" width="572" height="812" rx="18" fill="#2f6f5e"/>
+  <text x="360" y="250" text-anchor="middle" fill="#fbf7ef" font-family="Georgia, serif" font-size="72" font-weight="700">Le Deuxieme</text>
+  <text x="360" y="330" text-anchor="middle" fill="#fbf7ef" font-family="Georgia, serif" font-size="72" font-weight="700">Sexe</text>
+  <text x="360" y="410" text-anchor="middle" fill="#eadfce" font-family="Arial, sans-serif" font-size="30" letter-spacing="6">SIMONE DE BEAUVOIR</text>
+  <circle cx="360" cy="600" r="112" fill="none" stroke="#fbf7ef" stroke-width="18"/>
+  <path d="M360 712v100M306 762h108" stroke="#fbf7ef" stroke-width="18" stroke-linecap="round"/>
+  <path d="M150 820h420" stroke="#b8893b" stroke-width="18" stroke-linecap="round"/>
+</svg>

@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import { getHashId, scrollToHash } from '../utils/hashNavigation';
 
 function WorksPage() {
+  const location = useLocation();
   const [works, setWorks] = useState([]);
   const [authors, setAuthors] = useState([]);
   const [movements, setMovements] = useState([]);
@@ -10,6 +12,7 @@ function WorksPage() {
   const [selectedGenre, setSelectedGenre] = useState('');
   const [selectedAuthor, setSelectedAuthor] = useState('');
   const [searchTerm, setSearchTerm] = useState('');
+  const activeWorkId = getHashId(location.hash);
 
   useEffect(() => {
     const loadData = async () => {
@@ -36,6 +39,12 @@ function WorksPage() {
 
     loadData();
   }, []);
+
+  useEffect(() => {
+    if (!isLoading) {
+      scrollToHash(location.hash);
+    }
+  }, [isLoading, location.hash]);
 
   // Trier les œuvres par année
   const sortedWorks = [...works].sort((a, b) => a.year - b.year);
@@ -161,8 +170,17 @@ function WorksPage() {
             <div 
               key={work.id} 
               id={work.id} 
-              className="card entity-card work-card"
+              className={`card entity-card work-card ${activeWorkId === work.id ? 'is-highlighted' : ''}`}
             >
+              {work.cover && (
+                <img
+                  src={work.cover}
+                  alt={work.title}
+                  className="work-cover"
+                  loading="lazy"
+                />
+              )}
+
               <h3 style={{ marginBottom: '10px' }}>
                 {work.title}
               </h3>
@@ -192,8 +210,8 @@ function WorksPage() {
                   {work.themes.map((theme, index) => (
                     <span 
                       key={index} 
-                      className="badge" 
-                      style={{ backgroundColor: '#e0e0e0', color: 'var(--primary-color)', fontSize: '0.8rem' }}
+                      className="badge badge-theme" 
+                      style={{ fontSize: '0.8rem' }}
                     >
                       {theme}
                     </span>
@@ -240,8 +258,8 @@ function WorksPage() {
                         href={adaptation.link} 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="badge" 
-                        style={{ backgroundColor: '#e0e0e0', color: 'var(--primary-color)', fontSize: '0.8rem' }}
+                        className="badge badge-theme" 
+                        style={{ fontSize: '0.8rem' }}
                       >
                         {adaptation.type === 'film' ? '🎬' : adaptation.type === 'tv_series' ? '📺' : adaptation.type === 'musical' ? '🎭' : '🎵'} 
                         {adaptation.title} ({adaptation.year})

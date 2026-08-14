@@ -1,0 +1,712 @@
+{
+  "meta": {
+    "title": "Coordonnées des lieux biographiques",
+    "lang": "fr",
+    "source": "Wikidata/Wikipedia plus données locales existantes",
+    "count": 117
+  },
+  "coordinates": {
+    "11e-arrondissement-de-paris-france": {
+      "name": "11e arrondissement de Paris, France",
+      "lat": 48.858677777,
+      "lng": 2.379305555,
+      "source": "https://www.wikidata.org/wiki/Q170095"
+    },
+    "13e-arrondissement-de-paris-france": {
+      "name": "13e arrondissement de Paris, France",
+      "lat": 48.832222222,
+      "lng": 2.355555555,
+      "source": "https://www.wikidata.org/wiki/Q218690"
+    },
+    "14e-arrondissement-de-paris-france": {
+      "name": "14e arrondissement de Paris, France",
+      "lat": 48.833022222,
+      "lng": 2.326888888,
+      "source": "https://www.wikidata.org/wiki/Q46706"
+    },
+    "15e-arrondissement-de-paris-france": {
+      "name": "15e arrondissement de Paris, France",
+      "lat": 48.841327777,
+      "lng": 2.300291666,
+      "source": "https://www.wikidata.org/wiki/Q274319"
+    },
+    "16e-arrondissement-de-paris-france": {
+      "name": "16e arrondissement de Paris, France",
+      "lat": 48.863611111,
+      "lng": 2.276488888,
+      "source": "https://www.wikidata.org/wiki/Q297758"
+    },
+    "18e-arrondissement-de-paris-france": {
+      "name": "18e arrondissement de Paris, France",
+      "lat": 48.89215,
+      "lng": 2.344447222,
+      "source": "https://www.wikidata.org/wiki/Q151164"
+    },
+    "19e-arrondissement-de-paris-france": {
+      "name": "19e arrondissement de Paris, France",
+      "lat": 48.88235,
+      "lng": 2.381822222,
+      "source": "https://www.wikidata.org/wiki/Q157313"
+    },
+    "1er-arrondissement-de-paris-france": {
+      "name": "1er arrondissement de Paris, France",
+      "lat": 48.859947,
+      "lng": 2.342059,
+      "source": "https://www.wikidata.org/wiki/Q218679"
+    },
+    "5e-arrondissement-de-paris-france": {
+      "name": "5e arrondissement de Paris, France",
+      "lat": 48.847222222,
+      "lng": 2.344444444,
+      "source": "https://www.wikidata.org/wiki/Q131549"
+    },
+    "7e-arrondissement-de-paris-france": {
+      "name": "7e arrondissement de Paris, France",
+      "lat": 48.859166666,
+      "lng": 2.312777777,
+      "source": "https://www.wikidata.org/wiki/Q93166"
+    },
+    "9e-arrondissement-de-paris-france": {
+      "name": "9e arrondissement de Paris, France",
+      "lat": 48.878280555,
+      "lng": 2.336966666,
+      "source": "https://www.wikidata.org/wiki/Q160783"
+    },
+    "amiens-france": {
+      "name": "Amiens, France",
+      "lat": 49.891944444,
+      "lng": 2.297777777,
+      "source": "https://www.wikidata.org/wiki/Q33977"
+    },
+    "ancien-10e-arrondissement-de-paris-france": {
+      "name": "ancien 10e arrondissement de Paris, France",
+      "lat": 48.852668,
+      "lng": 2.329374,
+      "source": "https://www.wikidata.org/wiki/Q49767"
+    },
+    "ancien-6e-arrondissement-de-paris-france": {
+      "name": "ancien 6e arrondissement de Paris, France",
+      "lat": 48.865778,
+      "lng": 2.36375,
+      "source": "https://www.wikidata.org/wiki/Q3816"
+    },
+    "annecy-france": {
+      "name": "Annecy, France",
+      "lat": 45.899166666,
+      "lng": 6.129444444,
+      "source": "https://www.wikidata.org/wiki/Q315220"
+    },
+    "antananarivo-madagascar": {
+      "name": "Antananarivo, Madagascar",
+      "lat": -18.91,
+      "lng": 47.525,
+      "source": "https://www.wikidata.org/wiki/Q131549"
+    },
+    "apt-france": {
+      "name": "Apt, France",
+      "lat": 43.876111111,
+      "lng": 5.396388888,
+      "source": "https://www.wikidata.org/wiki/Q464371"
+    },
+    "arras-france": {
+      "name": "Arras, France",
+      "lat": 50.289166666,
+      "lng": 2.78,
+      "source": "https://www.wikidata.org/wiki/Q353882"
+    },
+    "bar-harbor-etats-unis": {
+      "name": "Bar Harbor, États-Unis",
+      "lat": 44.385833333,
+      "lng": -68.209444444,
+      "source": "https://www.wikidata.org/wiki/Q163118"
+    },
+    "basse-pointe-france": {
+      "name": "Basse-Pointe, France",
+      "lat": 14.868611111,
+      "lng": -61.120277777,
+      "source": "https://www.wikidata.org/wiki/Q223955"
+    },
+    "bellac-france": {
+      "name": "Bellac, France",
+      "lat": 46.121944444,
+      "lng": 1.049444444,
+      "source": "https://www.wikidata.org/wiki/Q309974"
+    },
+    "besancon-france": {
+      "name": "Besançon, France",
+      "lat": 47.2378,
+      "lng": 6.0241,
+      "source": "existing local data"
+    },
+    "bethesda-etats-unis": {
+      "name": "Bethesda, États-Unis",
+      "lat": 38.9848265,
+      "lng": -77.0946459,
+      "source": "https://www.wikidata.org/wiki/Q193670"
+    },
+    "bordeaux-france": {
+      "name": "Bordeaux, France",
+      "lat": 44.837777777,
+      "lng": -0.579444444,
+      "source": "https://www.wikidata.org/wiki/Q179025"
+    },
+    "boulogne-billancourt-france": {
+      "name": "Boulogne-Billancourt, France",
+      "lat": 48.835277777,
+      "lng": 2.241388888,
+      "source": "https://www.wikidata.org/wiki/Q222944"
+    },
+    "bruxelles-belgique": {
+      "name": "Bruxelles, Belgique",
+      "lat": 50.846666666,
+      "lng": 4.351666666,
+      "source": "https://www.wikidata.org/wiki/Q163118"
+    },
+    "caen-france": {
+      "name": "Caen, France",
+      "lat": 49.181388888,
+      "lng": -0.363611111,
+      "source": "https://www.wikidata.org/wiki/Q216266"
+    },
+    "camp-de-concentration-de-theresienstadt-tchequie": {
+      "name": "camp de concentration de Theresienstadt, Tchéquie",
+      "lat": 50.510278,
+      "lng": 14.149722,
+      "source": "https://www.wikidata.org/wiki/Q170095"
+    },
+    "cannes-france": {
+      "name": "Cannes, France",
+      "lat": 43.5525,
+      "lng": 7.021388888,
+      "source": "https://www.wikidata.org/wiki/Q160333"
+    },
+    "canteleu-france": {
+      "name": "Canteleu, France",
+      "lat": 49.4407,
+      "lng": 1.0246,
+      "source": "existing local data"
+    },
+    "charenton-le-pont-france": {
+      "name": "Charenton-le-Pont, France",
+      "lat": 48.821388888,
+      "lng": 2.411944444,
+      "source": "https://www.wikidata.org/wiki/Q152176"
+    },
+    "charleville-france": {
+      "name": "Charleville, France",
+      "lat": 49.772479,
+      "lng": 4.7200227,
+      "source": "https://www.wikidata.org/wiki/Q493"
+    },
+    "chateau-du-tertre-france": {
+      "name": "château du Tertre, France",
+      "lat": 48.388056,
+      "lng": 0.579167,
+      "source": "https://www.wikidata.org/wiki/Q129155"
+    },
+    "chatelus-le-marcheix-france": {
+      "name": "Châtelus-le-Marcheix, France",
+      "lat": 45.999444444,
+      "lng": 1.607777777,
+      "source": "https://www.wikidata.org/wiki/Q732644"
+    },
+    "cherbourg-france": {
+      "name": "Cherbourg, France",
+      "lat": 49.63333333,
+      "lng": -1.6,
+      "source": "https://www.wikidata.org/wiki/Q179109"
+    },
+    "cherchell-algerie": {
+      "name": "Cherchell, Algérie",
+      "lat": 36.6075,
+      "lng": 2.19,
+      "source": "https://www.wikidata.org/wiki/Q157313"
+    },
+    "choisel-france": {
+      "name": "Choisel, France",
+      "lat": 48.686388888,
+      "lng": 2.017777777,
+      "source": "https://www.wikidata.org/wiki/Q160783"
+    },
+    "clamecy-france": {
+      "name": "Clamecy, France",
+      "lat": 47.46,
+      "lng": 3.519444444,
+      "source": "https://www.wikidata.org/wiki/Q47162"
+    },
+    "corfou-grece": {
+      "name": "Corfou, Grèce",
+      "lat": 39.6,
+      "lng": 19.87,
+      "source": "https://www.wikidata.org/wiki/Q123553"
+    },
+    "courbevoie-france": {
+      "name": "Courbevoie, France",
+      "lat": 48.897222222,
+      "lng": 2.252222222,
+      "source": "https://www.wikidata.org/wiki/Q151820"
+    },
+    "creteil-france": {
+      "name": "Créteil, France",
+      "lat": 48.777777777,
+      "lng": 2.453055555,
+      "source": "https://www.wikidata.org/wiki/Q151164"
+    },
+    "douai-france": {
+      "name": "Douai, France",
+      "lat": 50.370833333,
+      "lng": 3.079166666,
+      "source": "https://www.wikidata.org/wiki/Q466987"
+    },
+    "fes-maroc": {
+      "name": "Fès, Maroc",
+      "lat": 34.043333333,
+      "lng": -5.003333333,
+      "source": "https://www.wikidata.org/wiki/Q334989"
+    },
+    "fort-de-france-france": {
+      "name": "Fort-de-France, France",
+      "lat": 14.6,
+      "lng": -61.066666666,
+      "source": "https://www.wikidata.org/wiki/Q470515"
+    },
+    "foxrock-irlande": {
+      "name": "Foxrock, Irlande",
+      "lat": 53.2667,
+      "lng": -6.1742,
+      "source": "https://www.wikidata.org/wiki/Q37327"
+    },
+    "geneve-suisse": {
+      "name": "Genève, Suisse",
+      "lat": 46.2,
+      "lng": 6.15,
+      "source": "https://www.wikidata.org/wiki/Q123553"
+    },
+    "gia-dinh-indochine-francaise-vietnam": {
+      "name": "Gia Định, Indochine française (Vietnam)",
+      "lat": 10.8231,
+      "lng": 106.6297,
+      "source": "existing local data"
+    },
+    "grenoble-france": {
+      "name": "Grenoble, France",
+      "lat": 45.186944444,
+      "lng": 5.726388888,
+      "source": "https://www.wikidata.org/wiki/Q502"
+    },
+    "hendaye-france": {
+      "name": "Hendaye, France",
+      "lat": 43.358611111,
+      "lng": -1.774444444,
+      "source": "https://www.wikidata.org/wiki/Q311854"
+    },
+    "hyeres-france": {
+      "name": "Hyères, France",
+      "lat": 43.118888888,
+      "lng": 6.128611111,
+      "source": "https://www.wikidata.org/wiki/Q132684"
+    },
+    "ile-de-riou-france": {
+      "name": "île de Riou, France",
+      "lat": 43.1761,
+      "lng": 5.38611,
+      "source": "https://www.wikidata.org/wiki/Q2908"
+    },
+    "ivanovo-russie": {
+      "name": "Ivanovo, Russie",
+      "lat": 57,
+      "lng": 41,
+      "source": "https://www.wikidata.org/wiki/Q297758"
+    },
+    "ivry-sur-seine-france": {
+      "name": "Ivry-sur-Seine, France",
+      "lat": 48.813888888,
+      "lng": 2.387777777,
+      "source": "https://www.wikidata.org/wiki/Q157303"
+    },
+    "joal-fadiouth-senegal": {
+      "name": "Joal-Fadiouth, Sénégal",
+      "lat": 14.153138888,
+      "lng": -16.831638888,
+      "source": "https://www.wikidata.org/wiki/Q154545"
+    },
+    "joigny-france": {
+      "name": "Joigny, France",
+      "lat": 47.982222222,
+      "lng": 3.397222222,
+      "source": "https://www.wikidata.org/wiki/Q318026"
+    },
+    "kralovo-pole-tchequie": {
+      "name": "Královo Pole, Tchéquie",
+      "lat": 49.225555555,
+      "lng": 16.596111111,
+      "source": "https://www.wikidata.org/wiki/Q93166"
+    },
+    "l-isle-sur-la-sorgue-france": {
+      "name": "L'Isle-sur-la-Sorgue, France",
+      "lat": 43.919444444,
+      "lng": 5.051388888,
+      "source": "https://www.wikidata.org/wiki/Q315015"
+    },
+    "la-chaux-de-fonds-suisse": {
+      "name": "La Chaux-de-Fonds, Suisse",
+      "lat": 47.099627777,
+      "lng": 6.829558333,
+      "source": "https://www.wikidata.org/wiki/Q123080"
+    },
+    "lausanne-suisse": {
+      "name": "Lausanne, Suisse",
+      "lat": 46.533333333,
+      "lng": 6.633333333,
+      "source": "https://www.wikidata.org/wiki/Q179025"
+    },
+    "le-bar-sur-loup-france": {
+      "name": "Le Bar-sur-Loup, France",
+      "lat": 43.701388888,
+      "lng": 6.988888888,
+      "source": "https://www.wikidata.org/wiki/Q551749"
+    },
+    "le-havre-france": {
+      "name": "Le Havre, France",
+      "lat": 49.494166666,
+      "lng": 0.108055555,
+      "source": "https://www.wikidata.org/wiki/Q218690"
+    },
+    "le-plessis-l-eveque-france": {
+      "name": "Le Plessis-l'Évêque, France",
+      "lat": 49.008333333,
+      "lng": 2.784166666,
+      "source": "https://www.wikidata.org/wiki/Q334965"
+    },
+    "le-puy-en-velay-france": {
+      "name": "Le Puy-en-Velay, France",
+      "lat": 45.043333333,
+      "lng": 3.885,
+      "source": "https://www.wikidata.org/wiki/Q551597"
+    },
+    "lillebonne-france": {
+      "name": "Lillebonne, France",
+      "lat": 49.520833333,
+      "lng": 0.5375,
+      "source": "https://www.wikidata.org/wiki/Q1153825"
+    },
+    "loches-france": {
+      "name": "Loches, France",
+      "lat": 47.128611111,
+      "lng": 0.995277777,
+      "source": "https://www.wikidata.org/wiki/Q309702"
+    },
+    "lyon-france": {
+      "name": "Lyon, France",
+      "lat": 45.7675,
+      "lng": 4.835,
+      "source": "https://www.wikidata.org/wiki/Q2908"
+    },
+    "macon-france": {
+      "name": "Mâcon, France",
+      "lat": 46.3069,
+      "lng": 4.8287,
+      "source": "existing local data"
+    },
+    "maisons-laffitte-france": {
+      "name": "Maisons-Laffitte, France",
+      "lat": 48.946111111,
+      "lng": 2.145,
+      "source": "https://www.wikidata.org/wiki/Q83158"
+    },
+    "manoir-de-la-bechellerie-france": {
+      "name": "manoir de la Béchellerie, France",
+      "lat": 47.4107,
+      "lng": 0.6558,
+      "source": "https://www.wikidata.org/wiki/Q42443"
+    },
+    "manosque-france": {
+      "name": "Manosque, France",
+      "lat": 43.833333333,
+      "lng": 5.783055555,
+      "source": "https://www.wikidata.org/wiki/Q177411"
+    },
+    "marseille-france": {
+      "name": "Marseille, France",
+      "lat": 43.296666666,
+      "lng": 5.376388888,
+      "source": "https://www.wikidata.org/wiki/Q187166"
+    },
+    "metz-france": {
+      "name": "Metz, France",
+      "lat": 49.119722222,
+      "lng": 6.176944444,
+      "source": "https://www.wikidata.org/wiki/Q755"
+    },
+    "meudon-france": {
+      "name": "Meudon, France",
+      "lat": 48.8075,
+      "lng": 2.240277777,
+      "source": "https://www.wikidata.org/wiki/Q151820"
+    },
+    "milly-la-foret-france": {
+      "name": "Milly-la-Forêt, France",
+      "lat": 48.404166666,
+      "lng": 2.466944444,
+      "source": "https://www.wikidata.org/wiki/Q83158"
+    },
+    "mondovi-algerie-francaise": {
+      "name": "Mondovi, Algérie française",
+      "lat": 36.6848,
+      "lng": 7.7513,
+      "source": "existing local data"
+    },
+    "montevideo-uruguay": {
+      "name": "Montevideo, Uruguay",
+      "lat": -34.905916666,
+      "lng": -56.191311111,
+      "source": "https://www.wikidata.org/wiki/Q380275"
+    },
+    "montpellier-france": {
+      "name": "Montpellier, France",
+      "lat": 43.610919444,
+      "lng": 3.877230555,
+      "source": "https://www.wikidata.org/wiki/Q551749"
+    },
+    "morlaix-france": {
+      "name": "Morlaix, France",
+      "lat": 48.5775,
+      "lng": -3.827777777,
+      "source": "https://www.wikidata.org/wiki/Q316536"
+    },
+    "namur-belgique": {
+      "name": "Namur, Belgique",
+      "lat": 50.466666666,
+      "lng": 4.866666666,
+      "source": "https://www.wikidata.org/wiki/Q160780"
+    },
+    "nantes-france": {
+      "name": "Nantes, France",
+      "lat": 47.217222222,
+      "lng": -1.553888888,
+      "source": "https://www.wikidata.org/wiki/Q33977"
+    },
+    "neuilly-sur-seine-france": {
+      "name": "Neuilly-sur-Seine, France",
+      "lat": 48.887222222,
+      "lng": 2.2675,
+      "source": "https://www.wikidata.org/wiki/Q165274"
+    },
+    "nice-france": {
+      "name": "Nice, France",
+      "lat": 43.701944444,
+      "lng": 7.268333333,
+      "source": "https://www.wikidata.org/wiki/Q42037"
+    },
+    "nimes-france": {
+      "name": "Nîmes, France",
+      "lat": 43.838333333,
+      "lng": 4.359722222,
+      "source": "https://www.wikidata.org/wiki/Q228546"
+    },
+    "nohant-vic-france": {
+      "name": "Nohant-Vic, France",
+      "lat": 46.638611111,
+      "lng": 1.96,
+      "source": "https://www.wikidata.org/wiki/Q3816"
+    },
+    "orleans-france": {
+      "name": "Orléans, France",
+      "lat": 47.902222222,
+      "lng": 1.904166666,
+      "source": "https://www.wikidata.org/wiki/Q334965"
+    },
+    "paris-france": {
+      "name": "Paris, France",
+      "lat": 48.8566,
+      "lng": 2.3522,
+      "source": "existing local data"
+    },
+    "passy-france": {
+      "name": "Passy, France",
+      "lat": 48.857111111,
+      "lng": 2.284136111,
+      "source": "https://www.wikidata.org/wiki/Q9327"
+    },
+    "pithiviers-france": {
+      "name": "Pithiviers, France",
+      "lat": 48.171944444,
+      "lng": 2.251944444,
+      "source": "https://www.wikidata.org/wiki/Q237106"
+    },
+    "pointe-a-pitre-france": {
+      "name": "Pointe-à-Pitre, France",
+      "lat": 16.241111111,
+      "lng": -61.533055555,
+      "source": "https://www.wikidata.org/wiki/Q464371"
+    },
+    "puys-france": {
+      "name": "Puys, France",
+      "lat": 49.937252,
+      "lng": 1.118199,
+      "source": "https://www.wikidata.org/wiki/Q38337"
+    },
+    "rochefort-france": {
+      "name": "Rochefort, France",
+      "lat": 45.941944444,
+      "lng": -0.966944444,
+      "source": "https://www.wikidata.org/wiki/Q311854"
+    },
+    "rome-italie": {
+      "name": "Rome, Italie",
+      "lat": 41.893055555,
+      "lng": 12.482777777,
+      "source": "https://www.wikidata.org/wiki/Q133855"
+    },
+    "rouen-france": {
+      "name": "Rouen, France",
+      "lat": 49.4431,
+      "lng": 1.0993,
+      "source": "existing local data"
+    },
+    "rue-beaujon-france": {
+      "name": "rue Beaujon, France",
+      "lat": 48.8751,
+      "lng": 2.29983,
+      "source": "https://www.wikidata.org/wiki/Q23441"
+    },
+    "rue-d-artois-france": {
+      "name": "rue d'Artois, France",
+      "lat": 48.8729,
+      "lng": 2.30782,
+      "source": "https://www.wikidata.org/wiki/Q309702"
+    },
+    "saint-denis-france": {
+      "name": "Saint-Denis, France",
+      "lat": 48.935555555,
+      "lng": 2.353888888,
+      "source": "https://www.wikidata.org/wiki/Q152176"
+    },
+    "saint-malo-france": {
+      "name": "Saint-Malo, France",
+      "lat": 48.649444444,
+      "lng": -2.026111111,
+      "source": "https://www.wikidata.org/wiki/Q49767"
+    },
+    "saint-pierre-france": {
+      "name": "Saint-Pierre, France",
+      "lat": -21.341944444,
+      "lng": 55.477777777,
+      "source": "https://www.wikidata.org/wiki/Q103114"
+    },
+    "saint-pierre-quilbignon-france": {
+      "name": "Saint-Pierre-Quilbignon, France",
+      "lat": 48.379474,
+      "lng": -4.535556,
+      "source": "https://www.wikidata.org/wiki/Q216266"
+    },
+    "saint-sauveur-en-puisaye-france": {
+      "name": "Saint-Sauveur-en-Puisaye, France",
+      "lat": 47.618333333,
+      "lng": 3.197222222,
+      "source": "https://www.wikidata.org/wiki/Q218679"
+    },
+    "sainte-marie-france": {
+      "name": "Sainte-Marie, France",
+      "lat": 14.781388888,
+      "lng": -60.993611111,
+      "source": "https://www.wikidata.org/wiki/Q274319"
+    },
+    "sete-france": {
+      "name": "Sète, France",
+      "lat": 43.404444444,
+      "lng": 3.696666666,
+      "source": "https://www.wikidata.org/wiki/Q200639"
+    },
+    "slatina-roumanie": {
+      "name": "Slatina, Roumanie",
+      "lat": 44.429722222,
+      "lng": 24.364166666,
+      "source": "https://www.wikidata.org/wiki/Q46706"
+    },
+    "tarbes-france": {
+      "name": "Tarbes, France",
+      "lat": 43.232777777,
+      "lng": 0.074444444,
+      "source": "https://www.wikidata.org/wiki/Q183713"
+    },
+    "teloche-france": {
+      "name": "Teloché, France",
+      "lat": 47.887777777,
+      "lng": 0.270833333,
+      "source": "https://www.wikidata.org/wiki/Q165274"
+    },
+    "tinchebray-france": {
+      "name": "Tinchebray, France",
+      "lat": 48.7636,
+      "lng": -0.7331,
+      "source": "https://www.wikidata.org/wiki/Q161955"
+    },
+    "tours-france": {
+      "name": "Tours, France",
+      "lat": 47.392777777,
+      "lng": 0.688333333,
+      "source": "https://www.wikidata.org/wiki/Q9711"
+    },
+    "tourville-sur-arques-france": {
+      "name": "Tourville-sur-Arques, France",
+      "lat": 49.858333333,
+      "lng": 1.101388888,
+      "source": "https://www.wikidata.org/wiki/Q9327"
+    },
+    "trevieres-france": {
+      "name": "Trévières, France",
+      "lat": 49.308611111,
+      "lng": -0.904166666,
+      "source": "https://www.wikidata.org/wiki/Q23441"
+    },
+    "valvins-france": {
+      "name": "Valvins, France",
+      "lat": 48.426629,
+      "lng": 2.74411,
+      "source": "https://www.wikidata.org/wiki/Q767"
+    },
+    "verneuil-sur-avre-france": {
+      "name": "Verneuil-sur-Avre, France",
+      "lat": 48.738888888,
+      "lng": 0.927777777,
+      "source": "https://www.wikidata.org/wiki/Q423298"
+    },
+    "verson-france": {
+      "name": "Verson, France",
+      "lat": 49.155,
+      "lng": -0.4525,
+      "source": "https://www.wikidata.org/wiki/Q154545"
+    },
+    "vezelay-france": {
+      "name": "Vézelay, France",
+      "lat": 47.465833333,
+      "lng": 3.745833333,
+      "source": "https://www.wikidata.org/wiki/Q47162"
+    },
+    "ville-d-avray-france": {
+      "name": "Ville-d'Avray, France",
+      "lat": 48.826111111,
+      "lng": 2.193333333,
+      "source": "https://www.wikidata.org/wiki/Q7833"
+    },
+    "villeblevin-france": {
+      "name": "Villeblevin, France",
+      "lat": 48.3245,
+      "lng": 3.0805,
+      "source": "existing local data"
+    },
+    "villeneuve-sur-fere-france": {
+      "name": "Villeneuve-sur-Fère, France",
+      "lat": 49.1775,
+      "lng": 3.475,
+      "source": "https://www.wikidata.org/wiki/Q295830"
+    },
+    "villers-cotterets-france": {
+      "name": "Villers-Cotterêts, France",
+      "lat": 49.253055555,
+      "lng": 3.090277777,
+      "source": "https://www.wikidata.org/wiki/Q38337"
+    }
+  }
+}

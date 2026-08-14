@@ -1,18 +1,22 @@
 import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import Timeline from '../components/Timeline/Timeline';
+import { getHashId } from '../utils/hashNavigation';
 
 function TimelinePage() {
+  const location = useLocation();
   const [events, setEvents] = useState([]);
   const [filteredEvents, setFilteredEvents] = useState([]);
   const [filters, setFilters] = useState({
     movement: '',
     genre: '',
     author: '',
-    type: 'all', // 'all', 'movements', 'works', 'authors', 'events'
+    type: 'all', // all, movement, work, author, event
   });
   const [movements, setMovements] = useState([]);
   const [authors, setAuthors] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const activeEventId = getHashId(location.hash);
 
   useEffect(() => {
     // Charger les données depuis les fichiers JSON
@@ -60,6 +64,8 @@ function TimelinePage() {
             end: work.year,
             description: work.summary.substring(0, 200) + '...',
             color: movementsData.find(m => m.id === work.movement)?.color || '#999',
+            authorId: work.author,
+            movementId: work.movement,
             subtitle: `Œuvre de ${authorsData.find(a => a.id === work.author)?.name || work.author} (${work.year})`,
             link: `/works#${work.id}`,
             icon: '📖',
@@ -77,12 +83,13 @@ function TimelinePage() {
               end: author.birth.year,
               description: `Naissance de ${author.name} à ${author.birth.place}.`,
               color: '#666',
+              authorId: author.id,
               subtitle: `Auteur ${author.movements?.join(', ') || ''}`,
               link: `/authors#${author.id}`,
               icon: '👶',
             });
           }
-          if (author.death.year) {
+          if (author.death?.year) {
             allEvents.push({
               id: `author-death-${author.id}`,
               type: 'author',
@@ -91,6 +98,7 @@ function TimelinePage() {
               end: author.death.year,
               description: `Mort de ${author.name} à ${author.death.place}.`,
               color: '#666',
+              authorId: author.id,
               subtitle: `Auteur ${author.movements?.join(', ') || ''}`,
               link: `/authors#${author.id}`,
               icon: '⚰️',
@@ -176,8 +184,7 @@ function TimelinePage() {
           return event.id === `movement-${filters.movement}`;
         }
         if (event.type === 'work') {
-          const movement = movements.find(m => m.id === filters.movement);
-          return movement && event.color === movement.color;
+          return event.movementId === filters.movement;
         }
         return false;
       });
@@ -186,10 +193,10 @@ function TimelinePage() {
     if (filters.author) {
       result = result.filter((event) => {
         if (event.type === 'work') {
-          return event.subtitle.includes(filters.author);
+          return event.authorId === filters.author;
         }
         if (event.type === 'author') {
-          return event.title.includes(filters.author);
+          return event.authorId === filters.author;
         }
         return false;
       });
@@ -197,6 +204,18 @@ function TimelinePage() {
 
     setFilteredEvents(result);
   }, [filters, events, movements]);
+
+  useEffect(() => {
+    if (!activeEventId || events.length === 0) {
+      return;
+    }
+
+    const activeEvent = events.find((event) => event.id === activeEventId);
+
+    if (activeEvent?.type === 'movement') {
+      setFilters((prev) => ({ ...prev, type: 'movement', movement: activeEventId.replace('movement-', '') }));
+    }
+  }, [activeEventId, events]);
 
   const handleFilterChange = (key, value) => {
     setFilters((prev) => ({ ...prev, [key]: value }));
@@ -261,7 +280,7 @@ function TimelinePage() {
           >
             <option value="">Tous</option>
             {authors.map((author) => (
-              <option key={author.id} value={author.name}>
+              <option key={author.id} value={author.id}>
                 {author.name}
               </option>
             ))}
@@ -282,7 +301,7 @@ function TimelinePage() {
       </div>
 
       <div style={{ marginTop: '30px' }}>
-        <Timeline events={filteredEvents} />
+        <Timeline events={filteredEvents} activeEventId={activeEventId} />
       </div>
     </div>
   );

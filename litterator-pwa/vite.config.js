@@ -98,17 +98,35 @@ export default defineConfig({
         ],
       },
       workbox: {
+        maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
         globPatterns: [
           '**/*.{js,css,html,ico,png,svg,json,woff2,ttf,eot}'
         ],
         runtimeCaching: [
           {
+            urlPattern: /^https:\/\/commons\.wikimedia\.org\/wiki\/Special:FilePath\/.*$/,
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'author-portraits',
+              cacheableResponse: {
+                statuses: [0, 200],
+              },
+              expiration: {
+                maxEntries: 350,
+                maxAgeSeconds: 60 * 60 * 24 * 180, // 6 mois
+              },
+            },
+          },
+          {
             urlPattern: /^https:\/\/.*\.(png|jpg|jpeg|svg|webp)$/,
             handler: 'CacheFirst',
             options: {
               cacheName: 'images',
+              cacheableResponse: {
+                statuses: [0, 200],
+              },
               expiration: {
-                maxEntries: 100,
+                maxEntries: 250,
                 maxAgeSeconds: 60 * 60 * 24 * 30, // 30 jours
               },
             },

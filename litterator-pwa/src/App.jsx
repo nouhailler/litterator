@@ -5,6 +5,7 @@ import MapPage from './pages/MapPage';
 import MovementsPage from './pages/MovementsPage';
 import AuthorsPage from './pages/AuthorsPage';
 import WorksPage from './pages/WorksPage';
+import GlossaryPage from './pages/GlossaryPage';
 import HomePage from './pages/HomePage';
 import './styles/global.css';
 
@@ -56,6 +57,7 @@ function App() {
                 <li><NavLink to="/movements">Mouvements</NavLink></li>
                 <li><NavLink to="/authors">Auteurs</NavLink></li>
                 <li><NavLink to="/works">Œuvres</NavLink></li>
+                <li><NavLink to="/glossary">Glossaire</NavLink></li>
               </ul>
             </nav>
 
@@ -75,6 +77,7 @@ function App() {
             <Route path="/movements" element={<MovementsPage />} />
             <Route path="/authors" element={<AuthorsPage />} />
             <Route path="/works" element={<WorksPage />} />
+            <Route path="/glossary" element={<GlossaryPage />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>

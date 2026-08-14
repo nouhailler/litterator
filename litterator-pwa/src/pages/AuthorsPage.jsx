@@ -1,13 +1,23 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import { getHashId, scrollToHash } from '../utils/hashNavigation';
+import { getLocationId, isSpecificLocation } from '../utils/locationIds';
 
 function AuthorsPage() {
+  const location = useLocation();
   const [authors, setAuthors] = useState([]);
   const [movements, setMovements] = useState([]);
   const [works, setWorks] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [selectedMovement, setSelectedMovement] = useState('');
   const [searchTerm, setSearchTerm] = useState('');
+  const activeAuthorId = getHashId(location.hash);
+
+  const handlePortraitError = (event) => {
+    const image = event.currentTarget;
+    image.style.display = 'none';
+    image.nextElementSibling?.removeAttribute('hidden');
+  };
 
   useEffect(() => {
     const loadData = async () => {
@@ -34,6 +44,12 @@ function AuthorsPage() {
 
     loadData();
   }, []);
+
+  useEffect(() => {
+    if (!isLoading) {
+      scrollToHash(location.hash);
+    }
+  }, [isLoading, location.hash]);
 
   // Trier les auteurs par année de naissance
   const sortedAuthors = [...authors].sort((a, b) => a.birth.year - b.birth.year);
@@ -121,14 +137,30 @@ function AuthorsPage() {
             <div 
               key={author.id} 
               id={author.id} 
-              className="card entity-card author-card"
+            className={`card entity-card author-card ${activeAuthorId === author.id ? 'is-highlighted' : ''}`}
             >
-              <div className="entity-initial" aria-hidden="true">
-                {author.name.charAt(0)}
-              </div>
+              {author.portrait ? (
+                <>
+                  <img
+                    src={author.portrait}
+                    alt={author.name}
+                    className="author-portrait"
+                    loading={activeAuthorId === author.id ? 'eager' : 'lazy'}
+                    fetchPriority={activeAuthorId === author.id ? 'high' : 'auto'}
+                    onError={handlePortraitError}
+                  />
+                  <div className="entity-initial" aria-hidden="true" hidden>
+                    {author.name.charAt(0)}
+                  </div>
+                </>
+              ) : (
+                <div className="entity-initial" aria-hidden="true">
+                  {author.name.charAt(0)}
+                </div>
+              )}
 
               <h3 style={{ marginBottom: '10px' }}>
-                {author.name} ({author.birth.year}-{author.death.year})
+                {author.name} ({author.birth.year}-{author.death?.year || '...'})
               </h3>
 
               <p style={{ marginBottom: '15px', color: 'var(--text-light)', fontSize: '0.9rem' }}>
@@ -201,7 +233,7 @@ function AuthorsPage() {
                   <strong>Naissance :</strong> {author.birth.date} à {author.birth.place}
                 </p>
                 <p style={{ fontSize: '0.9rem', color: 'var(--text-light)', marginBottom: '5px' }}>
-                  <strong>Décès :</strong> {author.death.date} à {author.death.place}
+                  <strong>Décès :</strong> {author.death?.date ? `${author.death.date} à ${author.death.place}` : 'Auteur vivant'}
                 </p>
                 <p style={{ fontSize: '0.9rem', color: 'var(--text-light)', marginBottom: '5px' }}>
                   <strong>Niveau de lecture :</strong> {author.reading_level}
@@ -216,9 +248,9 @@ function AuthorsPage() {
                 >
                   Voir sur la timeline
                 </Link>
-                {author.birth.place && (
+                {isSpecificLocation(author.birth.place) && (
                   <Link 
-                    to={`/map#${author.birth.place.toLowerCase().replace(/\s+/g, '-')}`} 
+                    to={`/map#${getLocationId(author.birth.place)}`} 
                     className="button button-secondary" 
                     style={{ fontSize: '0.9rem', padding: '8px 16px' }}
                   >

@@ -1,12 +1,14 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import { getHashId, scrollToHash } from '../utils/hashNavigation';
 
 function MovementsPage() {
+  const location = useLocation();
   const [movements, setMovements] = useState([]);
-  const [selectedMovement, setSelectedMovement] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [authors, setAuthors] = useState([]);
   const [works, setWorks] = useState([]);
+  const activeMovementId = getHashId(location.hash);
 
   useEffect(() => {
     const loadData = async () => {
@@ -34,8 +36,16 @@ function MovementsPage() {
     loadData();
   }, []);
 
+  useEffect(() => {
+    if (!isLoading) {
+      scrollToHash(location.hash);
+    }
+  }, [isLoading, location.hash]);
+
   // Trier les mouvements par période de début
   const sortedMovements = [...movements].sort((a, b) => a.period.start - b.period.start);
+  const authorsById = Object.fromEntries(authors.map((author) => [author.id, author]));
+  const worksById = Object.fromEntries(works.map((work) => [work.id, work]));
 
   if (isLoading) {
     return (
@@ -58,18 +68,20 @@ function MovementsPage() {
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))', gap: '20px' }}>
         {sortedMovements.map((movement) => {
-          // Trouver les auteurs et œuvres associés
-          const movementAuthors = authors.filter(author => author.movements.includes(movement.id));
-          const movementWorks = works.filter(work => work.movement === movement.id);
+          const movementAuthors = (movement.key_authors || [])
+            .map((authorId) => authorsById[authorId])
+            .filter(Boolean);
+          const movementWorks = (movement.key_works || [])
+            .map((workId) => worksById[workId])
+            .filter(Boolean);
 
           return (
             <div 
               key={movement.id} 
               id={movement.id} 
-              className="card movement-card" 
-              style={{ '--card-accent': movement.color }}
+              className={`card movement-card ${activeMovementId === movement.id ? 'is-highlighted' : ''}`}
             >
-              <h3 style={{ color: movement.color, marginBottom: '10px' }}>
+              <h3 style={{ marginBottom: '10px' }}>
                 {movement.name} ({movement.period.start}-{movement.period.end})
               </h3>
               
@@ -93,8 +105,8 @@ function MovementsPage() {
                   {movement.themes.map((theme, index) => (
                     <span 
                       key={index} 
-                      className="badge" 
-                      style={{ backgroundColor: movement.color, fontSize: '0.8rem' }}
+                      className="badge badge-theme" 
+                      style={{ fontSize: '0.8rem' }}
                     >
                       {theme}
                     </span>
@@ -102,47 +114,41 @@ function MovementsPage() {
                 </div>
               </div>
 
-              <div style={{ marginBottom: '15px' }}>
-                <h4 style={{ fontSize: '1rem', marginBottom: '8px' }}>Auteurs Majeurs</h4>
-                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
-                  {movementAuthors.slice(0, 5).map((author) => (
-                    <Link 
-                      key={author.id} 
-                      to={`/authors#${author.id}`} 
-                      className="badge" 
-                      style={{ backgroundColor: '#e0e0e0', color: 'var(--primary-color)', fontSize: '0.8rem' }}
+              <details className="movement-accordion">
+                <summary>
+                  <span>Auteurs Majeurs</span>
+                  <strong>{movementAuthors.length}</strong>
+                </summary>
+                <div className="movement-accordion-content">
+                  {movementAuthors.map((author) => (
+                    <Link
+                      key={author.id}
+                      to={`/authors#${author.id}`}
+                      className="badge badge-theme"
                     >
                       {author.name}
                     </Link>
                   ))}
-                  {movementAuthors.length > 5 && (
-                    <span style={{ fontSize: '0.8rem', color: 'var(--text-light)' }}>
-                      +{movementAuthors.length - 5} autres
-                    </span>
-                  )}
                 </div>
-              </div>
+              </details>
 
-              <div style={{ marginBottom: '15px' }}>
-                <h4 style={{ fontSize: '1rem', marginBottom: '8px' }}>Œuvres Clés</h4>
-                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
-                  {movementWorks.slice(0, 5).map((work) => (
-                    <Link 
-                      key={work.id} 
-                      to={`/works#${work.id}`} 
-                      className="badge" 
-                      style={{ backgroundColor: '#e0e0e0', color: 'var(--primary-color)', fontSize: '0.8rem' }}
+              <details className="movement-accordion">
+                <summary>
+                  <span>Œuvres Clés</span>
+                  <strong>{movementWorks.length}</strong>
+                </summary>
+                <div className="movement-accordion-content">
+                  {movementWorks.map((work) => (
+                    <Link
+                      key={work.id}
+                      to={`/works#${work.id}`}
+                      className="badge badge-theme"
                     >
                       {work.title} ({work.year})
                     </Link>
                   ))}
-                  {movementWorks.length > 5 && (
-                    <span style={{ fontSize: '0.8rem', color: 'var(--text-light)' }}>
-                      +{movementWorks.length - 5} autres
-                    </span>
-                  )}
                 </div>
-              </div>
+              </details>
 
               <div style={{ marginBottom: '15px' }}>
                 <h4 style={{ fontSize: '1rem', marginBottom: '8px' }}>Citations</h4>
@@ -157,7 +163,7 @@ function MovementsPage() {
                         fontSize: '0.9rem',
                         marginBottom: '10px',
                         paddingLeft: '10px',
-                        borderLeft: `3px solid ${movement.color}`
+                        borderLeft: '3px solid var(--brand)'
                       }}
                     >
                       "{quote.text}"
@@ -179,13 +185,14 @@ function MovementsPage() {
                         {movement.influences.predecessors.map((pred, index) => {
                           const predMovement = movements.find(m => m.id === pred);
                           return (
-                            <span 
+                            <Link
                               key={index} 
-                              className="badge" 
-                              style={{ backgroundColor: predMovement?.color || '#999', fontSize: '0.8rem' }}
+                              to={`/movements#${pred}`}
+                              className="badge badge-theme" 
+                              style={{ fontSize: '0.8rem' }}
                             >
                               {predMovement?.name || pred}
-                            </span>
+                            </Link>
                           );
                         })}
                       </div>
@@ -198,13 +205,14 @@ function MovementsPage() {
                         {movement.influences.successors.map((succ, index) => {
                           const succMovement = movements.find(m => m.id === succ);
                           return (
-                            <span 
+                            <Link
                               key={index} 
-                              className="badge" 
-                              style={{ backgroundColor: succMovement?.color || '#999', fontSize: '0.8rem' }}
+                              to={`/movements#${succ}`}
+                              className="badge badge-theme" 
+                              style={{ fontSize: '0.8rem' }}
                             >
                               {succMovement?.name || succ}
-                            </span>
+                            </Link>
                           );
                         })}
                       </div>
