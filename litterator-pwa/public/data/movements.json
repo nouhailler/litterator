@@ -116,7 +116,9 @@
       "soulie",
       "borel",
       "tastu",
-      "barbier"
+      "barbier",
+      "allart",
+      "mercoeur"
     ],
     "key_works": [
       "atala",
@@ -154,7 +156,9 @@
       "madame-putiphar",
       "rhapsodies",
       "poesies-tastu",
-      "iambes"
+      "iambes",
+      "elegies",
+      "poesies-mercoeur"
     ],
     "themes": [
       "moi",
@@ -174,6 +178,62 @@
     },
     "quotes": [],
     "color": "#e91e63"
+  },
+  {
+    "id": "feminisme",
+    "name": "Féminisme",
+    "period": {
+      "start": 1801,
+      "end": 1959
+    },
+    "description": "Féminisme regroupe les auteurs et œuvres du corpus associés à ce courant ou à cette pratique littéraire.",
+    "context": {
+      "historical": "Repère chronologique principal: 1801-1959.",
+      "cultural": "Courant associé aux genres et pratiques présents dans les corpus complémentaires."
+    },
+    "key_authors": [
+      "louise-michel",
+      "judith-gautier",
+      "severine",
+      "leneru",
+      "dieulafoy",
+      "tinayre",
+      "yver",
+      "gyp",
+      "allart"
+    ],
+    "key_works": [
+      "memoires-louise-michel",
+      "la-misere",
+      "le-dragon-imperial",
+      "le-livre-de-jade",
+      "pages-rouges",
+      "en-marche",
+      "les-affranchis",
+      "journal-leneru",
+      "parysatis",
+      "a-suse",
+      "la-maison-du-peche",
+      "la-rebelle",
+      "princesses-de-science",
+      "le-miracle-du-jour",
+      "petit-bob",
+      "sans-voiles",
+      "gertrude",
+      "memoires-allart"
+    ],
+    "themes": [
+      "forme littéraire",
+      "imaginaire",
+      "société",
+      "esthétique"
+    ],
+    "influences": {
+      "predecessors": [],
+      "successors": []
+    },
+    "quotes": [],
+    "color": "#db2777"
   },
   {
     "id": "vaudeville",
@@ -287,7 +347,8 @@
       "troyat",
       "sabatier",
       "cesbron",
-      "curtis"
+      "curtis",
+      "louise-michel"
     ],
     "key_works": [
       "le-rouge-et-le-noir",
@@ -387,7 +448,19 @@
       "feval",
       "ponson-du-terrail",
       "malet",
-      "manchette"
+      "manchette",
+      "vargas",
+      "lemaitre",
+      "thilliez",
+      "norek",
+      "daeninckx",
+      "manotti",
+      "jonquet",
+      "grange",
+      "minier",
+      "bussi",
+      "pennac",
+      "dard"
     ],
     "key_works": [
       "l-affaire-lerouge",
@@ -405,7 +478,30 @@
       "brouillard-au-pont-de-tolbiac",
       "casse-pipe-a-la-nation",
       "le-petit-bleu-de-la-cote-ouest",
-      "fatale"
+      "fatale",
+      "pars-vite-et-reviens-tard",
+      "l-homme-a-l-envers",
+      "au-revoir-la-haut",
+      "alex",
+      "le-manuscrit-inacheve",
+      "fractures",
+      "code-93",
+      "impact",
+      "meurtres-pour-memoire",
+      "cannibale",
+      "orpaillage",
+      "lorraine-connection",
+      "mygale",
+      "les-orpailleurs",
+      "les-rivieres-pourpres",
+      "le-concile-de-pierre",
+      "glace",
+      "le-bord-de-l-abime",
+      "un-avion-sans-elle",
+      "nympheas-noirs",
+      "au-bonheur-des-ogres",
+      "reglez-lui-son-compte",
+      "beru-beru"
     ],
     "themes": [
       "forme littéraire",
@@ -474,6 +570,54 @@
     },
     "quotes": [],
     "color": "#556b2f"
+  },
+  {
+    "id": "humour",
+    "name": "Humour",
+    "period": {
+      "start": 1854,
+      "end": 2000
+    },
+    "description": "Humour regroupe les auteurs et œuvres du corpus associés à ce courant ou à cette pratique littéraire.",
+    "context": {
+      "historical": "Repère chronologique principal: 1854-2000.",
+      "cultural": "Courant associé aux genres et pratiques présents dans les corpus complémentaires."
+    },
+    "key_authors": [
+      "allais",
+      "dac",
+      "dard",
+      "boudard",
+      "desproges",
+      "vialatte",
+      "topor"
+    ],
+    "key_works": [
+      "a-se-tordre",
+      "deux-et-deux-font-cinq",
+      "l-os-a-moelle",
+      "pensees-dac",
+      "la-cerise",
+      "les-combattants-du-petit-bonheur",
+      "les-requisitoires",
+      "textes-desproges",
+      "battling-le-tenebreux",
+      "chroniques-du-desert",
+      "la-cuisine-cannibale",
+      "le-locataire-chimerique"
+    ],
+    "themes": [
+      "forme littéraire",
+      "imaginaire",
+      "société",
+      "esthétique"
+    ],
+    "influences": {
+      "predecessors": [],
+      "successors": []
+    },
+    "quotes": [],
+    "color": "#ca8a04"
   },
   {
     "id": "symbolisme",
@@ -669,7 +813,9 @@
       "audiberti",
       "robin",
       "bouvier",
-      "chessex"
+      "chessex",
+      "pagnol",
+      "vialatte"
     ],
     "key_works": [
       "les-fleurs-du-mal",
@@ -857,6 +1003,71 @@
     },
     "quotes": [],
     "color": "#2563eb"
+  },
+  {
+    "id": "philosophie",
+    "name": "Philosophie",
+    "period": {
+      "start": 1859,
+      "end": 2026
+    },
+    "description": "Philosophie regroupe les auteurs et œuvres du corpus associés à ce courant ou à cette pratique littéraire.",
+    "context": {
+      "historical": "Repère chronologique principal: 1859-2026.",
+      "cultural": "Courant associé aux genres et pratiques présents dans les corpus complémentaires."
+    },
+    "key_authors": [
+      "bergson",
+      "bachelard",
+      "merleau-ponty",
+      "cioran",
+      "lyotard",
+      "foucault",
+      "deleuze",
+      "derrida",
+      "levinas",
+      "ricoeur",
+      "jankelevitch",
+      "canguilhem",
+      "baudrillard",
+      "morin"
+    ],
+    "key_works": [
+      "l-evolution-creatrice",
+      "le-rire",
+      "la-poetique-de-l-espace",
+      "la-flamme-d-une-chandelle",
+      "phenomenologie-de-la-perception",
+      "le-visible-et-l-invisible",
+      "precis-de-decomposition",
+      "de-l-inconvenient-d-etre-ne",
+      "surveiller-et-punir",
+      "les-mots-et-les-choses",
+      "difference-et-repetition",
+      "mille-plateaux",
+      "totalite-et-infini",
+      "autrement-qu-etre",
+      "temps-et-recit",
+      "soi-meme-comme-un-autre",
+      "le-je-ne-sais-quoi",
+      "l-ironie",
+      "le-normal-et-le-pathologique",
+      "la-connaissance-de-la-vie",
+      "introduction-a-la-pensee-complexe",
+      "la-methode"
+    ],
+    "themes": [
+      "forme littéraire",
+      "imaginaire",
+      "société",
+      "esthétique"
+    ],
+    "influences": {
+      "predecessors": [],
+      "successors": []
+    },
+    "quotes": [],
+    "color": "#1d4ed8"
   },
   {
     "id": "naturalisme",
@@ -1061,14 +1272,44 @@
     "key_authors": [
       "goscinny",
       "herge",
-      "tardi"
+      "tardi",
+      "moebius",
+      "bilal",
+      "satrapi",
+      "sfar",
+      "sattouf",
+      "blain",
+      "trondheim",
+      "guibert",
+      "pratt",
+      "franquin"
     ],
     "key_works": [
       "asterix-le-gaulois",
       "tintin-au-pays-des-soviets",
       "le-lotus-bleu",
       "adele-blanc-sec",
-      "c-etait-la-guerre-des-tranchees"
+      "c-etait-la-guerre-des-tranchees",
+      "l-incal",
+      "arzach",
+      "la-foire-aux-immortels",
+      "la-femme-piege",
+      "persepolis",
+      "poulet-aux-prunes",
+      "le-chat-du-rabbin",
+      "grand-vampire",
+      "l-arabe-du-futur",
+      "les-cahiers-d-esther",
+      "isaac-le-pirate",
+      "quai-d-orsay",
+      "lapinot-et-les-carottes",
+      "approximative-contemplation",
+      "la-guerre-d-alan",
+      "le-photographe",
+      "la-ballade-de-la-mer-salee",
+      "corto-maltese-en-siberie",
+      "gaston",
+      "idees-noires"
     ],
     "themes": [
       "forme littéraire",
@@ -1101,7 +1342,15 @@
       "boulle",
       "rosny-aine",
       "wul",
-      "gerard-klein"
+      "gerard-klein",
+      "damasio",
+      "werber",
+      "bordage",
+      "genefort",
+      "lehman",
+      "vonarburg",
+      "ayerdhal",
+      "day"
     ],
     "key_works": [
       "malevil",
@@ -1114,7 +1363,23 @@
       "niourk",
       "oms-en-serie",
       "les-perles-du-temps",
-      "le-gambit-des-etoiles"
+      "le-gambit-des-etoiles",
+      "la-horde-du-contrevent",
+      "la-zone-du-dehors",
+      "les-fourmis",
+      "les-thanatonautes",
+      "les-guerriers-du-silence",
+      "wang",
+      "omale",
+      "lumence",
+      "faust",
+      "la-brigade-chimerique",
+      "chroniques-du-pays-des-meres",
+      "tyranael",
+      "mytale",
+      "la-boheme-et-l-ivraie",
+      "du-sel-sous-les-paupieres",
+      "l-instinct-de-l-equarisseur"
     ],
     "themes": [
       "forme littéraire",
@@ -1208,6 +1473,41 @@
     "color": "#2196f3"
   },
   {
+    "id": "postmodernisme",
+    "name": "Postmodernisme",
+    "period": {
+      "start": 1924,
+      "end": 2007
+    },
+    "description": "Postmodernisme regroupe les auteurs et œuvres du corpus associés à ce courant ou à cette pratique littéraire.",
+    "context": {
+      "historical": "Repère chronologique principal: 1924-2007.",
+      "cultural": "Courant associé aux genres et pratiques présents dans les corpus complémentaires."
+    },
+    "key_authors": [
+      "lyotard",
+      "baudrillard"
+    ],
+    "key_works": [
+      "la-condition-postmoderne",
+      "le-differend",
+      "simulacres-et-simulation",
+      "la-societe-de-consommation"
+    ],
+    "themes": [
+      "forme littéraire",
+      "imaginaire",
+      "société",
+      "esthétique"
+    ],
+    "influences": {
+      "predecessors": [],
+      "successors": []
+    },
+    "quotes": [],
+    "color": "#9333ea"
+  },
+  {
     "id": "jeunesse",
     "name": "Jeunesse",
     "period": {
@@ -1221,10 +1521,33 @@
     },
     "key_authors": [
       "goscinny",
-      "herge"
+      "herge",
+      "segur",
+      "pagnol",
+      "brunhoff",
+      "murail",
+      "morgenstern",
+      "fombelle",
+      "pennac",
+      "gripari"
     ],
     "key_works": [
-      "le-petit-nicolas"
+      "le-petit-nicolas",
+      "les-malheurs-de-sophie",
+      "les-petites-filles-modeles",
+      "la-gloire-de-mon-pere",
+      "le-chateau-de-ma-mere",
+      "histoire-de-babar",
+      "le-voyage-de-babar",
+      "oh-boy",
+      "sauveur-et-fils",
+      "la-sixieme",
+      "lettres-d-amour-de-0-a-10",
+      "tobie-lolness",
+      "vango",
+      "comme-un-roman",
+      "contes-de-la-rue-broca",
+      "la-sorciere-de-la-rue-mouffetard"
     ],
     "themes": [
       "forme littéraire",
@@ -1238,6 +1561,38 @@
     },
     "quotes": [],
     "color": "#0d9488"
+  },
+  {
+    "id": "deconstruction",
+    "name": "Déconstruction",
+    "period": {
+      "start": 1930,
+      "end": 2004
+    },
+    "description": "Déconstruction regroupe les auteurs et œuvres du corpus associés à ce courant ou à cette pratique littéraire.",
+    "context": {
+      "historical": "Repère chronologique principal: 1930-2004.",
+      "cultural": "Courant associé aux genres et pratiques présents dans les corpus complémentaires."
+    },
+    "key_authors": [
+      "derrida"
+    ],
+    "key_works": [
+      "de-la-grammatologie",
+      "spectres-de-marx"
+    ],
+    "themes": [
+      "forme littéraire",
+      "imaginaire",
+      "société",
+      "esthétique"
+    ],
+    "influences": {
+      "predecessors": [],
+      "successors": []
+    },
+    "quotes": [],
+    "color": "#be185d"
   },
   {
     "id": "existentialisme",
@@ -1450,7 +1805,8 @@
     },
     "key_authors": [
       "queneau",
-      "perec"
+      "perec",
+      "le-tellier"
     ],
     "key_works": [
       "exercices-de-style",
@@ -1537,7 +1893,10 @@
       "blanchot",
       "sainte-beuve",
       "riviere",
-      "nizan"
+      "nizan",
+      "bachelard",
+      "bourdieu",
+      "foucault"
     ],
     "key_works": [
       "le-degre-zero-de-l-ecriture",
@@ -1548,7 +1907,9 @@
       "port-royal",
       "etudes-riviere",
       "le-pas-gagne",
-      "les-chiens-de-garde"
+      "les-chiens-de-garde",
+      "la-distinction",
+      "la-domination-masculine"
     ],
     "themes": [
       "signes",
@@ -1600,7 +1961,17 @@
       "kerangal",
       "gaude",
       "nothomb",
-      "slimani"
+      "slimani",
+      "enard",
+      "mbougar-sarr",
+      "dubois",
+      "le-tellier",
+      "mathieu",
+      "giraud",
+      "andrea",
+      "de-vigan",
+      "foenkinos",
+      "vuillard"
     ],
     "key_works": [
       "vendredi-ou-les-limbes-du-pacifique",
@@ -1650,7 +2021,25 @@
       "hygiene-de-l-assassin",
       "stupeur-et-tremblements",
       "dans-le-jardin-de-l-ogre",
-      "chanson-douce"
+      "chanson-douce",
+      "boussole",
+      "zone",
+      "tous-les-hommes",
+      "une-vie-francaise",
+      "l-anomalie",
+      "toutes-les-familles-heureuses",
+      "leurs-enfants-apres-eux",
+      "aux-animaux-la-guerre",
+      "vivre-vite",
+      "un-amour",
+      "veiller-sur-elle",
+      "ma-reine",
+      "d-apres-une-histoire-vraie",
+      "rien-ne-s-oppose-a-la-nuit",
+      "la-delicatesse",
+      "charlotte",
+      "l-ordre-du-jour",
+      "tristesse-de-la-terre"
     ],
     "themes": [
       "mémoire",
@@ -1669,6 +2058,41 @@
     },
     "quotes": [],
     "color": "#607d8b"
+  },
+  {
+    "id": "fantasy",
+    "name": "Fantasy",
+    "period": {
+      "start": 1968,
+      "end": 2009
+    },
+    "description": "Fantasy regroupe les auteurs et œuvres du corpus associés à ce courant ou à cette pratique littéraire.",
+    "context": {
+      "historical": "Repère chronologique principal: 1968-2009.",
+      "cultural": "Courant associé aux genres et pratiques présents dans les corpus complémentaires."
+    },
+    "key_authors": [
+      "pevel",
+      "jaworski"
+    ],
+    "key_works": [
+      "les-lames-du-cardinal",
+      "le-paris-des-merveilles",
+      "janua-vera",
+      "gagner-la-guerre"
+    ],
+    "themes": [
+      "forme littéraire",
+      "imaginaire",
+      "société",
+      "esthétique"
+    ],
+    "influences": {
+      "predecessors": [],
+      "successors": []
+    },
+    "quotes": [],
+    "color": "#6d28d9"
   },
   {
     "id": "francophonie",
@@ -1715,7 +2139,8 @@
       "maillet",
       "miron",
       "thuy",
-      "mouawad"
+      "mouawad",
+      "mbougar-sarr"
     ],
     "key_works": [
       "segou",
@@ -1780,7 +2205,9 @@
       "ru",
       "man",
       "littoral",
-      "incendies"
+      "incendies",
+      "la-plus-secrete-memoire-des-hommes",
+      "terre-ceinte"
     ],
     "themes": [
       "langue française",

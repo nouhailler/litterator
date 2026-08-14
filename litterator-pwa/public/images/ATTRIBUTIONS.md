@@ -259,3 +259,91 @@ Les fichiers listés ci-dessous proviennent de Wikimedia Commons ou de fichiers 
 | `/data/authors.json#prevost.portrait` | [File:Paris 13e - Rue Sœur Catherine Marie - Plaque à Jean Prévost.jpg](https://commons.wikimedia.org/wiki/File:Paris_13e_-_Rue_S%C5%93ur_Catherine_Marie_-_Plaque_%C3%A0_Jean_Pr%C3%A9vost.jpg) | Romainbehar | CC0 |
 | `/data/authors.json#alain.portrait` | [File:Émile Chartier portrait.jpg](https://commons.wikimedia.org/wiki/File:%C3%89mile_Chartier_portrait.jpg) | Auteur inconnu | Public domain |
 | `/data/authors.json#gerard-klein.portrait` | [File:Utos127-Gérard Klein.jpg](https://commons.wikimedia.org/wiki/File:Utos127-G%C3%A9rard_Klein.jpg) | Harmonia Amanda | CC BY-SA 3.0 |
+
+## Images ajoutées au corpus angles morts
+
+Les fichiers listés ci-dessous proviennent de Wikimedia Commons ou de fichiers libres exposés par Wikipédia en tant que `page_image_free`. Les conditions détaillées restent celles indiquées sur chaque page source.
+
+| Cible | Source | Auteur / crédit | Licence |
+| --- | --- | --- | --- |
+| `/data/authors.json#segur.portrait` | [File:Sophie Rostopchine by Louis-Gaston de Segur.png](https://commons.wikimedia.org/wiki/File:Sophie_Rostopchine_by_Louis-Gaston_de_Segur.png) | Louis Gaston Adrien de Ségur | Public domain |
+| `/data/authors.json#allart.portrait` | [File:Hortense Allart by Sophie Allart.jpg](https://commons.wikimedia.org/wiki/File:Hortense_Allart_by_Sophie_Allart.jpg) | Sophie Allart | Public domain |
+| `/data/authors.json#mercoeur.portrait` | [File:Élisa Mercœur by Auguste Belin.jpeg](https://commons.wikimedia.org/wiki/File:%C3%89lisa_Merc%C5%93ur_by_Auguste_Belin.jpeg) | Creator:Auguste Belin | Public domain |
+| `/data/authors.json#louise-michel.portrait` | [File:Louise Michel2.jpg](https://commons.wikimedia.org/wiki/File:Louise_Michel2.jpg) | J.M. Lopez | Public domain |
+| `/data/authors.json#judith-gautier.portrait` | [File:Judith Gautier circa 1880.jpg](https://commons.wikimedia.org/wiki/File:Judith_Gautier_circa_1880.jpg) | Nadar | Public domain |
+| `/data/authors.json#gyp.portrait` | [File:Marie-Antoinette de Riqueti de Mirabeau comtesse de Martel dite Gyp.jpg](https://commons.wikimedia.org/wiki/File:Marie-Antoinette_de_Riqueti_de_Mirabeau_comtesse_de_Martel_dite_Gyp.jpg) | Paul Nadar | Public domain |
+| `/data/authors.json#dieulafoy.portrait` | [File:Jane Dieulafoy photo.jpg](https://commons.wikimedia.org/wiki/File:Jane_Dieulafoy_photo.jpg) | Eugène Pirou | Public domain |
+| `/data/authors.json#allais.portrait` | [File:Alphonse Allais (1854-1905).jpg](https://commons.wikimedia.org/wiki/File:Alphonse_Allais_(1854-1905).jpg) | unidentified Photograph | Public domain |
+| `/data/authors.json#severine.portrait` | [File:Séverine Atelier Nadar 01.png](https://commons.wikimedia.org/wiki/File:S%C3%A9verine_Atelier_Nadar_01.png) | Nadar | Public domain |
+| `/data/authors.json#bergson.portrait` | [File:Henri Bergson (Nobel).jpg](https://commons.wikimedia.org/wiki/File:Henri_Bergson_(Nobel).jpg) | Auteur inconnu | Public domain |
+| `/data/authors.json#tinayre.portrait` | [File:Tinayre portrait from comoedia illustree 1910.png](https://commons.wikimedia.org/wiki/File:Tinayre_portrait_from_comoedia_illustree_1910.png) | Auteur inconnu | Public domain |
+| `/data/authors.json#yver.portrait` | [File:Vingt-cinq ans de littérature française 1925 Colette Yver.jpg](https://commons.wikimedia.org/wiki/File:Vingt-cinq_ans_de_litt%C3%A9rature_fran%C3%A7aise_1925_Colette_Yver.jpg) | Auteur inconnu | Public domain |
+| `/data/authors.json#leneru.portrait` | [File:Marie Lenéru 37ans.png](https://commons.wikimedia.org/wiki/File:Marie_Len%C3%A9ru_37ans.png) | Auteur inconnu | Public domain |
+| `/data/authors.json#bachelard.portrait` | [File:Gaston Bachelard.jpg](https://commons.wikimedia.org/wiki/File:Gaston_Bachelard.jpg) | Auteur inconnu | CC BY-SA 3.0 nl |
+| `/data/authors.json#dac.portrait` | [File:Dac-1947-Colorise.png](https://commons.wikimedia.org/wiki/File:Dac-1947-Colorise.png) | Studio Harcourt | Public domain |
+| `/data/authors.json#pagnol.portrait` | [File:Pagnol Harcourt 1948.jpg](https://commons.wikimedia.org/wiki/File:Pagnol_Harcourt_1948.jpg) | Studio Harcourt | Public domain |
+| `/data/authors.json#brunhoff.portrait` | [File:Jean de bruhnoff grave.jpg](https://commons.wikimedia.org/wiki/File:Jean_de_bruhnoff_grave.jpg) | Gede | CC BY-SA 3.0 |
+| `/data/authors.json#jankelevitch.portrait` | [File:Plaque Vladimir Jankélévitch, 1A quai aux Fleurs, Paris 4.jpg](https://commons.wikimedia.org/wiki/File:Plaque_Vladimir_Jank%C3%A9l%C3%A9vitch,_1A_quai_aux_Fleurs,_Paris_4.jpg) | Wikimedia Commons / Mu | CC BY-SA 3.0 |
+| `/data/authors.json#canguilhem.portrait` | [File:Georges Canguilhem.jpg](https://commons.wikimedia.org/wiki/File:Georges_Canguilhem.jpg) | 1U2M1 | CC BY-SA 4.0 |
+| `/data/authors.json#levinas.portrait` | [File:Emmanuel Levinas.jpg](https://commons.wikimedia.org/wiki/File:Emmanuel_Levinas.jpg) | Bracha L. Ettinger | CC BY-SA 2.5 |
+| `/data/authors.json#merleau-ponty.portrait` | [File:Maurice Merleau-Ponty.jpg](https://commons.wikimedia.org/wiki/File:Maurice_Merleau-Ponty.jpg) | http://www.philosophical-investigations.org/Users/PerigGouanvic | CC BY 3.0 |
+| `/data/authors.json#cioran.portrait` | [File:Cioran in Romania.jpg](https://commons.wikimedia.org/wiki/File:Cioran_in_Romania.jpg) | Photographer of Keyston agency/Getty Images before Rivarol Premium. Photo taken in the last years of Cioran's life-in-Romania, before his definitive transference in France (1947); first publication 1955-1960s; for Romanian law the artistic and non-artistic photo realized before 1956, or between the years 1956-1996, have their copyright expired. | Public domain |
+| `/data/authors.json#ricoeur.portrait` | [File:Paul Ricoeur Balzan.png](https://commons.wikimedia.org/wiki/File:Paul_Ricoeur_Balzan.png) | Juerg Mueller / Scanpix. | CC0 |
+| `/data/authors.json#morin.portrait` | [File:Edgar Morin, 2011 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Edgar_Morin,_2011_(cropped).jpg) | Fronteiras do Pensamento | CC BY-SA 2.0 |
+| `/data/authors.json#franquin.portrait` | [File:André Franquin, tekenaar strip Guust Flater, 1979 - 19.jpg](https://commons.wikimedia.org/wiki/File:Andr%C3%A9_Franquin,_tekenaar_strip_Guust_Flater,_1979_-_19.jpg) | Fotopersbureau De Boer | CC0 |
+| `/data/authors.json#lyotard.portrait` | [File:Jean-Francois Lyotard.jpg](https://commons.wikimedia.org/wiki/File:Jean-Francois_Lyotard.jpg) | Bracha L. Ettinger | CC BY-SA 2.0 |
+| `/data/authors.json#gripari.portrait` | [File:Pierre Gripari.jpg](https://commons.wikimedia.org/wiki/File:Pierre_Gripari.jpg) | Gardien008 | CC BY-SA 4.0 |
+| `/data/authors.json#deleuze.portrait` | [File:AVT Gilles-Deleuze 6342.webp](https://commons.wikimedia.org/wiki/File:AVT_Gilles-Deleuze_6342.webp) | Tintinades | CC BY-SA 4.0 |
+| `/data/authors.json#boudard.portrait` | [File:Alphonse Boudard.JPG](https://commons.wikimedia.org/wiki/File:Alphonse_Boudard.JPG) | François Alquier | CC BY-SA 3.0 |
+| `/data/authors.json#foucault.portrait` | [File:Photo of Michel Foucault on 1970 dustjacket of The Order of Things.jpg](https://commons.wikimedia.org/wiki/File:Photo_of_Michel_Foucault_on_1970_dustjacket_of_The_Order_of_Things.jpg) | Jerry Bauer | Public domain |
+| `/data/authors.json#pratt.portrait` | [File:Hugo Pratt (1989) by Erling Mandelmann - 2.jpg](https://commons.wikimedia.org/wiki/File:Hugo_Pratt_(1989)_by_Erling_Mandelmann_-_2.jpg) | Erling Mandelmann | CC BY-SA 3.0 |
+| `/data/authors.json#baudrillard.portrait` | [File:WikipediaBaudrillard20040612-cropped.png](https://commons.wikimedia.org/wiki/File:WikipediaBaudrillard20040612-cropped.png) | http://en.wikipedia.org/wiki/User:Ayaleila | CC BY-SA 3.0 |
+| `/data/authors.json#bourdieu.portrait` | [File:Pierre Bourdieu (1).jpg](https://commons.wikimedia.org/wiki/File:Pierre_Bourdieu_(1).jpg) | Bernard Lambert | CC BY-SA 4.0 |
+| `/data/authors.json#derrida.portrait` | [File:Derrida EHESS (cropped).png](https://commons.wikimedia.org/wiki/File:Derrida_EHESS_(cropped).png) | Auto-épreuve | CC BY 4.0 |
+| `/data/authors.json#desproges.portrait` | [File:Pierre Desproges17.jpg](https://commons.wikimedia.org/wiki/File:Pierre_Desproges17.jpg) | Roland Godefroy | CC BY 3.0 |
+| `/data/authors.json#manotti.portrait` | [File:Dominique Manotti en 2017.jpg](https://commons.wikimedia.org/wiki/File:Dominique_Manotti_en_2017.jpg) | Bonzooo | CC BY-SA 4.0 |
+| `/data/authors.json#pennac.portrait` | [File:Paris - Salon du livre de Paris 2017 - Daniel Pennac - 008.jpg](https://commons.wikimedia.org/wiki/File:Paris_-_Salon_du_livre_de_Paris_2017_-_Daniel_Pennac_-_008.jpg) | Thesupermat | CC BY-SA 4.0 |
+| `/data/authors.json#morgenstern.portrait` | [File:Susie Morgenstern - Comédie du Livre 2010 - P1390945.jpg](https://commons.wikimedia.org/wiki/File:Susie_Morgenstern_-_Com%C3%A9die_du_Livre_2010_-_P1390945.jpg) | Esby (talk) 15:45, 4 June 2010 (UTC) | CC BY-SA 3.0 |
+| `/data/authors.json#vonarburg.portrait` | [File:Élisabeth Vonarburg 2013-04-13.jpg](https://commons.wikimedia.org/wiki/File:%C3%89lisabeth_Vonarburg_2013-04-13.jpg) | Asclepias | CC BY-SA 3.0 |
+| `/data/authors.json#daeninckx.portrait` | [File:Didier daeninckx 1006970.jpg](https://commons.wikimedia.org/wiki/File:Didier_daeninckx_1006970.jpg) | G.Garitan | CC BY-SA 4.0 |
+| `/data/authors.json#bilal.portrait` | [File:Enki Bilal 20100328 Salon du livre de Paris 5.jpg](https://commons.wikimedia.org/wiki/File:Enki_Bilal_20100328_Salon_du_livre_de_Paris_5.jpg) | Georges Seguin (Okki) | CC BY-SA 3.0 |
+| `/data/authors.json#lemaitre.portrait` | [File:Pierre Lemaitre — Salon du livre de Paris - 23 mars 2014 recadrée.jpg](https://commons.wikimedia.org/wiki/File:Pierre_Lemaitre_%E2%80%94_Salon_du_livre_de_Paris_-_23_mars_2014_recadr%C3%A9e.jpg) | Wikinade | CC BY-SA 3.0 |
+| `/data/authors.json#dubois.portrait` | [File:Jean-Paul Dubois (2016) - 2.png](https://commons.wikimedia.org/wiki/File:Jean-Paul_Dubois_(2016)_-_2.png) | librairie mollat | CC BY 3.0 |
+| `/data/authors.json#murail.portrait` | [File:MA MURAIL.jpg](https://commons.wikimedia.org/wiki/File:MA_MURAIL.jpg) | Pierre ROBERT à partir d'une photographie de Marie-Aude MURAIL prise par Claudie ROCARD-LAPERROUSAZ | CC BY-SA 3.0 |
+| `/data/authors.json#bordage.portrait` | [File:Bordage4002 web.jpg](https://commons.wikimedia.org/wiki/File:Bordage4002_web.jpg) | Lucie Elisabeth Fluorit | CC BY 3.0 |
+| `/data/authors.json#vargas.portrait` | [File:Fred Vargas 2009.jpg](https://commons.wikimedia.org/wiki/File:Fred_Vargas_2009.jpg) | Marcello Casal Jr./ Agência Brasil | CC BY 3.0 br |
+| `/data/authors.json#le-tellier.portrait` | [File:Hervé Le Tellier (2021).png](https://commons.wikimedia.org/wiki/File:Herv%C3%A9_Le_Tellier_(2021).png) | librairie mollat | CC BY 3.0 |
+| `/data/authors.json#ayerdhal.portrait` | [File:Ayerdhal 2010.jpg](https://commons.wikimedia.org/wiki/File:Ayerdhal_2010.jpg) | Saragne | CC BY-SA 3.0 |
+| `/data/authors.json#minier.portrait` | [File:Bernard Minier (2019).jpg](https://commons.wikimedia.org/wiki/File:Bernard_Minier_(2019).jpg) | Jindřich Nosek (NoJin) | CC BY-SA 4.0 |
+| `/data/authors.json#grange.portrait` | [File:Grange01.jpg](https://commons.wikimedia.org/wiki/File:Grange01.jpg) | Krimidoedel Dr. Jost Hindersmann | CC BY 3.0 |
+| `/data/authors.json#werber.portrait` | [File:Bernard WERBER par Michel Restany.jpg](https://commons.wikimedia.org/wiki/File:Bernard_WERBER_par_Michel_Restany.jpg) | © Michel Restany (Site officiel) | CC BY-SA 3.0 |
+| `/data/authors.json#trondheim.portrait` | [File:FIBD2015LewisTrondheim.jpg](https://commons.wikimedia.org/wiki/File:FIBD2015LewisTrondheim.jpg) | Selbymay | CC BY-SA 4.0 |
+| `/data/authors.json#guibert.portrait` | [File:FIBD2020EmmanuelGuibert 01.jpg](https://commons.wikimedia.org/wiki/File:FIBD2020EmmanuelGuibert_01.jpg) | Selbymay | CC BY-SA 4.0 |
+| `/data/authors.json#lehman.portrait` | [File:Serge Lehman (2019).jpg](https://commons.wikimedia.org/wiki/File:Serge_Lehman_(2019).jpg) | Librairie Mollat | CC BY 3.0 |
+| `/data/authors.json#bussi.portrait` | [File:Michel Bussi 2.jpg](https://commons.wikimedia.org/wiki/File:Michel_Bussi_2.jpg) | Jean-Marie DAVID-LEBRET | CC BY-SA 4.0 |
+| `/data/authors.json#genefort.portrait` | [File:Laurent Genefort - Vendredi - Utopiales 2015 - E96A1111.jpg](https://commons.wikimedia.org/wiki/File:Laurent_Genefort_-_Vendredi_-_Utopiales_2015_-_E96A1111.jpg) | Yves Tennevin | CC BY-SA 3.0 |
+| `/data/authors.json#giraud.portrait` | [File:Brigitte Giraud (2017).png](https://commons.wikimedia.org/wiki/File:Brigitte_Giraud_(2017).png) | librairie mollat | CC BY 3.0 |
+| `/data/authors.json#de-vigan.portrait` | [File:Delphine de Vigan - Le Livre sur la Place (20740240153).jpg](https://commons.wikimedia.org/wiki/File:Delphine_de_Vigan_-_Le_Livre_sur_la_Place_(20740240153).jpg) | ActuaLitté | CC BY-SA 2.0 |
+| `/data/authors.json#pevel.portrait` | [File:Pierre Pevel-Imaginales 2010.jpg](https://commons.wikimedia.org/wiki/File:Pierre_Pevel-Imaginales_2010.jpg) | Ji-Elle | CC BY-SA 3.0 |
+| `/data/authors.json#vuillard.portrait` | [File:VUILLARD-J16-bertini-1002405.jpg](https://commons.wikimedia.org/wiki/File:VUILLARD-J16-bertini-1002405.jpg) | Jean-Luc Bertini | CC BY-SA 4.0 |
+| `/data/authors.json#satrapi.portrait` | [File:Marjane Satrapi Cannes 2008(Cropped).jpg](https://commons.wikimedia.org/wiki/File:Marjane_Satrapi_Cannes_2008(Cropped).jpg) | Georges Bird | CC BY 3.0 |
+| `/data/authors.json#damasio.portrait` | [File:Alain Damasio, 2019 (cropped).JPG](https://commons.wikimedia.org/wiki/File:Alain_Damasio,_2019_(cropped).JPG) | Rama | CC BY-SA 3.0 fr |
+| `/data/authors.json#jaworski.portrait` | [File:Jean-Philippe Jaworski en dédicace à la librairie Critic, Rennes, France (couleur).jpg](https://commons.wikimedia.org/wiki/File:Jean-Philippe_Jaworski_en_d%C3%A9dicace_%C3%A0_la_librairie_Critic,_Rennes,_France_(couleur).jpg) | Édouard Hue (User:EdouardHue) | CC BY-SA 3.0 |
+| `/data/authors.json#blain.portrait` | [File:Christophe Blain 20080318 Salon du livre 1.jpg](https://commons.wikimedia.org/wiki/File:Christophe_Blain_20080318_Salon_du_livre_1.jpg) | Georges Seguin (Okki) | CC BY-SA 3.0 |
+| `/data/authors.json#sfar.portrait` | [File:Joann Sfar 1503609 Reims.jpg](https://commons.wikimedia.org/wiki/File:Joann_Sfar_1503609_Reims.jpg) | G.Garitan | CC BY-SA 4.0 |
+| `/data/authors.json#andrea.portrait` | [File:Fnac Forum 2017 (37284503615).jpg](https://commons.wikimedia.org/wiki/File:Fnac_Forum_2017_(37284503615).jpg) | ActuaLitté | CC BY-SA 2.0 |
+| `/data/authors.json#enard.portrait` | [File:Mathias Énard (FOLIO - Festival Literário Internacional de Óbidos 2019).png](https://commons.wikimedia.org/wiki/File:Mathias_%C3%89nard_(FOLIO_-_Festival_Liter%C3%A1rio_Internacional_de_%C3%93bidos_2019).png) | Óbidos TV | CC BY 3.0 |
+| `/data/authors.json#thilliez.portrait` | [File:Franck Thilliez - quai du polar 2021 (2).jpg](https://commons.wikimedia.org/wiki/File:Franck_Thilliez_-_quai_du_polar_2021_(2).jpg) | Gnrc | CC BY-SA 4.0 |
+| `/data/authors.json#fombelle.portrait` | [File:Timothee de Fombelle 20100329 Salon du livre de Paris 1.jpg](https://commons.wikimedia.org/wiki/File:Timothee_de_Fombelle_20100329_Salon_du_livre_de_Paris_1.jpg) | Georges Seguin (Okki) | CC BY-SA 3.0 |
+| `/data/authors.json#foenkinos.portrait` | [File:David Foenkinos Lslap 1550204.jpg](https://commons.wikimedia.org/wiki/File:David_Foenkinos_Lslap_1550204.jpg) | Gérald Garitan | CC BY-SA 4.0 |
+| `/data/authors.json#norek.portrait` | [File:Norek au cellier 07324.jpg](https://commons.wikimedia.org/wiki/File:Norek_au_cellier_07324.jpg) | G.Garitan | CC BY-SA 4.0 |
+| `/data/authors.json#sattouf.portrait` | [File:Photo Riad Sattouf.jpg](https://commons.wikimedia.org/wiki/File:Photo_Riad_Sattouf.jpg) | Librairie Mollat | CC BY 3.0 |
+| `/data/authors.json#mbougar-sarr.portrait` | [File:Mohamed Mbougar Sarr (2021).png](https://commons.wikimedia.org/wiki/File:Mohamed_Mbougar_Sarr_(2021).png) | librairie mollat | CC BY 3.0 |
+| `/data/works.json#les-petites-filles-modeles.cover` | [File:Petites Filles modèles 105.jpg](https://commons.wikimedia.org/wiki/File:Petites_Filles_mod%C3%A8les_105.jpg) | Bertall (1820-1882), de son vrai nom Charles Constant Albert Nicolas, vicomte d'Arnoux, comte de Limoges-Saint-Saëns.Voir aussi l'article (wikipedia-FR) Bertall. | Public domain |
+| `/data/works.json#les-malheurs-de-sophie.cover` | [File:Ségur - Les Malheurs de Sophie 0052.jpg](https://commons.wikimedia.org/wiki/File:S%C3%A9gur_-_Les_Malheurs_de_Sophie_0052.jpg) | Horace Castelli | Public domain |
+| `/data/works.json#deux-et-deux-font-cinq.cover` | [File:Allais - Deux et deux font cinq (2+2=5).tif](https://commons.wikimedia.org/wiki/File:Allais_-_Deux_et_deux_font_cinq_(2%2B2%3D5).tif) | Alphonse Allais | Public domain |
+| `/data/works.json#simulacres-et-simulation.cover` | [File:Simulacres et Simulation.jpg](https://commons.wikimedia.org/wiki/File:Simulacres_et_Simulation.jpg) | Scan of book cover | Public domain |
+| `/data/works.json#la-domination-masculine.cover` | [File:La domination masculine (cropped).jpg](https://commons.wikimedia.org/wiki/File:La_domination_masculine_(cropped).jpg) | Maurice Marcellin | CC BY 2.5 |
+| `/data/works.json#la-brigade-chimerique.cover` | [File:Logo la brigade chimérique.png](https://commons.wikimedia.org/wiki/File:Logo_la_brigade_chim%C3%A9rique.png) | Serge Lehman et Gess | Public domain |
+| `/data/authors.json#moebius.portrait` | [File:Moebius Lodz 2008.jpg](https://commons.wikimedia.org/wiki/File:Moebius_Lodz_2008.jpg) | Jarek Obważanek, WRAK.PL | CC BY-SA 4.0 |
+| `/data/authors.json#dard.portrait` | [File:Frédéric Dard (1992) by Erling Mandelmann.jpg](https://commons.wikimedia.org/wiki/File:Fr%C3%A9d%C3%A9ric_Dard_(1992)_by_Erling_Mandelmann.jpg) | Erling Mandelmann | CC BY-SA 3.0 |

@@ -4,6 +4,9 @@
 
 ### Ajouté
 
+- Intégration d'un corpus de 80 auteurs `angles morts`.
+- Intégration de 160 œuvres `angles morts` liées aux auteurs via `author`.
+- Ajout des mouvements manquants nécessaires au corpus `angles morts` : Fantasy, Philosophie, Postmodernisme, Déconstruction, Féminisme et Humour.
 - Intégration d'un corpus de 100 auteurs de troisième plan.
 - Intégration de 200 œuvres de troisième plan liées aux auteurs via `author`.
 - Ajout des mouvements manquants nécessaires au corpus de troisième plan : Chanson, Aventures, Jeunesse et Bande dessinée.
@@ -16,9 +19,10 @@
 
 ### Modifié
 
+- Ajout d'un cache PWA dédié aux portraits Wikimedia Commons pour éviter de recharger les images des auteurs à chaque ouverture.
 - Extension des relations `key_authors` et `key_works` des mouvements existants avec les nouveaux auteurs et œuvres.
 - Conservation de couvertures typographiques générées pour les œuvres sans image libre fiable.
-- Mise à jour des volumes documentés du corpus : 300 auteurs, 600 œuvres et 28 mouvements.
+- Mise à jour des volumes documentés du corpus : 380 auteurs, 760 œuvres et 34 mouvements.
 
 ### Corrigé
 

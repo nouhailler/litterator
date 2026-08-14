@@ -553,6 +553,52 @@
     "notable_facts": []
   },
   {
+    "id": "segur",
+    "name": "Comtesse de Ségur",
+    "full_name": "Comtesse de Ségur",
+    "birth": {
+      "year": 1799,
+      "date": "1799",
+      "place": ""
+    },
+    "death": {
+      "year": 1874,
+      "date": "1874",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Sophie_Rostopchine_by_Louis-Gaston_de_Segur.png",
+    "bio": "Comtesse de Ségur est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Jeunesse et aux genres Conte, Roman.",
+    "period": "XIXe",
+    "movements": [
+      "jeunesse"
+    ],
+    "genres": [
+      "conte",
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "les-malheurs-de-sophie",
+        "title": "Les Malheurs de Sophie",
+        "year": 1859,
+        "genre": "conte"
+      },
+      {
+        "id": "les-petites-filles-modeles",
+        "title": "Les Petites Filles modèles",
+        "year": 1858,
+        "genre": "conte"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "soulie",
     "name": "Frédéric Soulié",
     "full_name": "Frédéric Soulié",
@@ -581,6 +627,53 @@
         "title": "Les Mémoires du diable",
         "year": 1837,
         "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "allart",
+    "name": "Hortense Allart",
+    "full_name": "Hortense Allart",
+    "birth": {
+      "year": 1801,
+      "date": "1801",
+      "place": ""
+    },
+    "death": {
+      "year": 1879,
+      "date": "1879",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Hortense_Allart_by_Sophie_Allart.jpg",
+    "bio": "Hortense Allart est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Féminisme, Romantisme et aux genres Roman, Mémoires.",
+    "period": "XIXe",
+    "movements": [
+      "feminisme",
+      "romantisme"
+    ],
+    "genres": [
+      "roman",
+      "mémoires"
+    ],
+    "works": [
+      {
+        "id": "gertrude",
+        "title": "Gertrude",
+        "year": 1832,
+        "genre": "roman"
+      },
+      {
+        "id": "memoires-allart",
+        "title": "Mémoires",
+        "year": 1860,
+        "genre": "mémoires"
       }
     ],
     "quotes": [],
@@ -1212,6 +1305,51 @@
         "id": "rhapsodies",
         "title": "Rhapsodies",
         "year": 1831,
+        "genre": "poésie"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "mercoeur",
+    "name": "Élisa Mercœur",
+    "full_name": "Élisa Mercœur",
+    "birth": {
+      "year": 1809,
+      "date": "1809",
+      "place": ""
+    },
+    "death": {
+      "year": 1835,
+      "date": "1835",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%89lisa_Merc%C5%93ur_by_Auguste_Belin.jpeg",
+    "bio": "Élisa Mercœur est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Romantisme et aux genres Poésie.",
+    "period": "XIXe",
+    "movements": [
+      "romantisme"
+    ],
+    "genres": [
+      "poésie"
+    ],
+    "works": [
+      {
+        "id": "elegies",
+        "title": "Élégies",
+        "year": 1829,
+        "genre": "poésie"
+      },
+      {
+        "id": "poesies-mercoeur",
+        "title": "Poésies",
+        "year": 1833,
         "genre": "poésie"
       }
     ],
@@ -1940,6 +2078,53 @@
     "notable_facts": []
   },
   {
+    "id": "louise-michel",
+    "name": "Louise Michel",
+    "full_name": "Louise Michel",
+    "birth": {
+      "year": 1830,
+      "date": "1830",
+      "place": ""
+    },
+    "death": {
+      "year": 1905,
+      "date": "1905",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Louise_Michel2.jpg",
+    "bio": "Louise Michel est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Féminisme, Réalisme et aux genres Mémoires, Roman.",
+    "period": "XIXe",
+    "movements": [
+      "feminisme",
+      "realisme"
+    ],
+    "genres": [
+      "mémoires",
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "memoires-louise-michel",
+        "title": "Mémoires",
+        "year": 1886,
+        "genre": "mémoires"
+      },
+      {
+        "id": "la-misere",
+        "title": "La Misère",
+        "year": 1882,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "valles",
     "name": "Jules Vallès",
     "full_name": "Jules Vallès",
@@ -2561,6 +2746,52 @@
     "notable_facts": []
   },
   {
+    "id": "judith-gautier",
+    "name": "Judith Gautier",
+    "full_name": "Judith Gautier",
+    "birth": {
+      "year": 1845,
+      "date": "1845",
+      "place": ""
+    },
+    "death": {
+      "year": 1917,
+      "date": "1917",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Judith_Gautier_circa_1880.jpg",
+    "bio": "Judith Gautier est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Féminisme et aux genres Roman, Essai.",
+    "period": "XIXe",
+    "movements": [
+      "feminisme"
+    ],
+    "genres": [
+      "roman",
+      "essai"
+    ],
+    "works": [
+      {
+        "id": "le-dragon-imperial",
+        "title": "Le Dragon impérial",
+        "year": 1869,
+        "genre": "roman"
+      },
+      {
+        "id": "le-livre-de-jade",
+        "title": "Le Livre de Jade",
+        "year": 1867,
+        "genre": "essai"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "lautreamont",
     "name": "Lautréamont",
     "full_name": "Lautréamont",
@@ -2723,6 +2954,51 @@
     "notable_facts": []
   },
   {
+    "id": "gyp",
+    "name": "Gyp",
+    "full_name": "Gyp",
+    "birth": {
+      "year": 1849,
+      "date": "1849",
+      "place": ""
+    },
+    "death": {
+      "year": 1932,
+      "date": "1932",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Marie-Antoinette_de_Riqueti_de_Mirabeau_comtesse_de_Martel_dite_Gyp.jpg",
+    "bio": "Gyp est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Féminisme et aux genres Roman.",
+    "period": "XIXe",
+    "movements": [
+      "feminisme"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "petit-bob",
+        "title": "Petit Bob",
+        "year": 1885,
+        "genre": "roman"
+      },
+      {
+        "id": "sans-voiles",
+        "title": "Sans voiles",
+        "year": 1892,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "maupassant",
     "name": "Guy de Maupassant",
     "full_name": "Guy de Maupassant",
@@ -2820,6 +3096,52 @@
     "notable_facts": []
   },
   {
+    "id": "dieulafoy",
+    "name": "Jane Dieulafoy",
+    "full_name": "Jane Dieulafoy",
+    "birth": {
+      "year": 1851,
+      "date": "1851",
+      "place": ""
+    },
+    "death": {
+      "year": 1916,
+      "date": "1916",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Jane_Dieulafoy_photo.jpg",
+    "bio": "Jane Dieulafoy est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Féminisme et aux genres Roman, Récit.",
+    "period": "XIXe",
+    "movements": [
+      "feminisme"
+    ],
+    "genres": [
+      "roman",
+      "récit"
+    ],
+    "works": [
+      {
+        "id": "parysatis",
+        "title": "Parysatis",
+        "year": 1890,
+        "genre": "roman"
+      },
+      {
+        "id": "a-suse",
+        "title": "À Suse, journal de fouilles",
+        "year": 1888,
+        "genre": "récit"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "rimbaud",
     "name": "Arthur Rimbaud",
     "full_name": "Arthur Rimbaud",
@@ -2860,6 +3182,52 @@
         "title": "Illuminations",
         "year": 1886,
         "genre": "poésie"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "allais",
+    "name": "Alphonse Allais",
+    "full_name": "Alphonse Allais",
+    "birth": {
+      "year": 1854,
+      "date": "1854",
+      "place": ""
+    },
+    "death": {
+      "year": 1905,
+      "date": "1905",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Alphonse_Allais_(1854-1905).jpg",
+    "bio": "Alphonse Allais est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Humour et aux genres Nouvelle, Essai.",
+    "period": "XIXe",
+    "movements": [
+      "humour"
+    ],
+    "genres": [
+      "nouvelle",
+      "essai"
+    ],
+    "works": [
+      {
+        "id": "a-se-tordre",
+        "title": "À se tordre",
+        "year": 1891,
+        "genre": "nouvelle"
+      },
+      {
+        "id": "deux-et-deux-font-cinq",
+        "title": "Deux et deux font cinq",
+        "year": 1895,
+        "genre": "essai"
       }
     ],
     "quotes": [],
@@ -2996,6 +3364,51 @@
         "title": "Le Carillonneur",
         "year": 1897,
         "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "severine",
+    "name": "Séverine",
+    "full_name": "Séverine",
+    "birth": {
+      "year": 1855,
+      "date": "1855",
+      "place": ""
+    },
+    "death": {
+      "year": 1929,
+      "date": "1929",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/S%C3%A9verine_Atelier_Nadar_01.png",
+    "bio": "Séverine est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Féminisme et aux genres Essai.",
+    "period": "XIXe",
+    "movements": [
+      "feminisme"
+    ],
+    "genres": [
+      "essai"
+    ],
+    "works": [
+      {
+        "id": "pages-rouges",
+        "title": "Pages rouges",
+        "year": 1897,
+        "genre": "essai"
+      },
+      {
+        "id": "en-marche",
+        "title": "En marche",
+        "year": 1896,
+        "genre": "essai"
       }
     ],
     "quotes": [],
@@ -3225,6 +3638,51 @@
         "title": "La Gynandre",
         "year": 1891,
         "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "bergson",
+    "name": "Henri Bergson",
+    "full_name": "Henri Bergson",
+    "birth": {
+      "year": 1859,
+      "date": "1859",
+      "place": ""
+    },
+    "death": {
+      "year": 1941,
+      "date": "1941",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Henri_Bergson_(Nobel).jpg",
+    "bio": "Henri Bergson est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Philosophie et aux genres Essai.",
+    "period": "XXe-1",
+    "movements": [
+      "philosophie"
+    ],
+    "genres": [
+      "essai"
+    ],
+    "works": [
+      {
+        "id": "l-evolution-creatrice",
+        "title": "L'Évolution créatrice",
+        "year": 1907,
+        "genre": "essai"
+      },
+      {
+        "id": "le-rire",
+        "title": "Le Rire",
+        "year": 1900,
+        "genre": "essai"
       }
     ],
     "quotes": [],
@@ -4185,6 +4643,51 @@
     "notable_facts": []
   },
   {
+    "id": "tinayre",
+    "name": "Marcelle Tinayre",
+    "full_name": "Marcelle Tinayre",
+    "birth": {
+      "year": 1870,
+      "date": "1870",
+      "place": ""
+    },
+    "death": {
+      "year": 1948,
+      "date": "1948",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Tinayre_portrait_from_comoedia_illustree_1910.png",
+    "bio": "Marcelle Tinayre est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Féminisme et aux genres Roman.",
+    "period": "XXe-1",
+    "movements": [
+      "feminisme"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "la-maison-du-peche",
+        "title": "La Maison du péché",
+        "year": 1904,
+        "genre": "roman"
+      },
+      {
+        "id": "la-rebelle",
+        "title": "La Rebelle",
+        "year": 1907,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "proust",
     "name": "Marcel Proust",
     "full_name": "Marcel Proust",
@@ -4511,6 +5014,51 @@
     "notable_facts": []
   },
   {
+    "id": "yver",
+    "name": "Colette Yver",
+    "full_name": "Colette Yver",
+    "birth": {
+      "year": 1874,
+      "date": "1874",
+      "place": ""
+    },
+    "death": {
+      "year": 1959,
+      "date": "1959",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Vingt-cinq_ans_de_litt%C3%A9rature_fran%C3%A7aise_1925_Colette_Yver.jpg",
+    "bio": "Colette Yver est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Féminisme et aux genres Roman.",
+    "period": "XXe-1",
+    "movements": [
+      "feminisme"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "princesses-de-science",
+        "title": "Princesses de science",
+        "year": 1907,
+        "genre": "roman"
+      },
+      {
+        "id": "le-miracle-du-jour",
+        "title": "Le Miracle du jour",
+        "year": 1910,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "dhouville",
     "name": "Gérard d'Houville",
     "full_name": "Gérard d'Houville",
@@ -4545,6 +5093,52 @@
         "title": "Temps d'amour",
         "year": 1908,
         "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "leneru",
+    "name": "Marie Lenéru",
+    "full_name": "Marie Lenéru",
+    "birth": {
+      "year": 1875,
+      "date": "1875",
+      "place": ""
+    },
+    "death": {
+      "year": 1918,
+      "date": "1918",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Marie_Len%C3%A9ru_37ans.png",
+    "bio": "Marie Lenéru est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Féminisme et aux genres Théâtre, Mémoires.",
+    "period": "XXe-1",
+    "movements": [
+      "feminisme"
+    ],
+    "genres": [
+      "théâtre",
+      "mémoires"
+    ],
+    "works": [
+      {
+        "id": "les-affranchis",
+        "title": "Les Affranchis",
+        "year": 1908,
+        "genre": "théâtre"
+      },
+      {
+        "id": "journal-leneru",
+        "title": "Journal",
+        "year": 1922,
+        "genre": "mémoires"
       }
     ],
     "quotes": [],
@@ -5296,6 +5890,52 @@
         "id": "les-fleurs-de-tarbes",
         "title": "Les Fleurs de Tarbes",
         "year": 1941,
+        "genre": "essai"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "bachelard",
+    "name": "Gaston Bachelard",
+    "full_name": "Gaston Bachelard",
+    "birth": {
+      "year": 1884,
+      "date": "1884",
+      "place": ""
+    },
+    "death": {
+      "year": 1962,
+      "date": "1962",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Gaston_Bachelard.jpg",
+    "bio": "Gaston Bachelard est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Philosophie, Critique et aux genres Essai.",
+    "period": "XXe-2",
+    "movements": [
+      "philosophie",
+      "critique"
+    ],
+    "genres": [
+      "essai"
+    ],
+    "works": [
+      {
+        "id": "la-poetique-de-l-espace",
+        "title": "La Poétique de l'espace",
+        "year": 1957,
+        "genre": "essai"
+      },
+      {
+        "id": "la-flamme-d-une-chandelle",
+        "title": "La Flamme d'une chandelle",
+        "year": 1961,
         "genre": "essai"
       }
     ],
@@ -6063,6 +6703,51 @@
     "notable_facts": []
   },
   {
+    "id": "dac",
+    "name": "Pierre Dac",
+    "full_name": "Pierre Dac",
+    "birth": {
+      "year": 1893,
+      "date": "1893",
+      "place": ""
+    },
+    "death": {
+      "year": 1975,
+      "date": "1975",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Dac-1947-Colorise.png",
+    "bio": "Pierre Dac est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Humour et aux genres Essai.",
+    "period": "XXe-2",
+    "movements": [
+      "humour"
+    ],
+    "genres": [
+      "essai"
+    ],
+    "works": [
+      {
+        "id": "l-os-a-moelle",
+        "title": "L'Os à moelle",
+        "year": 1938,
+        "genre": "essai"
+      },
+      {
+        "id": "pensees-dac",
+        "title": "Pensées, répliques et textes",
+        "year": 1972,
+        "genre": "essai"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "celine",
     "name": "Louis-Ferdinand Céline",
     "full_name": "Louis-Ferdinand Céline",
@@ -6305,6 +6990,53 @@
         "title": "Lettres de guerre",
         "year": 1919,
         "genre": "essai"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "pagnol",
+    "name": "Marcel Pagnol",
+    "full_name": "Marcel Pagnol",
+    "birth": {
+      "year": 1895,
+      "date": "1895",
+      "place": ""
+    },
+    "death": {
+      "year": 1974,
+      "date": "1974",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Pagnol_Harcourt_1948.jpg",
+    "bio": "Marcel Pagnol est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Jeunesse, Modernité et aux genres Mémoires, Roman.",
+    "period": "XXe-1",
+    "movements": [
+      "jeunesse",
+      "modernite"
+    ],
+    "genres": [
+      "mémoires",
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "la-gloire-de-mon-pere",
+        "title": "La Gloire de mon père",
+        "year": 1957,
+        "genre": "mémoires"
+      },
+      {
+        "id": "le-chateau-de-ma-mere",
+        "title": "Le Château de ma mère",
+        "year": 1957,
+        "genre": "mémoires"
       }
     ],
     "quotes": [],
@@ -7090,6 +7822,51 @@
     "notable_facts": []
   },
   {
+    "id": "brunhoff",
+    "name": "Jean de Brunhoff",
+    "full_name": "Jean de Brunhoff",
+    "birth": {
+      "year": 1899,
+      "date": "1899",
+      "place": ""
+    },
+    "death": {
+      "year": 1937,
+      "date": "1937",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Jean_de_bruhnoff_grave.jpg",
+    "bio": "Jean de Brunhoff est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Jeunesse et aux genres Conte.",
+    "period": "XXe-1",
+    "movements": [
+      "jeunesse"
+    ],
+    "genres": [
+      "conte"
+    ],
+    "works": [
+      {
+        "id": "histoire-de-babar",
+        "title": "Histoire de Babar",
+        "year": 1931,
+        "genre": "conte"
+      },
+      {
+        "id": "le-voyage-de-babar",
+        "title": "Le Voyage de Babar",
+        "year": 1932,
+        "genre": "conte"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "desnos",
     "name": "Robert Desnos",
     "full_name": "Robert Desnos",
@@ -7583,6 +8360,53 @@
     "notable_facts": []
   },
   {
+    "id": "vialatte",
+    "name": "Alexandre Vialatte",
+    "full_name": "Alexandre Vialatte",
+    "birth": {
+      "year": 1901,
+      "date": "1901",
+      "place": ""
+    },
+    "death": {
+      "year": 1971,
+      "date": "1971",
+      "place": ""
+    },
+    "portrait": "",
+    "bio": "Alexandre Vialatte est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Humour, Modernité et aux genres Roman, Essai.",
+    "period": "XXe-2",
+    "movements": [
+      "humour",
+      "modernite"
+    ],
+    "genres": [
+      "roman",
+      "essai"
+    ],
+    "works": [
+      {
+        "id": "battling-le-tenebreux",
+        "title": "Battling le ténébreux",
+        "year": 1932,
+        "genre": "roman"
+      },
+      {
+        "id": "chroniques-du-desert",
+        "title": "Chroniques du désert",
+        "year": 1973,
+        "genre": "essai"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "ayme",
     "name": "Marcel Aymé",
     "full_name": "Marcel Aymé",
@@ -7940,6 +8764,51 @@
     "notable_facts": []
   },
   {
+    "id": "jankelevitch",
+    "name": "Vladimir Jankélévitch",
+    "full_name": "Vladimir Jankélévitch",
+    "birth": {
+      "year": 1903,
+      "date": "1903",
+      "place": ""
+    },
+    "death": {
+      "year": 1985,
+      "date": "1985",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Plaque_Vladimir_Jank%C3%A9l%C3%A9vitch%2C_1A_quai_aux_Fleurs%2C_Paris_4.jpg",
+    "bio": "Vladimir Jankélévitch est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Philosophie et aux genres Essai.",
+    "period": "XXe-2",
+    "movements": [
+      "philosophie"
+    ],
+    "genres": [
+      "essai"
+    ],
+    "works": [
+      {
+        "id": "le-je-ne-sais-quoi",
+        "title": "Le Je-ne-sais-quoi et le presque-rien",
+        "year": 1957,
+        "genre": "essai"
+      },
+      {
+        "id": "l-ironie",
+        "title": "L'Ironie",
+        "year": 1964,
+        "genre": "essai"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "calet",
     "name": "Henri Calet",
     "full_name": "Henri Calet",
@@ -7974,6 +8843,51 @@
         "id": "le-tout-sur-le-tout",
         "title": "Le Tout sur le tout",
         "year": 1948,
+        "genre": "essai"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "canguilhem",
+    "name": "Georges Canguilhem",
+    "full_name": "Georges Canguilhem",
+    "birth": {
+      "year": 1904,
+      "date": "1904",
+      "place": ""
+    },
+    "death": {
+      "year": 1995,
+      "date": "1995",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Georges_Canguilhem.jpg",
+    "bio": "Georges Canguilhem est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Philosophie et aux genres Essai.",
+    "period": "XXe-2",
+    "movements": [
+      "philosophie"
+    ],
+    "genres": [
+      "essai"
+    ],
+    "works": [
+      {
+        "id": "le-normal-et-le-pathologique",
+        "title": "Le Normal et le Pathologique",
+        "year": 1943,
+        "genre": "essai"
+      },
+      {
+        "id": "la-connaissance-de-la-vie",
+        "title": "La Connaissance de la vie",
+        "year": 1952,
         "genre": "essai"
       }
     ],
@@ -8206,6 +9120,51 @@
         "title": "Chants d'ombre",
         "year": 1945,
         "genre": "poésie"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "levinas",
+    "name": "Emmanuel Levinas",
+    "full_name": "Emmanuel Levinas",
+    "birth": {
+      "year": 1906,
+      "date": "1906",
+      "place": ""
+    },
+    "death": {
+      "year": 1995,
+      "date": "1995",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Emmanuel_Levinas.jpg",
+    "bio": "Emmanuel Levinas est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Philosophie et aux genres Essai.",
+    "period": "XXe-2",
+    "movements": [
+      "philosophie"
+    ],
+    "genres": [
+      "essai"
+    ],
+    "works": [
+      {
+        "id": "totalite-et-infini",
+        "title": "Totalité et Infini",
+        "year": 1961,
+        "genre": "essai"
+      },
+      {
+        "id": "autrement-qu-etre",
+        "title": "Autrement qu'être",
+        "year": 1974,
+        "genre": "essai"
       }
     ],
     "quotes": [],
@@ -8675,6 +9634,51 @@
         "title": "Ping-Pong",
         "year": 1955,
         "genre": "théâtre"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "merleau-ponty",
+    "name": "Maurice Merleau-Ponty",
+    "full_name": "Maurice Merleau-Ponty",
+    "birth": {
+      "year": 1908,
+      "date": "1908",
+      "place": ""
+    },
+    "death": {
+      "year": 1961,
+      "date": "1961",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Maurice_Merleau-Ponty.jpg",
+    "bio": "Maurice Merleau-Ponty est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Philosophie et aux genres Essai.",
+    "period": "XXe-2",
+    "movements": [
+      "philosophie"
+    ],
+    "genres": [
+      "essai"
+    ],
+    "works": [
+      {
+        "id": "phenomenologie-de-la-perception",
+        "title": "Phénoménologie de la perception",
+        "year": 1945,
+        "genre": "essai"
+      },
+      {
+        "id": "le-visible-et-l-invisible",
+        "title": "Le Visible et l'invisible",
+        "year": 1964,
+        "genre": "essai"
       }
     ],
     "quotes": [],
@@ -9178,6 +10182,51 @@
     "notable_facts": []
   },
   {
+    "id": "cioran",
+    "name": "Emil Cioran",
+    "full_name": "Emil Cioran",
+    "birth": {
+      "year": 1911,
+      "date": "1911",
+      "place": ""
+    },
+    "death": {
+      "year": 1995,
+      "date": "1995",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Cioran_in_Romania.jpg",
+    "bio": "Emil Cioran est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Philosophie et aux genres Essai.",
+    "period": "XXe-2",
+    "movements": [
+      "philosophie"
+    ],
+    "genres": [
+      "essai"
+    ],
+    "works": [
+      {
+        "id": "precis-de-decomposition",
+        "title": "Précis de décomposition",
+        "year": 1949,
+        "genre": "essai"
+      },
+      {
+        "id": "de-l-inconvenient-d-etre-ne",
+        "title": "De l'inconvénient d'être né",
+        "year": 1973,
+        "genre": "essai"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "boulle",
     "name": "Pierre Boulle",
     "full_name": "Pierre Boulle",
@@ -9546,6 +10595,51 @@
         "title": "Les Chemins qui montent",
         "year": 1957,
         "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "ricoeur",
+    "name": "Paul Ricœur",
+    "full_name": "Paul Ricœur",
+    "birth": {
+      "year": 1913,
+      "date": "1913",
+      "place": ""
+    },
+    "death": {
+      "year": 2005,
+      "date": "2005",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Paul_Ricoeur_Balzan.png",
+    "bio": "Paul Ricœur est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Philosophie et aux genres Essai.",
+    "period": "XXe-2",
+    "movements": [
+      "philosophie"
+    ],
+    "genres": [
+      "essai"
+    ],
+    "works": [
+      {
+        "id": "temps-et-recit",
+        "title": "Temps et récit",
+        "year": 1983,
+        "genre": "essai"
+      },
+      {
+        "id": "soi-meme-comme-un-autre",
+        "title": "Soi-même comme un autre",
+        "year": 1990,
+        "genre": "essai"
       }
     ],
     "quotes": [],
@@ -10303,6 +11397,93 @@
     "notable_facts": []
   },
   {
+    "id": "morin",
+    "name": "Edgar Morin",
+    "full_name": "Edgar Morin",
+    "birth": {
+      "year": 1921,
+      "date": "1921",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Edgar_Morin%2C_2011_(cropped).jpg",
+    "bio": "Edgar Morin est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Philosophie et aux genres Essai.",
+    "period": "XXe-2",
+    "movements": [
+      "philosophie"
+    ],
+    "genres": [
+      "essai"
+    ],
+    "works": [
+      {
+        "id": "introduction-a-la-pensee-complexe",
+        "title": "Introduction à la pensée complexe",
+        "year": 1990,
+        "genre": "essai"
+      },
+      {
+        "id": "la-methode",
+        "title": "La Méthode",
+        "year": 1977,
+        "genre": "essai"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "dard",
+    "name": "Frédéric Dard (San-Antonio)",
+    "full_name": "Frédéric Dard (San-Antonio)",
+    "birth": {
+      "year": 1921,
+      "date": "1921",
+      "place": ""
+    },
+    "death": {
+      "year": 2000,
+      "date": "2000",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Fr%C3%A9d%C3%A9ric_Dard_(1992)_by_Erling_Mandelmann.jpg",
+    "bio": "Frédéric Dard (San-Antonio) est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Humour, Policier et aux genres Roman.",
+    "period": "XXe-2",
+    "movements": [
+      "humour",
+      "policier"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "reglez-lui-son-compte",
+        "title": "Réglez-lui son compte",
+        "year": 1949,
+        "genre": "roman"
+      },
+      {
+        "id": "beru-beru",
+        "title": "Béru-Béru",
+        "year": 1953,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "robbe-grillet",
     "name": "Alain Robbe-Grillet",
     "full_name": "Alain Robbe-Grillet",
@@ -10657,6 +11838,97 @@
     "notable_facts": []
   },
   {
+    "id": "franquin",
+    "name": "André Franquin",
+    "full_name": "André Franquin",
+    "birth": {
+      "year": 1924,
+      "date": "1924",
+      "place": ""
+    },
+    "death": {
+      "year": 1997,
+      "date": "1997",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Andr%C3%A9_Franquin%2C_tekenaar_strip_Guust_Flater%2C_1979_-_19.jpg",
+    "bio": "André Franquin est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Bande dessinée et aux genres Bande dessinée.",
+    "period": "XXe-2",
+    "movements": [
+      "bande_dessinee"
+    ],
+    "genres": [
+      "bande dessinée"
+    ],
+    "works": [
+      {
+        "id": "gaston",
+        "title": "Gaston",
+        "year": 1961,
+        "genre": "bande dessinée"
+      },
+      {
+        "id": "idees-noires",
+        "title": "Idées noires",
+        "year": 1977,
+        "genre": "bande dessinée"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "lyotard",
+    "name": "Jean-François Lyotard",
+    "full_name": "Jean-François Lyotard",
+    "birth": {
+      "year": 1924,
+      "date": "1924",
+      "place": ""
+    },
+    "death": {
+      "year": 1998,
+      "date": "1998",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Jean-Francois_Lyotard.jpg",
+    "bio": "Jean-François Lyotard est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Philosophie, Postmodernisme et aux genres Essai.",
+    "period": "XXe-2",
+    "movements": [
+      "philosophie",
+      "postmodernisme"
+    ],
+    "genres": [
+      "essai"
+    ],
+    "works": [
+      {
+        "id": "la-condition-postmoderne",
+        "title": "La Condition postmoderne",
+        "year": 1979,
+        "genre": "essai"
+      },
+      {
+        "id": "le-differend",
+        "title": "Le Différend",
+        "year": 1983,
+        "genre": "essai"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "fanon",
     "name": "Frantz Fanon",
     "full_name": "Frantz Fanon",
@@ -10793,6 +12065,142 @@
     "notable_facts": []
   },
   {
+    "id": "gripari",
+    "name": "Pierre Gripari",
+    "full_name": "Pierre Gripari",
+    "birth": {
+      "year": 1925,
+      "date": "1925",
+      "place": ""
+    },
+    "death": {
+      "year": 1990,
+      "date": "1990",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Pierre_Gripari.jpg",
+    "bio": "Pierre Gripari est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Jeunesse et aux genres Conte.",
+    "period": "XXe-2",
+    "movements": [
+      "jeunesse"
+    ],
+    "genres": [
+      "conte"
+    ],
+    "works": [
+      {
+        "id": "contes-de-la-rue-broca",
+        "title": "Contes de la rue Broca",
+        "year": 1967,
+        "genre": "conte"
+      },
+      {
+        "id": "la-sorciere-de-la-rue-mouffetard",
+        "title": "La Sorcière de la rue Mouffetard",
+        "year": 1967,
+        "genre": "conte"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "deleuze",
+    "name": "Gilles Deleuze",
+    "full_name": "Gilles Deleuze",
+    "birth": {
+      "year": 1925,
+      "date": "1925",
+      "place": ""
+    },
+    "death": {
+      "year": 1995,
+      "date": "1995",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/AVT_Gilles-Deleuze_6342.webp",
+    "bio": "Gilles Deleuze est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Philosophie et aux genres Essai.",
+    "period": "XXe-2",
+    "movements": [
+      "philosophie"
+    ],
+    "genres": [
+      "essai"
+    ],
+    "works": [
+      {
+        "id": "difference-et-repetition",
+        "title": "Différence et répétition",
+        "year": 1968,
+        "genre": "essai"
+      },
+      {
+        "id": "mille-plateaux",
+        "title": "Mille Plateaux",
+        "year": 1980,
+        "genre": "essai"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "boudard",
+    "name": "Alphonse Boudard",
+    "full_name": "Alphonse Boudard",
+    "birth": {
+      "year": 1925,
+      "date": "1925",
+      "place": ""
+    },
+    "death": {
+      "year": 2000,
+      "date": "2000",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Alphonse_Boudard.JPG",
+    "bio": "Alphonse Boudard est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Humour et aux genres Roman, Mémoires.",
+    "period": "XXe-2",
+    "movements": [
+      "humour"
+    ],
+    "genres": [
+      "roman",
+      "mémoires"
+    ],
+    "works": [
+      {
+        "id": "la-cerise",
+        "title": "La Cerise",
+        "year": 1958,
+        "genre": "roman"
+      },
+      {
+        "id": "les-combattants-du-petit-bonheur",
+        "title": "Les Combattants du petit bonheur",
+        "year": 1977,
+        "genre": "mémoires"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "chraibi",
     "name": "Driss Chraïbi",
     "full_name": "Driss Chraïbi",
@@ -10885,6 +12293,52 @@
     "notable_facts": []
   },
   {
+    "id": "foucault",
+    "name": "Michel Foucault",
+    "full_name": "Michel Foucault",
+    "birth": {
+      "year": 1926,
+      "date": "1926",
+      "place": ""
+    },
+    "death": {
+      "year": 1984,
+      "date": "1984",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Photo_of_Michel_Foucault_on_1970_dustjacket_of_The_Order_of_Things.jpg",
+    "bio": "Michel Foucault est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Philosophie, Critique et aux genres Essai.",
+    "period": "XXe-2",
+    "movements": [
+      "philosophie",
+      "critique"
+    ],
+    "genres": [
+      "essai"
+    ],
+    "works": [
+      {
+        "id": "surveiller-et-punir",
+        "title": "Surveiller et Punir",
+        "year": 1975,
+        "genre": "essai"
+      },
+      {
+        "id": "les-mots-et-les-choses",
+        "title": "Les Mots et les Choses",
+        "year": 1966,
+        "genre": "essai"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "kourouma",
     "name": "Ahmadou Kourouma",
     "full_name": "Ahmadou Kourouma",
@@ -10919,6 +12373,51 @@
         "title": "En attendant le vote des bêtes sauvages",
         "year": 1998,
         "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "pratt",
+    "name": "Hugo Pratt",
+    "full_name": "Hugo Pratt",
+    "birth": {
+      "year": 1927,
+      "date": "1927",
+      "place": ""
+    },
+    "death": {
+      "year": 1995,
+      "date": "1995",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Hugo_Pratt_(1989)_by_Erling_Mandelmann_-_2.jpg",
+    "bio": "Hugo Pratt est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Bande dessinée et aux genres Bande dessinée.",
+    "period": "XXe-2",
+    "movements": [
+      "bande_dessinee"
+    ],
+    "genres": [
+      "bande dessinée"
+    ],
+    "works": [
+      {
+        "id": "la-ballade-de-la-mer-salee",
+        "title": "La Ballade de la mer salée",
+        "year": 1967,
+        "genre": "bande dessinée"
+      },
+      {
+        "id": "corto-maltese-en-siberie",
+        "title": "Corto Maltese en Sibérie",
+        "year": 1974,
+        "genre": "bande dessinée"
       }
     ],
     "quotes": [],
@@ -11387,6 +12886,52 @@
     "notable_facts": []
   },
   {
+    "id": "baudrillard",
+    "name": "Jean Baudrillard",
+    "full_name": "Jean Baudrillard",
+    "birth": {
+      "year": 1929,
+      "date": "1929",
+      "place": ""
+    },
+    "death": {
+      "year": 2007,
+      "date": "2007",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/WikipediaBaudrillard20040612-cropped.png",
+    "bio": "Jean Baudrillard est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Philosophie, Postmodernisme et aux genres Essai.",
+    "period": "XXe-2",
+    "movements": [
+      "philosophie",
+      "postmodernisme"
+    ],
+    "genres": [
+      "essai"
+    ],
+    "works": [
+      {
+        "id": "simulacres-et-simulation",
+        "title": "Simulacres et Simulation",
+        "year": 1981,
+        "genre": "essai"
+      },
+      {
+        "id": "la-societe-de-consommation",
+        "title": "La Société de consommation",
+        "year": 1970,
+        "genre": "essai"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "mallet-joris",
     "name": "Françoise Mallet-Joris",
     "full_name": "Françoise Mallet-Joris",
@@ -11421,6 +12966,97 @@
         "id": "lettre-a-moi-meme",
         "title": "Lettre à moi-même",
         "year": 1963,
+        "genre": "essai"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "bourdieu",
+    "name": "Pierre Bourdieu",
+    "full_name": "Pierre Bourdieu",
+    "birth": {
+      "year": 1930,
+      "date": "1930",
+      "place": ""
+    },
+    "death": {
+      "year": 2002,
+      "date": "2002",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Pierre_Bourdieu_(1).jpg",
+    "bio": "Pierre Bourdieu est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Critique et aux genres Essai.",
+    "period": "XXe-2",
+    "movements": [
+      "critique"
+    ],
+    "genres": [
+      "essai"
+    ],
+    "works": [
+      {
+        "id": "la-distinction",
+        "title": "La Distinction",
+        "year": 1979,
+        "genre": "essai"
+      },
+      {
+        "id": "la-domination-masculine",
+        "title": "La Domination masculine",
+        "year": 1998,
+        "genre": "essai"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "derrida",
+    "name": "Jacques Derrida",
+    "full_name": "Jacques Derrida",
+    "birth": {
+      "year": 1930,
+      "date": "1930",
+      "place": ""
+    },
+    "death": {
+      "year": 2004,
+      "date": "2004",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Derrida_EHESS_(cropped).png",
+    "bio": "Jacques Derrida est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Philosophie, Déconstruction et aux genres Essai.",
+    "period": "XXe-2",
+    "movements": [
+      "philosophie",
+      "deconstruction"
+    ],
+    "genres": [
+      "essai"
+    ],
+    "works": [
+      {
+        "id": "de-la-grammatologie",
+        "title": "De la grammatologie",
+        "year": 1967,
+        "genre": "essai"
+      },
+      {
+        "id": "spectres-de-marx",
+        "title": "Spectres de Marx",
+        "year": 1993,
         "genre": "essai"
       }
     ],
@@ -12001,6 +13637,97 @@
     "notable_facts": []
   },
   {
+    "id": "moebius",
+    "name": "Jean Giraud (Moebius)",
+    "full_name": "Jean Giraud (Moebius)",
+    "birth": {
+      "year": 1938,
+      "date": "1938",
+      "place": ""
+    },
+    "death": {
+      "year": 2012,
+      "date": "2012",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Moebius_Lodz_2008.jpg",
+    "bio": "Jean Giraud (Moebius) est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Bande dessinée et aux genres Bande dessinée.",
+    "period": "XXe-2",
+    "movements": [
+      "bande_dessinee"
+    ],
+    "genres": [
+      "bande dessinée"
+    ],
+    "works": [
+      {
+        "id": "l-incal",
+        "title": "L'Incal",
+        "year": 1981,
+        "genre": "bande dessinée"
+      },
+      {
+        "id": "arzach",
+        "title": "Arzach",
+        "year": 1976,
+        "genre": "bande dessinée"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "topor",
+    "name": "Roland Topor",
+    "full_name": "Roland Topor",
+    "birth": {
+      "year": 1938,
+      "date": "1938",
+      "place": ""
+    },
+    "death": {
+      "year": 1997,
+      "date": "1997",
+      "place": ""
+    },
+    "portrait": "",
+    "bio": "Roland Topor est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Humour et aux genres Essai, Roman.",
+    "period": "XXe-2",
+    "movements": [
+      "humour"
+    ],
+    "genres": [
+      "essai",
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "la-cuisine-cannibale",
+        "title": "La Cuisine cannibale",
+        "year": 1970,
+        "genre": "essai"
+      },
+      {
+        "id": "le-locataire-chimerique",
+        "title": "Le Locataire chimérique",
+        "year": 1976,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "blais",
     "name": "Marie-Claire Blais",
     "full_name": "Marie-Claire Blais",
@@ -12035,6 +13762,51 @@
         "title": "Soifs",
         "year": 1995,
         "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "desproges",
+    "name": "Pierre Desproges",
+    "full_name": "Pierre Desproges",
+    "birth": {
+      "year": 1939,
+      "date": "1939",
+      "place": ""
+    },
+    "death": {
+      "year": 1988,
+      "date": "1988",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Pierre_Desproges17.jpg",
+    "bio": "Pierre Desproges est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Humour et aux genres Essai.",
+    "period": "XXe-2",
+    "movements": [
+      "humour"
+    ],
+    "genres": [
+      "essai"
+    ],
+    "works": [
+      {
+        "id": "les-requisitoires",
+        "title": "Les Réquisitoires du Tribunal des flagrants délires",
+        "year": 1980,
+        "genre": "essai"
+      },
+      {
+        "id": "textes-desproges",
+        "title": "Textes de scène",
+        "year": 1986,
+        "genre": "essai"
       }
     ],
     "quotes": [],
@@ -12316,6 +14088,47 @@
     "notable_facts": []
   },
   {
+    "id": "manotti",
+    "name": "Dominique Manotti",
+    "full_name": "Dominique Manotti",
+    "birth": {
+      "year": 1942,
+      "date": "1942",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Dominique_Manotti_en_2017.jpg",
+    "bio": "Dominique Manotti est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Policier et aux genres Roman.",
+    "period": "Contemporain",
+    "movements": [
+      "policier"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "orpaillage",
+        "title": "Orpaillage",
+        "year": 1995,
+        "genre": "roman"
+      },
+      {
+        "id": "lorraine-connection",
+        "title": "Lorraine connection",
+        "year": 2006,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "ben-jelloun",
     "name": "Tahar Ben Jelloun",
     "full_name": "Tahar Ben Jelloun",
@@ -12340,6 +14153,49 @@
         "title": "La Nuit sacrée",
         "year": 1987,
         "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "pennac",
+    "name": "Daniel Pennac",
+    "full_name": "Daniel Pennac",
+    "birth": {
+      "year": 1944,
+      "date": "1944",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Paris_-_Salon_du_livre_de_Paris_2017_-_Daniel_Pennac_-_008.jpg",
+    "bio": "Daniel Pennac est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Jeunesse, Policier et aux genres Roman, Essai.",
+    "period": "Contemporain",
+    "movements": [
+      "jeunesse",
+      "policier"
+    ],
+    "genres": [
+      "roman",
+      "essai"
+    ],
+    "works": [
+      {
+        "id": "au-bonheur-des-ogres",
+        "title": "Au bonheur des ogres",
+        "year": 1985,
+        "genre": "roman"
+      },
+      {
+        "id": "comme-un-roman",
+        "title": "Comme un roman",
+        "year": 1992,
+        "genre": "essai"
       }
     ],
     "quotes": [],
@@ -12428,6 +14284,47 @@
         "title": "Vies minuscules",
         "year": 1984,
         "genre": "récit"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "morgenstern",
+    "name": "Susie Morgenstern",
+    "full_name": "Susie Morgenstern",
+    "birth": {
+      "year": 1945,
+      "date": "1945",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Susie_Morgenstern_-_Com%C3%A9die_du_Livre_2010_-_P1390945.jpg",
+    "bio": "Susie Morgenstern est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Jeunesse et aux genres Roman.",
+    "period": "Contemporain",
+    "movements": [
+      "jeunesse"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "la-sixieme",
+        "title": "La Sixième",
+        "year": 1980,
+        "genre": "roman"
+      },
+      {
+        "id": "lettres-d-amour-de-0-a-10",
+        "title": "Lettres d'amour de 0 à 10",
+        "year": 1996,
+        "genre": "roman"
       }
     ],
     "quotes": [],
@@ -12578,6 +14475,47 @@
     "notable_facts": []
   },
   {
+    "id": "vonarburg",
+    "name": "Élisabeth Vonarburg",
+    "full_name": "Élisabeth Vonarburg",
+    "birth": {
+      "year": 1947,
+      "date": "1947",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%89lisabeth_Vonarburg_2013-04-13.jpg",
+    "bio": "Élisabeth Vonarburg est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Science-fiction et aux genres Roman.",
+    "period": "Contemporain",
+    "movements": [
+      "science_fiction"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "chroniques-du-pays-des-meres",
+        "title": "Chroniques du pays des Mères",
+        "year": 1992,
+        "genre": "roman"
+      },
+      {
+        "id": "tyranael",
+        "title": "Tyranaël",
+        "year": 1997,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "quignard",
     "name": "Pascal Quignard",
     "full_name": "Pascal Quignard",
@@ -12703,6 +14641,47 @@
     "notable_facts": []
   },
   {
+    "id": "daeninckx",
+    "name": "Didier Daeninckx",
+    "full_name": "Didier Daeninckx",
+    "birth": {
+      "year": 1949,
+      "date": "1949",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Didier_daeninckx_1006970.jpg",
+    "bio": "Didier Daeninckx est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Policier et aux genres Roman.",
+    "period": "Contemporain",
+    "movements": [
+      "policier"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "meurtres-pour-memoire",
+        "title": "Meurtres pour mémoire",
+        "year": 1984,
+        "genre": "roman"
+      },
+      {
+        "id": "cannibale",
+        "title": "Cannibale",
+        "year": 1998,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "confiant",
     "name": "Raphaël Confiant",
     "full_name": "Raphaël Confiant",
@@ -12732,6 +14711,129 @@
         "id": "eau-de-cafe",
         "title": "Eau de café",
         "year": 1991,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "bilal",
+    "name": "Enki Bilal",
+    "full_name": "Enki Bilal",
+    "birth": {
+      "year": 1951,
+      "date": "1951",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Enki_Bilal_20100328_Salon_du_livre_de_Paris_5.jpg",
+    "bio": "Enki Bilal est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Bande dessinée et aux genres Bande dessinée.",
+    "period": "Contemporain",
+    "movements": [
+      "bande_dessinee"
+    ],
+    "genres": [
+      "bande dessinée"
+    ],
+    "works": [
+      {
+        "id": "la-foire-aux-immortels",
+        "title": "La Foire aux immortels",
+        "year": 1980,
+        "genre": "bande dessinée"
+      },
+      {
+        "id": "la-femme-piege",
+        "title": "La Femme piège",
+        "year": 1986,
+        "genre": "bande dessinée"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "lemaitre",
+    "name": "Pierre Lemaitre",
+    "full_name": "Pierre Lemaitre",
+    "birth": {
+      "year": 1951,
+      "date": "1951",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Pierre_Lemaitre_%E2%80%94_Salon_du_livre_de_Paris_-_23_mars_2014_recadr%C3%A9e.jpg",
+    "bio": "Pierre Lemaitre est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Policier et aux genres Roman.",
+    "period": "Contemporain",
+    "movements": [
+      "policier"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "au-revoir-la-haut",
+        "title": "Au revoir là-haut",
+        "year": 2013,
+        "genre": "roman"
+      },
+      {
+        "id": "alex",
+        "title": "Alex",
+        "year": 2009,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "dubois",
+    "name": "Jean-Paul Dubois",
+    "full_name": "Jean-Paul Dubois",
+    "birth": {
+      "year": 1951,
+      "date": "1951",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Jean-Paul_Dubois_(2016)_-_2.png",
+    "bio": "Jean-Paul Dubois est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Contemporain et aux genres Roman.",
+    "period": "Contemporain",
+    "movements": [
+      "contemporain"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "tous-les-hommes",
+        "title": "Tous les hommes n'habitent pas le monde de la même façon",
+        "year": 2019,
+        "genre": "roman"
+      },
+      {
+        "id": "une-vie-francaise",
+        "title": "Une vie française",
+        "year": 2004,
         "genre": "roman"
       }
     ],
@@ -12820,6 +14922,92 @@
     "notable_facts": []
   },
   {
+    "id": "jonquet",
+    "name": "Thierry Jonquet",
+    "full_name": "Thierry Jonquet",
+    "birth": {
+      "year": 1954,
+      "date": "1954",
+      "place": ""
+    },
+    "death": {
+      "year": 2009,
+      "date": "2009",
+      "place": ""
+    },
+    "portrait": "",
+    "bio": "Thierry Jonquet est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Policier et aux genres Roman.",
+    "period": "XXe-2",
+    "movements": [
+      "policier"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "mygale",
+        "title": "Mygale",
+        "year": 1984,
+        "genre": "roman"
+      },
+      {
+        "id": "les-orpailleurs",
+        "title": "Les Orpailleurs",
+        "year": 1993,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "murail",
+    "name": "Marie-Aude Murail",
+    "full_name": "Marie-Aude Murail",
+    "birth": {
+      "year": 1954,
+      "date": "1954",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/MA_MURAIL.jpg",
+    "bio": "Marie-Aude Murail est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Jeunesse et aux genres Roman.",
+    "period": "Contemporain",
+    "movements": [
+      "jeunesse"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "oh-boy",
+        "title": "Oh boy !",
+        "year": 2000,
+        "genre": "roman"
+      },
+      {
+        "id": "sauveur-et-fils",
+        "title": "Sauveur & fils",
+        "year": 2015,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "khadra",
     "name": "Yasmina Khadra",
     "full_name": "Yasmina Khadra",
@@ -12850,6 +15038,47 @@
         "id": "l-attentat",
         "title": "L'Attentat",
         "year": 2005,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "bordage",
+    "name": "Pierre Bordage",
+    "full_name": "Pierre Bordage",
+    "birth": {
+      "year": 1955,
+      "date": "1955",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Bordage4002_web.jpg",
+    "bio": "Pierre Bordage est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Science-fiction et aux genres Roman.",
+    "period": "Contemporain",
+    "movements": [
+      "science_fiction"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "les-guerriers-du-silence",
+        "title": "Les Guerriers du silence",
+        "year": 1993,
+        "genre": "roman"
+      },
+      {
+        "id": "wang",
+        "title": "Wang",
+        "year": 1996,
         "genre": "roman"
       }
     ],
@@ -13051,6 +15280,381 @@
     "notable_facts": []
   },
   {
+    "id": "vargas",
+    "name": "Fred Vargas",
+    "full_name": "Fred Vargas",
+    "birth": {
+      "year": 1957,
+      "date": "1957",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Fred_Vargas_2009.jpg",
+    "bio": "Fred Vargas est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Policier et aux genres Roman.",
+    "period": "Contemporain",
+    "movements": [
+      "policier"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "pars-vite-et-reviens-tard",
+        "title": "Pars vite et reviens tard",
+        "year": 2001,
+        "genre": "roman"
+      },
+      {
+        "id": "l-homme-a-l-envers",
+        "title": "L'Homme à l'envers",
+        "year": 1999,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "le-tellier",
+    "name": "Hervé Le Tellier",
+    "full_name": "Hervé Le Tellier",
+    "birth": {
+      "year": 1957,
+      "date": "1957",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Herv%C3%A9_Le_Tellier_(2021).png",
+    "bio": "Hervé Le Tellier est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Contemporain, Oulipo et aux genres Roman.",
+    "period": "Contemporain",
+    "movements": [
+      "contemporain",
+      "oulipo"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "l-anomalie",
+        "title": "L'Anomalie",
+        "year": 2020,
+        "genre": "roman"
+      },
+      {
+        "id": "toutes-les-familles-heureuses",
+        "title": "Toutes les familles heureuses",
+        "year": 2009,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "ayerdhal",
+    "name": "Ayerdhal",
+    "full_name": "Ayerdhal",
+    "birth": {
+      "year": 1959,
+      "date": "1959",
+      "place": ""
+    },
+    "death": {
+      "year": 2015,
+      "date": "2015",
+      "place": ""
+    },
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Ayerdhal_2010.jpg",
+    "bio": "Ayerdhal est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Science-fiction et aux genres Roman.",
+    "period": "Contemporain",
+    "movements": [
+      "science_fiction"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "mytale",
+        "title": "Mytale",
+        "year": 1993,
+        "genre": "roman"
+      },
+      {
+        "id": "la-boheme-et-l-ivraie",
+        "title": "La Bohême et l'ivraie",
+        "year": 1999,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "minier",
+    "name": "Bernard Minier",
+    "full_name": "Bernard Minier",
+    "birth": {
+      "year": 1960,
+      "date": "1960",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Bernard_Minier_(2019).jpg",
+    "bio": "Bernard Minier est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Policier et aux genres Roman.",
+    "period": "Contemporain",
+    "movements": [
+      "policier"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "glace",
+        "title": "Glacé",
+        "year": 2011,
+        "genre": "roman"
+      },
+      {
+        "id": "le-bord-de-l-abime",
+        "title": "Le Bord de l'abîme",
+        "year": 2021,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "grange",
+    "name": "Jean-Christophe Grangé",
+    "full_name": "Jean-Christophe Grangé",
+    "birth": {
+      "year": 1961,
+      "date": "1961",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Grange01.jpg",
+    "bio": "Jean-Christophe Grangé est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Policier et aux genres Roman.",
+    "period": "Contemporain",
+    "movements": [
+      "policier"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "les-rivieres-pourpres",
+        "title": "Les Rivières pourpres",
+        "year": 1998,
+        "genre": "roman"
+      },
+      {
+        "id": "le-concile-de-pierre",
+        "title": "Le Concile de pierre",
+        "year": 2000,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "werber",
+    "name": "Bernard Werber",
+    "full_name": "Bernard Werber",
+    "birth": {
+      "year": 1961,
+      "date": "1961",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Bernard_WERBER_par_Michel_Restany.jpg",
+    "bio": "Bernard Werber est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Science-fiction et aux genres Roman.",
+    "period": "Contemporain",
+    "movements": [
+      "science_fiction"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "les-fourmis",
+        "title": "Les Fourmis",
+        "year": 1991,
+        "genre": "roman"
+      },
+      {
+        "id": "les-thanatonautes",
+        "title": "Les Thanatonautes",
+        "year": 1994,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "trondheim",
+    "name": "Lewis Trondheim",
+    "full_name": "Lewis Trondheim",
+    "birth": {
+      "year": 1964,
+      "date": "1964",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/FIBD2015LewisTrondheim.jpg",
+    "bio": "Lewis Trondheim est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Bande dessinée et aux genres Bande dessinée.",
+    "period": "Contemporain",
+    "movements": [
+      "bande_dessinee"
+    ],
+    "genres": [
+      "bande dessinée"
+    ],
+    "works": [
+      {
+        "id": "lapinot-et-les-carottes",
+        "title": "Lapinot et les carottes de Patagonie",
+        "year": 1992,
+        "genre": "bande dessinée"
+      },
+      {
+        "id": "approximative-contemplation",
+        "title": "Approximative Contemplation",
+        "year": 2007,
+        "genre": "bande dessinée"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "guibert",
+    "name": "Emmanuel Guibert",
+    "full_name": "Emmanuel Guibert",
+    "birth": {
+      "year": 1964,
+      "date": "1964",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/FIBD2020EmmanuelGuibert_01.jpg",
+    "bio": "Emmanuel Guibert est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Bande dessinée et aux genres Bande dessinée.",
+    "period": "Contemporain",
+    "movements": [
+      "bande_dessinee"
+    ],
+    "genres": [
+      "bande dessinée"
+    ],
+    "works": [
+      {
+        "id": "la-guerre-d-alan",
+        "title": "La Guerre d'Alan",
+        "year": 2002,
+        "genre": "bande dessinée"
+      },
+      {
+        "id": "le-photographe",
+        "title": "Le Photographe",
+        "year": 2003,
+        "genre": "bande dessinée"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "lehman",
+    "name": "Serge Lehman",
+    "full_name": "Serge Lehman",
+    "birth": {
+      "year": 1964,
+      "date": "1964",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Serge_Lehman_(2019).jpg",
+    "bio": "Serge Lehman est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Science-fiction et aux genres Roman, Bande dessinée.",
+    "period": "Contemporain",
+    "movements": [
+      "science_fiction"
+    ],
+    "genres": [
+      "roman",
+      "bande dessinée"
+    ],
+    "works": [
+      {
+        "id": "faust",
+        "title": "F.A.U.S.T.",
+        "year": 1996,
+        "genre": "roman"
+      },
+      {
+        "id": "la-brigade-chimerique",
+        "title": "La Brigade chimérique",
+        "year": 2009,
+        "genre": "bande dessinée"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "waberi",
     "name": "Abdourahman Waberi",
     "full_name": "Abdourahman Waberi",
@@ -13081,6 +15685,88 @@
         "id": "aux-etats-unis-d-afrique",
         "title": "Aux États-Unis d'Afrique",
         "year": 2006,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "bussi",
+    "name": "Michel Bussi",
+    "full_name": "Michel Bussi",
+    "birth": {
+      "year": 1965,
+      "date": "1965",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Michel_Bussi_2.jpg",
+    "bio": "Michel Bussi est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Policier et aux genres Roman.",
+    "period": "Contemporain",
+    "movements": [
+      "policier"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "un-avion-sans-elle",
+        "title": "Un avion sans elle",
+        "year": 2012,
+        "genre": "roman"
+      },
+      {
+        "id": "nympheas-noirs",
+        "title": "Nymphéas noirs",
+        "year": 2011,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "genefort",
+    "name": "Laurent Genefort",
+    "full_name": "Laurent Genefort",
+    "birth": {
+      "year": 1965,
+      "date": "1965",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Laurent_Genefort_-_Vendredi_-_Utopiales_2015_-_E96A1111.jpg",
+    "bio": "Laurent Genefort est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Science-fiction et aux genres Roman.",
+    "period": "Contemporain",
+    "movements": [
+      "science_fiction"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "omale",
+        "title": "Omale",
+        "year": 2001,
+        "genre": "roman"
+      },
+      {
+        "id": "lumence",
+        "title": "Lumence",
+        "year": 1996,
         "genre": "roman"
       }
     ],
@@ -13163,6 +15849,88 @@
         "id": "verre-casse",
         "title": "Verre cassé",
         "year": 2005,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "giraud",
+    "name": "Brigitte Giraud",
+    "full_name": "Brigitte Giraud",
+    "birth": {
+      "year": 1966,
+      "date": "1966",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Brigitte_Giraud_(2017).png",
+    "bio": "Brigitte Giraud est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Contemporain et aux genres Roman.",
+    "period": "Contemporain",
+    "movements": [
+      "contemporain"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "vivre-vite",
+        "title": "Vivre vite",
+        "year": 2022,
+        "genre": "roman"
+      },
+      {
+        "id": "un-amour",
+        "title": "Un amour",
+        "year": 2005,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "de-vigan",
+    "name": "Delphine de Vigan",
+    "full_name": "Delphine de Vigan",
+    "birth": {
+      "year": 1966,
+      "date": "1966",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Delphine_de_Vigan_-_Le_Livre_sur_la_Place_(20740240153).jpg",
+    "bio": "Delphine de Vigan est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Contemporain et aux genres Roman.",
+    "period": "Contemporain",
+    "movements": [
+      "contemporain"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "d-apres-une-histoire-vraie",
+        "title": "D'après une histoire vraie",
+        "year": 2015,
+        "genre": "roman"
+      },
+      {
+        "id": "rien-ne-s-oppose-a-la-nuit",
+        "title": "Rien ne s'oppose à la nuit",
+        "year": 2011,
         "genre": "roman"
       }
     ],
@@ -13381,6 +16149,88 @@
     "notable_facts": []
   },
   {
+    "id": "pevel",
+    "name": "Pierre Pevel",
+    "full_name": "Pierre Pevel",
+    "birth": {
+      "year": 1968,
+      "date": "1968",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Pierre_Pevel-Imaginales_2010.jpg",
+    "bio": "Pierre Pevel est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Fantasy et aux genres Roman.",
+    "period": "Contemporain",
+    "movements": [
+      "fantasy"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "les-lames-du-cardinal",
+        "title": "Les Lames du Cardinal",
+        "year": 2007,
+        "genre": "roman"
+      },
+      {
+        "id": "le-paris-des-merveilles",
+        "title": "Le Paris des merveilles",
+        "year": 2003,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "vuillard",
+    "name": "Éric Vuillard",
+    "full_name": "Éric Vuillard",
+    "birth": {
+      "year": 1968,
+      "date": "1968",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/VUILLARD-J16-bertini-1002405.jpg",
+    "bio": "Éric Vuillard est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Contemporain et aux genres Roman.",
+    "period": "Contemporain",
+    "movements": [
+      "contemporain"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "l-ordre-du-jour",
+        "title": "L'Ordre du jour",
+        "year": 2017,
+        "genre": "roman"
+      },
+      {
+        "id": "tristesse-de-la-terre",
+        "title": "Tristesse de la terre",
+        "year": 2014,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "darrieussecq",
     "name": "Marie Darrieussecq",
     "full_name": "Marie Darrieussecq",
@@ -13422,6 +16272,293 @@
     "notable_facts": []
   },
   {
+    "id": "satrapi",
+    "name": "Marjane Satrapi",
+    "full_name": "Marjane Satrapi",
+    "birth": {
+      "year": 1969,
+      "date": "1969",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Marjane_Satrapi_Cannes_2008(Cropped).jpg",
+    "bio": "Marjane Satrapi est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Bande dessinée et aux genres Bande dessinée.",
+    "period": "Contemporain",
+    "movements": [
+      "bande_dessinee"
+    ],
+    "genres": [
+      "bande dessinée"
+    ],
+    "works": [
+      {
+        "id": "persepolis",
+        "title": "Persepolis",
+        "year": 2000,
+        "genre": "bande dessinée"
+      },
+      {
+        "id": "poulet-aux-prunes",
+        "title": "Poulet aux prunes",
+        "year": 2004,
+        "genre": "bande dessinée"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "damasio",
+    "name": "Alain Damasio",
+    "full_name": "Alain Damasio",
+    "birth": {
+      "year": 1969,
+      "date": "1969",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Alain_Damasio%2C_2019_(cropped).JPG",
+    "bio": "Alain Damasio est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Science-fiction et aux genres Roman.",
+    "period": "Contemporain",
+    "movements": [
+      "science_fiction"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "la-horde-du-contrevent",
+        "title": "La Horde du Contrevent",
+        "year": 2004,
+        "genre": "roman"
+      },
+      {
+        "id": "la-zone-du-dehors",
+        "title": "La Zone du Dehors",
+        "year": 1999,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "jaworski",
+    "name": "Jean-Philippe Jaworski",
+    "full_name": "Jean-Philippe Jaworski",
+    "birth": {
+      "year": 1969,
+      "date": "1969",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Jean-Philippe_Jaworski_en_d%C3%A9dicace_%C3%A0_la_librairie_Critic%2C_Rennes%2C_France_(couleur).jpg",
+    "bio": "Jean-Philippe Jaworski est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Fantasy et aux genres Roman.",
+    "period": "Contemporain",
+    "movements": [
+      "fantasy"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "janua-vera",
+        "title": "Janua Vera",
+        "year": 2007,
+        "genre": "roman"
+      },
+      {
+        "id": "gagner-la-guerre",
+        "title": "Gagner la guerre",
+        "year": 2009,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "blain",
+    "name": "Christophe Blain",
+    "full_name": "Christophe Blain",
+    "birth": {
+      "year": 1970,
+      "date": "1970",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Christophe_Blain_20080318_Salon_du_livre_1.jpg",
+    "bio": "Christophe Blain est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Bande dessinée et aux genres Bande dessinée.",
+    "period": "Contemporain",
+    "movements": [
+      "bande_dessinee"
+    ],
+    "genres": [
+      "bande dessinée"
+    ],
+    "works": [
+      {
+        "id": "isaac-le-pirate",
+        "title": "Isaac le pirate",
+        "year": 2001,
+        "genre": "bande dessinée"
+      },
+      {
+        "id": "quai-d-orsay",
+        "title": "Quai d'Orsay",
+        "year": 2010,
+        "genre": "bande dessinée"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "day",
+    "name": "Thomas Day",
+    "full_name": "Thomas Day",
+    "birth": {
+      "year": 1970,
+      "date": "1970",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "",
+    "bio": "Thomas Day est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Science-fiction et aux genres Roman.",
+    "period": "Contemporain",
+    "movements": [
+      "science_fiction"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "du-sel-sous-les-paupieres",
+        "title": "Du sel sous les paupières",
+        "year": 1997,
+        "genre": "roman"
+      },
+      {
+        "id": "l-instinct-de-l-equarisseur",
+        "title": "L'Instinct de l'équarisseur",
+        "year": 2000,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "sfar",
+    "name": "Joann Sfar",
+    "full_name": "Joann Sfar",
+    "birth": {
+      "year": 1971,
+      "date": "1971",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Joann_Sfar_1503609_Reims.jpg",
+    "bio": "Joann Sfar est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Bande dessinée et aux genres Bande dessinée.",
+    "period": "Contemporain",
+    "movements": [
+      "bande_dessinee"
+    ],
+    "genres": [
+      "bande dessinée"
+    ],
+    "works": [
+      {
+        "id": "le-chat-du-rabbin",
+        "title": "Le Chat du rabbin",
+        "year": 2002,
+        "genre": "bande dessinée"
+      },
+      {
+        "id": "grand-vampire",
+        "title": "Grand Vampire",
+        "year": 2000,
+        "genre": "bande dessinée"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "andrea",
+    "name": "Jean-Baptiste Andrea",
+    "full_name": "Jean-Baptiste Andrea",
+    "birth": {
+      "year": 1971,
+      "date": "1971",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Fnac_Forum_2017_(37284503615).jpg",
+    "bio": "Jean-Baptiste Andrea est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Contemporain et aux genres Roman.",
+    "period": "Contemporain",
+    "movements": [
+      "contemporain"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "veiller-sur-elle",
+        "title": "Veiller sur elle",
+        "year": 2023,
+        "genre": "roman"
+      },
+      {
+        "id": "ma-reine",
+        "title": "Ma reine",
+        "year": 2017,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "gaude",
     "name": "Laurent Gaudé",
     "full_name": "Laurent Gaudé",
@@ -13451,6 +16588,47 @@
         "id": "le-soleil-des-scorta",
         "title": "Le Soleil des Scorta",
         "year": 2004,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "enard",
+    "name": "Mathias Énard",
+    "full_name": "Mathias Énard",
+    "birth": {
+      "year": 1972,
+      "date": "1972",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Mathias_%C3%89nard_(FOLIO_-_Festival_Liter%C3%A1rio_Internacional_de_%C3%93bidos_2019).png",
+    "bio": "Mathias Énard est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Contemporain et aux genres Roman.",
+    "period": "Contemporain",
+    "movements": [
+      "contemporain"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "boussole",
+        "title": "Boussole",
+        "year": 2015,
+        "genre": "roman"
+      },
+      {
+        "id": "zone",
+        "title": "Zone",
+        "year": 2008,
         "genre": "roman"
       }
     ],
@@ -13545,6 +16723,252 @@
     "notable_facts": []
   },
   {
+    "id": "thilliez",
+    "name": "Franck Thilliez",
+    "full_name": "Franck Thilliez",
+    "birth": {
+      "year": 1973,
+      "date": "1973",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Franck_Thilliez_-_quai_du_polar_2021_(2).jpg",
+    "bio": "Franck Thilliez est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Policier et aux genres Roman.",
+    "period": "Contemporain",
+    "movements": [
+      "policier"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "le-manuscrit-inacheve",
+        "title": "Le Manuscrit inachevé",
+        "year": 2018,
+        "genre": "roman"
+      },
+      {
+        "id": "fractures",
+        "title": "Fractures",
+        "year": 2020,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "fombelle",
+    "name": "Timothée de Fombelle",
+    "full_name": "Timothée de Fombelle",
+    "birth": {
+      "year": 1973,
+      "date": "1973",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Timothee_de_Fombelle_20100329_Salon_du_livre_de_Paris_1.jpg",
+    "bio": "Timothée de Fombelle est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Jeunesse et aux genres Roman.",
+    "period": "Contemporain",
+    "movements": [
+      "jeunesse"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "tobie-lolness",
+        "title": "Tobie Lolness",
+        "year": 2006,
+        "genre": "roman"
+      },
+      {
+        "id": "vango",
+        "title": "Vango",
+        "year": 2010,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "foenkinos",
+    "name": "David Foenkinos",
+    "full_name": "David Foenkinos",
+    "birth": {
+      "year": 1974,
+      "date": "1974",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/David_Foenkinos_Lslap_1550204.jpg",
+    "bio": "David Foenkinos est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Contemporain et aux genres Roman.",
+    "period": "Contemporain",
+    "movements": [
+      "contemporain"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "la-delicatesse",
+        "title": "La Délicatesse",
+        "year": 2009,
+        "genre": "roman"
+      },
+      {
+        "id": "charlotte",
+        "title": "Charlotte",
+        "year": 2014,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "norek",
+    "name": "Olivier Norek",
+    "full_name": "Olivier Norek",
+    "birth": {
+      "year": 1975,
+      "date": "1975",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Norek_au_cellier_07324.jpg",
+    "bio": "Olivier Norek est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Policier et aux genres Roman.",
+    "period": "Contemporain",
+    "movements": [
+      "policier"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "code-93",
+        "title": "Code 93",
+        "year": 2013,
+        "genre": "roman"
+      },
+      {
+        "id": "impact",
+        "title": "Impact",
+        "year": 2020,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "sattouf",
+    "name": "Riad Sattouf",
+    "full_name": "Riad Sattouf",
+    "birth": {
+      "year": 1978,
+      "date": "1978",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Photo_Riad_Sattouf.jpg",
+    "bio": "Riad Sattouf est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Bande dessinée et aux genres Bande dessinée.",
+    "period": "Contemporain",
+    "movements": [
+      "bande_dessinee"
+    ],
+    "genres": [
+      "bande dessinée"
+    ],
+    "works": [
+      {
+        "id": "l-arabe-du-futur",
+        "title": "L'Arabe du futur",
+        "year": 2014,
+        "genre": "bande dessinée"
+      },
+      {
+        "id": "les-cahiers-d-esther",
+        "title": "Les Cahiers d'Esther",
+        "year": 2016,
+        "genre": "bande dessinée"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "mathieu",
+    "name": "Nicolas Mathieu",
+    "full_name": "Nicolas Mathieu",
+    "birth": {
+      "year": 1978,
+      "date": "1978",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "",
+    "bio": "Nicolas Mathieu est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Contemporain et aux genres Roman.",
+    "period": "Contemporain",
+    "movements": [
+      "contemporain"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "leurs-enfants-apres-eux",
+        "title": "Leurs enfants après eux",
+        "year": 2018,
+        "genre": "roman"
+      },
+      {
+        "id": "aux-animaux-la-guerre",
+        "title": "Aux animaux la guerre",
+        "year": 2014,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
     "id": "slimani",
     "name": "Leïla Slimani",
     "full_name": "Leïla Slimani",
@@ -13574,6 +16998,48 @@
         "id": "chanson-douce",
         "title": "Chanson douce",
         "year": 2016,
+        "genre": "roman"
+      }
+    ],
+    "quotes": [],
+    "influences": {
+      "received": [],
+      "exerted": []
+    },
+    "reading_level": "lycéen",
+    "notable_facts": []
+  },
+  {
+    "id": "mbougar-sarr",
+    "name": "Mohamed Mbougar Sarr",
+    "full_name": "Mohamed Mbougar Sarr",
+    "birth": {
+      "year": 1990,
+      "date": "1990",
+      "place": ""
+    },
+    "death": {},
+    "portrait": "https://commons.wikimedia.org/wiki/Special:FilePath/Mohamed_Mbougar_Sarr_(2021).png",
+    "bio": "Mohamed Mbougar Sarr est un auteur d'angle mort du corpus littéraire français ou francophone, associé à Francophonie, Contemporain et aux genres Roman.",
+    "period": "Contemporain",
+    "movements": [
+      "francophonie",
+      "contemporain"
+    ],
+    "genres": [
+      "roman"
+    ],
+    "works": [
+      {
+        "id": "la-plus-secrete-memoire-des-hommes",
+        "title": "La Plus Secrète Mémoire des hommes",
+        "year": 2021,
+        "genre": "roman"
+      },
+      {
+        "id": "terre-ceinte",
+        "title": "Terre ceinte",
+        "year": 2015,
         "genre": "roman"
       }
     ],
