@@ -10,14 +10,14 @@ Les données principales sont locales et servies depuis `public/data/` :
 
 | Fichier | Rôle |
 | --- | --- |
-| `authors.json` | 100 auteurs de premier plan, portraits, biographies, lieux, citations et relations. |
-| `works.json` | 200 œuvres liées aux auteurs via `author`. |
-| `movements.json` | 19 mouvements littéraires avec thèmes, influences, auteurs et œuvres clés. |
+| `authors.json` | 200 auteurs de premier et second plan, portraits quand une image libre fiable existe, biographies, lieux, citations et relations. |
+| `works.json` | 400 œuvres liées aux auteurs via `author`, avec couvertures libres quand elles sont disponibles et couvertures typographiques générées sinon. |
+| `movements.json` | 24 mouvements littéraires avec thèmes, influences, auteurs et œuvres clés. |
 | `glossary.json` | 224 entrées de glossaire complétées. |
 | `locations.json` | Lieux littéraires éditoriaux. |
 | `place-coordinates.json` | Coordonnées de lieux biographiques, enrichies depuis Wikidata. |
 
-Les fichiers `Qwen_json_20260813_jdn2gbxvr.json` et `Qwen_json_20260813_upkhtc94i.json`, placés à la racine du dépôt, sont des corpus de second plan non encore intégrés à l'interface.
+Le corpus de second plan est intégré dans les mêmes fichiers applicatifs que le corpus initial. Les identifiants doivent rester uniques car ils servent aux liens profonds, aux relations auteurs-œuvres et aux entrées de mouvements.
 
 ## Navigation
 
@@ -56,6 +56,7 @@ Les lieux génériques comme `France` ne doivent pas être géolocalisés. Un bo
 ## Sources Et Attributions
 
 - Les portraits distants viennent de Wikimedia Commons via Wikidata.
+- Les images libres du corpus de second plan viennent de Wikimedia Commons ou de fichiers libres exposés par Wikipédia en tant que `page_image_free`.
 - Les coordonnées de lieux biographiques viennent de Wikidata, base structurée liée à Wikipédia.
 - Les couvertures SVG typographiques sont générées localement et ne reproduisent pas de jaquette commerciale.
 - Les attributions sont maintenues dans `public/images/ATTRIBUTIONS.md`.
@@ -68,4 +69,3 @@ Commandes de référence :
 npm run lint
 npm run build
 ```
-

@@ -39,19 +39,14 @@ Littérator rassemble mouvements, auteurs, œuvres, notions de glossaire et lieu
 
 | Type | Volume |
 | --- | ---: |
-| Mouvements littéraires | 19 |
-| Auteurs de premier plan | 100 |
-| Œuvres de premier plan | 200 |
+| Mouvements littéraires | 24 |
+| Auteurs | 200 |
+| Œuvres | 400 |
 | Entrées de glossaire | 224 |
 | Lieux littéraires éditoriaux | 8 |
 | Lieux biographiques géocodés | 117 |
 
-Deux fichiers JSON de travail au niveau racine du dépôt contiennent aussi des corpus de second plan non encore intégrés à l'application :
-
-```text
-Qwen_json_20260813_jdn2gbxvr.json
-Qwen_json_20260813_upkhtc94i.json
-```
+Le corpus inclut désormais les auteurs et œuvres de premier plan ainsi qu'un ensemble de second plan relié aux mêmes filtres, fiches, mouvements et vues chronologiques.
 
 ## Stack
 
@@ -168,5 +163,6 @@ Les utilitaires de normalisation et de scroll sont dans `src/utils/`.
 ## Sources
 
 - Les portraits distants proviennent de Wikimedia Commons via Wikidata.
+- Les images libres ajoutées pour le corpus de second plan proviennent de Wikimedia Commons ou de fichiers libres exposés par Wikipédia.
 - Les lieux biographiques et coordonnées ajoutés proviennent de Wikidata, base structurée liée à Wikipédia.
 - Les attributions connues sont documentées dans `public/images/ATTRIBUTIONS.md`.

@@ -1,5 +1,26 @@
 # Changelog
 
+## 2026-08-14
+
+### Ajouté
+
+- Intégration d'un corpus de 100 auteurs de second plan.
+- Intégration de 200 œuvres de second plan liées aux auteurs via `author`.
+- Ajout des mouvements manquants nécessaires au corpus de second plan : Fantastique, Vaudeville, Policier, Dadaïsme et Science-fiction.
+- Ajout de 95 portraits libres pour les auteurs du corpus de second plan.
+- Ajout de 29 images libres d'œuvres lorsque la source Commons/Wikipédia est clairement exploitable.
+- Ajout des crédits et licences correspondants dans `public/images/ATTRIBUTIONS.md`.
+
+### Modifié
+
+- Extension des relations `key_authors` et `key_works` des mouvements existants avec les nouveaux auteurs et œuvres.
+- Conservation de couvertures typographiques générées pour les œuvres sans image libre fiable.
+- Mise à jour des volumes documentés du corpus : 200 auteurs, 400 œuvres et 24 mouvements.
+
+### Corrigé
+
+- Résolution de la collision d'identifiant `les-champs-magnetiques` en conservant l'entrée initiale et en utilisant `les-champs-magnetiques-soupault` pour l'œuvre de Soupault.
+
 ## 2026-08-13
 
 ### Ajouté
@@ -33,4 +54,3 @@
 - Correction des liens `Voir sur la carte` pour utiliser des slugs de lieux stables.
 - Correction de l'affichage de la carte quand le fournisseur de tuiles OSM bloque les requêtes.
 - Correction des anciennes références d'identifiants dans les données de glossaire et lieux.
-

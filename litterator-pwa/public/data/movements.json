@@ -1,5 +1,40 @@
 [
   {
+    "id": "fantastique",
+    "name": "Fantastique",
+    "period": {
+      "start": 1800,
+      "end": 1976
+    },
+    "description": "Fantastique regroupe les auteurs et œuvres du corpus associés à ce courant ou à cette pratique littéraire.",
+    "context": {
+      "historical": "Repère chronologique principal: 1800-1976.",
+      "cultural": "Courant associé aux genres et pratiques présents dans le corpus de second plan."
+    },
+    "key_authors": [
+      "nodier",
+      "bosco"
+    ],
+    "key_works": [
+      "smarra",
+      "la-fee-aux-miettes",
+      "l-ane-culotte",
+      "le-jardin-d-hyacinthe"
+    ],
+    "themes": [
+      "forme littéraire",
+      "imaginaire",
+      "société",
+      "esthétique"
+    ],
+    "influences": {
+      "predecessors": [],
+      "successors": []
+    },
+    "quotes": [],
+    "color": "#5b2a86"
+  },
+  {
     "id": "romantisme",
     "name": "Romantisme",
     "period": {
@@ -22,7 +57,10 @@
       "dumas",
       "sand",
       "nerval",
-      "musset"
+      "musset",
+      "nodier",
+      "girardin",
+      "colet"
     ],
     "key_works": [
       "atala",
@@ -47,7 +85,11 @@
       "les-contemplations",
       "la-legende-des-siecles",
       "les-miserables",
-      "les-destinees"
+      "les-destinees",
+      "la-canne-de-m-balzac",
+      "lettres-parisiennes",
+      "fleurs-du-midi",
+      "lui"
     ],
     "themes": [
       "moi",
@@ -67,6 +109,43 @@
     },
     "quotes": [],
     "color": "#e91e63"
+  },
+  {
+    "id": "vaudeville",
+    "name": "Vaudeville",
+    "period": {
+      "start": 1815,
+      "end": 1975
+    },
+    "description": "Vaudeville regroupe les auteurs et œuvres du corpus associés à ce courant ou à cette pratique littéraire.",
+    "context": {
+      "historical": "Repère chronologique principal: 1815-1975.",
+      "cultural": "Courant associé aux genres et pratiques présents dans le corpus de second plan."
+    },
+    "key_authors": [
+      "labiche",
+      "feydeau",
+      "courteline"
+    ],
+    "key_works": [
+      "le-voyage-de-m-perrichon",
+      "la-cagnotte",
+      "un-fil-a-la-patte",
+      "la-puce-a-l-oreille",
+      "boubouroche"
+    ],
+    "themes": [
+      "forme littéraire",
+      "imaginaire",
+      "société",
+      "esthétique"
+    ],
+    "influences": {
+      "predecessors": [],
+      "successors": []
+    },
+    "quotes": [],
+    "color": "#c77d19"
   },
   {
     "id": "realisme",
@@ -90,7 +169,15 @@
       "valles",
       "france",
       "loti",
-      "martin-du-gard"
+      "martin-du-gard",
+      "renard",
+      "murger",
+      "courteline",
+      "malot",
+      "erckmann-chatriau",
+      "guilloux",
+      "bazin",
+      "merle"
     ],
     "key_works": [
       "le-rouge-et-le-noir",
@@ -113,7 +200,21 @@
       "le-crime-de-sylvestre-bonnard",
       "bouvard-et-pecuchet",
       "pecheur-d-islande",
-      "les-thibault"
+      "les-thibault",
+      "poil-de-carotte",
+      "histoires-naturelles",
+      "scenes-de-la-vie-de-boheme",
+      "les-buveurs-d-eau",
+      "messieurs-les-ronds-de-cuir",
+      "romain-kalbris",
+      "sans-famille",
+      "l-ami-fritz",
+      "histoire-d-un-conscrit-de-1813",
+      "le-sang-noir",
+      "le-jeu-de-patience",
+      "vipere-au-poing",
+      "la-tete-contre-les-murs",
+      "week-end-a-zuydcoote"
     ],
     "themes": [
       "société",
@@ -136,6 +237,49 @@
     "color": "#4caf50"
   },
   {
+    "id": "policier",
+    "name": "Policier",
+    "period": {
+      "start": 1832,
+      "end": 2005
+    },
+    "description": "Policier regroupe les auteurs et œuvres du corpus associés à ce courant ou à cette pratique littéraire.",
+    "context": {
+      "historical": "Repère chronologique principal: 1832-2005.",
+      "cultural": "Courant associé aux genres et pratiques présents dans le corpus de second plan."
+    },
+    "key_authors": [
+      "gaboriau",
+      "leblanc",
+      "leroux",
+      "simenon",
+      "khadra"
+    ],
+    "key_works": [
+      "l-affaire-lerouge",
+      "monsieur-lecoq",
+      "arsene-lupin-gentleman-cambrioleur",
+      "l-aiguille-creuse",
+      "le-mystere-de-la-chambre-jaune",
+      "le-parfum-de-la-dame-en-noir",
+      "pietr-le-letton",
+      "la-neige-etait-sale",
+      "morituri"
+    ],
+    "themes": [
+      "forme littéraire",
+      "imaginaire",
+      "société",
+      "esthétique"
+    ],
+    "influences": {
+      "predecessors": [],
+      "successors": []
+    },
+    "quotes": [],
+    "color": "#334155"
+  },
+  {
     "id": "parnasse",
     "name": "Parnasse",
     "period": {
@@ -148,11 +292,23 @@
       "cultural": "Courant associé aux genres et pratiques dominants du corpus: poésie."
     },
     "key_authors": [
-      "gautier"
+      "gautier",
+      "banville",
+      "leconte-de-lisle",
+      "heredia",
+      "sully-prudhomme"
     ],
     "key_works": [
       "emaux-et-camees",
-      "poemes-saturniens"
+      "poemes-saturniens",
+      "les-cariatides",
+      "odes-funambulesques",
+      "poemes-antiques",
+      "poemes-barbares",
+      "les-trophees",
+      "les-conquerants",
+      "stances-et-poemes",
+      "la-justice"
     ],
     "themes": [
       "forme",
@@ -190,7 +346,13 @@
       "verlaine",
       "corbiere",
       "rimbaud",
-      "laforgue"
+      "laforgue",
+      "villiers",
+      "schwob",
+      "jarry",
+      "louys",
+      "gourmont",
+      "jammes"
     ],
     "key_works": [
       "les-chimeres",
@@ -204,7 +366,17 @@
       "les-complaintes",
       "illuminations",
       "poesies-mallarme",
-      "un-coup-de-des"
+      "un-coup-de-des",
+      "contes-cruels",
+      "l-eve-future",
+      "le-livre-de-monelle",
+      "vies-imaginaires",
+      "ubu-roi",
+      "les-chansons-de-bilitis",
+      "sixtine",
+      "promenades-litteraires",
+      "de-l-angelus-de-l-aube",
+      "le-deuil-des-primeveres"
     ],
     "themes": [
       "suggestion",
@@ -268,7 +440,38 @@
       "char",
       "genet",
       "anouilh",
-      "vian"
+      "vian",
+      "toulet",
+      "alain-fournier",
+      "romains",
+      "duhamel",
+      "larbaud",
+      "roussel",
+      "montherlant",
+      "kessel",
+      "mac-orlan",
+      "drieu",
+      "green",
+      "radiguet",
+      "fargue",
+      "supervielle",
+      "jouhandeau",
+      "paulhan",
+      "weil",
+      "ramuz",
+      "calet",
+      "vailland",
+      "vercors",
+      "sagan",
+      "leduc",
+      "roche",
+      "klossowski",
+      "tardieu",
+      "bonnefoy",
+      "jaccottet",
+      "du-bouchet",
+      "guillevic",
+      "la-tour-du-pin"
     ],
     "key_works": [
       "les-fleurs-du-mal",
@@ -325,7 +528,68 @@
       "memoires-d-hadrien",
       "amers",
       "belle-du-seigneur",
-      "l-oeuvre-au-noir"
+      "l-oeuvre-au-noir",
+      "monsieur-du-paur",
+      "les-contrerimes",
+      "le-grand-meaulnes",
+      "miracles",
+      "knock",
+      "les-hommes-de-bonne-volonte",
+      "confession-de-minuit",
+      "scenes-de-la-vie-future",
+      "fermina-marquez",
+      "a-o-barnabooth",
+      "impressions-d-afrique",
+      "locus-solus",
+      "les-jeunes-filles",
+      "la-reine-morte",
+      "l-equipage",
+      "fortune-carree",
+      "la-cavaliere-elsa",
+      "quai-des-brumes",
+      "le-feu-follet",
+      "gilles",
+      "adrienne-mesurat",
+      "moira",
+      "le-diable-au-corps",
+      "le-bal-du-comte-d-orgel",
+      "banlieue",
+      "le-pieton-de-paris",
+      "le-forcant-innocent",
+      "les-amis-inconnus",
+      "monsieur-godeau-intime",
+      "chaminadour",
+      "le-guerrier-applique",
+      "la-pesanteur-et-la-grace",
+      "l-enracinement",
+      "la-grande-peur-dans-la-montagne",
+      "derborence",
+      "la-belle-lurette",
+      "le-tout-sur-le-tout",
+      "drole-de-jeu",
+      "325-000-francs",
+      "le-pont-de-la-riviere-kwai",
+      "le-silence-de-la-mer",
+      "bonjour-tristesse",
+      "un-certain-sourire",
+      "l-asphyxie",
+      "la-batarde",
+      "jules-et-jim",
+      "deux-anglaises-et-le-continent",
+      "roberte-ce-soir",
+      "les-lois-de-l-hospitalite",
+      "monsieur-monsieur",
+      "la-cite-sans-sommeil",
+      "douve",
+      "les-planches-courbes",
+      "l-effraie",
+      "paysages-avec-figures-absentes",
+      "dans-la-chaleur-vacante",
+      "airs",
+      "carnac",
+      "euclidiennes",
+      "la-quete-de-joie",
+      "une-somme-de-poesie"
     ],
     "themes": [
       "ville",
@@ -415,10 +679,23 @@
       "cultural": "Courant associé aux genres et pratiques dominants du corpus: roman."
     },
     "key_authors": [
-      "huysmans"
+      "huysmans",
+      "barbey",
+      "bloy",
+      "rachilde",
+      "barres"
     ],
     "key_works": [
-      "a-rebours"
+      "a-rebours",
+      "un-pretre-marie",
+      "les-diaboliques",
+      "le-desespere",
+      "la-femme-pauvre",
+      "aphrodite",
+      "monsieur-venus",
+      "la-marquise-de-sade",
+      "sous-l-oeil-des-barbares",
+      "les-deracines"
     ],
     "themes": [
       "artifice",
@@ -438,6 +715,42 @@
     },
     "quotes": [],
     "color": "#7f1d1d"
+  },
+  {
+    "id": "dadaisme",
+    "name": "Dadaïsme",
+    "period": {
+      "start": 1896,
+      "end": 1931
+    },
+    "description": "Dadaïsme regroupe les auteurs et œuvres du corpus associés à ce courant ou à cette pratique littéraire.",
+    "context": {
+      "historical": "Repère chronologique principal: 1896-1931.",
+      "cultural": "Courant associé aux genres et pratiques présents dans le corpus de second plan."
+    },
+    "key_authors": [
+      "jarry",
+      "tzara",
+      "soupault"
+    ],
+    "key_works": [
+      "docteur-faustroll",
+      "vingt-cinq-poemes",
+      "l-homme-approximatif",
+      "les-champs-magnetiques-soupault"
+    ],
+    "themes": [
+      "forme littéraire",
+      "imaginaire",
+      "société",
+      "esthétique"
+    ],
+    "influences": {
+      "predecessors": [],
+      "successors": []
+    },
+    "quotes": [],
+    "color": "#0f766e"
   },
   {
     "id": "neo_romantisme",
@@ -476,6 +789,43 @@
     "color": "#b56576"
   },
   {
+    "id": "science_fiction",
+    "name": "Science-fiction",
+    "period": {
+      "start": 1908,
+      "end": 1972
+    },
+    "description": "Science-fiction regroupe les auteurs et œuvres du corpus associés à ce courant ou à cette pratique littéraire.",
+    "context": {
+      "historical": "Repère chronologique principal: 1908-1972.",
+      "cultural": "Courant associé aux genres et pratiques présents dans le corpus de second plan."
+    },
+    "key_authors": [
+      "merle",
+      "barjavel",
+      "boulle"
+    ],
+    "key_works": [
+      "malevil",
+      "ravage",
+      "la-nuit-des-temps",
+      "la-planete-des-singes",
+      "les-animaux-denatures"
+    ],
+    "themes": [
+      "forme littéraire",
+      "imaginaire",
+      "société",
+      "esthétique"
+    ],
+    "influences": {
+      "predecessors": [],
+      "successors": []
+    },
+    "quotes": [],
+    "color": "#2563eb"
+  },
+  {
     "id": "surréalisme",
     "name": "Surréalisme",
     "period": {
@@ -492,7 +842,14 @@
       "breton",
       "artaud",
       "aragon",
-      "desnos"
+      "desnos",
+      "max-jacob",
+      "reverdy",
+      "soupault",
+      "bataille",
+      "leiris",
+      "triolet",
+      "mandiargues"
     ],
     "key_works": [
       "les-mamelles-de-tiresias",
@@ -504,7 +861,20 @@
       "nadja",
       "l-amour-la-poesie",
       "corps-et-biens",
-      "l-amour-fou"
+      "l-amour-fou",
+      "le-cornet-a-des",
+      "ballades",
+      "plupart-du-temps",
+      "sources-du-vent",
+      "le-negre",
+      "histoire-de-l-oeil",
+      "madame-edwarda",
+      "l-age-d-homme",
+      "fourbis",
+      "le-cheval-blanc",
+      "le-premier-accroc",
+      "le-musee-noir",
+      "la-marge"
     ],
     "themes": [
       "rêve",
@@ -572,52 +942,6 @@
     "color": "#ff5722"
   },
   {
-    "id": "nouveau_roman",
-    "name": "Nouveau Roman",
-    "period": {
-      "start": 1939,
-      "end": 1965
-    },
-    "description": "Nouveau Roman regroupe les auteurs et œuvres majeurs du corpus fourni pour ce courant ou cette période littéraire.",
-    "context": {
-      "historical": "Repère chronologique principal: 1939-1965.",
-      "cultural": "Courant associé aux genres et pratiques dominants du corpus: récit, roman."
-    },
-    "key_authors": [
-      "sarraute",
-      "simon",
-      "duras",
-      "robbe-grillet"
-    ],
-    "key_works": [
-      "tropismes",
-      "portrait-d-un-inconnu",
-      "la-jalousie",
-      "moderato-cantabile",
-      "la-route-des-flandres",
-      "le-proces-verbal",
-      "les-choses"
-    ],
-    "themes": [
-      "perception",
-      "fragmentation",
-      "objet",
-      "mémoire",
-      "anti-intrigue"
-    ],
-    "influences": {
-      "predecessors": [
-        "modernite",
-        "absurde"
-      ],
-      "successors": [
-        "contemporain"
-      ]
-    },
-    "quotes": [],
-    "color": "#795548"
-  },
-  {
     "id": "negritude",
     "name": "Négritude",
     "period": {
@@ -631,12 +955,18 @@
     },
     "key_authors": [
       "senghor",
-      "cesaire"
+      "cesaire",
+      "damas",
+      "maran"
     ],
     "key_works": [
       "cahier-d-un-retour-au-pays-natal",
       "chants-d-ombre",
-      "une-tempete"
+      "une-tempete",
+      "pigments",
+      "graffiti",
+      "batouala",
+      "le-livre-du-souvenir"
     ],
     "themes": [
       "identité noire",
@@ -658,6 +988,60 @@
     "color": "#374151"
   },
   {
+    "id": "nouveau_roman",
+    "name": "Nouveau Roman",
+    "period": {
+      "start": 1939,
+      "end": 1965
+    },
+    "description": "Nouveau Roman regroupe les auteurs et œuvres majeurs du corpus fourni pour ce courant ou cette période littéraire.",
+    "context": {
+      "historical": "Repère chronologique principal: 1939-1965.",
+      "cultural": "Courant associé aux genres et pratiques dominants du corpus: récit, roman."
+    },
+    "key_authors": [
+      "sarraute",
+      "simon",
+      "duras",
+      "robbe-grillet",
+      "blanchot",
+      "pinget",
+      "toussaint"
+    ],
+    "key_works": [
+      "tropismes",
+      "portrait-d-un-inconnu",
+      "la-jalousie",
+      "moderato-cantabile",
+      "la-route-des-flandres",
+      "le-proces-verbal",
+      "les-choses",
+      "thomas-l-obscur",
+      "mahu-ou-le-materiau",
+      "passacaille",
+      "la-salle-de-bain",
+      "faire-l-amour"
+    ],
+    "themes": [
+      "perception",
+      "fragmentation",
+      "objet",
+      "mémoire",
+      "anti-intrigue"
+    ],
+    "influences": {
+      "predecessors": [
+        "modernite",
+        "absurde"
+      ],
+      "successors": [
+        "contemporain"
+      ]
+    },
+    "quotes": [],
+    "color": "#795548"
+  },
+  {
     "id": "absurde",
     "name": "Absurde",
     "period": {
@@ -672,7 +1056,10 @@
     "key_authors": [
       "beckett",
       "ionesco",
-      "camus"
+      "camus",
+      "adamov",
+      "arrabal",
+      "dubillard"
     ],
     "key_works": [
       "l-etranger",
@@ -680,7 +1067,13 @@
       "la-cantatrice-chauve",
       "molloy",
       "en-attendant-godot",
-      "rhinoceros"
+      "rhinoceros",
+      "la-parodie",
+      "ping-pong",
+      "le-grand-ceremonial",
+      "l-architecte-et-l-empereur",
+      "la-maison-d-os",
+      "les-diablogues"
     ],
     "themes": [
       "non-sens",
@@ -795,11 +1188,15 @@
       "cultural": "Courant associé aux genres et pratiques dominants du corpus: essai."
     },
     "key_authors": [
-      "barthes"
+      "barthes",
+      "paulhan",
+      "blanchot"
     ],
     "key_works": [
       "le-degre-zero-de-l-ecriture",
-      "mythologies"
+      "mythologies",
+      "les-fleurs-de-tarbes",
+      "l-espace-litteraire"
     ],
     "themes": [
       "signes",
@@ -841,7 +1238,17 @@
       "echenoz",
       "quignard",
       "houellebecq",
-      "ndiaye"
+      "ndiaye",
+      "groult",
+      "sollers",
+      "cixous",
+      "guyotat",
+      "volodine",
+      "darrieussecq",
+      "kerangal",
+      "gaude",
+      "nothomb",
+      "slimani"
     ],
     "key_works": [
       "vendredi-ou-les-limbes-du-pacifique",
@@ -871,7 +1278,27 @@
       "memoire-de-fille",
       "envoyee-speciale",
       "serotonine",
-      "aneantir"
+      "aneantir",
+      "ainsi-soit-elle",
+      "les-vaisseaux-du-coeur",
+      "drame",
+      "femmes",
+      "dedans",
+      "le-rire-de-la-meduse",
+      "tombeau-pour-cinq-cent-mille-soldats",
+      "eden-eden-eden",
+      "des-anges-mineurs",
+      "bardo-or-not-bardo",
+      "truismes",
+      "il-faut-beaucoup-aimer-les-hommes",
+      "naissance-d-un-pont",
+      "reparer-les-vivants",
+      "la-mort-du-roi-tsongor",
+      "le-soleil-des-scorta",
+      "hygiene-de-l-assassin",
+      "stupeur-et-tremblements",
+      "dans-le-jardin-de-l-ogre",
+      "chanson-douce"
     ],
     "themes": [
       "mémoire",
@@ -906,12 +1333,38 @@
     "key_authors": [
       "conde",
       "djebar",
-      "ben-jelloun"
+      "ben-jelloun",
+      "laferriere",
+      "hebert",
+      "roy",
+      "tremblay",
+      "kourouma",
+      "mabanckou",
+      "mukasonga",
+      "kateb-yacine",
+      "khadra"
     ],
     "key_works": [
       "segou",
       "l-amour-la-fantasia",
-      "la-nuit-sacree"
+      "la-nuit-sacree",
+      "comment-faire-l-amour-avec-un-negre",
+      "l-enigme-du-retour",
+      "le-tombeau-des-rois",
+      "kamouraska",
+      "bonheur-d-occasion",
+      "la-route-d-altamont",
+      "les-belles-soeurs",
+      "hosanna",
+      "les-soleils-des-independances",
+      "en-attendant-le-vote",
+      "bleu-blanc-rouge",
+      "verre-casse",
+      "l-iguifou",
+      "notre-dame-du-nil",
+      "nedjma",
+      "le-polygone-etoile",
+      "l-attentat"
     ],
     "themes": [
       "langue française",
