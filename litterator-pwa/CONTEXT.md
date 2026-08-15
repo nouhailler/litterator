@@ -77,7 +77,7 @@ Les lieux génériques comme `France` ne doivent pas être géolocalisés. Un bo
 
 Les biographies ne doivent pas utiliser de classement contestable comme `premier plan`, `second plan` ou `troisième plan`. La formulation attendue est du type `est un auteur de la littérature française`.
 
-Sur l'écran auteurs, les portraits et initiales ouvrent une fenêtre modale Wikipédia. Le contenu affiché est construit en Markdown depuis l'API publique Wikipédia en français, avec un résumé, les repères de naissance/décès issus de la fiche locale et un lien vers la page source.
+Sur l'écran auteurs, les portraits et les fiches ne doivent pas être cliquables. L'accès Wikipédia doit rester un lien HTML explicite via le bouton `Wikipédia`, afin de fonctionner de façon fiable sur mobile et de ne pas déclencher de sélection de page. Les noms ambigus doivent utiliser un titre Wikipédia explicite plutôt qu'une recherche.
 
 ## Œuvres, Textes Libres Et Adaptations
 
@@ -122,7 +122,7 @@ La logique est centralisée dans `src/utils/pwaUpdate.js`. Le service worker est
 - Les portraits distants viennent de Wikimedia Commons via Wikidata.
 - Les images libres du corpus de second plan viennent de Wikimedia Commons ou de fichiers libres exposés par Wikipédia en tant que `page_image_free`.
 - Les coordonnées de lieux biographiques viennent de Wikidata, base structurée liée à Wikipédia.
-- Les résumés Wikipédia des auteurs sont chargés depuis l'API publique de Wikipédia en français.
+- Les liens Wikipédia des auteurs pointent vers les pages Wikipédia en français, avec corrections explicites pour les noms ambigus.
 - Les liens de lecture proviennent d'Open Library et de Project Gutenberg.
 - Les adaptations connues sont liées à Wikidata quand une fiche structurée existe.
 - Les couvertures SVG typographiques sont générées localement et ne reproduisent pas de jaquette commerciale.

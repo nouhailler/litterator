@@ -32,7 +32,7 @@ Littérator rassemble mouvements, auteurs, œuvres, lieux et notions littéraire
 | 🗺️ Carte | Explorer les 125 lieux littéraires et biographiques géocodés. |
 | 📚 Œuvres | Filtrer 760 œuvres par mouvement, genre, auteur, recherche texte ou disponibilité d'un texte libre. |
 | 🔗 Lecture | Ouvrir les textes libres de droit disponibles sur Open Library ou Project Gutenberg. |
-| ✍️ Auteurs | Parcourir 380 fiches biographiques avec portraits, citations, œuvres liées et fenêtre Wikipédia en Markdown. |
+| ✍️ Auteurs | Parcourir 380 fiches biographiques avec portraits, citations, œuvres liées et lien direct Wikipédia. |
 | 🧭 Mouvements | Comprendre 34 courants avec influences, thèmes, auteurs et œuvres clés. |
 | 🧠 Glossaire | Consulter 224 notions pour l'analyse littéraire. |
 | 🎬 Adaptations | Identifier les adaptations connues des œuvres quand elles sont documentées. |
@@ -59,7 +59,7 @@ Littérator rassemble mouvements, auteurs, œuvres, lieux et notions littéraire
 
 Les liens de lecture sont ajoutés uniquement pour les œuvres dont l'auteur est entré dans le domaine public selon la règle générale vie + 70 ans, et uniquement lorsqu'une correspondance exploitable a été trouvée sur Open Library ou Project Gutenberg.
 
-Les biographies d'auteurs évitent les classements subjectifs de type `premier plan`, `second plan` ou `troisième plan`. Les portraits peuvent ouvrir une fenêtre Wikipédia qui affiche un résumé en Markdown et un lien vers la source.
+Les biographies d'auteurs évitent les classements subjectifs de type `premier plan`, `second plan` ou `troisième plan`. Chaque fiche auteur propose un bouton `Wikipédia` sous forme de lien HTML direct vers la page Wikipédia de l'auteur.
 
 ## Stack
 
@@ -136,7 +136,7 @@ litterator-pwa/public/data/glossary.json
 ## Sources et attributions
 
 - Les liens de lecture proviennent d'Open Library et de Project Gutenberg.
-- Les fiches Wikipédia des auteurs sont chargées depuis l'API publique de Wikipédia en français.
+- Les liens Wikipédia des auteurs pointent vers les pages Wikipédia en français, avec corrections explicites pour les noms ambigus.
 - Les adaptations sont liées à Wikidata quand une fiche structurée existe.
 - Les coordonnées biographiques s'appuient sur Wikidata/Wikipedia et des données locales.
 - Les attributions d'images connues sont documentées dans [`litterator-pwa/public/images/ATTRIBUTIONS.md`](litterator-pwa/public/images/ATTRIBUTIONS.md).

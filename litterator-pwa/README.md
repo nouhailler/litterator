@@ -14,7 +14,7 @@
 
 Littérator rassemble mouvements, auteurs, œuvres, notions de glossaire et lieux littéraires dans une interface claire, installable et utilisable comme une application. Le projet met l'accent sur la consultation rapide, la navigation chronologique, les liens directs entre fiches et la découverte géographique.
 
-Les dernières fiches enrichies ajoutent aussi des liens vers les textes libres de droit, des extraits documentés, des adaptations connues et une fenêtre Wikipédia en Markdown accessible depuis les portraits d'auteurs.
+Les dernières fiches enrichies ajoutent aussi des liens vers les textes libres de droit, des extraits documentés, des adaptations connues et un lien Wikipédia direct sur chaque fiche auteur.
 
 ## Aperçus
 
@@ -33,7 +33,7 @@ Les dernières fiches enrichies ajoutent aussi des liens vers les textes libres 
 | Chronologie | Frise chronologique | Situer mouvements, œuvres, auteurs et événements historiques avec navigation horizontale, zoom et panneaux détaillés par année. |
 | Carte | Carte littéraire | Explorer les 125 lieux liés aux auteurs, œuvres et mouvements avec Leaflet et un fond CARTO. |
 | Œuvres | Fiches œuvres | Parcourir les œuvres, leurs auteurs, genres, mouvements, visuels, liens de lecture, extraits et adaptations. |
-| Auteurs | Fiches biographiques | Consulter biographies, œuvres principales, citations, portraits, lieux biographiques précis et résumé Wikipédia en Markdown. |
+| Auteurs | Fiches biographiques | Consulter biographies, œuvres principales, citations, portraits, lieux biographiques précis et lien direct Wikipédia. |
 | Mouvements | Fiches mouvements | Comprendre les courants littéraires, leurs influences, auteurs majeurs et œuvres clés en accordéons. |
 | Glossaire | Notions littéraires | Rechercher les termes, procédés, genres, périodes et concepts, avec définitions complétées. |
 | À propos | Informations application | Afficher nom, version ou SHA de commit, auteur, liens, crédits open-source et contacts de support. |
@@ -203,7 +203,7 @@ Le menu `À propos` expose les informations demandées pour la distribution de l
 - Les portraits distants proviennent de Wikimedia Commons via Wikidata.
 - Les images libres ajoutées pour le corpus de second plan proviennent de Wikimedia Commons ou de fichiers libres exposés par Wikipédia.
 - Les lieux biographiques et coordonnées ajoutés proviennent de Wikidata, base structurée liée à Wikipédia.
-- Les résumés Wikipédia des auteurs sont chargés depuis l'API publique de Wikipédia en français.
+- Les liens Wikipédia des auteurs pointent vers les pages Wikipédia en français, avec corrections explicites pour les noms ambigus.
 - Les liens de lecture proviennent d'Open Library et de Project Gutenberg.
 - Les adaptations connues sont liées à Wikidata quand une fiche structurée existe.
 - Les attributions connues sont documentées dans `public/images/ATTRIBUTIONS.md`.

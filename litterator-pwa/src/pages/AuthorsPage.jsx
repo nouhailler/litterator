@@ -3,75 +3,17 @@ import { Link, useLocation } from 'react-router-dom';
 import { getHashId, scrollToHash } from '../utils/hashNavigation';
 import { getLocationId, isSpecificLocation } from '../utils/locationIds';
 
-const getAuthorSearchName = (author) => author.full_name || author.name;
-
-const buildWikipediaMarkdown = (author, page) => {
-  const sourceUrl = page.content_urls?.desktop?.page || `https://fr.wikipedia.org/wiki/${encodeURIComponent(page.title)}`;
-  const description = page.description ? `\n\n_${page.description}_` : '';
-  const extract = page.extract || 'Aucun résumé encyclopédique disponible.';
-
-  return {
-    markdown: [
-      `## ${page.title || author.name}`,
-      description,
-      '',
-      extract,
-      '',
-      '### Repères',
-      `- Naissance : ${author.birth.date}${author.birth.place ? ` à ${author.birth.place}` : ''}`,
-      `- Décès : ${author.death?.date ? `${author.death.date}${author.death.place ? ` à ${author.death.place}` : ''}` : 'Auteur vivant'}`,
-      `- Source : [Wikipédia](${sourceUrl})`,
-    ].filter(Boolean).join('\n'),
-    sourceUrl,
-  };
+const wikipediaTitleOverrides = {
+  beranger: 'Pierre-Jean de Béranger',
+  chateaubriand: 'François-René de Chateaubriand',
+  'erckmann-chatriau': 'Erckmann-Chatrian',
 };
 
-function MarkdownPreview({ markdown }) {
-  const lines = markdown.split('\n');
+const getWikipediaTitle = (author) => wikipediaTitleOverrides[author.id] || author.name;
 
-  return (
-    <div className="markdown-preview">
-      {lines.map((line, index) => {
-        if (line.startsWith('## ')) {
-          return <h2 key={index}>{line.replace(/^## /, '')}</h2>;
-        }
-
-        if (line.startsWith('### ')) {
-          return <h3 key={index}>{line.replace(/^### /, '')}</h3>;
-        }
-
-        if (line.startsWith('- ')) {
-          const content = line.replace(/^- /, '');
-          const linkMatch = content.match(/^(.*)\[([^\]]+)\]\(([^)]+)\)(.*)$/);
-
-          return (
-            <p key={index} className="markdown-list-item">
-              {linkMatch ? (
-                <>
-                  {linkMatch[1]}
-                  <a href={linkMatch[3]} target="_blank" rel="noopener noreferrer">
-                    {linkMatch[2]}
-                  </a>
-                  {linkMatch[4]}
-                </>
-              ) : content}
-            </p>
-          );
-        }
-
-        if (line.startsWith('_') && line.endsWith('_')) {
-          return <p key={index} className="markdown-emphasis">{line.slice(1, -1)}</p>;
-        }
-
-        if (!line.trim()) {
-          return null;
-        }
-
-        return <p key={index}>{line}</p>;
-      })}
-    </div>
-  );
-}
+const getWikipediaUrl = (author) => (
+  `https://fr.wikipedia.org/wiki/${encodeURIComponent(getWikipediaTitle(author).replaceAll(' ', '_'))}`
+);
 
 function AuthorsPage() {
   const location = useLocation();
@@ -81,72 +23,12 @@ function AuthorsPage() {
   const [isLoading, setIsLoading] = useState(true);
   const [selectedMovement, setSelectedMovement] = useState('');
   const [searchTerm, setSearchTerm] = useState('');
-  const [wikipediaModal, setWikipediaModal] = useState(null);
   const activeAuthorId = getHashId(location.hash);
 
   const handlePortraitError = (event) => {
     const image = event.currentTarget;
     image.style.display = 'none';
     image.nextElementSibling?.removeAttribute('hidden');
-  };
-
-  const closeWikipediaModal = () => {
-    setWikipediaModal(null);
-  };
-
-  const openWikipediaModal = async (author) => {
-    setWikipediaModal({
-      author,
-      markdown: '',
-      sourceUrl: '',
-      isLoading: true,
-      error: '',
-    });
-
-    try {
-      const searchParams = new URLSearchParams({
-        action: 'query',
-        format: 'json',
-        list: 'search',
-        origin: '*',
-        srlimit: '1',
-        srsearch: `${getAuthorSearchName(author)} écrivain`,
-      });
-      const searchResponse = await fetch(`https://fr.wikipedia.org/w/api.php?${searchParams}`);
-      const searchData = await searchResponse.json();
-      const pageTitle = searchData.query?.search?.[0]?.title;
-
-      if (!pageTitle) {
-        throw new Error('Aucune fiche Wikipédia trouvée.');
-      }
-
-      const summaryResponse = await fetch(
-        `https://fr.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(pageTitle)}`,
-      );
-      const summaryData = await summaryResponse.json();
-      const { markdown, sourceUrl } = buildWikipediaMarkdown(author, summaryData);
-
-      setWikipediaModal({
-        author,
-        markdown,
-        sourceUrl,
-        isLoading: false,
-        error: '',
-      });
-    } catch (error) {
-      setWikipediaModal({
-        author,
-        markdown: '',
-        sourceUrl: '',
-        isLoading: false,
-        error: error.message || 'Impossible de charger la fiche Wikipédia.',
-      });
-    }
-  };
-
-  const handleWikipediaButtonClick = (event, author) => {
-    event.preventDefault();
-    openWikipediaModal(author);
   };
 
   useEffect(() => {
@@ -372,14 +254,15 @@ function AuthorsPage() {
               </div>
 
               <div className="card-actions">
-                <button
-                  type="button"
+                <a
                   className="button"
+                  href={getWikipediaUrl(author)}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   style={{ fontSize: '0.9rem', padding: '8px 16px' }}
-                  onClick={(event) => handleWikipediaButtonClick(event, author)}
                 >
                   Wikipédia
-                </button>
+                </a>
                 <Link 
                   to={`/timeline#author-birth-${author.id}`} 
                   className="button button-secondary" 
@@ -402,48 +285,6 @@ function AuthorsPage() {
         })}
       </div>
 
-      {wikipediaModal && (
-        <div
-          className="modal-backdrop"
-          role="presentation"
-          onClick={closeWikipediaModal}
-        >
-          <section
-            className="author-wikipedia-modal"
-            role="dialog"
-            aria-modal="true"
-            aria-labelledby="author-wikipedia-title"
-            onClick={(event) => event.stopPropagation()}
-          >
-            <div className="modal-header">
-              <div>
-                <p className="eyebrow">Fiche Wikipédia</p>
-                <h2 id="author-wikipedia-title">{wikipediaModal.author.name}</h2>
-              </div>
-              <button
-                type="button"
-                className="modal-close-button"
-                onClick={closeWikipediaModal}
-                aria-label="Fermer"
-              >
-                ×
-              </button>
-            </div>
-
-            {wikipediaModal.isLoading && (
-              <p className="modal-status">Chargement de la fiche Wikipédia...</p>
-            )}
-
-            {wikipediaModal.error && (
-              <p className="modal-status modal-status-error">{wikipediaModal.error}</p>
-            )}
-
-            {wikipediaModal.markdown && (
-              <MarkdownPreview markdown={wikipediaModal.markdown} />
-            )}
-          </section>
-        </div>
-      )}
     </div>
   );
 }

@@ -1081,17 +1081,6 @@ blockquote {
   background: rgba(37, 27, 20, 0.42);
 }
 
-.author-wikipedia-modal {
-  width: min(680px, 100%);
-  max-height: min(720px, calc(100vh - 48px));
-  overflow: auto;
-  padding: 22px;
-  border: 1px solid rgba(111, 29, 27, 0.22);
-  border-radius: var(--border-radius);
-  background: var(--surface);
-  box-shadow: 0 24px 80px rgba(37, 27, 20, 0.26);
-}
-
 .about-modal {
   width: min(760px, 100%);
   max-height: min(760px, calc(100vh - 48px));
@@ -1238,50 +1227,6 @@ blockquote {
   color: var(--accent-strong);
   font-size: 0.94rem;
   font-weight: 650;
-}
-
-.markdown-preview {
-  display: grid;
-  gap: 12px;
-  color: var(--ink);
-  font-size: 0.95rem;
-  line-height: 1.65;
-}
-
-.markdown-preview h2,
-.markdown-preview h3,
-.markdown-preview p {
-  margin: 0;
-}
-
-.markdown-preview h2 {
-  font-size: 1.35rem;
-}
-
-.markdown-preview h3 {
-  margin-top: 6px;
-  font-size: 1rem;
-}
-
-.markdown-emphasis {
-  color: var(--text-light);
-  font-style: italic;
-}
-
-.markdown-list-item {
-  padding-left: 14px;
-  position: relative;
-}
-
-.markdown-list-item::before {
-  content: "";
-  position: absolute;
-  top: 0.78em;
-  left: 0;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: var(--brand);
 }
 
 .timeline-detail-group {
@@ -1487,8 +1432,7 @@ blockquote {
     padding: 12px;
   }
 
-  .about-modal,
-  .author-wikipedia-modal {
+  .about-modal {
     max-height: calc(100vh - 24px);
     padding: 18px;
   }
