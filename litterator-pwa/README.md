@@ -6,6 +6,7 @@
 ![Vite](https://img.shields.io/badge/Vite-8-b8893b?style=for-the-badge)
 ![PWA](https://img.shields.io/badge/PWA-installable-2f6f5e?style=for-the-badge)
 ![Offline](https://img.shields.io/badge/Données-locales-251b14?style=for-the-badge)
+![Lecture](https://img.shields.io/badge/Liens-OpenLibrary%20%2B%20Gutenberg-2563eb?style=for-the-badge)
 
 ![Aperçu de Littérator](public/screenshots/home.png)
 
@@ -42,12 +43,16 @@ Littérator rassemble mouvements, auteurs, œuvres, notions de glossaire et lieu
 | Mouvements littéraires | 34 |
 | Auteurs | 380 |
 | Œuvres | 760 |
+| Œuvres avec lien de lecture externe | 177 |
+| Liens de lecture vérifiés | 255 |
 | Entrées de glossaire | 224 |
 | Lieux littéraires éditoriaux | 8 |
 | Lieux biographiques géocodés | 117 |
 
 Le corpus inclut désormais les auteurs et œuvres de premier plan ainsi que des ensembles de second plan, troisième plan et angles morts reliés aux mêmes filtres, fiches, mouvements et vues chronologiques.
 La page d'accueil reprend ces volumes dans le bloc `Corpus local`.
+
+Les œuvres libres de droit trouvées sur Open Library ou Project Gutenberg affichent un bloc `Lire le texte` dans leur fiche. Les liens ne sont ajoutés que lorsqu'une correspondance exploitable a été trouvée et que la date de décès de l'auteur permet une intégration prudente.
 
 ## Stack
 

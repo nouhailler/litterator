@@ -248,6 +248,26 @@ function WorksPage() {
                 )}
               </div>
 
+              {work.externalLinks?.length > 0 && (
+                <div style={{ marginBottom: '15px' }}>
+                  <h4 style={{ fontSize: '1rem', marginBottom: '8px' }}>Lire le texte</h4>
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
+                    {work.externalLinks.map((link) => (
+                      <a
+                        key={`${work.id}-${link.source}`}
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="badge badge-theme"
+                        style={{ fontSize: '0.8rem' }}
+                      >
+                        {link.source}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              )}
+
               <div style={{ marginBottom: '15px' }}>
                 <h4 style={{ fontSize: '1rem', marginBottom: '8px' }}>Adaptations</h4>
                 {work.adaptations.length > 0 ? (

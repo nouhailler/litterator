@@ -1,22 +1,156 @@
+import { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { getLocationId, isSpecificLocation } from '../utils/locationIds';
 
-const movements = [
-  { id: 'romantisme', name: 'Romantisme', period: '1800-1865', color: 'var(--romantisme)' },
-  { id: 'realisme', name: 'Réalisme', period: '1830-1922', color: 'var(--realisme)' },
-  { id: 'modernite', name: 'Modernité', period: '1857-1968', color: '#2563eb' },
-  { id: 'surréalisme', name: 'Surréalisme', period: '1917-1938', color: 'var(--surréalisme)' },
-  { id: 'existentialisme', name: 'Existentialisme', period: '1938-1964', color: 'var(--existentialisme)' },
-  { id: 'contemporain', name: 'Contemporain', period: '1967-2022', color: '#607d8b' },
+const featuredMovementIds = [
+  'romantisme',
+  'realisme',
+  'modernite',
+  'surréalisme',
+  'existentialisme',
+  'contemporain',
 ];
 
-const authors = [
-  { id: 'hugo', name: 'Victor Hugo', work: 'Les Misérables', period: '1802-1885' },
-  { id: 'flaubert', name: 'Gustave Flaubert', work: 'Madame Bovary', period: '1821-1880' },
-  { id: 'zola', name: 'Émile Zola', work: 'Germinal', period: '1840-1902' },
-  { id: 'camus', name: 'Albert Camus', work: "L'Étranger", period: '1913-1960' },
+const featuredAuthorWorks = [
+  { authorId: 'hugo', workId: 'les-miserables' },
+  { authorId: 'flaubert', workId: 'madame-bovary' },
+  { authorId: 'zola', workId: 'germinal' },
+  { authorId: 'camus', workId: 'l-etranger' },
 ];
+
+const defaultCorpus = {
+  movements: [],
+  authors: [],
+  works: [],
+  locations: [],
+  glossary: [],
+  placeCoordinates: {},
+};
+
+const formatNumber = (value) =>
+  typeof value === 'number' ? value.toLocaleString('fr-FR') : '...';
+
+const getMapLocationCount = (locations, authors, placeCoordinates) => {
+  const locationIds = new Set(locations.map((location) => location.id));
+
+  authors.forEach((author) => {
+    [author.birth?.place, author.death?.place].filter(Boolean).forEach((place) => {
+      if (!isSpecificLocation(place)) {
+        return;
+      }
+
+      const id = getLocationId(place);
+
+      if (placeCoordinates[id]) {
+        locationIds.add(id);
+      }
+    });
+  });
+
+  return locationIds.size;
+};
 
 function HomePage() {
+  const [corpus, setCorpus] = useState(defaultCorpus);
+  const [isCorpusLoaded, setIsCorpusLoaded] = useState(false);
+
+  useEffect(() => {
+    const loadCorpus = async () => {
+      try {
+        const [
+          movementsRes,
+          authorsRes,
+          worksRes,
+          locationsRes,
+          glossaryRes,
+          placeCoordinatesRes,
+        ] = await Promise.all([
+          fetch('/data/movements.json'),
+          fetch('/data/authors.json'),
+          fetch('/data/works.json'),
+          fetch('/data/locations.json'),
+          fetch('/data/glossary.json'),
+          fetch('/data/place-coordinates.json'),
+        ]);
+
+        const [
+          movementsData,
+          authorsData,
+          worksData,
+          locationsData,
+          glossaryData,
+          placeCoordinatesData,
+        ] = await Promise.all([
+          movementsRes.json(),
+          authorsRes.json(),
+          worksRes.json(),
+          locationsRes.json(),
+          glossaryRes.json(),
+          placeCoordinatesRes.json(),
+        ]);
+
+        setCorpus({
+          movements: movementsData,
+          authors: authorsData,
+          works: worksData,
+          locations: locationsData,
+          glossary: glossaryData,
+          placeCoordinates: placeCoordinatesData.coordinates || {},
+        });
+        setIsCorpusLoaded(true);
+      } catch (error) {
+        console.error("Erreur lors du chargement des données d'accueil:", error);
+      }
+    };
+
+    loadCorpus();
+  }, []);
+
+  const stats = useMemo(() => ({
+    movements: corpus.movements.length,
+    authors: corpus.authors.length,
+    works: corpus.works.length,
+    locations: getMapLocationCount(corpus.locations, corpus.authors, corpus.placeCoordinates),
+    glossary: corpus.glossary.length,
+  }), [corpus]);
+
+  const movements = useMemo(() => {
+    const movementsById = Object.fromEntries(corpus.movements.map((movement) => [movement.id, movement]));
+
+    return featuredMovementIds
+      .map((id) => movementsById[id])
+      .filter(Boolean)
+      .map((movement) => ({
+        id: movement.id,
+        name: movement.name,
+        period: `${movement.period.start}-${movement.period.end}`,
+        color: movement.color,
+      }));
+  }, [corpus.movements]);
+
+  const authors = useMemo(() => {
+    const authorsById = Object.fromEntries(corpus.authors.map((author) => [author.id, author]));
+    const worksById = Object.fromEntries(corpus.works.map((work) => [work.id, work]));
+
+    return featuredAuthorWorks
+      .map(({ authorId, workId }) => {
+        const author = authorsById[authorId];
+        const work = worksById[workId];
+
+        if (!author) {
+          return null;
+        }
+
+        return {
+          id: author.id,
+          name: author.name,
+          work: work?.title || 'Œuvre à préciser',
+          period: `${author.birth.year}-${author.death?.year || '...'}`,
+        };
+      })
+      .filter(Boolean);
+  }, [corpus.authors, corpus.works]);
+
   return (
     <div className="fade-in">
       <section className="hero-panel">
@@ -46,23 +180,23 @@ function HomePage() {
           <div className="stat-list">
             <div className="stat-item">
               <span>Mouvements</span>
-              <span className="stat-number">34</span>
+              <span className="stat-number">{formatNumber(isCorpusLoaded ? stats.movements : null)}</span>
             </div>
             <div className="stat-item">
               <span>Auteurs</span>
-              <span className="stat-number">380</span>
+              <span className="stat-number">{formatNumber(isCorpusLoaded ? stats.authors : null)}</span>
             </div>
             <div className="stat-item">
               <span>Œuvres</span>
-              <span className="stat-number">760</span>
+              <span className="stat-number">{formatNumber(isCorpusLoaded ? stats.works : null)}</span>
             </div>
             <div className="stat-item">
               <span>Lieux</span>
-              <span className="stat-number">8</span>
+              <span className="stat-number">{formatNumber(isCorpusLoaded ? stats.locations : null)}</span>
             </div>
             <div className="stat-item">
               <span>Termes</span>
-              <span className="stat-number">224</span>
+              <span className="stat-number">{formatNumber(isCorpusLoaded ? stats.glossary : null)}</span>
             </div>
           </div>
         </aside>
