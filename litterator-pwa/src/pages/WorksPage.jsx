@@ -11,6 +11,7 @@ function WorksPage() {
   const [selectedMovement, setSelectedMovement] = useState('');
   const [selectedGenre, setSelectedGenre] = useState('');
   const [selectedAuthor, setSelectedAuthor] = useState('');
+  const [selectedReadingAccess, setSelectedReadingAccess] = useState('');
   const [searchTerm, setSearchTerm] = useState('');
   const activeWorkId = getHashId(location.hash);
 
@@ -57,11 +58,14 @@ function WorksPage() {
     const matchesMovement = selectedMovement ? work.movement === selectedMovement : true;
     const matchesGenre = selectedGenre ? work.genre === selectedGenre : true;
     const matchesAuthor = selectedAuthor ? work.author === selectedAuthor : true;
+    const matchesReadingAccess = selectedReadingAccess === 'public-domain-text'
+      ? work.externalLinks?.length > 0
+      : true;
     const matchesSearch = searchTerm 
       ? work.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
         work.summary.toLowerCase().includes(searchTerm.toLowerCase())
       : true;
-    return matchesMovement && matchesGenre && matchesAuthor && matchesSearch;
+    return matchesMovement && matchesGenre && matchesAuthor && matchesReadingAccess && matchesSearch;
   });
 
   if (isLoading) {
@@ -143,11 +147,24 @@ function WorksPage() {
           </select>
         </div>
 
+        <div className="filter-group">
+          <label>Texte libre</label>
+          <select
+            value={selectedReadingAccess}
+            onChange={(e) => setSelectedReadingAccess(e.target.value)}
+            style={{ width: '190px' }}
+          >
+            <option value="">Toutes les œuvres</option>
+            <option value="public-domain-text">Avec lien de lecture</option>
+          </select>
+        </div>
+
         <button 
           onClick={() => { 
             setSelectedMovement(''); 
             setSelectedGenre(''); 
             setSelectedAuthor(''); 
+            setSelectedReadingAccess('');
             setSearchTerm(''); 
           }}
           className="button button-secondary"
