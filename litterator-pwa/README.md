@@ -14,6 +14,8 @@
 
 Littérator rassemble mouvements, auteurs, œuvres, notions de glossaire et lieux littéraires dans une interface claire, installable et utilisable comme une application. Le projet met l'accent sur la consultation rapide, la navigation chronologique, les liens directs entre fiches et la découverte géographique.
 
+Les dernières fiches enrichies ajoutent aussi des liens vers les textes libres de droit, des extraits documentés, des adaptations connues et une fenêtre Wikipédia en Markdown accessible depuis les portraits d'auteurs.
+
 ## Aperçus
 
 | Œuvres | Auteurs |
@@ -29,11 +31,12 @@ Littérator rassemble mouvements, auteurs, œuvres, notions de glossaire et lieu
 | Icône | Module | Description |
 | --- | --- | --- |
 | Chronologie | Frise chronologique | Situer mouvements, œuvres, auteurs et événements historiques avec navigation horizontale, zoom et panneaux détaillés par année. |
-| Carte | Carte littéraire | Explorer les lieux liés aux auteurs, œuvres et mouvements avec Leaflet et un fond CARTO. |
-| Œuvres | Fiches œuvres | Parcourir les œuvres, leurs auteurs, genres, mouvements et visuels. |
-| Auteurs | Fiches biographiques | Consulter biographies, œuvres principales, citations, portraits et lieux biographiques précis. |
+| Carte | Carte littéraire | Explorer les 125 lieux liés aux auteurs, œuvres et mouvements avec Leaflet et un fond CARTO. |
+| Œuvres | Fiches œuvres | Parcourir les œuvres, leurs auteurs, genres, mouvements, visuels, liens de lecture, extraits et adaptations. |
+| Auteurs | Fiches biographiques | Consulter biographies, œuvres principales, citations, portraits, lieux biographiques précis et résumé Wikipédia en Markdown. |
 | Mouvements | Fiches mouvements | Comprendre les courants littéraires, leurs influences, auteurs majeurs et œuvres clés en accordéons. |
 | Glossaire | Notions littéraires | Rechercher les termes, procédés, genres, périodes et concepts, avec définitions complétées. |
+| À propos | Informations application | Afficher nom, version ou SHA de commit, auteur, liens, crédits open-source et contacts de support. |
 | PWA | Application installable | Installer l'application sur desktop ou mobile, avec données locales précachées. |
 
 ## Corpus inclus
@@ -45,14 +48,21 @@ Littérator rassemble mouvements, auteurs, œuvres, notions de glossaire et lieu
 | Œuvres | 760 |
 | Œuvres avec lien de lecture externe | 177 |
 | Liens de lecture vérifiés | 255 |
+| Œuvres avec extrait documenté | 11 |
+| Extraits documentés | 23 |
+| Œuvres avec adaptation documentée | 154 |
+| Adaptations documentées | 333 |
 | Entrées de glossaire | 224 |
 | Lieux littéraires éditoriaux | 8 |
 | Lieux biographiques géocodés | 117 |
+| Lieux affichables sur la carte | 125 |
 
-Le corpus inclut désormais les auteurs et œuvres de premier plan ainsi que des ensembles de second plan, troisième plan et angles morts reliés aux mêmes filtres, fiches, mouvements et vues chronologiques.
+Le corpus inclut les auteurs et œuvres de référence ainsi que des ensembles complémentaires et angles morts reliés aux mêmes filtres, fiches, mouvements et vues chronologiques.
 La page d'accueil reprend ces volumes dans le bloc `Corpus local`.
 
 Les œuvres libres de droit trouvées sur Open Library ou Project Gutenberg affichent un bloc `Lire le texte` dans leur fiche. Les liens ne sont ajoutés que lorsqu'une correspondance exploitable a été trouvée et que la date de décès de l'auteur permet une intégration prudente.
+
+Les biographies d'auteurs évitent les classements subjectifs de type `premier plan`, `second plan` ou `troisième plan`.
 
 ## Stack
 
@@ -64,6 +74,7 @@ Les œuvres libres de droit trouvées sur Open Library ou Project Gutenberg affi
 | Carte | Leaflet + React Leaflet |
 | Données | JSON local dans `public/data/` |
 | UI | CSS custom, variables de thème, Grid/Flexbox |
+| Sources externes | Open Library, Project Gutenberg, Wikipédia, Wikidata |
 
 ## Démarrage
 
@@ -166,9 +177,30 @@ Les fiches supportent les liens directs par hash :
 
 Les utilitaires de normalisation et de scroll sont dans `src/utils/`.
 
+## Textes libres, extraits et adaptations
+
+Les œuvres libres de droit utilisent le champ `externalLinks` pour afficher les sources de lecture. Le filtre `Texte libre` de l'écran `Œuvres de la littérature française` permet de remonter ces fiches directement.
+
+Le bloc `Extraits` affiche les citations disponibles dans `excerpts`. Les adaptations sont stockées dans `adaptations` avec un type, un titre, une année et, quand elle existe, une URL Wikidata.
+
+## À propos
+
+Le menu `À propos` expose les informations demandées pour la distribution de l'application :
+
+- nom de l'application et logo ;
+- version issue du paquet ou SHA injecté par `VITE_COMMIT_SHA` ;
+- auteur/développeur : Patrick Nouhailler, swinux.ch ;
+- description courte ;
+- liens GitHub, README, changelog et portfolio ;
+- crédits open-source majeurs ;
+- lien mailto pour les utilisateurs et tracker d'issues pour les développeurs.
+
 ## Sources
 
 - Les portraits distants proviennent de Wikimedia Commons via Wikidata.
 - Les images libres ajoutées pour le corpus de second plan proviennent de Wikimedia Commons ou de fichiers libres exposés par Wikipédia.
 - Les lieux biographiques et coordonnées ajoutés proviennent de Wikidata, base structurée liée à Wikipédia.
+- Les résumés Wikipédia des auteurs sont chargés depuis l'API publique de Wikipédia en français.
+- Les liens de lecture proviennent d'Open Library et de Project Gutenberg.
+- Les adaptations connues sont liées à Wikidata quand une fiche structurée existe.
 - Les attributions connues sont documentées dans `public/images/ATTRIBUTIONS.md`.

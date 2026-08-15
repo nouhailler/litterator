@@ -1,4 +1,4 @@
-# Litterator
+# Littérator
 
 > Explorer la littérature française depuis 1800 avec une PWA éditoriale, visuelle et installable.
 
@@ -8,49 +8,58 @@
 ![OpenLibrary](https://img.shields.io/badge/OpenLibrary-liens%20lecture-2563eb?style=for-the-badge)
 ![Gutenberg](https://img.shields.io/badge/Project%20Gutenberg-textes%20libres-607d8b?style=for-the-badge)
 
-![Accueil de Litterator](litterator-pwa/public/screenshots/home.png)
+![Accueil de Littérator](litterator-pwa/public/screenshots/home.png)
 
-## Apercu
+## Aperçu
 
-Litterator rassemble mouvements, auteurs, oeuvres, lieux et notions litteraires dans une interface de consultation rapide. L'application est concue pour naviguer entre les fiches, situer les periodes sur une frise, explorer une carte litteraire et ouvrir les textes libres de droit quand une source fiable est disponible.
+Littérator rassemble mouvements, auteurs, œuvres, lieux et notions littéraires dans une interface de consultation rapide. L'application permet de naviguer entre les fiches, situer les périodes sur une frise, explorer une carte littéraire, ouvrir des textes libres de droit et consulter des repères encyclopédiques sur les auteurs.
 
 ## Captures
 
-| Bibliotheque | Auteurs |
+| Bibliothèque | Auteurs |
 | --- | --- |
-| ![Page des oeuvres](litterator-pwa/public/screenshots/works.png) | ![Page des auteurs](litterator-pwa/public/screenshots/authors.png) |
+| ![Page des œuvres](litterator-pwa/public/screenshots/works.png) | ![Page des auteurs](litterator-pwa/public/screenshots/authors.png) |
 
-| Carte litteraire |
+| Carte littéraire |
 | --- |
-| ![Carte litteraire](litterator-pwa/public/screenshots/map.png) |
+| ![Carte littéraire](litterator-pwa/public/screenshots/map.png) |
 
-## Fonctionnalites
+## Fonctionnalités
 
 | Module | Ce que l'on peut faire |
 | --- | --- |
-| 🕰️ Frise | Situer les mouvements, auteurs, oeuvres et evenements dans le temps. |
-| 🗺️ Carte | Explorer les lieux litteraires et biographiques geocodes. |
-| 📚 Oeuvres | Filtrer 760 oeuvres par mouvement, genre, auteur ou recherche texte. |
+| 🕰️ Frise | Situer les mouvements, auteurs, œuvres et événements dans le temps. |
+| 🗺️ Carte | Explorer les 125 lieux littéraires et biographiques géocodés. |
+| 📚 Œuvres | Filtrer 760 œuvres par mouvement, genre, auteur, recherche texte ou disponibilité d'un texte libre. |
 | 🔗 Lecture | Ouvrir les textes libres de droit disponibles sur Open Library ou Project Gutenberg. |
-| ✍️ Auteurs | Parcourir 380 fiches biographiques avec portraits, citations et oeuvres liees. |
-| 🧭 Mouvements | Comprendre 34 courants avec influences, themes, auteurs et oeuvres cles. |
-| 🧠 Glossaire | Consulter 224 notions pour l'analyse litteraire. |
-| 📱 PWA | Installer l'application et utiliser les donnees locales precachees. |
+| ✍️ Auteurs | Parcourir 380 fiches biographiques avec portraits, citations, œuvres liées et fenêtre Wikipédia en Markdown. |
+| 🧭 Mouvements | Comprendre 34 courants avec influences, thèmes, auteurs et œuvres clés. |
+| 🧠 Glossaire | Consulter 224 notions pour l'analyse littéraire. |
+| 🎬 Adaptations | Identifier les adaptations connues des œuvres quand elles sont documentées. |
+| ℹ️ À propos | Afficher nom de l'application, version, auteur, liens, crédits et support. |
+| 📱 PWA | Installer l'application et utiliser les données locales précachées. |
 
 ## Corpus
 
-| Donnees | Volume |
+| Données | Volume |
 | --- | ---: |
-| Mouvements litteraires | 34 |
+| Mouvements littéraires | 34 |
 | Auteurs | 380 |
-| Oeuvres | 760 |
-| Oeuvres avec lien de lecture externe | 177 |
-| Liens de lecture verifies | 255 |
-| Entrees de glossaire | 224 |
-| Lieux litteraires editoriaux | 8 |
-| Lieux biographiques geocodes | 117 |
+| Œuvres | 760 |
+| Œuvres avec lien de lecture externe | 177 |
+| Liens de lecture vérifiés | 255 |
+| Œuvres avec extrait documenté | 11 |
+| Extraits documentés | 23 |
+| Œuvres avec adaptation documentée | 154 |
+| Adaptations documentées | 333 |
+| Entrées de glossaire | 224 |
+| Lieux littéraires éditoriaux | 8 |
+| Lieux biographiques géocodés | 117 |
+| Lieux affichables sur la carte | 125 |
 
-Les liens de lecture sont ajoutes uniquement pour les oeuvres dont l'auteur est entre dans le domaine public selon la regle generale vie + 70 ans, et uniquement lorsqu'une correspondance exploitable a ete trouvee sur Open Library ou Project Gutenberg.
+Les liens de lecture sont ajoutés uniquement pour les œuvres dont l'auteur est entré dans le domaine public selon la règle générale vie + 70 ans, et uniquement lorsqu'une correspondance exploitable a été trouvée sur Open Library ou Project Gutenberg.
+
+Les biographies d'auteurs évitent les classements subjectifs de type `premier plan`, `second plan` ou `troisième plan`. Les portraits peuvent ouvrir une fenêtre Wikipédia qui affiche un résumé en Markdown et un lien vers la source.
 
 ## Stack
 
@@ -60,10 +69,10 @@ Les liens de lecture sont ajoutes uniquement pour les oeuvres dont l'auteur est 
 | Build | Vite 8 |
 | PWA | vite-plugin-pwa + Workbox |
 | Carte | Leaflet + React Leaflet |
-| Donnees | JSON local dans `litterator-pwa/public/data/` |
-| Qualite | Oxlint |
+| Données | JSON local dans `litterator-pwa/public/data/` |
+| Qualité | Oxlint |
 
-## Demarrage
+## Démarrage
 
 ```bash
 cd litterator-pwa
@@ -92,7 +101,7 @@ litterator/
 └── litterator-pwa/
     ├── public/
     │   ├── data/          # Corpus JSON
-    │   ├── icons/         # Icones PWA
+    │   ├── icons/         # Icônes PWA
     │   └── screenshots/   # Captures du README
     ├── src/
     │   ├── pages/
@@ -107,13 +116,13 @@ litterator/
 | Commande | Usage |
 | --- | --- |
 | `npm run dev` | Lance le serveur local Vite. |
-| `npm run build` | Genere le build de production. |
+| `npm run build` | Génère le build de production. |
 | `npm run preview` | Sert le build de production en local. |
 | `npm run lint` | Lance Oxlint. |
 
-## Donnees
+## Données
 
-Le corpus est editable directement dans les fichiers JSON :
+Le corpus est éditable directement dans les fichiers JSON :
 
 ```text
 litterator-pwa/public/data/authors.json
@@ -127,5 +136,17 @@ litterator-pwa/public/data/glossary.json
 ## Sources et attributions
 
 - Les liens de lecture proviennent d'Open Library et de Project Gutenberg.
-- Les coordonnees biographiques s'appuient sur Wikidata/Wikipedia et des donnees locales.
-- Les attributions d'images connues sont documentees dans [`litterator-pwa/public/images/ATTRIBUTIONS.md`](litterator-pwa/public/images/ATTRIBUTIONS.md).
+- Les fiches Wikipédia des auteurs sont chargées depuis l'API publique de Wikipédia en français.
+- Les adaptations sont liées à Wikidata quand une fiche structurée existe.
+- Les coordonnées biographiques s'appuient sur Wikidata/Wikipedia et des données locales.
+- Les attributions d'images connues sont documentées dans [`litterator-pwa/public/images/ATTRIBUTIONS.md`](litterator-pwa/public/images/ATTRIBUTIONS.md).
+
+## À propos et support
+
+Le menu `À propos` expose les informations essentielles de l'application : nom, version ou SHA de commit, auteur/développeur Patrick Nouhailler, entité swinux.ch, liens GitHub, README, changelog, portfolio, crédits open-source et contacts de support.
+
+- Dépôt source : <https://github.com/nouhailler/litterator>
+- Documentation : <https://github.com/nouhailler/litterator#readme>
+- Changelog : <https://github.com/nouhailler/litterator/blob/main/litterator-pwa/CHANGELOG.md>
+- Portfolio : <https://swinux.ch/applications/>
+- Issues développeurs : <https://github.com/nouhailler/litterator/issues/new>
