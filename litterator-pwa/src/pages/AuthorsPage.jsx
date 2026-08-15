@@ -5,20 +5,6 @@ import { getLocationId, isSpecificLocation } from '../utils/locationIds';
 
 const getAuthorSearchName = (author) => author.full_name || author.name;
 
-const getClosestElement = (target) => {
-  if (!target) {
-    return null;
-  }
-
-  return target.nodeType === 1 ? target : target.parentElement;
-};
-
-const isInteractiveElement = (target) => {
-  const element = getClosestElement(target);
-
-  return Boolean(element?.closest('a, button, input, select, textarea, summary'));
-};
-
 const buildWikipediaMarkdown = (author, page) => {
   const sourceUrl = page.content_urls?.desktop?.page || `https://fr.wikipedia.org/wiki/${encodeURIComponent(page.title)}`;
   const description = page.description ? `\n\n_${page.description}_` : '';
@@ -158,17 +144,8 @@ function AuthorsPage() {
     }
   };
 
-  const handleAuthorCardClick = (event, author) => {
-    if (isInteractiveElement(event.target)) {
-      return;
-    }
-
-    openWikipediaModal(author);
-  };
-
   const handleWikipediaButtonClick = (event, author) => {
     event.preventDefault();
-    event.stopPropagation();
     openWikipediaModal(author);
   };
 
@@ -291,42 +268,26 @@ function AuthorsPage() {
               key={author.id} 
               id={author.id}
               className={`card entity-card author-card ${activeAuthorId === author.id ? 'is-highlighted' : ''}`}
-              onClick={(event) => handleAuthorCardClick(event, author)}
-              title={`Ouvrir la fiche Wikipédia de ${author.name}`}
             >
               {author.portrait ? (
                 <>
-                  <button
-                    type="button"
-                    className="author-portrait-button"
-                    onClick={() => openWikipediaModal(author)}
-                    aria-label={`Ouvrir la fiche Wikipédia de ${author.name}`}
-                  >
-                    <img
-                      src={author.portrait}
-                      alt={author.name}
-                      className="author-portrait"
-                      draggable="false"
-                      loading={activeAuthorId === author.id ? 'eager' : 'lazy'}
-                      fetchPriority={activeAuthorId === author.id ? 'high' : 'auto'}
-                      onError={handlePortraitError}
-                    />
-                    <div className="entity-initial" aria-hidden="true" hidden>
-                      {author.name.charAt(0)}
-                    </div>
-                  </button>
-                </>
-              ) : (
-                <button
-                  type="button"
-                  className="author-initial-button"
-                  onClick={() => openWikipediaModal(author)}
-                  aria-label={`Ouvrir la fiche Wikipédia de ${author.name}`}
-                >
-                  <div className="entity-initial" aria-hidden="true">
+                  <img
+                    src={author.portrait}
+                    alt={author.name}
+                    className="author-portrait"
+                    draggable="false"
+                    loading={activeAuthorId === author.id ? 'eager' : 'lazy'}
+                    fetchPriority={activeAuthorId === author.id ? 'high' : 'auto'}
+                    onError={handlePortraitError}
+                  />
+                  <div className="entity-initial" aria-hidden="true" hidden>
                     {author.name.charAt(0)}
                   </div>
-                </button>
+                </>
+              ) : (
+                <div className="entity-initial" aria-hidden="true">
+                  {author.name.charAt(0)}
+                </div>
               )}
 
               <h3 style={{ marginBottom: '10px' }}>
