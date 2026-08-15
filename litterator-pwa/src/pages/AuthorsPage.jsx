@@ -5,7 +5,19 @@ import { getLocationId, isSpecificLocation } from '../utils/locationIds';
 
 const getAuthorSearchName = (author) => author.full_name || author.name;
 
-const isInteractiveElement = (target) => Boolean(target.closest('a, button, input, select, textarea, summary'));
+const getClosestElement = (target) => {
+  if (!target) {
+    return null;
+  }
+
+  return target.nodeType === 1 ? target : target.parentElement;
+};
+
+const isInteractiveElement = (target) => {
+  const element = getClosestElement(target);
+
+  return Boolean(element?.closest('a, button, input, select, textarea, summary'));
+};
 
 const buildWikipediaMarkdown = (author, page) => {
   const sourceUrl = page.content_urls?.desktop?.page || `https://fr.wikipedia.org/wiki/${encodeURIComponent(page.title)}`;
@@ -151,6 +163,12 @@ function AuthorsPage() {
       return;
     }
 
+    openWikipediaModal(author);
+  };
+
+  const handleWikipediaButtonClick = (event, author) => {
+    event.preventDefault();
+    event.stopPropagation();
     openWikipediaModal(author);
   };
 
@@ -393,9 +411,17 @@ function AuthorsPage() {
               </div>
 
               <div className="card-actions">
+                <button
+                  type="button"
+                  className="button"
+                  style={{ fontSize: '0.9rem', padding: '8px 16px' }}
+                  onClick={(event) => handleWikipediaButtonClick(event, author)}
+                >
+                  Wikipédia
+                </button>
                 <Link 
                   to={`/timeline#author-birth-${author.id}`} 
-                  className="button" 
+                  className="button button-secondary" 
                   style={{ fontSize: '0.9rem', padding: '8px 16px' }}
                 >
                   Voir sur la timeline
