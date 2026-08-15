@@ -238,36 +238,42 @@ function WorksPage() {
 
               <div style={{ marginBottom: '15px' }}>
                 <h4 style={{ fontSize: '1rem', marginBottom: '8px' }}>Extraits</h4>
-                {work.excerpts.slice(0, 1).map((excerpt, index) => (
-                  <blockquote 
-                    key={index} 
-                    style={{ 
-                      fontStyle: 'italic', 
-                      color: 'var(--text-light)', 
-                      fontSize: '0.9rem',
-                      marginBottom: '10px',
-                      paddingLeft: '10px',
-                      borderLeft: '3px solid var(--brand)'
-                    }}
-                  >
-                    "{excerpt.text}"
-                    {excerpt.chapter && (
-                      <footer style={{ marginTop: '5px', fontWeight: '600', fontSize: '0.8rem' }}>
-                        — {excerpt.chapter}
-                      </footer>
-                    )}
-                  </blockquote>
-                ))}
+                {work.excerpts.length > 0 ? (
+                  work.excerpts.slice(0, 1).map((excerpt, index) => (
+                    <blockquote 
+                      key={index} 
+                      style={{ 
+                        fontStyle: 'italic', 
+                        color: 'var(--text-light)', 
+                        fontSize: '0.9rem',
+                        marginBottom: '10px',
+                        paddingLeft: '10px',
+                        borderLeft: '3px solid var(--brand)'
+                      }}
+                    >
+                      "{excerpt.text}"
+                      {excerpt.chapter && (
+                        <footer style={{ marginTop: '5px', fontWeight: '600', fontSize: '0.8rem' }}>
+                          — {excerpt.chapter}
+                        </footer>
+                      )}
+                    </blockquote>
+                  ))
+                ) : (
+                  <p style={{ fontSize: '0.9rem', color: 'var(--text-light)', marginBottom: '10px' }}>
+                    Aucun extrait court n'est encore renseigné pour cette œuvre.
+                  </p>
+                )}
                 {work.excerpts.length > 1 && (
                   <p style={{ fontSize: '0.8rem', color: 'var(--text-light)' }}>
                     +{work.excerpts.length - 1} autres extraits
                   </p>
                 )}
-              </div>
-
-              {work.externalLinks?.length > 0 && (
-                <div style={{ marginBottom: '15px' }}>
-                  <h4 style={{ fontSize: '1rem', marginBottom: '8px' }}>Lire le texte</h4>
+                {work.externalLinks?.length > 0 && (
+                  <>
+                    <p style={{ fontSize: '0.85rem', color: 'var(--text-light)', marginBottom: '8px' }}>
+                      Texte intégral librement accessible :
+                    </p>
                   <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
                     {work.externalLinks.map((link) => (
                       <a
@@ -282,8 +288,9 @@ function WorksPage() {
                       </a>
                     ))}
                   </div>
-                </div>
-              )}
+                  </>
+                )}
+              </div>
 
               <div style={{ marginBottom: '15px' }}>
                 <h4 style={{ fontSize: '1rem', marginBottom: '8px' }}>Adaptations</h4>
