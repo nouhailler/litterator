@@ -37,6 +37,7 @@ Les dernières fiches enrichies ajoutent aussi des liens vers les textes libres 
 | Mouvements | Fiches mouvements | Comprendre les courants littéraires, leurs influences, auteurs majeurs et œuvres clés en accordéons. |
 | Glossaire | Notions littéraires | Rechercher les termes, procédés, genres, périodes et concepts, avec définitions complétées. |
 | À propos | Informations application | Afficher nom, version ou SHA de commit, auteur, liens, crédits open-source et contacts de support. |
+| Mise à jour | Synchronisation PWA | Forcer la vérification du service worker, vider les caches locaux et recharger la dernière version déployée. |
 | PWA | Application installable | Installer l'application sur desktop ou mobile, avec données locales précachées. |
 
 ## Corpus inclus
@@ -103,6 +104,8 @@ npm run preview
 3. L'application s'installe avec son icône dédiée et se lance en mode autonome.
 
 Les icônes PWA sont dans `public/icons/` et déclarées dans `public/manifest.json` ainsi que dans la configuration `vite-plugin-pwa`.
+
+Après un nouveau déploiement Netlify, l'onglet `Paramètres > Mise à jour` permet de forcer la récupération de la dernière version sur mobile sans multiplier les rafraîchissements manuels.
 
 ## Structure
 

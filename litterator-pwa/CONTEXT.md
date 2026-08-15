@@ -103,6 +103,20 @@ Le menu `À propos` doit exposer les informations essentielles :
 - contact utilisateur par e-mail ;
 - tracker développeur : <https://github.com/nouhailler/litterator/issues/new>.
 
+## Mise À Jour PWA
+
+La page `Paramètres` expose un onglet `Mise à jour`. Son bouton doit rester disponible pour les usages mobiles après un déploiement Netlify.
+
+Le flux attendu :
+
+- vérifier l'enregistrement du service worker ;
+- activer un service worker en attente si une version est déjà détectée ;
+- vider les caches locaux de l'origine ;
+- désenregistrer l'ancien service worker si nécessaire ;
+- recharger l'application pour récupérer les derniers fichiers publiés.
+
+La logique est centralisée dans `src/utils/pwaUpdate.js`. Le service worker est enregistré depuis `src/main.jsx` via `registerAppServiceWorker()`.
+
 ## Sources Et Attributions
 
 - Les portraits distants viennent de Wikimedia Commons via Wikidata.

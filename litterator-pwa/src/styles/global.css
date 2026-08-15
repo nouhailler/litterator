@@ -314,6 +314,13 @@ a.button {
   transform: translateY(-1px);
 }
 
+.button:disabled,
+button.button:disabled {
+  opacity: 0.62;
+  cursor: not-allowed;
+  transform: none;
+}
+
 .button-secondary {
   border-color: rgba(111, 29, 27, 0.18);
   background: var(--surface);
@@ -626,6 +633,16 @@ blockquote {
   background: linear-gradient(180deg, var(--surface) 0%, var(--surface-strong) 100%);
 }
 
+.author-card {
+  cursor: pointer;
+  user-select: none;
+}
+
+.author-card a,
+.author-card button {
+  user-select: auto;
+}
+
 .work-card::before,
 .author-card::before {
   background: var(--brand);
@@ -663,6 +680,10 @@ blockquote {
   height: 230px;
   object-fit: cover;
   object-position: center 20%;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
 }
 
 .author-portrait-button,
@@ -675,6 +696,9 @@ blockquote {
   color: inherit;
   cursor: pointer;
   text-align: left;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
 }
 
 .author-initial-button {
@@ -1250,6 +1274,17 @@ blockquote {
 .about-link-list a:hover,
 .about-grid section > a:hover {
   text-decoration: underline;
+}
+
+.settings-status {
+  margin-top: 16px;
+  padding: 12px 14px;
+  border: 1px solid rgba(47, 111, 94, 0.22);
+  border-radius: var(--border-radius);
+  background: rgba(47, 111, 94, 0.08);
+  color: var(--accent-strong);
+  font-size: 0.94rem;
+  font-weight: 650;
 }
 
 .markdown-preview {

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { forceAppUpdate } from '../utils/pwaUpdate';
 
 function SettingsPage() {
   const [activeTab, setActiveTab] = useState('import');
@@ -9,6 +10,8 @@ function SettingsPage() {
   const [success, setSuccess] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [theme, setTheme] = useState('light');
+  const [updateStatus, setUpdateStatus] = useState('');
+  const [isUpdatingApp, setIsUpdatingApp] = useState(false);
 
   // Gabarits JSON pour l'import (avec image_url pour Wikipédia/Wikimédia)
   const templates = {
@@ -351,6 +354,25 @@ function SettingsPage() {
     setTheme(theme === 'light' ? 'dark' : 'light');
   };
 
+  const handleAppUpdate = async () => {
+    setIsUpdatingApp(true);
+    setUpdateStatus('Recherche de la dernière version et nettoyage du cache local...');
+
+    try {
+      const result = await forceAppUpdate();
+
+      if (result === 'unsupported') {
+        setUpdateStatus('Service worker non disponible. Rechargement de la page...');
+        return;
+      }
+
+      setUpdateStatus('Mise à jour appliquée. Rechargement de Littérator...');
+    } catch (error) {
+      setUpdateStatus(`Impossible de lancer la mise à jour : ${error.message}`);
+      setIsUpdatingApp(false);
+    }
+  };
+
   return (
     <div className="fade-in">
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
@@ -393,6 +415,13 @@ function SettingsPage() {
           style={{ padding: '10px 20px' }}
         >
           Images Wikipédia
+        </button>
+        <button
+          onClick={() => setActiveTab('update')}
+          className={`button ${activeTab === 'update' ? 'button-secondary' : ''}`}
+          style={{ padding: '10px 20px' }}
+        >
+          Mise à jour
         </button>
       </div>
 
@@ -670,6 +699,43 @@ function SettingsPage() {
             <p style={{ marginTop: '15px', fontSize: '0.9rem', color: 'var(--text-light)' }}>
               <strong>Note :</strong> Pour une utilisation optimale, préférez les images en haute résolution et vérifiez leur licence sur Wikimedia Commons.
             </p>
+          </div>
+        </div>
+      )}
+
+      {/* Onglet Mise à jour */}
+      {activeTab === 'update' && (
+        <div className="card">
+          <h3 style={{ marginBottom: '20px' }}>Mise à jour de l'application</h3>
+
+          <p style={{ marginBottom: '20px', color: 'var(--text-light)' }}>
+            Après un déploiement Netlify, ce bouton force Littérator à vérifier le service worker,
+            vider les caches locaux de la PWA et recharger l'application avec les derniers fichiers publiés.
+          </p>
+
+          <button
+            type="button"
+            onClick={handleAppUpdate}
+            disabled={isUpdatingApp}
+            className="button"
+            style={{ padding: '10px 20px' }}
+          >
+            {isUpdatingApp ? 'Mise à jour en cours...' : 'Mettre à jour l’application'}
+          </button>
+
+          {updateStatus && (
+            <div className="settings-status" role="status" aria-live="polite">
+              {updateStatus}
+            </div>
+          )}
+
+          <div style={{ marginTop: '20px', padding: '15px', backgroundColor: 'var(--card-bg)', borderRadius: 'var(--border-radius)', border: '1px solid var(--border-color)' }}>
+            <h4 style={{ marginBottom: '10px' }}>Quand utiliser ce bouton ?</h4>
+            <ol style={{ paddingLeft: '20px', lineHeight: '1.6' }}>
+              <li>Après avoir poussé une nouvelle version sur GitHub et attendu la fin du déploiement Netlify.</li>
+              <li>Quand l'application installée sur mobile affiche encore une ancienne version.</li>
+              <li>Quand les données locales ne semblent pas correspondre au dernier déploiement.</li>
+            </ol>
           </div>
         </div>
       )}

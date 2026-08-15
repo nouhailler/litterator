@@ -5,6 +5,8 @@ import { getLocationId, isSpecificLocation } from '../utils/locationIds';
 
 const getAuthorSearchName = (author) => author.full_name || author.name;
 
+const isInteractiveElement = (target) => Boolean(target.closest('a, button, input, select, textarea, summary'));
+
 const buildWikipediaMarkdown = (author, page) => {
   const sourceUrl = page.content_urls?.desktop?.page || `https://fr.wikipedia.org/wiki/${encodeURIComponent(page.title)}`;
   const description = page.description ? `\n\n_${page.description}_` : '';
@@ -144,6 +146,14 @@ function AuthorsPage() {
     }
   };
 
+  const handleAuthorCardClick = (event, author) => {
+    if (isInteractiveElement(event.target)) {
+      return;
+    }
+
+    openWikipediaModal(author);
+  };
+
   useEffect(() => {
     const loadData = async () => {
       try {
@@ -263,6 +273,8 @@ function AuthorsPage() {
               key={author.id} 
               id={author.id}
               className={`card entity-card author-card ${activeAuthorId === author.id ? 'is-highlighted' : ''}`}
+              onClick={(event) => handleAuthorCardClick(event, author)}
+              title={`Ouvrir la fiche Wikipédia de ${author.name}`}
             >
               {author.portrait ? (
                 <>
@@ -276,6 +288,7 @@ function AuthorsPage() {
                       src={author.portrait}
                       alt={author.name}
                       className="author-portrait"
+                      draggable="false"
                       loading={activeAuthorId === author.id ? 'eager' : 'lazy'}
                       fetchPriority={activeAuthorId === author.id ? 'high' : 'auto'}
                       onError={handlePortraitError}
