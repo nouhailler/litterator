@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, NavLink, Link, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, NavLink, Link, Navigate, useLocation } from 'react-router-dom';
 import TimelinePage from './pages/TimelinePage';
 import MapPage from './pages/MapPage';
 import MovementsPage from './pages/MovementsPage';
@@ -14,10 +14,39 @@ import './styles/global.css';
 const appVersion = import.meta.env.VITE_COMMIT_SHA || packageInfo.version;
 const githubRepositoryUrl = 'https://github.com/nouhailler/litterator';
 
+function ScrollToTop() {
+  const { pathname, search, hash } = useLocation();
+
+  useEffect(() => {
+    if (!hash) {
+      window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+    }
+  }, [pathname, search, hash]);
+
+  return null;
+}
+
 function App() {
   const [isInstalled, setIsInstalled] = useState(false);
   const [isAboutOpen, setIsAboutOpen] = useState(false);
+  const [isNavOpen, setIsNavOpen] = useState(false);
   const bugReportUrl = `mailto:contact@swinux.ch?subject=${encodeURIComponent('[Bug Report] Littérator')}&body=${encodeURIComponent(`Version : ${appVersion}\nOS : \nDescription du problème : \n\nÉtapes pour reproduire : `)}`;
+
+  const closeNav = () => {
+    setIsNavOpen(false);
+  };
+
+  const scrollHomeToTop = () => {
+    closeNav();
+    window.requestAnimationFrame(() => {
+      window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+    });
+  };
+
+  const openAbout = () => {
+    closeNav();
+    setIsAboutOpen(true);
+  };
 
   useEffect(() => {
     const standaloneQuery = window.matchMedia('(display-mode: standalone)');
@@ -37,10 +66,11 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <div className="app">
         <header className="app-header">
           <div className="header-inner">
-            <Link to="/" className="brand-link">
+            <Link to="/" className="brand-link" onClick={scrollHomeToTop}>
               <span className="brand-mark">L</span>
               <span className="brand-text">
                 <span className="brand-title">Littérator</span>
@@ -48,21 +78,38 @@ function App() {
               </span>
             </Link>
 
-            <nav className="app-nav" aria-label="Navigation principale">
+            <button
+              type="button"
+              className={`menu-toggle ${isNavOpen ? 'is-open' : ''}`}
+              onClick={() => setIsNavOpen((isOpen) => !isOpen)}
+              aria-expanded={isNavOpen}
+              aria-controls="main-navigation"
+              aria-label={isNavOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
+            >
+              <span aria-hidden="true" />
+              <span aria-hidden="true" />
+              <span aria-hidden="true" />
+            </button>
+
+            <nav
+              id="main-navigation"
+              className={`app-nav ${isNavOpen ? 'is-open' : ''}`}
+              aria-label="Navigation principale"
+            >
               <ul>
-                <li><NavLink to="/" end>Accueil</NavLink></li>
-                <li><NavLink to="/timeline">Frise</NavLink></li>
-                <li><NavLink to="/map">Carte</NavLink></li>
-                <li><NavLink to="/movements">Mouvements</NavLink></li>
-                <li><NavLink to="/authors">Auteurs</NavLink></li>
-                <li><NavLink to="/works">Œuvres</NavLink></li>
-                <li><NavLink to="/glossary">Glossaire</NavLink></li>
-                <li><NavLink to="/settings">Paramètres</NavLink></li>
+                <li><NavLink to="/" end onClick={scrollHomeToTop}>Accueil</NavLink></li>
+                <li><NavLink to="/timeline" onClick={closeNav}>Frise</NavLink></li>
+                <li><NavLink to="/map" onClick={closeNav}>Carte</NavLink></li>
+                <li><NavLink to="/movements" onClick={closeNav}>Mouvements</NavLink></li>
+                <li><NavLink to="/authors" onClick={closeNav}>Auteurs</NavLink></li>
+                <li><NavLink to="/works" onClick={closeNav}>Œuvres</NavLink></li>
+                <li><NavLink to="/glossary" onClick={closeNav}>Glossaire</NavLink></li>
+                <li><NavLink to="/settings" onClick={closeNav}>Paramètres</NavLink></li>
                 <li>
                   <button
                     type="button"
                     className="nav-button"
-                    onClick={() => setIsAboutOpen(true)}
+                    onClick={openAbout}
                   >
                     À propos
                   </button>

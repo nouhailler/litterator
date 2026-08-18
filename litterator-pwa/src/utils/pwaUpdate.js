@@ -9,7 +9,8 @@ const reloadApp = () => {
   }
 
   hasReloadStarted = true;
-  window.location.reload();
+  const appRoot = `${window.location.origin}${import.meta.env.BASE_URL || '/'}`;
+  window.location.replace(appRoot);
 };
 
 const clearLocalCaches = async () => {

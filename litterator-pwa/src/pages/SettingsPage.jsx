@@ -375,7 +375,7 @@ function SettingsPage() {
 
   return (
     <div className="fade-in">
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
+      <div className="settings-header">
         <h2 style={{ fontFamily: 'var(--font-secondary)', margin: 0 }}>
           Paramétrage - Import/Export de Données
         </h2>
@@ -394,10 +394,12 @@ function SettingsPage() {
       </p>
 
       {/* Menu de navigation */}
-      <div style={{ display: 'flex', gap: '10px', marginBottom: '30px', borderBottom: '1px solid var(--border-color)' }}>
+      <div className="settings-tabs" role="tablist" aria-label="Paramètres">
         <button 
           onClick={() => setActiveTab('import')} 
           className={`button ${activeTab === 'import' ? 'button-secondary' : ''}`}
+          role="tab"
+          aria-selected={activeTab === 'import'}
           style={{ padding: '10px 20px' }}
         >
           Importer des données
@@ -405,6 +407,8 @@ function SettingsPage() {
         <button 
           onClick={() => setActiveTab('export')} 
           className={`button ${activeTab === 'export' ? 'button-secondary' : ''}`}
+          role="tab"
+          aria-selected={activeTab === 'export'}
           style={{ padding: '10px 20px' }}
         >
           Exporter des données
@@ -412,6 +416,8 @@ function SettingsPage() {
         <button 
           onClick={() => setActiveTab('images')} 
           className={`button ${activeTab === 'images' ? 'button-secondary' : ''}`}
+          role="tab"
+          aria-selected={activeTab === 'images'}
           style={{ padding: '10px 20px' }}
         >
           Images Wikipédia
@@ -419,6 +425,8 @@ function SettingsPage() {
         <button
           onClick={() => setActiveTab('update')}
           className={`button ${activeTab === 'update' ? 'button-secondary' : ''}`}
+          role="tab"
+          aria-selected={activeTab === 'update'}
           style={{ padding: '10px 20px' }}
         >
           Mise à jour
