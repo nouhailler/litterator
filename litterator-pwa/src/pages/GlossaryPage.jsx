@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import HelpTooltip from '../components/HelpTooltip';
 
 const normalizeText = (value) =>
   value
@@ -185,11 +186,17 @@ function GlossaryPage() {
     <div className="fade-in">
       <div className="page-header">
         <p className="eyebrow">Outils d'analyse</p>
-        <h2>Glossaire des termes littéraires</h2>
+        <div className="page-title-row">
+          <h2>Glossaire des termes littéraires</h2>
+          <HelpTooltip label="Aide sur le glossaire">
+            Combinez recherche, catégories et lettres pour retrouver rapidement une notion.
+          </HelpTooltip>
+        </div>
         <p className="lead">
           Retrouvez les notions utiles pour lire, commenter et comparer les textes:
           figures de style, registres, narration, structure et mouvements.
         </p>
+        <Link to="/help" className="context-help-link">Ouvrir l’aide sur le glossaire</Link>
       </div>
 
       <div className="glossary-category-panel" aria-label="Catégories du glossaire">
@@ -208,7 +215,12 @@ function GlossaryPage() {
 
       <div className="filters glossary-filters">
         <div className="filter-group">
-          <label>Rechercher un terme</label>
+          <label>
+            Rechercher un terme
+            <HelpTooltip label="Aide recherche glossaire">
+              La recherche couvre le terme, la définition, l’exemple et les notions liées.
+            </HelpTooltip>
+          </label>
           <input
             type="text"
             value={searchTerm}

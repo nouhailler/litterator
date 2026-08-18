@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Timeline from '../components/Timeline/Timeline';
+import HelpTooltip from '../components/HelpTooltip';
 import { getHashId } from '../utils/hashNavigation';
 
 function TimelinePage() {
@@ -233,15 +234,26 @@ function TimelinePage() {
     <div className="fade-in">
       <div className="page-header">
         <p className="eyebrow">Chronologie</p>
-        <h2>Frise de la littérature française</h2>
+        <div className="page-title-row">
+          <h2>Frise de la littérature française</h2>
+          <HelpTooltip label="Aide sur la frise">
+            Les filtres réduisent les événements affichés. Les éléments de la frise ouvrent les fiches liées.
+          </HelpTooltip>
+        </div>
         <p className="lead">
           Situez mouvements, œuvres, auteurs et événements historiques dans une même lecture du temps.
         </p>
+        <Link to="/help" className="context-help-link">Ouvrir l’aide sur la frise</Link>
       </div>
 
       <div className="filters">
         <div className="filter-group">
-          <label>Type d'événement</label>
+          <label>
+            Type d'événement
+            <HelpTooltip label="Aide filtre type">
+              Utilisez ce filtre pour isoler les mouvements, œuvres, auteurs ou événements historiques.
+            </HelpTooltip>
+          </label>
           <select 
             value={filters.type} 
             onChange={(e) => handleFilterChange('type', e.target.value)}

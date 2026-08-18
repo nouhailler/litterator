@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
+import HelpTooltip from '../components/HelpTooltip';
 import { getHashId } from '../utils/hashNavigation';
 import { getLocationId, isSpecificLocation } from '../utils/locationIds';
 
@@ -244,16 +245,27 @@ function MapPage() {
     <div className="fade-in">
       <div className="page-header">
         <p className="eyebrow">Géographie littéraire</p>
-        <h2>Carte littéraire de la France</h2>
+        <div className="page-title-row">
+          <h2>Carte littéraire de la France</h2>
+          <HelpTooltip label="Aide sur la carte">
+            Filtrez puis touchez un marqueur pour lire les auteurs, mouvements et œuvres associés au lieu.
+          </HelpTooltip>
+        </div>
         <p className="lead">
           Explorez les lieux emblématiques de la littérature française : Paris romantique, la Normandie de Flaubert,
           Montmartre des surréalistes, l'Algérie de Camus, et bien d'autres.
         </p>
+        <Link to="/help" className="context-help-link">Ouvrir l’aide sur la carte</Link>
       </div>
 
       <div className="filters">
         <div className="filter-group">
-          <label>Mouvement Littéraire</label>
+          <label>
+            Mouvement Littéraire
+            <HelpTooltip label="Aide filtre mouvement">
+              Affiche uniquement les lieux reliés au mouvement choisi.
+            </HelpTooltip>
+          </label>
           <select 
             value={selectedMovement} 
             onChange={(e) => setSelectedMovement(e.target.value)}

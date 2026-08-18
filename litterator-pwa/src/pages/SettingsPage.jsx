@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { forceAppUpdate } from '../utils/pwaUpdate';
+import HelpTooltip from '../components/HelpTooltip';
 
 function SettingsPage() {
   const [activeTab, setActiveTab] = useState('import');
@@ -379,13 +380,18 @@ function SettingsPage() {
         <h2 style={{ fontFamily: 'var(--font-secondary)', margin: 0 }}>
           Paramétrage - Import/Export de Données
         </h2>
-        <button 
-          onClick={toggleTheme} 
-          className="button button-secondary"
-          style={{ padding: '10px 20px', display: 'flex', alignItems: 'center', gap: '8px' }}
-        >
-          {theme === 'light' ? '🌙 Thème Sombre' : '☀️ Thème Clair'}
-        </button>
+        <div className="settings-header-actions">
+          <Link to="/help" className="button button-secondary">
+            Aide / FAQ
+          </Link>
+          <button
+            onClick={toggleTheme}
+            className="button button-secondary"
+            style={{ padding: '10px 20px', display: 'flex', alignItems: 'center', gap: '8px' }}
+          >
+            {theme === 'light' ? '🌙 Thème Sombre' : '☀️ Thème Clair'}
+          </button>
+        </div>
       </div>
 
       <p style={{ marginBottom: '30px', color: 'var(--text-light)' }}>
@@ -439,8 +445,11 @@ function SettingsPage() {
           <h3 style={{ marginBottom: '20px' }}>Importer des données</h3>
 
           <div style={{ marginBottom: '20px' }}>
-            <label style={{ display: 'block', marginBottom: '10px', fontWeight: '600' }}>
+            <label style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '10px', fontWeight: '600' }}>
               Type de données à importer :
+              <HelpTooltip label="Aide sur les types de données">
+                Choisissez le type correspondant au fichier JSON à générer dans public/data.
+              </HelpTooltip>
             </label>
             <select 
               value={dataType} 
