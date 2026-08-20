@@ -9,6 +9,8 @@ import GlossaryPage from './pages/GlossaryPage';
 import HomePage from './pages/HomePage';
 import SettingsPage from './pages/SettingsPage';
 import HelpPage from './pages/HelpPage';
+import FirstLaunchNotice from './legal/FirstLaunchNotice';
+import LegalPage from './legal/LegalPage';
 import packageInfo from '../package.json';
 import './styles/global.css';
 
@@ -107,6 +109,7 @@ function App() {
                 <li><NavLink to="/glossary" onClick={closeNav}>Glossaire</NavLink></li>
                 <li><NavLink to="/help" onClick={closeNav}>Aide</NavLink></li>
                 <li><NavLink to="/settings" onClick={closeNav}>Paramètres</NavLink></li>
+                <li><NavLink to="/legal" onClick={closeNav}>Mentions légales</NavLink></li>
                 <li>
                   <button
                     type="button"
@@ -138,6 +141,7 @@ function App() {
             <Route path="/glossary" element={<GlossaryPage />} />
             <Route path="/help" element={<HelpPage />} />
             <Route path="/settings" element={<SettingsPage />} />
+            <Route path="/legal" element={<LegalPage />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>
@@ -250,6 +254,8 @@ function App() {
             </section>
           </div>
         )}
+
+        <FirstLaunchNotice />
       </div>
     </Router>
   );

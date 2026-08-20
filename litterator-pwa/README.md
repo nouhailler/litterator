@@ -37,6 +37,7 @@ Les dernières fiches enrichies ajoutent aussi des liens vers les textes libres 
 | Mouvements | Fiches mouvements | Comprendre les courants littéraires, leurs influences, auteurs majeurs et œuvres clés en accordéons. |
 | Glossaire | Notions littéraires | Rechercher les termes, procédés, genres, périodes et concepts, avec définitions complétées. |
 | À propos | Informations application | Afficher nom, version ou SHA de commit, auteur, liens, crédits open-source et contacts de support. |
+| Mentions légales | Avertissement et responsabilité | Afficher l’avertissement au premier lancement, puis garder les mentions légales accessibles dans l’application. |
 | Mise à jour | Synchronisation PWA | Forcer la vérification du service worker, vider les caches locaux et recharger la dernière version déployée. |
 | PWA | Application installable | Installer l'application sur desktop ou mobile, avec données locales précachées. |
 
@@ -107,6 +108,31 @@ Les icônes PWA sont dans `public/icons/` et déclarées dans `public/manifest.j
 
 Après un nouveau déploiement Netlify, l'onglet `Paramètres > Mise à jour` permet de forcer la récupération de la dernière version sur mobile sans multiplier les rafraîchissements manuels.
 
+## Avertissement et mentions légales
+
+Au premier lancement, Littérator affiche un avertissement légal local. L’utilisateur peut consulter les détails ou valider avec `J’ai compris`. Cette validation est mémorisée uniquement dans le navigateur, sans compte utilisateur, sans serveur et sans donnée personnelle.
+
+Stockage local utilisé :
+
+```text
+legal_notice_acknowledged=true
+legal_notice_acknowledged_version=1.0
+```
+
+Les mentions complètes restent accessibles depuis `Mentions légales` dans la navigation principale, depuis `/legal`, et depuis `Paramètres > Mentions légales`.
+
+Le contenu et la version sont centralisés dans :
+
+```text
+src/legal/legalNoticeConfig.js
+```
+
+Pour modifier le texte ou adapter le module à une autre PWA, ajuster `legalNotice`. Pour changer la version affichée, modifier `LEGAL_NOTICE_VERSION`. La logique actuelle ne réaffiche pas automatiquement l’avertissement à chaque changement de version mineur ; elle est volontairement simple et peut être durcie ultérieurement si une nouvelle acceptation devient nécessaire.
+
+Pour tester un premier lancement en développement, ouvrir `Paramètres > Mentions légales` puis utiliser `Réinitialiser les mentions légales`. En production, ce bouton n’est pas rendu. Il est aussi possible d’effacer manuellement `legal_notice_acknowledged` et `legal_notice_acknowledged_version` dans le stockage local du navigateur.
+
+Les champs d’identité légale non présents dans le projet restent marqués `[À COMPLÉTER]`. La politique de confidentialité n’est pas inventée ; un emplacement est prévu pour l’ajouter si nécessaire.
+
 ## Structure
 
 ```text
@@ -135,6 +161,7 @@ litterator-pwa/
 | `npm run build` | Génère la version production dans `dist/`. |
 | `npm run preview` | Prévisualise le build production. |
 | `npm run lint` | Lance Oxlint. |
+| `npm run test` | Lance les tests Node du module légal. |
 
 ## Personnaliser le corpus
 

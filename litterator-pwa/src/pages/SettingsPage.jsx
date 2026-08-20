@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { forceAppUpdate } from '../utils/pwaUpdate';
 import HelpTooltip from '../components/HelpTooltip';
+import { LegalPageContent } from '../legal/LegalPage';
+import { resetLegalNoticeAcknowledgement } from '../legal/legalStorage';
 
 function SettingsPage() {
   const [activeTab, setActiveTab] = useState('import');
@@ -13,6 +15,7 @@ function SettingsPage() {
   const [theme, setTheme] = useState('light');
   const [updateStatus, setUpdateStatus] = useState('');
   const [isUpdatingApp, setIsUpdatingApp] = useState(false);
+  const [legalResetStatus, setLegalResetStatus] = useState('');
 
   // Gabarits JSON pour l'import (avec image_url pour Wikipédia/Wikimédia)
   const templates = {
@@ -374,6 +377,11 @@ function SettingsPage() {
     }
   };
 
+  const handleLegalNoticeReset = () => {
+    resetLegalNoticeAcknowledgement();
+    setLegalResetStatus('Acceptation réinitialisée pour ce navigateur. Rechargez la page pour revoir l’avertissement.');
+  };
+
   return (
     <div className="fade-in">
       <div className="settings-header">
@@ -383,6 +391,9 @@ function SettingsPage() {
         <div className="settings-header-actions">
           <Link to="/help" className="button button-secondary">
             Aide / FAQ
+          </Link>
+          <Link to="/legal" className="button button-secondary">
+            Mentions légales
           </Link>
           <button
             onClick={toggleTheme}
@@ -436,6 +447,15 @@ function SettingsPage() {
           style={{ padding: '10px 20px' }}
         >
           Mise à jour
+        </button>
+        <button
+          onClick={() => setActiveTab('legal')}
+          className={`button ${activeTab === 'legal' ? 'button-secondary' : ''}`}
+          role="tab"
+          aria-selected={activeTab === 'legal'}
+          style={{ padding: '10px 20px' }}
+        >
+          Mentions légales
         </button>
       </div>
 
@@ -754,6 +774,34 @@ function SettingsPage() {
               <li>Quand les données locales ne semblent pas correspondre au dernier déploiement.</li>
             </ol>
           </div>
+        </div>
+      )}
+
+      {/* Onglet Mentions légales */}
+      {activeTab === 'legal' && (
+        <div className="card settings-legal-card">
+          <LegalPageContent compact />
+
+          {import.meta.env.DEV && (
+            <section className="legal-dev-tools" aria-labelledby="legal-dev-tools-title">
+              <h3 id="legal-dev-tools-title">Tests développeur</h3>
+              <p>
+                Ce bouton efface uniquement l’acceptation locale des mentions légales dans ce navigateur.
+              </p>
+              <button
+                type="button"
+                className="button button-secondary"
+                onClick={handleLegalNoticeReset}
+              >
+                Réinitialiser les mentions légales
+              </button>
+              {legalResetStatus && (
+                <div className="settings-status" role="status" aria-live="polite">
+                  {legalResetStatus}
+                </div>
+              )}
+            </section>
+          )}
         </div>
       )}
 
