@@ -1,5 +1,20 @@
 # Changelog
 
+## 2026-08-21
+
+### Ajouté
+
+- Ajout d'une documentation intégrée accessible depuis `/docs`, la navigation principale, l'aide, les paramètres et le menu `À propos`.
+- Ajout d'une source documentaire structurée dans `src/docs/documentationData.js` pour générer l'accueil, le sommaire, les pages, la recherche, les liens internes et les références.
+- Ajout des sections documentaires obligatoires : premiers pas, guide utilisateur, fonctionnalités, paramètres, permissions, données, mode hors connexion, dépannage, FAQ, référence, versions, informations légales et support.
+- Ajout de `DOCUMENTATION_SPEC.md` pour définir la règle de maintenance documentaire du projet.
+- Ajout de `npm run docs:audit` avec contrôle des pages obligatoires, routes applicatives, paramètres documentés et liens internes.
+
+### Modifié
+
+- Le build production exécute désormais l'audit documentaire avant `vite build`.
+- Les raccourcis d'aide, de paramètres et d'à propos pointent vers la documentation intégrée.
+
 ## 2026-08-14
 
 ### Ajouté

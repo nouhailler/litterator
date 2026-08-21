@@ -103,6 +103,33 @@ Le menu `À propos` doit exposer les informations essentielles :
 - contact utilisateur par e-mail ;
 - tracker développeur : <https://github.com/nouhailler/litterator/issues/new>.
 
+## Documentation Intégrée
+
+Littérator dispose d'une documentation intégrée servie par React sur `/docs/*`.
+
+Fichiers de référence :
+
+| Fichier | Rôle |
+| --- | --- |
+| `src/docs/documentationData.js` | Source structurée des pages, paramètres, permissions, erreurs et liens documentaires. |
+| `src/docs/DocumentationPage.jsx` | Rendu React de l'accueil documentaire, des articles, de la recherche, du sommaire et des navigations précédent/suivant. |
+| `scripts/documentation-audit.mjs` | Audit automatique de couverture documentaire. |
+| `DOCUMENTATION_SPEC.md` | Règles de maintenance documentaire du projet. |
+
+La documentation doit rester alignée avec le code. Toute modification visible par l'utilisateur doit vérifier au minimum :
+
+- les pages concernées dans `src/docs/documentationData.js` ;
+- les paramètres exposés ;
+- les permissions ou capacités navigateur ;
+- les données utilisées ou stockées ;
+- le fonctionnement hors connexion et en ligne ;
+- les erreurs, le dépannage et la FAQ ;
+- le changelog si la modification est notable.
+
+La documentation ne doit pas inventer de fonctionnalité, de compatibilité, de traitement de données ou de contenu juridique définitif. Si une information ne peut pas être prouvée par le code ou la configuration, elle doit rester marquée `A verifier`.
+
+Le build production lance `npm run docs:audit` avant `vite build`. L'audit doit échouer en cas de page obligatoire manquante, route applicative non référencée, paramètre non documenté ou lien interne cassé.
+
 ## Mise À Jour PWA
 
 La page `Paramètres` expose un onglet `Mise à jour`. Son bouton doit rester disponible pour les usages mobiles après un déploiement Netlify.
@@ -134,5 +161,7 @@ Commandes de référence :
 
 ```bash
 npm run lint
+npm run docs:audit
+npm test
 npm run build
 ```

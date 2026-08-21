@@ -36,6 +36,7 @@ Les dernières fiches enrichies ajoutent aussi des liens vers les textes libres 
 | Auteurs | Fiches biographiques | Consulter biographies, œuvres principales, citations, portraits, lieux biographiques précis et lien direct Wikipédia. |
 | Mouvements | Fiches mouvements | Comprendre les courants littéraires, leurs influences, auteurs majeurs et œuvres clés en accordéons. |
 | Glossaire | Notions littéraires | Rechercher les termes, procédés, genres, périodes et concepts, avec définitions complétées. |
+| Documentation | Documentation intégrée | Consulter le guide utilisateur, les fonctionnalités, les paramètres, les données, l'offline, la FAQ, le dépannage et la référence depuis `/docs`. |
 | À propos | Informations application | Afficher nom, version ou SHA de commit, auteur, liens, crédits open-source et contacts de support. |
 | Mentions légales | Avertissement et responsabilité | Afficher l’avertissement au premier lancement, puis garder les mentions légales accessibles dans l’application. |
 | Mise à jour | Synchronisation PWA | Forcer la vérification du service worker, vider les caches locaux et recharger la dernière version déployée. |
@@ -108,6 +109,33 @@ Les icônes PWA sont dans `public/icons/` et déclarées dans `public/manifest.j
 
 Après un nouveau déploiement Netlify, l'onglet `Paramètres > Mise à jour` permet de forcer la récupération de la dernière version sur mobile sans multiplier les rafraîchissements manuels.
 
+## Documentation intégrée
+
+Littérator embarque un moteur documentaire accessible depuis la navigation principale, l'aide, les paramètres, le menu `À propos` et la route :
+
+```text
+/docs
+```
+
+La documentation couvre les premiers pas, le guide utilisateur, les fonctionnalités, les paramètres, les permissions et capacités navigateur, les données, le fonctionnement hors connexion, le dépannage, la FAQ, la référence, les versions, les informations légales et le support.
+
+Les sources principales sont :
+
+```text
+src/docs/documentationData.js
+src/docs/DocumentationPage.jsx
+DOCUMENTATION_SPEC.md
+scripts/documentation-audit.mjs
+```
+
+L'audit documentaire vérifie les pages obligatoires, les routes applicatives référencées, les paramètres documentés et les liens internes :
+
+```bash
+npm run docs:audit
+```
+
+Le build production exécute cet audit avant Vite. Une fonctionnalité visible ne doit pas être considérée comme terminée si la documentation correspondante n'est pas à jour.
+
 ## Avertissement et mentions légales
 
 Au premier lancement, Littérator affiche un avertissement légal local. L’utilisateur peut consulter les détails ou valider avec `J’ai compris`. Cette validation est mémorisée uniquement dans le navigateur, sans compte utilisateur, sans serveur et sans donnée personnelle.
@@ -144,10 +172,14 @@ litterator-pwa/
 │   └── manifest.json
 ├── src/
 │   ├── components/
+│   ├── docs/             # Moteur documentaire intégré
 │   ├── pages/
 │   ├── styles/global.css
 │   ├── App.jsx
 │   └── main.jsx
+├── scripts/
+│   └── documentation-audit.mjs
+├── DOCUMENTATION_SPEC.md
 ├── index.html
 ├── package.json
 └── vite.config.js
@@ -158,9 +190,10 @@ litterator-pwa/
 | Commande | Usage |
 | --- | --- |
 | `npm run dev` | Lance le serveur local. |
-| `npm run build` | Génère la version production dans `dist/`. |
+| `npm run build` | Lance l'audit documentaire puis génère la version production dans `dist/`. |
 | `npm run preview` | Prévisualise le build production. |
 | `npm run lint` | Lance Oxlint. |
+| `npm run docs:audit` | Vérifie la couverture documentaire et les liens internes. |
 | `npm run test` | Lance les tests Node du module légal. |
 
 ## Personnaliser le corpus
