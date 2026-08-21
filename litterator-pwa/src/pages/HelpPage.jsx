@@ -267,6 +267,9 @@ function HelpPage() {
 
           <section className="card help-quick-links">
             <p className="eyebrow">Accès rapides</p>
+            <Link to="/docs" className="button button-secondary">Documentation</Link>
+            <Link to="/docs/troubleshooting" className="button button-secondary">Dépannage</Link>
+            <Link to="/docs/faq" className="button button-secondary">FAQ complète</Link>
             <Link to="/settings" className="button button-secondary">Paramètres</Link>
             <Link to="/timeline" className="button button-secondary">Frise</Link>
             <Link to="/map" className="button button-secondary">Carte</Link>

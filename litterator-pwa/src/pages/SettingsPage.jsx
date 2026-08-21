@@ -392,6 +392,9 @@ function SettingsPage() {
           <Link to="/help" className="button button-secondary">
             Aide / FAQ
           </Link>
+          <Link to="/docs" className="button button-secondary">
+            Documentation
+          </Link>
           <Link to="/legal" className="button button-secondary">
             Mentions légales
           </Link>

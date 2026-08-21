@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "npm run docs:audit && vite build",
     "lint": "oxlint",
+    "docs:audit": "node scripts/documentation-audit.mjs",
     "test": "node --test tests/*.test.mjs",
     "preview": "vite preview"
   },

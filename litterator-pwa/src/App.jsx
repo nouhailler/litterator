@@ -9,6 +9,7 @@ import GlossaryPage from './pages/GlossaryPage';
 import HomePage from './pages/HomePage';
 import SettingsPage from './pages/SettingsPage';
 import HelpPage from './pages/HelpPage';
+import DocumentationPage from './docs/DocumentationPage';
 import FirstLaunchNotice from './legal/FirstLaunchNotice';
 import LegalPage from './legal/LegalPage';
 import packageInfo from '../package.json';
@@ -108,6 +109,7 @@ function App() {
                 <li><NavLink to="/works" onClick={closeNav}>Œuvres</NavLink></li>
                 <li><NavLink to="/glossary" onClick={closeNav}>Glossaire</NavLink></li>
                 <li><NavLink to="/help" onClick={closeNav}>Aide</NavLink></li>
+                <li><NavLink to="/docs" onClick={closeNav}>Documentation</NavLink></li>
                 <li><NavLink to="/settings" onClick={closeNav}>Paramètres</NavLink></li>
                 <li><NavLink to="/legal" onClick={closeNav}>Mentions légales</NavLink></li>
                 <li>
@@ -140,6 +142,7 @@ function App() {
             <Route path="/works" element={<WorksPage />} />
             <Route path="/glossary" element={<GlossaryPage />} />
             <Route path="/help" element={<HelpPage />} />
+            <Route path="/docs/*" element={<DocumentationPage />} />
             <Route path="/settings" element={<SettingsPage />} />
             <Route path="/legal" element={<LegalPage />} />
             <Route path="*" element={<Navigate to="/" replace />} />
@@ -216,8 +219,11 @@ function App() {
                       Dépôt source sur GitHub
                     </a>
                     <a href={`${githubRepositoryUrl}#readme`} target="_blank" rel="noopener noreferrer">
-                      Documentation
+                      Documentation GitHub
                     </a>
+                    <Link to="/docs" onClick={() => setIsAboutOpen(false)}>
+                      Documentation intégrée
+                    </Link>
                     <a href={`${githubRepositoryUrl}/blob/main/litterator-pwa/CHANGELOG.md`} target="_blank" rel="noopener noreferrer">
                       Changelog
                     </a>
