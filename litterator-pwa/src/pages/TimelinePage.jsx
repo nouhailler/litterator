@@ -1,37 +1,35 @@
-import { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { useState, useEffect, useMemo, useRef } from 'react';
+import { Link, useLocation, useNavigate, useSearchParams } from 'react-router-dom';
 import Timeline from '../components/Timeline/Timeline';
 import HelpTooltip from '../components/HelpTooltip';
+import FilterPanel from '../components/FilterPanel';
+import LoadErrorState from '../components/LoadErrorState';
 import { getHashId } from '../utils/hashNavigation';
+import { loadCoreCorpus } from '../data/corpus';
+import { readEnum, updateUrlState } from '../utils/urlState';
 
 function TimelinePage() {
   const location = useLocation();
+  const navigate = useNavigate();
+  const appliedHashRef = useRef('');
+  const [searchParams, setSearchParams] = useSearchParams();
   const [events, setEvents] = useState([]);
-  const [filteredEvents, setFilteredEvents] = useState([]);
-  const [filters, setFilters] = useState({
-    movement: '',
-    genre: '',
-    author: '',
-    type: 'all', // all, movement, work, author, event
-  });
   const [movements, setMovements] = useState([]);
   const [authors, setAuthors] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const filters = {
+    movement: searchParams.get('movement') || '',
+    author: searchParams.get('author') || '',
+    type: readEnum(searchParams.get('type'), ['all', 'movement', 'work', 'author', 'event'], 'all'),
+  };
   const activeEventId = getHashId(location.hash);
 
   useEffect(() => {
     // Charger les données depuis les fichiers JSON
     const loadData = async () => {
       try {
-        const [movementsRes, authorsRes, worksRes] = await Promise.all([
-          fetch('/data/movements.json'),
-          fetch('/data/authors.json'),
-          fetch('/data/works.json'),
-        ]);
-        
-        const movementsData = await movementsRes.json();
-        const authorsData = await authorsRes.json();
-        const worksData = await worksRes.json();
+        const { movements: movementsData, authors: authorsData, works: worksData } = await loadCoreCorpus();
 
         setMovements(movementsData);
         setAuthors(authorsData);
@@ -68,7 +66,7 @@ function TimelinePage() {
             authorId: work.author,
             movementId: work.movement,
             subtitle: `Œuvre de ${authorsData.find(a => a.id === work.author)?.name || work.author} (${work.year})`,
-            link: `/works#${work.id}`,
+            link: `/works/${work.id}`,
             icon: '📖',
           });
         });
@@ -86,7 +84,7 @@ function TimelinePage() {
               color: '#666',
               authorId: author.id,
               subtitle: `Auteur ${author.movements?.join(', ') || ''}`,
-              link: `/authors#${author.id}`,
+              link: `/authors/${author.id}`,
               icon: '👶',
             });
           }
@@ -101,7 +99,7 @@ function TimelinePage() {
               color: '#666',
               authorId: author.id,
               subtitle: `Auteur ${author.movements?.join(', ') || ''}`,
-              link: `/authors#${author.id}`,
+              link: `/authors/${author.id}`,
               icon: '⚰️',
             });
           }
@@ -160,10 +158,10 @@ function TimelinePage() {
         allEvents.sort((a, b) => a.start - b.start);
 
         setEvents(allEvents);
-        setFilteredEvents(allEvents);
         setIsLoading(false);
-      } catch (error) {
-        console.error('Erreur lors du chargement des données:', error);
+      } catch (loadError) {
+        console.error('Erreur lors du chargement des données:', loadError);
+        setError(loadError);
         setIsLoading(false);
       }
     };
@@ -171,8 +169,7 @@ function TimelinePage() {
     loadData();
   }, []);
 
-  useEffect(() => {
-    // Appliquer les filtres
+  const filteredEvents = useMemo(() => {
     let result = [...events];
 
     if (filters.type !== 'all') {
@@ -203,23 +200,33 @@ function TimelinePage() {
       });
     }
 
-    setFilteredEvents(result);
-  }, [filters, events, movements]);
+    return result;
+  }, [events, filters.author, filters.movement, filters.type]);
 
   useEffect(() => {
-    if (!activeEventId || events.length === 0) {
+    if (!activeEventId) {
+      appliedHashRef.current = '';
       return;
     }
+    if (events.length === 0 || appliedHashRef.current === activeEventId) {
+      return;
+    }
+    appliedHashRef.current = activeEventId;
 
     const activeEvent = events.find((event) => event.id === activeEventId);
 
-    if (activeEvent?.type === 'movement') {
-      setFilters((prev) => ({ ...prev, type: 'movement', movement: activeEventId.replace('movement-', '') }));
+    const movementId = activeEventId.replace('movement-', '');
+    if (activeEvent?.type === 'movement'
+      && (searchParams.get('type') !== 'movement' || searchParams.get('movement') !== movementId)) {
+      const next = new URLSearchParams(searchParams);
+      next.set('type', 'movement');
+      next.set('movement', movementId);
+      navigate({ pathname: location.pathname, search: next.toString(), hash: location.hash }, { replace: true });
     }
-  }, [activeEventId, events]);
+  }, [activeEventId, events, searchParams, navigate, location.pathname, location.hash]);
 
   const handleFilterChange = (key, value) => {
-    setFilters((prev) => ({ ...prev, [key]: value }));
+    updateUrlState(searchParams, setSearchParams, { [key]: value === 'all' ? null : value });
   };
 
   if (isLoading) {
@@ -230,12 +237,14 @@ function TimelinePage() {
     );
   }
 
+  if (error) return <LoadErrorState title="Impossible de charger la frise" error={error} />;
+
   return (
     <div className="fade-in">
       <div className="page-header">
         <p className="eyebrow">Chronologie</p>
         <div className="page-title-row">
-          <h2>Frise de la littérature française</h2>
+          <h1>Frise de la littérature française</h1>
           <HelpTooltip label="Aide sur la frise">
             Les filtres réduisent les événements affichés. Les éléments de la frise ouvrent les fiches liées.
           </HelpTooltip>
@@ -246,15 +255,15 @@ function TimelinePage() {
         <Link to="/help" className="context-help-link">Ouvrir l’aide sur la frise</Link>
       </div>
 
-      <div className="filters">
+      <FilterPanel activeCount={Number(filters.type !== 'all') + Number(Boolean(filters.movement)) + Number(Boolean(filters.author))}>
         <div className="filter-group">
-          <label>
+          <label htmlFor="timeline-type">
             Type d'événement
             <HelpTooltip label="Aide filtre type">
               Utilisez ce filtre pour isoler les mouvements, œuvres, auteurs ou événements historiques.
             </HelpTooltip>
           </label>
-          <select 
+          <select id="timeline-type"
             value={filters.type} 
             onChange={(e) => handleFilterChange('type', e.target.value)}
             style={{ width: '200px' }}
@@ -268,8 +277,8 @@ function TimelinePage() {
         </div>
 
         <div className="filter-group">
-          <label>Mouvement Littéraire</label>
-          <select 
+          <label htmlFor="timeline-movement">Mouvement littéraire</label>
+          <select id="timeline-movement"
             value={filters.movement} 
             onChange={(e) => handleFilterChange('movement', e.target.value)}
             style={{ width: '200px' }}
@@ -284,8 +293,8 @@ function TimelinePage() {
         </div>
 
         <div className="filter-group">
-          <label>Auteur</label>
-          <select 
+          <label htmlFor="timeline-author">Auteur</label>
+          <select id="timeline-author"
             value={filters.author} 
             onChange={(e) => handleFilterChange('author', e.target.value)}
             style={{ width: '200px' }}
@@ -300,13 +309,13 @@ function TimelinePage() {
         </div>
 
         <button 
-          onClick={() => setFilters({ movement: '', genre: '', author: '', type: 'all' })} 
+          onClick={() => updateUrlState(searchParams, setSearchParams, { movement: null, author: null, type: null })}
           className="button button-secondary"
-          style={{ alignSelf: 'flex-end', marginTop: '20px' }}
+          disabled={filters.type === 'all' && !filters.movement && !filters.author}
         >
           Réinitialiser les filtres
         </button>
-      </div>
+      </FilterPanel>
 
       <div className="result-count">
         {filteredEvents.length} événements affichés

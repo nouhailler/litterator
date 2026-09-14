@@ -54,14 +54,13 @@ function Timeline({ events, activeEventId }) {
   }, [activeEvent, sortedYears]);
 
   const navigationYears = useMemo(() => {
-    const maxButtons = 18;
-    const movementStartYears = new Set(events.filter((event) => event.type === 'movement').map((event) => event.start));
+    const maxButtons = 14;
     const step = Math.max(1, Math.ceil(sortedYears.length / maxButtons));
 
     return sortedYears.filter((year, index) =>
-      index % step === 0 || movementStartYears.has(year) || year === activeEvent?.start,
+      index === 0 || index === sortedYears.length - 1 || index % step === 0 || year === activeEvent?.start,
     );
-  }, [activeEvent, events, sortedYears]);
+  }, [activeEvent, sortedYears]);
 
   const scrollToYear = useCallback((year, behavior = 'smooth') => {
     if (!timelineRef.current) {
@@ -179,18 +178,19 @@ function Timeline({ events, activeEventId }) {
 
   return (
     <div className="timeline-container">
-      <div className="timeline-toolbar" aria-label="Contrôles de la timeline">
-        <button type="button" className="button button-secondary" onClick={() => panTimeline(-1)}>
-          Gauche
+      <div className="timeline-toolbar" role="group" aria-label="Contrôles de la frise">
+        <button type="button" className="button button-secondary" onClick={() => panTimeline(-1)} aria-label="Afficher les années précédentes">
+          Précédent
         </button>
-        <button type="button" className="button button-secondary" onClick={() => panTimeline(1)}>
-          Droite
+        <button type="button" className="button button-secondary" onClick={() => panTimeline(1)} aria-label="Afficher les années suivantes">
+          Suivant
         </button>
         <button
           type="button"
           className="button button-secondary"
           onClick={() => changeZoom(-1)}
           disabled={zoomIndex === 0}
+          aria-label="Réduire le zoom de la frise"
         >
           -
         </button>
@@ -199,6 +199,7 @@ function Timeline({ events, activeEventId }) {
           className="button button-secondary"
           onClick={() => changeZoom(1)}
           disabled={zoomIndex === ZOOM_LEVELS.length - 1}
+          aria-label="Agrandir le zoom de la frise"
         >
           +
         </button>

@@ -1,19 +1,18 @@
-import { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
+import { useState, useEffect, useMemo } from 'react';
+import { Link, useLocation, useSearchParams } from 'react-router-dom';
+import { MapContainer, TileLayer, Marker, Popup, useMap, useMapEvents } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
+import FilterPanel from '../components/FilterPanel';
 import HelpTooltip from '../components/HelpTooltip';
+import Pagination from '../components/Pagination';
+import LoadErrorState from '../components/LoadErrorState';
+import { loadJson } from '../data/corpus';
 import { getHashId } from '../utils/hashNavigation';
 import { getLocationId, isSpecificLocation } from '../utils/locationIds';
+import { readPositivePage, updateUrlState } from '../utils/urlState';
 
-// Correction pour les icônes Leaflet (nécessaire avec Webpack/Vite)
-delete L.Icon.Default.prototype._getIconUrl;
-L.Icon.Default.mergeOptions({
-  iconRetinaUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon-2x.png',
-  iconUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png',
-  shadowUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png',
-});
+const LOCATION_PAGE_SIZE = 12;
 
 // Composant pour recalculer la vue de la carte
 function ChangeView({ center, zoom }) {
@@ -71,16 +70,103 @@ function createCustomIcon() {
   });
 }
 
+const locationIcon = createCustomIcon();
+
+function createClusterIcon(count) {
+  return L.divIcon({
+    className: 'location-cluster-wrapper',
+    html: `<span class="location-cluster-icon">${count}</span>`,
+    iconSize: [44, 44],
+    iconAnchor: [22, 22],
+  });
+}
+
+function LocationPopupContent({ location, movementsById, authorsById, onClose }) {
+  return (
+    <div className="map-popup-content">
+      <h2>{location.name}</h2>
+      <p>{location.description}</p>
+      {location.movements.length > 0 && (
+        <div className="tag-row">
+          {location.movements.map((id) => movementsById[id] ? <span key={id} className="badge badge-theme">{movementsById[id].name}</span> : null)}
+        </div>
+      )}
+      {location.authors.length > 0 && (
+        <div className="map-popup-links">
+          {location.authors.slice(0, 8).map((id) => authorsById[id] ? <Link key={id} to={`/authors/${id}`}>{authorsById[id].name}</Link> : null)}
+        </div>
+      )}
+      <PopupCloseButton onClose={onClose} />
+    </div>
+  );
+}
+
+function ClusteredMarkers({ locations, movementsById, authorsById, onSelect }) {
+  const map = useMap();
+  const [zoom, setZoom] = useState(map.getZoom());
+  useMapEvents({ zoomend: () => setZoom(map.getZoom()) });
+
+  const clusters = useMemo(() => {
+    const step = zoom <= 5 ? 3 : zoom <= 7 ? 1.2 : zoom <= 9 ? 0.45 : zoom <= 11 ? 0.12 : 0;
+    if (step === 0) return locations.map((location) => ({ key: location.id, locations: [location], center: [location.coordinates.lat, location.coordinates.lng] }));
+    const groups = new Map();
+    locations.forEach((location) => {
+      const key = `${Math.round(location.coordinates.lat / step)}:${Math.round(location.coordinates.lng / step)}`;
+      groups.set(key, [...(groups.get(key) || []), location]);
+    });
+    return [...groups.entries()].map(([key, groupedLocations]) => ({
+      key,
+      locations: groupedLocations,
+      center: [
+        groupedLocations.reduce((sum, item) => sum + item.coordinates.lat, 0) / groupedLocations.length,
+        groupedLocations.reduce((sum, item) => sum + item.coordinates.lng, 0) / groupedLocations.length,
+      ],
+    }));
+  }, [locations, zoom]);
+
+  return clusters.map((cluster) => {
+    if (cluster.locations.length > 1) {
+      return (
+        <Marker
+          key={`cluster-${cluster.key}`}
+          position={cluster.center}
+          icon={createClusterIcon(cluster.locations.length)}
+          eventHandlers={{ click: () => map.setView(cluster.center, Math.min(zoom + 2, 12)) }}
+        />
+      );
+    }
+    const location = cluster.locations[0];
+    return (
+      <Marker
+        key={location.id}
+        position={[location.coordinates.lat, location.coordinates.lng]}
+        icon={locationIcon}
+        alt={location.name}
+        eventHandlers={{ click: () => onSelect(location) }}
+      >
+        <Popup>
+          <LocationPopupContent location={location} movementsById={movementsById} authorsById={authorsById} onClose={() => onSelect(null)} />
+        </Popup>
+      </Marker>
+    );
+  });
+}
+
 function MapPage() {
   const routeLocation = useLocation();
+  const [searchParams, setSearchParams] = useSearchParams();
   const [locations, setLocations] = useState([]);
   const [selectedLocation, setSelectedLocation] = useState(null);
-  const [selectedMovement, setSelectedMovement] = useState('');
-  const [selectedAuthor, setSelectedAuthor] = useState('');
   const [movements, setMovements] = useState([]);
   const [authors, setAuthors] = useState([]);
   const [placeCoordinates, setPlaceCoordinates] = useState({});
   const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [hasTileError, setHasTileError] = useState(false);
+  const [tileLayerVersion, setTileLayerVersion] = useState(0);
+  const selectedMovement = searchParams.get('movement') || '';
+  const selectedAuthor = searchParams.get('author') || '';
+  const requestedPage = readPositivePage(searchParams.get('page'));
 
   // Position par défaut (Paris)
   const defaultCenter = [48.8566, 2.3522];
@@ -90,25 +176,21 @@ function MapPage() {
   useEffect(() => {
     const loadData = async () => {
       try {
-        const [locationsRes, movementsRes, authorsRes, placeCoordinatesRes] = await Promise.all([
-          fetch('/data/locations.json'),
-          fetch('/data/movements.json'),
-          fetch('/data/authors.json'),
-          fetch('/data/place-coordinates.json'),
+        const [locationsData, movementsData, authorsData, placeCoordinatesData] = await Promise.all([
+          loadJson('/data/locations.json'),
+          loadJson('/data/movements.json'),
+          loadJson('/data/authors.json'),
+          loadJson('/data/place-coordinates.json'),
         ]);
-        
-        const locationsData = await locationsRes.json();
-        const movementsData = await movementsRes.json();
-        const authorsData = await authorsRes.json();
-        const placeCoordinatesData = await placeCoordinatesRes.json();
 
         setLocations(locationsData);
         setMovements(movementsData);
         setAuthors(authorsData);
         setPlaceCoordinates(placeCoordinatesData.coordinates || {});
         setIsLoading(false);
-      } catch (error) {
-        console.error('Erreur lors du chargement des données:', error);
+      } catch (loadError) {
+        console.error('Erreur lors du chargement des données:', loadError);
+        setError(loadError);
         setIsLoading(false);
       }
     };
@@ -116,11 +198,16 @@ function MapPage() {
     loadData();
   }, []);
 
-  const allLocations = [...locations];
-  const locationsById = new Map(allLocations.map((location) => [location.id, location]));
+  const allLocations = useMemo(() => {
+    const result = locations.map((location) => ({
+      ...location,
+      authors: [...location.authors],
+      movements: [...location.movements],
+    }));
+    const locationsById = new Map(result.map((location) => [location.id, location]));
 
-  authors.forEach((author) => {
-    [author.birth?.place, author.death?.place].filter(Boolean).forEach((place) => {
+    authors.forEach((author) => {
+      [author.birth?.place, author.death?.place].filter(Boolean).forEach((place) => {
       if (!isSpecificLocation(place)) {
         return;
       }
@@ -166,9 +253,14 @@ function MapPage() {
       };
 
       locationsById.set(id, generatedLocation);
-      allLocations.push(generatedLocation);
+      result.push(generatedLocation);
+      });
     });
-  });
+    return result;
+  }, [authors, locations, placeCoordinates]);
+
+  const movementsById = useMemo(() => Object.fromEntries(movements.map((movement) => [movement.id, movement])), [movements]);
+  const authorsById = useMemo(() => Object.fromEntries(authors.map((author) => [author.id, author])), [authors]);
 
   const activeLocation = activeLocationId
     ? allLocations.find((location) => location.id === activeLocationId)
@@ -189,10 +281,16 @@ function MapPage() {
     return true;
   });
 
+  useEffect(() => setSelectedLocation(null), [selectedMovement, selectedAuthor, activeLocationId]);
+
+  const totalLocationPages = Math.max(1, Math.ceil(filteredLocations.length / LOCATION_PAGE_SIZE));
+  const locationPage = Math.min(requestedPage, totalLocationPages);
+  const visibleLocations = filteredLocations.slice((locationPage - 1) * LOCATION_PAGE_SIZE, locationPage * LOCATION_PAGE_SIZE);
+
   // Calculer le centre de la carte en fonction des lieux filtrés
   const getMapCenter = () => {
-    if (activeLocation) {
-      return [activeLocation.coordinates.lat, activeLocation.coordinates.lng];
+    if (highlightedLocation) {
+      return [highlightedLocation.coordinates.lat, highlightedLocation.coordinates.lng];
     }
 
     if (filteredLocations.length === 0) {
@@ -215,8 +313,8 @@ function MapPage() {
 
   // Calculer le zoom en fonction des lieux filtrés
   const getMapZoom = () => {
-    if (activeLocation) {
-      return activeLocation.zoom || 11;
+    if (highlightedLocation) {
+      return highlightedLocation.zoom || 10;
     }
 
     if (filteredLocations.length <= 1) {
@@ -228,11 +326,6 @@ function MapPage() {
     return defaultZoom;
   };
 
-  // Obtenir l'icône pour un lieu
-  const getLocationIcon = () => {
-    return createCustomIcon();
-  };
-
   if (isLoading) {
     return (
       <div className="loading-state">
@@ -241,12 +334,14 @@ function MapPage() {
     );
   }
 
+  if (error) return <LoadErrorState title="Impossible de charger la carte littéraire" error={error} />;
+
   return (
     <div className="fade-in">
       <div className="page-header">
         <p className="eyebrow">Géographie littéraire</p>
         <div className="page-title-row">
-          <h2>Carte littéraire de la France</h2>
+          <h1>Carte littéraire de la France</h1>
           <HelpTooltip label="Aide sur la carte">
             Filtrez puis touchez un marqueur pour lire les auteurs, mouvements et œuvres associés au lieu.
           </HelpTooltip>
@@ -258,18 +353,17 @@ function MapPage() {
         <Link to="/help" className="context-help-link">Ouvrir l’aide sur la carte</Link>
       </div>
 
-      <div className="filters">
+      <FilterPanel activeCount={Number(Boolean(selectedMovement)) + Number(Boolean(selectedAuthor))}>
         <div className="filter-group">
-          <label>
-            Mouvement Littéraire
+          <label htmlFor="map-movement">
+            Mouvement littéraire
             <HelpTooltip label="Aide filtre mouvement">
               Affiche uniquement les lieux reliés au mouvement choisi.
             </HelpTooltip>
           </label>
-          <select 
+          <select id="map-movement"
             value={selectedMovement} 
-            onChange={(e) => setSelectedMovement(e.target.value)}
-            style={{ width: '250px' }}
+            onChange={(e) => updateUrlState(searchParams, setSearchParams, { movement: e.target.value, page: null })}
           >
             <option value="">Tous les mouvements</option>
             {movements.map((movement) => (
@@ -281,11 +375,10 @@ function MapPage() {
         </div>
 
         <div className="filter-group">
-          <label>Auteur</label>
-          <select 
+          <label htmlFor="map-author">Auteur</label>
+          <select id="map-author"
             value={selectedAuthor} 
-            onChange={(e) => setSelectedAuthor(e.target.value)}
-            style={{ width: '250px' }}
+            onChange={(e) => updateUrlState(searchParams, setSearchParams, { author: e.target.value, page: null })}
           >
             <option value="">Tous les auteurs</option>
             {authors.map((author) => (
@@ -297,18 +390,31 @@ function MapPage() {
         </div>
 
         <button 
-          onClick={() => { setSelectedMovement(''); setSelectedAuthor(''); setSelectedLocation(null); }}
+          onClick={() => { updateUrlState(searchParams, setSearchParams, { movement: null, author: null, page: null }); setSelectedLocation(null); }}
           className="button button-secondary"
-          style={{ alignSelf: 'flex-end' }}
+          disabled={!selectedMovement && !selectedAuthor && !selectedLocation}
         >
           Réinitialiser
         </button>
-      </div>
+      </FilterPanel>
 
       <div className="result-count">
         {filteredLocations.length} lieux affichés
         {highlightedLocation ? ` · ${highlightedLocation.name}` : ''}
       </div>
+
+      {hasTileError && (
+        <div className="map-status" role="alert">
+          <span><strong>Fond de carte indisponible.</strong> Les lieux restent consultables dans la liste ci-dessous.</span>
+          <button
+            type="button"
+            className="button button-secondary"
+            onClick={() => { setHasTileError(false); setTileLayerVersion((version) => version + 1); }}
+          >
+            Recharger le fond
+          </button>
+        </div>
+      )}
 
       <div className="map-container">
         <MapContainer 
@@ -320,147 +426,57 @@ function MapPage() {
           <ResizeMap />
           <ChangeView center={getMapCenter()} zoom={getMapZoom()} />
           
-          <TileLayer 
-            url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
+          <TileLayer
+            key={tileLayerVersion}
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+            eventHandlers={{ tileerror: () => setHasTileError(true) }}
           />
-
-          {filteredLocations.map((location) => (
-            <Marker 
-              key={location.id} 
-              position={[location.coordinates.lat, location.coordinates.lng]} 
-              icon={getLocationIcon()}
-              eventHandlers={{
-                click: () => {
-                  setSelectedLocation(location);
-                },
-              }}
-            >
-              <Popup>
-                <div style={{ minWidth: '250px' }}>
-                  <h4 style={{ margin: '0 0 10px 0', color: 'var(--primary-color)' }}>
-                    {location.name}
-                  </h4>
-                  <p style={{ margin: '0 0 10px 0', fontSize: '0.9rem', color: 'var(--text-light)' }}>
-                    {location.description}
-                  </p>
-                  
-                  {location.movements.length > 0 && (
-                    <div style={{ margin: '10px 0' }}>
-                      <strong>Mouvements :</strong>
-                      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '5px', marginTop: '5px' }}>
-                        {location.movements.map((movementId) => {
-                          const movement = movements.find(m => m.id === movementId);
-                          return (
-                            <span 
-                              key={movementId} 
-                              className="badge badge-theme" 
-                              style={{ fontSize: '0.7rem' }}
-                            >
-                              {movement?.name || movementId}
-                            </span>
-                          );
-                        })}
-                      </div>
-                    </div>
-                  )}
-
-                  {location.authors.length > 0 && (
-                    <div style={{ margin: '10px 0' }}>
-                      <strong>Auteurs :</strong>
-                      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '5px', marginTop: '5px' }}>
-                        {location.authors.map((authorId) => {
-                          const author = authors.find(a => a.id === authorId);
-                          return (
-                            <span 
-                              key={authorId} 
-                              style={{ fontSize: '0.8rem', color: 'var(--text-light)' }}
-                            >
-                              {author?.name || authorId}
-                            </span>
-                          );
-                        })}
-                      </div>
-                    </div>
-                  )}
-
-                  {location.works.length > 0 && (
-                    <div style={{ margin: '10px 0' }}>
-                      <strong>Œuvres associées :</strong>
-                      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '5px', marginTop: '5px' }}>
-                        {location.works.map((workId) => (
-                          <span 
-                            key={workId} 
-                            style={{ fontSize: '0.8rem', color: 'var(--text-light)' }}
-                          >
-                            {workId}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                  )}
-
-                  <div style={{ marginTop: '15px', textAlign: 'center' }}>
-                    <PopupCloseButton onClose={() => setSelectedLocation(null)} />
-                  </div>
-                </div>
-              </Popup>
-            </Marker>
-          ))}
+          <ClusteredMarkers locations={filteredLocations} movementsById={movementsById} authorsById={authorsById} onSelect={setSelectedLocation} />
         </MapContainer>
       </div>
 
-      {/* Légende */}
-      <div className="card" style={{ marginTop: '20px' }}>
-        <h4 style={{ marginBottom: '10px' }}>Légende</h4>
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '15px' }}>
+      <details className="card map-legend">
+        <summary>Légende des mouvements</summary>
+        <div className="map-legend-grid">
           {movements.map((movement) => (
-            <div key={movement.id} style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
-              <div className="legend-dot"></div>
-              <span style={{ fontSize: '0.9rem' }}>{movement.name}</span>
+            <div key={movement.id}>
+              <span className="legend-dot" style={{ backgroundColor: movement.color }} />
+              <span>{movement.name}</span>
             </div>
           ))}
         </div>
-      </div>
+      </details>
 
-      {/* Liste des lieux (pour mobile) */}
-      <div style={{ marginTop: '30px' }}>
-        <h3 style={{ fontSize: '1.2rem', marginBottom: '15px' }}>Liste des lieux</h3>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '15px' }}>
-          {filteredLocations.map((location) => (
-            <div 
-              key={location.id} 
-              className="card" 
-              style={{ cursor: 'pointer' }}
+      <details className="location-directory">
+        <summary>Parcourir la liste des lieux <span>{filteredLocations.length}</span></summary>
+        <div className="location-grid">
+          {visibleLocations.map((location) => (
+            <button
+              type="button"
+              key={location.id}
+              className={`card location-card ${highlightedLocation?.id === location.id ? 'is-highlighted' : ''}`}
               onClick={() => {
+                setSelectedLocation(location);
                 const map = document.querySelector('.leaflet-container');
-                if (map) {
-                  map.scrollIntoView({ behavior: 'smooth' });
-                }
+                map?.scrollIntoView({ behavior: 'smooth', block: 'center' });
               }}
             >
-              <h4 style={{ marginBottom: '8px' }}>{location.name}</h4>
-              <p style={{ color: 'var(--text-light)', fontSize: '0.9rem', marginBottom: '8px' }}>
-                {location.description.substring(0, 100)}...
-              </p>
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '5px' }}>
-                {location.movements.map((movementId) => {
-                  const movement = movements.find(m => m.id === movementId);
-                  return (
-                    <span 
-                      key={movementId} 
-                      className="badge badge-theme" 
-                      style={{ fontSize: '0.7rem' }}
-                    >
-                      {movement?.name || movementId}
-                    </span>
-                  );
-                })}
+              <strong>{location.name}</strong>
+              <span>{location.description}</span>
+              <div className="tag-row">
+                {location.movements.slice(0, 3).map((id) => movementsById[id] ? <span key={id} className="badge badge-theme">{movementsById[id].name}</span> : null)}
               </div>
-            </div>
+            </button>
           ))}
         </div>
-      </div>
+        <Pagination
+          currentPage={locationPage}
+          pageSize={LOCATION_PAGE_SIZE}
+          totalItems={filteredLocations.length}
+          onPageChange={(page) => updateUrlState(searchParams, setSearchParams, { page: page === 1 ? null : page })}
+        />
+      </details>
     </div>
   );
 }

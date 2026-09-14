@@ -1,31 +1,46 @@
-import { useState, useEffect } from 'react';
+import { lazy, Suspense, useState, useEffect, useRef } from 'react';
 import { BrowserRouter as Router, Routes, Route, NavLink, Link, Navigate, useLocation } from 'react-router-dom';
-import TimelinePage from './pages/TimelinePage';
-import MapPage from './pages/MapPage';
-import MovementsPage from './pages/MovementsPage';
-import AuthorsPage from './pages/AuthorsPage';
-import WorksPage from './pages/WorksPage';
-import GlossaryPage from './pages/GlossaryPage';
-import HomePage from './pages/HomePage';
-import SettingsPage from './pages/SettingsPage';
-import HelpPage from './pages/HelpPage';
-import DocumentationPage from './docs/DocumentationPage';
 import FirstLaunchNotice from './legal/FirstLaunchNotice';
-import LegalPage from './legal/LegalPage';
+import ConnectivityBanner from './components/ConnectivityBanner';
 import packageInfo from '../package.json';
 import './styles/global.css';
+
+const HomePage = lazy(() => import('./pages/HomePage'));
+const SearchPage = lazy(() => import('./pages/SearchPage'));
+const TimelinePage = lazy(() => import('./pages/TimelinePage'));
+const MapPage = lazy(() => import('./pages/MapPage'));
+const MovementsPage = lazy(() => import('./pages/MovementsPage'));
+const AuthorsPage = lazy(() => import('./pages/AuthorsPage'));
+const AuthorDetailPage = lazy(() => import('./pages/AuthorDetailPage'));
+const WorksPage = lazy(() => import('./pages/WorksPage'));
+const WorkDetailPage = lazy(() => import('./pages/WorkDetailPage'));
+const GlossaryPage = lazy(() => import('./pages/GlossaryPage'));
+const GlossaryDetailPage = lazy(() => import('./pages/GlossaryDetailPage'));
+const HelpPage = lazy(() => import('./pages/HelpPage'));
+const DocumentationPage = lazy(() => import('./docs/DocumentationPage'));
+const SettingsPage = lazy(() => import('./pages/SettingsPage'));
+const LegalPage = lazy(() => import('./legal/LegalPage'));
 
 const appVersion = import.meta.env.VITE_COMMIT_SHA || packageInfo.version;
 const githubRepositoryUrl = 'https://github.com/nouhailler/litterator';
 
+function getSavedTheme() {
+  try {
+    const savedTheme = localStorage.getItem('theme');
+    return savedTheme === 'dark' || savedTheme === 'light' ? savedTheme : 'light';
+  } catch {
+    return 'light';
+  }
+}
+
 function ScrollToTop() {
-  const { pathname, search, hash } = useLocation();
+  const { pathname, hash } = useLocation();
 
   useEffect(() => {
     if (!hash) {
       window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
     }
-  }, [pathname, search, hash]);
+  }, [pathname, hash]);
 
   return null;
 }
@@ -34,10 +49,18 @@ function App() {
   const [isInstalled, setIsInstalled] = useState(false);
   const [isAboutOpen, setIsAboutOpen] = useState(false);
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [theme, setTheme] = useState(getSavedTheme);
+  const aboutDialogRef = useRef(null);
+  const aboutTriggerRef = useRef(null);
+  const aboutCloseRef = useRef(null);
+  const utilityMenuRef = useRef(null);
   const bugReportUrl = `mailto:contact@swinux.ch?subject=${encodeURIComponent('[Bug Report] Littérator')}&body=${encodeURIComponent(`Version : ${appVersion}\nOS : \nDescription du problème : \n\nÉtapes pour reproduire : `)}`;
 
   const closeNav = () => {
     setIsNavOpen(false);
+    if (utilityMenuRef.current) {
+      utilityMenuRef.current.open = false;
+    }
   };
 
   const scrollHomeToTop = () => {
@@ -51,6 +74,53 @@ function App() {
     closeNav();
     setIsAboutOpen(true);
   };
+
+  const closeAbout = () => {
+    setIsAboutOpen(false);
+    window.requestAnimationFrame(() => aboutTriggerRef.current?.focus());
+  };
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    try {
+      localStorage.setItem('theme', theme);
+    } catch {
+      // Le thème reste actif pour la session si le stockage local est indisponible.
+    }
+    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', theme === 'dark' ? '#17130f' : '#6f1d1b');
+  }, [theme]);
+
+  useEffect(() => {
+    if (!isAboutOpen) return undefined;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape') {
+        closeAbout();
+        return;
+      }
+      if (event.key !== 'Tab' || !aboutDialogRef.current) return;
+      const focusable = [...aboutDialogRef.current.querySelectorAll('a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])')];
+      if (focusable.length === 0) return;
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    };
+
+    document.addEventListener('keydown', handleKeyDown);
+    window.requestAnimationFrame(() => aboutCloseRef.current?.focus());
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [isAboutOpen]);
 
   useEffect(() => {
     const standaloneQuery = window.matchMedia('(display-mode: standalone)');
@@ -72,6 +142,7 @@ function App() {
     <Router>
       <ScrollToTop />
       <div className="app">
+        <a className="skip-link" href="#main-content">Aller au contenu</a>
         <header className="app-header">
           <div className="header-inner">
             <Link to="/" className="brand-link" onClick={scrollHomeToTop}>
@@ -102,24 +173,26 @@ function App() {
             >
               <ul>
                 <li><NavLink to="/" end onClick={scrollHomeToTop}>Accueil</NavLink></li>
+                <li><NavLink to="/search" onClick={closeNav}>Recherche</NavLink></li>
                 <li><NavLink to="/timeline" onClick={closeNav}>Frise</NavLink></li>
                 <li><NavLink to="/map" onClick={closeNav}>Carte</NavLink></li>
                 <li><NavLink to="/movements" onClick={closeNav}>Mouvements</NavLink></li>
                 <li><NavLink to="/authors" onClick={closeNav}>Auteurs</NavLink></li>
                 <li><NavLink to="/works" onClick={closeNav}>Œuvres</NavLink></li>
                 <li><NavLink to="/glossary" onClick={closeNav}>Glossaire</NavLink></li>
-                <li><NavLink to="/help" onClick={closeNav}>Aide</NavLink></li>
-                <li><NavLink to="/docs" onClick={closeNav}>Documentation</NavLink></li>
-                <li><NavLink to="/settings" onClick={closeNav}>Paramètres</NavLink></li>
-                <li><NavLink to="/legal" onClick={closeNav}>Mentions légales</NavLink></li>
-                <li>
-                  <button
-                    type="button"
-                    className="nav-button"
-                    onClick={openAbout}
-                  >
-                    À propos
-                  </button>
+                <li className="utility-menu-item">
+                  <details className="utility-menu" ref={utilityMenuRef}>
+                    <summary>Plus</summary>
+                    <ul className="utility-menu-list">
+                      <li><NavLink to="/help" onClick={closeNav}>Aide</NavLink></li>
+                      <li><NavLink to="/docs" onClick={closeNav}>Documentation</NavLink></li>
+                      <li><NavLink to="/settings" onClick={closeNav}>Paramètres</NavLink></li>
+                      <li><NavLink to="/legal" onClick={closeNav}>Mentions légales</NavLink></li>
+                      <li>
+                        <button type="button" className="nav-button" onClick={openAbout} ref={aboutTriggerRef}>À propos</button>
+                      </li>
+                    </ul>
+                  </details>
                 </li>
               </ul>
             </nav>
@@ -132,21 +205,29 @@ function App() {
           </div>
         </header>
 
-        <main className="main-container">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/timeline" element={<TimelinePage />} />
-            <Route path="/map" element={<MapPage />} />
-            <Route path="/movements" element={<MovementsPage />} />
-            <Route path="/authors" element={<AuthorsPage />} />
-            <Route path="/works" element={<WorksPage />} />
-            <Route path="/glossary" element={<GlossaryPage />} />
-            <Route path="/help" element={<HelpPage />} />
-            <Route path="/docs/*" element={<DocumentationPage />} />
-            <Route path="/settings" element={<SettingsPage />} />
-            <Route path="/legal" element={<LegalPage />} />
-            <Route path="*" element={<Navigate to="/" replace />} />
-          </Routes>
+        <ConnectivityBanner />
+
+        <main className="main-container" id="main-content">
+          <Suspense fallback={<div className="loading-state"><p>Chargement de la page…</p></div>}>
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/search" element={<SearchPage />} />
+              <Route path="/timeline" element={<TimelinePage />} />
+              <Route path="/map" element={<MapPage />} />
+              <Route path="/movements" element={<MovementsPage />} />
+              <Route path="/authors" element={<AuthorsPage />} />
+              <Route path="/authors/:authorId" element={<AuthorDetailPage />} />
+              <Route path="/works" element={<WorksPage />} />
+              <Route path="/works/:workId" element={<WorkDetailPage />} />
+              <Route path="/glossary" element={<GlossaryPage />} />
+              <Route path="/glossary/:termId" element={<GlossaryDetailPage />} />
+              <Route path="/help" element={<HelpPage />} />
+              <Route path="/docs/*" element={<DocumentationPage />} />
+              <Route path="/settings" element={<SettingsPage theme={theme} onToggleTheme={() => setTheme((current) => current === 'light' ? 'dark' : 'light')} />} />
+              <Route path="/legal" element={<LegalPage />} />
+              <Route path="*" element={<Navigate to="/" replace />} />
+            </Routes>
+          </Suspense>
         </main>
 
         <footer className="app-footer">
@@ -162,13 +243,14 @@ function App() {
           <div
             className="modal-backdrop"
             role="presentation"
-            onClick={() => setIsAboutOpen(false)}
+            onClick={closeAbout}
           >
             <section
               className="about-modal"
               role="dialog"
               aria-modal="true"
               aria-labelledby="about-title"
+              ref={aboutDialogRef}
               onClick={(event) => event.stopPropagation()}
             >
               <div className="modal-header">
@@ -182,8 +264,9 @@ function App() {
                 <button
                   type="button"
                   className="modal-close-button"
-                  onClick={() => setIsAboutOpen(false)}
+                  onClick={closeAbout}
                   aria-label="Fermer"
+                  ref={aboutCloseRef}
                 >
                   ×
                 </button>
@@ -221,7 +304,7 @@ function App() {
                     <a href={`${githubRepositoryUrl}#readme`} target="_blank" rel="noopener noreferrer">
                       Documentation GitHub
                     </a>
-                    <Link to="/docs" onClick={() => setIsAboutOpen(false)}>
+                    <Link to="/docs" onClick={closeAbout}>
                       Documentation intégrée
                     </Link>
                     <a href={`${githubRepositoryUrl}/blob/main/litterator-pwa/CHANGELOG.md`} target="_blank" rel="noopener noreferrer">
@@ -240,7 +323,7 @@ function App() {
                   </p>
                   <p>
                     Librairies et ressources majeures : React, Vite, vite-plugin-pwa, Workbox, Leaflet,
-                    React Leaflet, OpenStreetMap, CARTO, Wikimedia Commons, Wikidata, Open Library et
+                    React Leaflet, OpenStreetMap, Wikimedia Commons, Wikidata, Open Library et
                     Project Gutenberg.
                   </p>
                 </section>

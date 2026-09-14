@@ -11,12 +11,25 @@
     <link rel="manifest" href="/manifest.json" />
     <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
     <title>Littérator - Littérature Française depuis 1800</title>
+    <script>
+      try {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark' || savedTheme === 'light') {
+          document.documentElement.dataset.theme = savedTheme;
+        }
+      } catch (_) {
+        // Le thème clair reste le comportement de repli si le stockage est indisponible.
+      }
+    </script>
     <style>
       /* Styles pour éviter le FOUC (Flash of Unstyled Content) */
       body {
         margin: 0;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
         background-color: #fbf7ef;
+      }
+      html[data-theme="dark"] body {
+        background-color: #17130f;
       }
       #root {
         min-height: 100vh;

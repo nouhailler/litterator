@@ -2,20 +2,24 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { forceAppUpdate } from '../utils/pwaUpdate';
 import HelpTooltip from '../components/HelpTooltip';
+import ImagePreview from '../components/ImagePreview';
+import LoadErrorState from '../components/LoadErrorState';
+import { loadJson } from '../data/corpus';
 import { LegalPageContent } from '../legal/LegalPage';
 import { resetLegalNoticeAcknowledgement } from '../legal/legalStorage';
 
-function SettingsPage() {
+function SettingsPage({ theme, onToggleTheme }) {
   const [activeTab, setActiveTab] = useState('import');
   const [dataType, setDataType] = useState('author');
   const [jsonInput, setJsonInput] = useState('');
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const [theme, setTheme] = useState('light');
   const [updateStatus, setUpdateStatus] = useState('');
   const [isUpdatingApp, setIsUpdatingApp] = useState(false);
   const [legalResetStatus, setLegalResetStatus] = useState('');
+  const [dataError, setDataError] = useState(null);
+  const [isDataLoading, setIsDataLoading] = useState(true);
 
   // Gabarits JSON pour l'import (avec image_url pour Wikipédia/Wikimédia)
   const templates = {
@@ -138,73 +142,58 @@ function SettingsPage() {
   const [wikipediaSearch, setWikipediaSearch] = useState('');
   const [wikipediaResults, setWikipediaResults] = useState([]);
   const [selectedImageUrl, setSelectedImageUrl] = useState('');
+  const [imageSearchError, setImageSearchError] = useState('');
+  const [isImageSearching, setIsImageSearching] = useState(false);
 
   useEffect(() => {
     const loadData = async () => {
       try {
-        const [authorsRes, worksRes, movementsRes, locationsRes] = await Promise.all([
-          fetch('/data/authors.json'),
-          fetch('/data/works.json'),
-          fetch('/data/movements.json'),
-          fetch('/data/locations.json'),
-        ]);
         const [authors, works, movements, locations] = await Promise.all([
-          authorsRes.json(),
-          worksRes.json(),
-          movementsRes.json(),
-          locationsRes.json(),
+          loadJson('/data/authors.json'),
+          loadJson('/data/works.json'),
+          loadJson('/data/movements.json'),
+          loadJson('/data/locations.json'),
         ]);
         setExistingData({ authors, works, movements, locations });
       } catch (error) {
-        console.error('Erreur lors du chargement des données:', error);
+        setDataError(error);
+      } finally {
+        setIsDataLoading(false);
       }
     };
     loadData();
   }, []);
 
-  // Appliquer le thème
-  useEffect(() => {
-    document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem('theme', theme);
-  }, [theme]);
-
-  // Charger le thème depuis localStorage
-  useEffect(() => {
-    const savedTheme = localStorage.getItem('theme') || 'light';
-    setTheme(savedTheme);
-  }, []);
-
   // Rechercher des images sur Wikipédia/Wikimédia
   const searchWikipediaImages = async () => {
     if (!wikipediaSearch.trim()) return;
+    setIsImageSearching(true);
+    setImageSearchError('');
+    setWikipediaResults([]);
     
     try {
       // Utiliser l'API Wikimedia Commons (recherche d'images)
       const response = await fetch(
         `https://commons.wikimedia.org/w/api.php?action=query&format=json&list=search&srsearch=${encodeURIComponent(wikipediaSearch)}&srnamespace=6&srlimit=10&origin=*`
       );
+      if (!response.ok) throw new Error(`Statut HTTP ${response.status}`);
       const data = await response.json();
+      if (data.error) throw new Error(data.error.info || 'Réponse Wikimedia invalide');
       
       if (data.query && data.query.search) {
         // Extraire les URLs des images (simplifié - en réalité, il faudrait plus de traitement)
-        const results = data.query.search.map((item) => ({
-          title: item.title,
-          // URL simplifiée (en réalité, il faudrait utiliser l'API pour obtenir l'URL complète)
-          url: `https://commons.wikimedia.org/wiki/File:${encodeURIComponent(item.title)}`,
-          thumbnail: `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(item.title)}?width=200`
-        }));
+        const results = data.query.search.map((item) => {
+          const fileTitle = item.title.replace(/^File:/i, '');
+          const url = `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(fileTitle)}`;
+          return { title: fileTitle, url, thumbnail: `${url}?width=200` };
+        });
         setWikipediaResults(results);
+        if (!results.length) setImageSearchError('Aucune image trouvée. Essayez un autre nom.');
       }
     } catch (error) {
-      console.error('Erreur lors de la recherche Wikipédia:', error);
-      // Si l'API échoue, proposer des URLs manuelles
-      setWikipediaResults([
-        {
-          title: `Image pour ${wikipediaSearch}`,
-          url: `https://upload.wikimedia.org/wikipedia/commons/thumb/.../${encodeURIComponent(wikipediaSearch)}.jpg`,
-          thumbnail: `https://via.placeholder.com/200?text=${encodeURIComponent(wikipediaSearch)}`
-        }
-      ]);
+      setImageSearchError(`${navigator.onLine ? 'La recherche Wikimedia est indisponible.' : 'La recherche Wikimedia nécessite une connexion Internet.'} Vérifiez la connexion puis réessayez. ${error.message}`);
+    } finally {
+      setIsImageSearching(false);
     }
   };
 
@@ -251,6 +240,7 @@ function SettingsPage() {
 
   // Importer les données
   const handleImport = async () => {
+    if (isDataLoading || dataError) return;
     const validationError = validateJSON(jsonInput);
     if (validationError) {
       setError(validationError);
@@ -293,6 +283,7 @@ function SettingsPage() {
 
   // Exporter les données
   const handleExport = (type) => {
+    if (isDataLoading || dataError) return;
     const data = existingData[type + 's'];
     const fileName = `${type}s_${new Date().toISOString().split('T')[0]}.json`;
     const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
@@ -307,6 +298,7 @@ function SettingsPage() {
 
   // Exporter tout
   const handleExportAll = () => {
+    if (isDataLoading || dataError) return;
     const allData = {
       authors: existingData.authors,
       works: existingData.works,
@@ -341,21 +333,16 @@ function SettingsPage() {
         const data = JSON.parse(jsonInput);
         if (dataType === 'author') {
           data.image_url = url;
-          data.portrait = `/images/authors/${data.id}.jpg`; // Chemin local
+          data.portrait = url;
         } else if (dataType === 'location') {
           data.image_url = url;
-          data.image = `/images/locations/${data.id}.jpg`; // Chemin local
+          data.image = url;
         }
         setJsonInput(JSON.stringify(data, null, 2));
       } catch (error) {
         console.error('Erreur lors de la mise à jour de l\'image:', error);
       }
     }
-  };
-
-  // Basculer entre thème clair et sombre
-  const toggleTheme = () => {
-    setTheme(theme === 'light' ? 'dark' : 'light');
   };
 
   const handleAppUpdate = async () => {
@@ -385,23 +372,14 @@ function SettingsPage() {
   return (
     <div className="fade-in">
       <div className="settings-header">
-        <h2 style={{ fontFamily: 'var(--font-secondary)', margin: 0 }}>
-          Paramétrage - Import/Export de Données
-        </h2>
+        <div>
+          <p className="eyebrow">Préférences et données</p>
+          <h1>Paramètres</h1>
+        </div>
         <div className="settings-header-actions">
-          <Link to="/help" className="button button-secondary">
-            Aide / FAQ
-          </Link>
-          <Link to="/docs" className="button button-secondary">
-            Documentation
-          </Link>
-          <Link to="/legal" className="button button-secondary">
-            Mentions légales
-          </Link>
           <button
-            onClick={toggleTheme}
+            onClick={onToggleTheme}
             className="button button-secondary"
-            style={{ padding: '10px 20px', display: 'flex', alignItems: 'center', gap: '8px' }}
           >
             {theme === 'light' ? '🌙 Thème Sombre' : '☀️ Thème Clair'}
           </button>
@@ -409,9 +387,11 @@ function SettingsPage() {
       </div>
 
       <p style={{ marginBottom: '30px', color: 'var(--text-light)' }}>
-        Gérez vos données littéraires : importez de nouvelles œuvres, auteurs, mouvements ou lieux,
-        ou exportez les données existantes pour les sauvegarder ou les partager.
+        Personnalisez l’apparence, gérez les données locales et contrôlez les mises à jour de l’application.
       </p>
+
+      {isDataLoading && <p role="status">Chargement des données locales…</p>}
+      {dataError && <LoadErrorState headingLevel={2} title="Données locales indisponibles" error={dataError} />}
 
       {/* Menu de navigation */}
       <div className="settings-tabs" role="tablist" aria-label="Paramètres">
@@ -496,10 +476,11 @@ function SettingsPage() {
           </div>
 
           <div style={{ marginBottom: '20px' }}>
-            <label style={{ display: 'block', marginBottom: '10px', fontWeight: '600' }}>
+            <label htmlFor="json-import" style={{ display: 'block', marginBottom: '10px', fontWeight: '600' }}>
               Données JSON à importer :
             </label>
             <textarea 
+              id="json-import"
               value={jsonInput} 
               onChange={(e) => setJsonInput(e.target.value)}
               style={{
@@ -524,20 +505,20 @@ function SettingsPage() {
           </div>
 
           {error && (
-            <div style={{ color: '#f44336', marginBottom: '20px', padding: '10px', backgroundColor: '#ffebee', borderRadius: 'var(--border-radius)' }}>
+            <div className="form-status form-status-error" role="alert">
               ❌ {error}
             </div>
           )}
 
           {success && (
-            <div style={{ color: '#4caf50', marginBottom: '20px', padding: '10px', backgroundColor: '#e8f5e9', borderRadius: 'var(--border-radius)' }}>
+            <div className="form-status form-status-success" role="status">
               ✅ {success}
             </div>
           )}
 
           <button 
             onClick={handleImport} 
-            disabled={isLoading || !jsonInput.trim()}
+            disabled={isLoading || isDataLoading || Boolean(dataError) || !jsonInput.trim()}
             className="button"
             style={{ padding: '10px 20px' }}
           >
@@ -569,6 +550,7 @@ function SettingsPage() {
             <div style={{ display: 'flex', gap: '15px', flexWrap: 'wrap' }}>
               <button 
                 onClick={() => handleExport('author')} 
+                disabled={isDataLoading || Boolean(dataError)}
                 className="button"
                 style={{ padding: '10px 20px' }}
               >
@@ -576,6 +558,7 @@ function SettingsPage() {
               </button>
               <button 
                 onClick={() => handleExport('work')} 
+                disabled={isDataLoading || Boolean(dataError)}
                 className="button"
                 style={{ padding: '10px 20px' }}
               >
@@ -583,6 +566,7 @@ function SettingsPage() {
               </button>
               <button 
                 onClick={() => handleExport('movement')} 
+                disabled={isDataLoading || Boolean(dataError)}
                 className="button"
                 style={{ padding: '10px 20px' }}
               >
@@ -590,6 +574,7 @@ function SettingsPage() {
               </button>
               <button 
                 onClick={() => handleExport('location')} 
+                disabled={isDataLoading || Boolean(dataError)}
                 className="button"
                 style={{ padding: '10px 20px' }}
               >
@@ -602,6 +587,7 @@ function SettingsPage() {
             <h4 style={{ marginBottom: '15px' }}>Exporter tout :</h4>
             <button 
               onClick={handleExportAll} 
+              disabled={isDataLoading || Boolean(dataError)}
               className="button button-secondary"
               style={{ padding: '10px 20px' }}
             >
@@ -613,7 +599,7 @@ function SettingsPage() {
           </div>
 
           {success && (
-            <div style={{ color: '#4caf50', marginBottom: '20px', padding: '10px', backgroundColor: '#e8f5e9', borderRadius: 'var(--border-radius)' }}>
+            <div className="form-status form-status-success" role="status">
               ✅ {success}
             </div>
           )}
@@ -648,11 +634,12 @@ function SettingsPage() {
           </p>
 
           <div style={{ marginBottom: '20px' }}>
-            <label style={{ display: 'block', marginBottom: '10px', fontWeight: '600' }}>
+            <label htmlFor="wikimedia-search" style={{ display: 'block', marginBottom: '10px', fontWeight: '600' }}>
               Rechercher une image :
             </label>
             <div style={{ display: 'flex', gap: '10px' }}>
               <input 
+                id="wikimedia-search"
                 type="text" 
                 value={wikipediaSearch} 
                 onChange={(e) => setWikipediaSearch(e.target.value)}
@@ -666,22 +653,21 @@ function SettingsPage() {
                   color: 'var(--text-color)'
                 }}
               />
-              <button onClick={searchWikipediaImages} className="button" style={{ padding: '10px 20px' }}>
-                Rechercher
+              <button onClick={searchWikipediaImages} disabled={isImageSearching || !wikipediaSearch.trim()} className="button" style={{ padding: '10px 20px' }}>
+                {isImageSearching ? 'Recherche…' : 'Rechercher'}
               </button>
             </div>
           </div>
 
+          {imageSearchError && <p className="form-status form-status-error" role="alert" data-testid="image-search-error">{imageSearchError}</p>}
+
           {selectedImageUrl && (
             <div style={{ marginBottom: '20px', padding: '15px', backgroundColor: 'var(--card-bg)', borderRadius: 'var(--border-radius)', border: '1px solid var(--border-color)' }}>
               <h4 style={{ marginBottom: '10px' }}>Image sélectionnée :</h4>
-              <img 
+              <ImagePreview
                 src={selectedImageUrl} 
                 alt="Sélectionnée"
                 style={{ maxWidth: '200px', maxHeight: '200px', borderRadius: 'var(--border-radius)' }}
-                onError={(e) => {
-                  e.target.src = 'https://via.placeholder.com/200?text=Image+non+disponible';
-                }}
               />
               <div style={{ marginTop: '10px' }}>
                 <code style={{ backgroundColor: 'var(--border-color)', padding: '5px', borderRadius: '4px' }}>
@@ -709,13 +695,10 @@ function SettingsPage() {
                     style={{ cursor: 'pointer', padding: '10px' }}
                     onClick={() => selectImage(result.url)}
                   >
-                    <img 
+                    <ImagePreview
                       src={result.thumbnail || result.url} 
                       alt={result.title}
                       style={{ width: '100%', height: '150px', objectFit: 'cover', borderRadius: 'var(--border-radius)' }}
-                      onError={(e) => {
-                        e.target.src = 'https://via.placeholder.com/200?text=Image+non+disponible';
-                      }}
                     />
                     <p style={{ marginTop: '10px', fontSize: '0.8rem', textAlign: 'center' }}>
                       {result.title}

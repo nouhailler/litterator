@@ -169,7 +169,7 @@ function HelpPage() {
     <div className="fade-in">
       <div className="page-header help-page-header">
         <p className="eyebrow">Aide et support</p>
-        <h2>Centre d’aide Littérator</h2>
+        <h1>Centre d’aide Littérator</h1>
         <p className="lead">
           Recherchez une réponse, relancez le tutoriel ou contactez le support sans quitter l’application.
         </p>

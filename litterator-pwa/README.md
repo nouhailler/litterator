@@ -31,7 +31,7 @@ Les dernières fiches enrichies ajoutent aussi des liens vers les textes libres 
 | Icône | Module | Description |
 | --- | --- | --- |
 | Chronologie | Frise chronologique | Situer mouvements, œuvres, auteurs et événements historiques avec navigation horizontale, zoom et panneaux détaillés par année. |
-| Carte | Carte littéraire | Explorer les 125 lieux liés aux auteurs, œuvres et mouvements avec Leaflet et un fond CARTO. |
+| Carte | Carte littéraire | Explorer les 125 lieux liés aux auteurs, œuvres et mouvements avec Leaflet, regroupement des marqueurs et un fond OpenStreetMap. |
 | Œuvres | Fiches œuvres | Parcourir les œuvres, leurs auteurs, genres, mouvements, visuels, liens de lecture, extraits et adaptations. |
 | Auteurs | Fiches biographiques | Consulter biographies, œuvres principales, citations, portraits, lieux biographiques précis et lien direct Wikipédia. |
 | Mouvements | Fiches mouvements | Comprendre les courants littéraires, leurs influences, auteurs majeurs et œuvres clés en accordéons. |
@@ -98,6 +98,36 @@ Build production :
 npm run build
 npm run preview
 ```
+
+## Recette et régression visuelle
+
+```bash
+npm run lint
+npm test
+npm run test:e2e
+```
+
+La recette E2E utilise le Chromium système (Node 22+, `/usr/bin/chromium`, ou variable `CHROMIUM_PATH`) et démarre automatiquement un serveur de prévisualisation local sur un port libre. Elle vérifie les filtres/tri/pagination et l’historique, les fiches, la recherche, les erreurs réseau, les images de remplacement, la carte et le bandeau hors connexion.
+
+Les 12 références visuelles de `tests/visual-regression/` couvrent l’accueil et le catalogue d’œuvres à **375, 768 et 1440 px**, en clair et sombre. Les ressources distantes et le service worker sont contournés pour ces comparaisons déterministes. Le seuil maximal est de 0,3 % de pixels différents (sensibilité pixelmatch 0,1). Les captures actuelles, différences et rapport sont écrits dans `test-results/visual/`, ignoré par Git.
+
+Après une modification visuelle intentionnelle, régénérer et inspecter les références :
+
+```bash
+npm run test:visual:update
+```
+
+Utiliser la même version de Chromium et les mêmes polices en CI ; les références actuelles sont produites sous Linux. La recette teste séparément le cache PWA réel pour l’ouverture hors connexion.
+
+## Optimisation et suivi éditorial
+
+`works.json` ne stocke plus les 705 couvertures SVG de remplacement : elles sont générées en CSS par `WorkCover`. Les 55 autres visuels sont conservés, avec remplacement automatique en cas d’échec. Le fichier reste sous 1 Mo, budget contrôlé par les tests.
+
+Les 31 années d’adaptation auparavant manquantes ont été renseignées avec `dateType` et `yearSource`, visibles dans les fiches. La distinction entre sortie, première, diffusion et création est conservée. Le film *Pêcheur d’Islande* de Henri Pouctal conserve une note de divergence 1915/1916 et deux sources. Pour *Sisyphe*, 2019 désigne la création documentée par le crédit de l’œuvre au MBAM, pas toutes ses représentations ultérieures. Les autres champs historiques restent à relire éditorialement ; le corpus n’est pas présenté comme entièrement validé.
+
+Les classifications manifestement incorrectes de ce même lot sont corrigées : les productions scéniques ne sont plus présentées comme des films, ni les opéras comme des comédies musicales. Les types `opera`, `ballet`, `stage`, `performance` et `music` sont reconnus dans les fiches.
+
+Le script idempotent `npm run data:optimize` documente les correspondances et supprime les couvertures intégrées si elles réapparaissent. Il refuse une adaptation sans année pour laquelle aucune correspondance n’est connue. Les tests contrôlent les 333 années, les 31 sources et les identifiants uniques.
 
 ## Installation PWA
 

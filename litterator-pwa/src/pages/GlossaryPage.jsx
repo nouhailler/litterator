@@ -1,203 +1,87 @@
 import { useEffect, useMemo, useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate, useSearchParams } from 'react-router-dom';
+import EmptyState from '../components/EmptyState';
+import FilterPanel from '../components/FilterPanel';
 import HelpTooltip from '../components/HelpTooltip';
+import PageHeader from '../components/PageHeader';
+import Pagination from '../components/Pagination';
+import LoadErrorState from '../components/LoadErrorState';
+import { loadJson } from '../data/corpus';
+import { buildGlossaryCategories, enrichGlossary, normalizeText } from '../data/glossary';
+import { readPositivePage, updateUrlState } from '../utils/urlState';
 
-const normalizeText = (value) =>
-  value
-    .toLocaleLowerCase('fr-FR')
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '');
-
-const slugify = (value) =>
-  normalizeText(value)
-    .replace(/œ/g, 'oe')
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-|-$/g, '');
+const PAGE_SIZE = 24;
 
 function GlossaryPage() {
   const location = useLocation();
+  const navigate = useNavigate();
+  const [searchParams, setSearchParams] = useSearchParams();
   const [terms, setTerms] = useState([]);
   const [glossaryMeta, setGlossaryMeta] = useState(null);
   const [glossaryCategories, setGlossaryCategories] = useState([]);
-  const [movements, setMovements] = useState([]);
-  const [works, setWorks] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [selectedCategory, setSelectedCategory] = useState('');
-  const [selectedLetter, setSelectedLetter] = useState('');
-  const [searchTerm, setSearchTerm] = useState('');
+  const [error, setError] = useState(null);
+  const selectedCategory = searchParams.get('category') || '';
+  const selectedLetter = searchParams.get('letter') || '';
+  const searchTerm = searchParams.get('q') || '';
+  const requestedPage = readPositivePage(searchParams.get('page'));
 
   useEffect(() => {
-    const loadData = async () => {
-      try {
-        const [glossaryRes, categoriesRes, movementsRes, worksRes] = await Promise.all([
-          fetch('/data/glossary.json'),
-          fetch('/data/glossary-categories.json'),
-          fetch('/data/movements.json'),
-          fetch('/data/works.json'),
-        ]);
-
-        const glossaryData = await glossaryRes.json();
-        const categoriesData = await categoriesRes.json();
-        const movementsData = await movementsRes.json();
-        const worksData = await worksRes.json();
-
+    Promise.all([loadJson('/data/glossary.json'), loadJson('/data/glossary-categories.json')])
+      .then(([glossaryData, categoriesData]) => {
         setTerms(glossaryData);
         setGlossaryMeta(categoriesData.meta);
         setGlossaryCategories(categoriesData.categories);
-        setMovements(movementsData);
-        setWorks(worksData);
-        setIsLoading(false);
-      } catch (error) {
-        console.error('Erreur lors du chargement du glossaire:', error);
-        setIsLoading(false);
-      }
-    };
-
-    loadData();
+      })
+      .catch(setError)
+      .finally(() => setIsLoading(false));
   }, []);
 
-  const enrichedTerms = useMemo(() => {
-    const detailedTermsByName = new Map(
-      terms.map((term) => [normalizeText(term.term), term]),
-    );
-    const catalogTermNames = new Set();
-    const catalogTerms = glossaryCategories.flatMap((category) =>
-      category.terms.map((termLabel) => {
-        const detailedTerm = detailedTermsByName.get(normalizeText(termLabel));
-        catalogTermNames.add(normalizeText(termLabel));
+  useEffect(() => {
+    if (!isLoading && location.hash) {
+      navigate(`/glossary/${decodeURIComponent(location.hash.slice(1))}`, { replace: true });
+    }
+  }, [isLoading, location.hash, navigate]);
 
-        return {
-          ...(detailedTerm || {}),
-          id: detailedTerm?.id || slugify(termLabel),
-          term: detailedTerm?.term || termLabel,
-          category: category.label,
-          categoryId: category.id,
-          definition: detailedTerm?.definition || 'Définition à compléter.',
-          example: detailedTerm?.example || 'Cette entrée est classée dans le catalogue du glossaire et pourra recevoir une fiche détaillée.',
-          isPendingDefinition: !detailedTerm,
-        };
-      }),
-    );
-    const uncataloguedTerms = terms
-      .filter((term) => !catalogTermNames.has(normalizeText(term.term)))
-      .map((term) => ({
-        ...term,
-        categoryId: `legacy-${slugify(term.category)}`,
-        isPendingDefinition: false,
-      }));
-
-    return [...catalogTerms, ...uncataloguedTerms].sort((a, b) => a.term.localeCompare(b.term, 'fr'));
-  }, [glossaryCategories, terms]);
-
-  const categories = useMemo(() => {
-    const uncataloguedCategoriesById = new Map();
-
-    enrichedTerms
-      .filter((term) => term.categoryId?.startsWith('legacy-'))
-      .forEach((term) => {
-        const existingCategory = uncataloguedCategoriesById.get(term.categoryId);
-
-        if (existingCategory) {
-          existingCategory.terms.push(term.term);
-        } else {
-          uncataloguedCategoriesById.set(term.categoryId, {
-            id: term.categoryId,
-            label: term.category,
-            terms: [term.term],
-          });
-        }
-      });
-
-    return [...glossaryCategories, ...uncataloguedCategoriesById.values()];
-  }, [enrichedTerms, glossaryCategories]);
-
+  const enrichedTerms = useMemo(() => enrichGlossary(terms, glossaryCategories), [glossaryCategories, terms]);
+  const categories = useMemo(() => buildGlossaryCategories(enrichedTerms, glossaryCategories), [enrichedTerms, glossaryCategories]);
   const letters = useMemo(
     () => [...new Set(enrichedTerms.map((term) => normalizeText(term.term).charAt(0).toUpperCase()))],
     [enrichedTerms],
   );
 
-  const movementsById = useMemo(
-    () => Object.fromEntries(movements.map((movement) => [movement.id, movement])),
-    [movements],
-  );
-
-  const worksById = useMemo(
-    () => Object.fromEntries(works.map((work) => [work.id, work])),
-    [works],
-  );
-
-  const filteredTerms = enrichedTerms.filter((term) => {
+  const filteredTerms = useMemo(() => {
     const normalizedSearch = normalizeText(searchTerm.trim());
-    const matchesCategory = selectedCategory ? term.categoryId === selectedCategory : true;
-    const matchesLetter = selectedLetter
-      ? normalizeText(term.term).startsWith(selectedLetter.toLocaleLowerCase('fr-FR'))
-      : true;
-    const searchableText = normalizeText([
-      term.term,
-      term.category,
-      term.definition,
-      term.example,
-      ...(term.relatedTerms || []),
-    ].join(' '));
-    const matchesSearch = normalizedSearch ? searchableText.includes(normalizedSearch) : true;
-
-    return matchesCategory && matchesLetter && matchesSearch;
-  });
-
-  useEffect(() => {
-    if (isLoading || !location.hash) {
-      return;
-    }
-
-    const targetId = decodeURIComponent(location.hash.slice(1));
-    const targetTerm = enrichedTerms.find((term) => term.id === targetId);
-
-    if (!targetTerm) {
-      return;
-    }
-
-    setSelectedCategory('');
-    setSelectedLetter('');
-    setSearchTerm('');
-
-    window.requestAnimationFrame(() => {
-      document.getElementById(targetId)?.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-      });
+    return enrichedTerms.filter((term) => {
+      const searchableText = normalizeText([term.term, term.category, term.definition, term.example, ...(term.relatedTerms || [])].join(' '));
+      return (!selectedCategory || term.categoryId === selectedCategory)
+        && (!selectedLetter || normalizeText(term.term).startsWith(selectedLetter.toLocaleLowerCase('fr-FR')))
+        && (!normalizedSearch || searchableText.includes(normalizedSearch));
     });
-  }, [enrichedTerms, isLoading, location.hash]);
+  }, [enrichedTerms, searchTerm, selectedCategory, selectedLetter]);
 
+  const totalPages = Math.max(1, Math.ceil(filteredTerms.length / PAGE_SIZE));
+  const currentPage = Math.min(requestedPage, totalPages);
+  const visibleTerms = filteredTerms.slice((currentPage - 1) * PAGE_SIZE, currentPage * PAGE_SIZE);
+  const activeFilterCount = [searchTerm, selectedCategory, selectedLetter].filter(Boolean).length;
+  const updateParams = (changes, options) => updateUrlState(searchParams, setSearchParams, changes, options);
   const resetFilters = () => {
-    setSelectedCategory('');
-    setSelectedLetter('');
-    setSearchTerm('');
+    updateParams({ q: null, category: null, letter: null, page: null });
   };
 
-  if (isLoading) {
-    return (
-      <div className="loading-state">
-        <p>Chargement du glossaire...</p>
-      </div>
-    );
-  }
+  if (isLoading) return <div className="loading-state"><p>Chargement du glossaire…</p></div>;
+  if (error) return <LoadErrorState title="Impossible de charger le glossaire" error={error} />;
 
   return (
     <div className="fade-in">
-      <div className="page-header">
-        <p className="eyebrow">Outils d'analyse</p>
-        <div className="page-title-row">
-          <h2>Glossaire des termes littéraires</h2>
-          <HelpTooltip label="Aide sur le glossaire">
-            Combinez recherche, catégories et lettres pour retrouver rapidement une notion.
-          </HelpTooltip>
-        </div>
-        <p className="lead">
-          Retrouvez les notions utiles pour lire, commenter et comparer les textes:
-          figures de style, registres, narration, structure et mouvements.
-        </p>
-        <Link to="/help" className="context-help-link">Ouvrir l’aide sur le glossaire</Link>
-      </div>
+      <PageHeader
+        eyebrow="Outils d’analyse"
+        title="Glossaire des termes littéraires"
+        description="Retrouvez les notions utiles pour lire, commenter et comparer les textes : figures de style, registres, narration et mouvements."
+        actions={<Link to="/help" className="context-help-link">Ouvrir l’aide sur le glossaire</Link>}
+      >
+        <HelpTooltip label="Aide sur le glossaire">Combinez recherche, catégories et lettres pour retrouver rapidement une notion.</HelpTooltip>
+      </PageHeader>
 
       <div className="glossary-category-panel" aria-label="Catégories du glossaire">
         {categories.map((category) => (
@@ -205,154 +89,67 @@ function GlossaryPage() {
             key={category.id}
             type="button"
             className={selectedCategory === category.id ? 'category-filter active' : 'category-filter'}
-            onClick={() => setSelectedCategory(selectedCategory === category.id ? '' : category.id)}
+            aria-pressed={selectedCategory === category.id}
+            onClick={() => updateParams({ category: selectedCategory === category.id ? null : category.id, page: null })}
           >
-            <span>{category.label}</span>
-            <strong>{category.terms.length}</strong>
+            <span>{category.label}</span><strong>{category.terms.length}</strong>
           </button>
         ))}
       </div>
 
-      <div className="filters glossary-filters">
-        <div className="filter-group">
-          <label>
-            Rechercher un terme
-            <HelpTooltip label="Aide recherche glossaire">
-              La recherche couvre le terme, la définition, l’exemple et les notions liées.
-            </HelpTooltip>
-          </label>
-          <input
-            type="text"
-            value={searchTerm}
-            onChange={(event) => setSearchTerm(event.target.value)}
-            placeholder="Ex: métaphore, focalisation, réalisme..."
-          />
+      <FilterPanel activeCount={activeFilterCount}>
+        <div className="filter-group filter-group-wide">
+          <label htmlFor="glossary-search">Rechercher un terme</label>
+          <input id="glossary-search" type="search" value={searchTerm} onChange={(event) => updateParams({ q: event.target.value, page: null }, { replace: true })} placeholder="Métaphore, focalisation, réalisme…" />
         </div>
-
         <div className="filter-group">
-          <label>Catégorie</label>
-          <select
-            value={selectedCategory}
-            onChange={(event) => setSelectedCategory(event.target.value)}
-          >
+          <label htmlFor="glossary-category">Catégorie</label>
+          <select id="glossary-category" value={selectedCategory} onChange={(event) => updateParams({ category: event.target.value, page: null })}>
             <option value="">Toutes les catégories</option>
-            {categories.map((category) => (
-              <option key={category.id} value={category.id}>
-                {category.label}
-              </option>
-            ))}
+            {categories.map((category) => <option key={category.id} value={category.id}>{category.label}</option>)}
           </select>
         </div>
-
-        <button
-          type="button"
-          onClick={resetFilters}
-          className="button button-secondary"
-        >
-          Réinitialiser
-        </button>
-      </div>
+        <button type="button" onClick={resetFilters} className="button button-secondary filter-reset" disabled={activeFilterCount === 0}>Réinitialiser</button>
+      </FilterPanel>
 
       <div className="letter-filter" aria-label="Filtrer par lettre">
-        <button
-          type="button"
-          className={!selectedLetter ? 'letter-button active' : 'letter-button'}
-          onClick={() => setSelectedLetter('')}
-        >
-          Tous
-        </button>
+        <button type="button" className={!selectedLetter ? 'letter-button active' : 'letter-button'} aria-pressed={!selectedLetter} onClick={() => updateParams({ letter: null, page: null })}>Tous</button>
         {letters.map((letter) => (
-          <button
-            key={letter}
-            type="button"
-            className={selectedLetter === letter ? 'letter-button active' : 'letter-button'}
-            onClick={() => setSelectedLetter(letter)}
-          >
-            {letter}
-          </button>
+          <button key={letter} type="button" className={selectedLetter === letter ? 'letter-button active' : 'letter-button'} aria-pressed={selectedLetter === letter} onClick={() => updateParams({ letter, page: null })}>{letter}</button>
         ))}
       </div>
 
-      <div className="result-count">
-        {filteredTerms.length} termes trouvés
-        {glossaryMeta?.totalTerms && ` - ${glossaryMeta.totalTerms} termes catalogués`}
+      <div className="results-toolbar">
+        <p><strong>{filteredTerms.length}</strong> termes trouvés</p>
+        {glossaryMeta?.totalTerms && <p className="muted">{glossaryMeta.totalTerms} termes catalogués</p>}
       </div>
 
-      <div className="glossary-grid">
-        {filteredTerms.map((term) => (
-          <article key={term.id} id={term.id} className="card glossary-card">
-            <div className="glossary-card-header">
-              <div>
-                <p className="glossary-letter">{term.term.charAt(0)}</p>
-                <h3>{term.term}</h3>
+      {visibleTerms.length === 0 ? (
+        <EmptyState>Essayez une autre recherche ou réinitialisez les filtres.</EmptyState>
+      ) : (
+        <div className="glossary-grid catalog-grid">
+          {visibleTerms.map((term) => (
+            <article key={term.id} className="card glossary-card catalog-card">
+              <div className="glossary-card-header">
+                <div><p className="glossary-letter">{term.term.charAt(0)}</p><h2 className="card-title">{term.term}</h2></div>
+                <span className="badge badge-theme">{term.category}</span>
               </div>
-              <span className="badge badge-theme">{term.category}</span>
-            </div>
-
-            <p className="glossary-definition">{term.definition}</p>
-            <p className="glossary-example">{term.example}</p>
-
-            {term.isPendingDefinition && (
-              <p className="glossary-status">Fiche détaillée à compléter</p>
-            )}
-
-            {term.relatedTerms?.length > 0 && (
-              <div className="card-section">
-                <h4>Notions liées</h4>
-                <div className="tag-row">
-                  {term.relatedTerms.map((relatedTermId) => {
-                    const relatedTerm = enrichedTerms.find((item) => item.id === relatedTermId);
-
-                    return relatedTerm ? (
-                      <Link key={relatedTermId} to={`/glossary#${relatedTermId}`} className="badge badge-theme">
-                        {relatedTerm.term}
-                      </Link>
-                    ) : (
-                      <span key={relatedTermId} className="badge badge-theme">
-                        {relatedTermId}
-                      </span>
-                    );
-                  })}
-                </div>
+              <p className="glossary-definition catalog-summary">{term.definition}</p>
+              {term.isPendingDefinition && <p className="glossary-status">Fiche détaillée à compléter</p>}
+              <div className="card-actions catalog-actions">
+                <Link to={`/glossary/${term.id}`} className="button">Voir la définition</Link>
               </div>
-            )}
+            </article>
+          ))}
+        </div>
+      )}
 
-            {term.relatedMovements?.length > 0 && (
-              <div className="card-section">
-                <h4>Mouvements associés</h4>
-                <div className="tag-row">
-                  {term.relatedMovements.map((movementId) => {
-                    const movement = movementsById[movementId];
-
-                    return movement ? (
-                      <Link key={movementId} to={`/movements#${movementId}`} className="badge badge-theme">
-                        {movement.name}
-                      </Link>
-                    ) : null;
-                  })}
-                </div>
-              </div>
-            )}
-
-            {term.relatedWorks?.length > 0 && (
-              <div className="card-section">
-                <h4>Œuvres repères</h4>
-                <div className="tag-row">
-                  {term.relatedWorks.map((workId) => {
-                    const work = worksById[workId];
-
-                    return work ? (
-                      <Link key={workId} to={`/works#${workId}`} className="badge badge-theme">
-                        {work.title}
-                      </Link>
-                    ) : null;
-                  })}
-                </div>
-              </div>
-            )}
-          </article>
-        ))}
-      </div>
+      <Pagination
+        currentPage={currentPage}
+        pageSize={PAGE_SIZE}
+        totalItems={filteredTerms.length}
+        onPageChange={(page) => updateParams({ page: page === 1 ? null : page })}
+      />
     </div>
   );
 }

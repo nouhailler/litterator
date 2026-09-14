@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { getHashId, scrollToHash } from '../utils/hashNavigation';
+import LoadErrorState from '../components/LoadErrorState';
+import { loadCoreCorpus } from '../data/corpus';
 
 function MovementsPage() {
   const location = useLocation();
@@ -8,27 +10,21 @@ function MovementsPage() {
   const [isLoading, setIsLoading] = useState(true);
   const [authors, setAuthors] = useState([]);
   const [works, setWorks] = useState([]);
+  const [error, setError] = useState(null);
   const activeMovementId = getHashId(location.hash);
 
   useEffect(() => {
     const loadData = async () => {
       try {
-        const [movementsRes, authorsRes, worksRes] = await Promise.all([
-          fetch('/data/movements.json'),
-          fetch('/data/authors.json'),
-          fetch('/data/works.json'),
-        ]);
-        
-        const movementsData = await movementsRes.json();
-        const authorsData = await authorsRes.json();
-        const worksData = await worksRes.json();
+        const { movements: movementsData, authors: authorsData, works: worksData } = await loadCoreCorpus();
 
         setMovements(movementsData);
         setAuthors(authorsData);
         setWorks(worksData);
         setIsLoading(false);
-      } catch (error) {
-        console.error('Erreur lors du chargement des données:', error);
+      } catch (loadError) {
+        console.error('Erreur lors du chargement des données:', loadError);
+        setError(loadError);
         setIsLoading(false);
       }
     };
@@ -55,11 +51,13 @@ function MovementsPage() {
     );
   }
 
+  if (error) return <LoadErrorState title="Impossible de charger les mouvements" error={error} />;
+
   return (
     <div className="fade-in">
       <div className="page-header">
         <p className="eyebrow">Courants et ruptures</p>
-        <h2>Mouvements littéraires français</h2>
+        <h1>Mouvements littéraires français</h1>
         <p className="lead">
           Découvrez les grands mouvements qui ont marqué l'histoire de la littérature française,
           de la Révolution industrielle à l'ère numérique.
@@ -123,7 +121,7 @@ function MovementsPage() {
                   {movementAuthors.map((author) => (
                     <Link
                       key={author.id}
-                      to={`/authors#${author.id}`}
+                      to={`/authors/${author.id}`}
                       className="badge badge-theme"
                     >
                       {author.name}
@@ -141,7 +139,7 @@ function MovementsPage() {
                   {movementWorks.map((work) => (
                     <Link
                       key={work.id}
-                      to={`/works#${work.id}`}
+                      to={`/works/${work.id}`}
                       className="badge badge-theme"
                     >
                       {work.title} ({work.year})
@@ -227,7 +225,7 @@ function MovementsPage() {
                   className="button" 
                   style={{ fontSize: '0.9rem', padding: '8px 16px' }}
                 >
-                  Voir sur la timeline
+                  Voir sur la frise
                 </Link>
               </div>
             </div>

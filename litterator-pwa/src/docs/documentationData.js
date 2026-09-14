@@ -1,8 +1,9 @@
 export const documentationVersion = '1.0.0';
-export const documentationUpdatedAt = '2026-08-21';
+export const documentationUpdatedAt = '2026-09-12';
 
 export const documentedAppRoutes = [
-  '/', '/timeline', '/map', '/movements', '/authors', '/works', '/glossary', '/help', '/settings', '/legal', '/docs',
+  '/', '/search', '/timeline', '/map', '/movements', '/authors', '/authors/:authorId', '/works', '/works/:workId',
+  '/glossary', '/glossary/:termId', '/help', '/settings', '/legal', '/docs',
 ];
 
 export const documentedSettings = [
@@ -85,6 +86,18 @@ export const documentedErrors = [
     solution: 'Verifier le reseau, le cache PWA, les fichiers public/data et relancer la mise a jour.',
   },
   {
+    code: 'MAP_TILE_ERROR',
+    message: 'Fond de carte indisponible',
+    meaning: 'Une ou plusieurs tuiles OpenStreetMap n ont pas pu etre chargees.',
+    solution: 'L annuaire des lieux reste accessible. Verifier la connexion puis utiliser Recharger le fond.',
+  },
+  {
+    code: 'IMAGE_LOAD_ERROR',
+    message: 'Portrait ou couverture indisponible',
+    meaning: 'Une image distante est absente ou inaccessible.',
+    solution: 'Une initiale ou une couverture generee remplace automatiquement l image. La fiche reste consultable.',
+  },
+  {
     code: 'UPDATE_ERROR',
     message: 'Impossible de lancer la mise a jour',
     meaning: 'La mise a jour PWA ou le nettoyage du cache a echoue.',
@@ -148,6 +161,14 @@ export const docPages = [
         ],
       },
       {
+        title: 'Recherche globale',
+        list: [
+          'Objectif: rechercher simultanement un auteur, une oeuvre ou une notion du glossaire.',
+          'Acces: lien Recherche dans la navigation ou bouton Rechercher sur l accueil.',
+          'Comportement: la recherche reste locale et affiche des liens vers les fiches detaillees.',
+        ],
+      },
+      {
         title: 'Frise',
         list: [
           'Objectif: situer les evenements et les oeuvres dans le temps.',
@@ -168,6 +189,14 @@ export const docPages = [
         list: [
           'Objectif: importer, exporter, rechercher des images Wikimedia, changer le theme, mettre a jour la PWA et consulter les mentions legales.',
           'Resultats: les imports generent un fichier JSON a telecharger; ils ne modifient pas directement le depot.',
+        ],
+      },
+      {
+        title: 'Catalogues et fiches',
+        list: [
+          'Les pages Auteurs, Oeuvres et Glossaire affichent des listes filtrees et paginees pour limiter la longueur de page.',
+          'Chaque resultat ouvre une fiche detaillee avec les informations, liens et contenus associes.',
+          'Les anciennes ancres de catalogue sont redirigees vers les nouvelles fiches lorsque cela est possible.',
         ],
       },
     ],
@@ -191,7 +220,7 @@ export const docPages = [
       {
         title: 'Recherche et filtres',
         list: [
-          'Description: filtrer les contenus dans les pages specialisees.',
+          'Description: rechercher dans tout le corpus ou filtrer les contenus dans les pages specialisees.',
           'Donnees utilisees: fichiers JSON publies dans public/data.',
           'Limite: la recherche documentaire et applicative est locale, sans index serveur.',
         ],
@@ -279,6 +308,14 @@ export const docPages = [
         ],
       },
       {
+        title: 'Couvertures et dates editoriales',
+        content: [
+          '705 couvertures de remplacement sont generees dans l interface plutot que stockees dans works.json. Les 55 couvertures reelles restent conservees ; une couverture generee prend le relais en cas d erreur.',
+          'Les 31 adaptations precedemment sans annee possedent desormais une date, sa nature et un lien vers la source. Une divergence entre sources est indiquee sur la fiche concernee. Cela ne constitue pas une validation historique exhaustive du corpus.',
+          'Les recherches, filtres, tris et pages des catalogues sont conserves dans l URL. Un lien partage reprend la meme selection ; precedent et suivant restaurent ces parametres. La saisie remplace l entree courante pour ne pas creer un historique par caractere.',
+        ],
+      },
+      {
         title: 'Point juridique',
         content: ['La politique de confidentialite definitive est a verifier humainement. Le projet contient actuellement un placeholder legal pour les traitements futurs.'],
       },
@@ -310,6 +347,13 @@ export const docPages = [
         content: [
           'Aucune synchronisation de donnees utilisateur n est implementee dans le code. La seule synchronisation observee concerne le service worker et les caches de ressources.',
           'Schema: reseau disponible -> verification du service worker -> cache mis a jour -> rechargement de l application si necessaire.',
+        ],
+      },
+      {
+        title: 'Etats de connexion et erreurs',
+        content: [
+          'Un bandeau signale la perte de connexion. Les donnees deja cachees restent consultables, tandis que les ressources absentes du cache necessitent une reconnexion.',
+          'Une erreur de donnees propose Reessayer sans supprimer les parametres URL, ainsi qu un detail technique identifiant le fichier ou le statut HTTP. La carte conserve son annuaire quand les tuiles sont indisponibles.',
         ],
       },
     ],

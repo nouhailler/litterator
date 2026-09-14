@@ -46,7 +46,7 @@ for (const route of routeMatches) {
 }
 
 const settingSignals = [
-  ['theme', settingsSource.includes("localStorage.setItem('theme'")],
+  ['theme', settingsSource.includes("localStorage.setItem('theme'") || appSource.includes("localStorage.setItem('theme'")],
   ['dataType', settingsSource.includes("useState('author')")],
   ['legal_notice_acknowledged', legalStorageSource.includes('LEGAL_NOTICE_ACKNOWLEDGED_KEY')],
 ];
