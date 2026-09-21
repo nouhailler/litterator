@@ -117,7 +117,7 @@ Après une modification visuelle intentionnelle, régénérer et inspecter les r
 npm run test:visual:update
 ```
 
-Utiliser la même version de Chromium et les mêmes polices en CI ; les références actuelles sont produites sous Linux. La recette teste séparément le cache PWA réel pour l’ouverture hors connexion.
+Utiliser la même version de Chromium en CI ; les références actuelles sont produites sous Linux. Les polices de référence sont fournies dans `tests/fixtures/fonts/` et chargées explicitement avant chaque capture pour éviter les variations de polices système. Elles ne sont pas incluses dans le build de production. La recette teste séparément le cache PWA réel pour l’ouverture hors connexion.
 
 ## Optimisation et suivi éditorial
 

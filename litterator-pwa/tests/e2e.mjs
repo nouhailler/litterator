@@ -16,6 +16,19 @@ const pause = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 const checks = [];
 const captures = [];
 
+// Bundle the reference fonts with the tests: system-ui differs across Linux images.
+// These fixtures never enter public/ or the PWA precache.
+const referenceFonts = [
+  ['Regression Sans', '400', 'DejaVuSans.ttf'],
+  ['Regression Sans', '700', 'DejaVuSans-Bold.ttf'],
+  ['Regression Serif', '400', 'LiberationSerif-Regular.ttf'],
+  ['Regression Serif', '700', 'LiberationSerif-Bold.ttf'],
+];
+const referenceFontCss = (await Promise.all(referenceFonts.map(async ([family, weight, file]) => {
+  const bytes = await readFile(join(project, 'tests/fixtures/fonts', file));
+  return `@font-face { font-family: '${family}'; font-weight: ${weight}; src: url(data:font/ttf;base64,${bytes.toString('base64')}) format('truetype'); }`;
+}))).join('\n') + `\n:root { --font-primary: 'Regression Sans', sans-serif; --font-secondary: 'Regression Serif', serif; } body { font-family: var(--font-primary) !important; }`;
+
 async function waitFor(check, description, timeout = 15_000) {
   const deadline = Date.now() + timeout;
   while (Date.now() < deadline) {
@@ -230,6 +243,8 @@ async function main() {
           await navigate(path, selector);
           assert.equal(await evaluate("document.documentElement.dataset.theme"), theme);
           await evaluate("(() => { const style = document.createElement('style'); style.textContent = '*, *::before, *::after { animation: none !important; transition: none !important; caret-color: transparent !important; }'; document.head.append(style); window.scrollTo(0, 0); })()");
+          await evaluate(`(() => { const style = document.createElement('style'); style.textContent = ${JSON.stringify(referenceFontCss)}; document.head.append(style); })()`);
+          await evaluate(`Promise.all(${JSON.stringify(referenceFonts.map(([family, weight]) => `${weight} 16px "${family}"`))}.map(font => document.fonts.load(font))).then(results => { if (results.some(faces => faces.length !== 1 || faces[0].status !== 'loaded')) throw new Error('Police de référence indisponible'); })`);
           await evaluate('document.fonts.ready');
           await pause(200);
           assert.equal(await evaluate('document.scrollingElement.scrollWidth <= innerWidth'), true, `${name} déborde à ${width}px (${theme})`);
