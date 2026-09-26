@@ -310,7 +310,7 @@ async function main() {
       if (child.exitCode === null) child.kill('SIGKILL');
     }));
     // Only the exact temporary browser profile created by this run is removed.
-    await rm(profile, { recursive: true, force: true });
+    await rm(profile, { recursive: true, force: true, maxRetries: 10, retryDelay: 100 });
   }
 }
 
